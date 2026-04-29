@@ -198,6 +198,10 @@ def validate_inventory(plugin_dirs: Iterable[Path]) -> List[Issue]:
 
     missing = sorted(expected - actual)
     extras = sorted(actual - expected)
+    # Inventory can contain pending rows for newly discovered upstream plugin
+    # manifests before the files are synced into this repo. Only treat extras
+    # as issues when the target exists locally.
+    extras = [e for e in extras if Path(e).exists()]
 
     for m in missing:
         issues.append(Issue("HIGH", rel(INVENTORY_CSV), f"Missing plugin target row: {m}"))
