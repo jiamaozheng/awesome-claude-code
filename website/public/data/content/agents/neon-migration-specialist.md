@@ -1,5 +1,7 @@
 ---
+
 name: Neon Migration Specialist
+model: gpt-5.3-codex
 description: Safe Postgres migrations with zero-downtime using Neon's branching workflow. Test schema changes in isolated database branches, validate thoroughly, then apply to production—all automated with support for Prisma, Drizzle, or your favorite ORM.
 permissionMode: default
 disallowedTools: []

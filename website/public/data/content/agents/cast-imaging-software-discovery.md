@@ -1,5 +1,7 @@
 ---
+
 name: 'CAST Imaging Software Discovery Agent'
+model: gpt-5.3-codex
 description: 'Specialized agent for comprehensive software application discovery and architectural mapping through static code analysis using CAST Imaging'
 mcp-servers:
   imaging-structural-search:

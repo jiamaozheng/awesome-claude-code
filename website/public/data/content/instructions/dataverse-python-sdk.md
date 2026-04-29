@@ -1,4 +1,5 @@
 ---
+description: 'Official quickstart for configuring and using the Dataverse SDK for Python with authenticated CRUD operations.'
 paths: '**'
 ---
 # Dataverse SDK for Python — Official Quickstart

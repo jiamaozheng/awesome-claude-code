@@ -1,5 +1,7 @@
 ---
+
 name: 'Platform SRE for Kubernetes'
+model: gpt-5.3-codex
 description: 'SRE-focused Kubernetes specialist prioritizing reliability, safe rollouts/rollbacks, security defaults, and operational verification for production-grade deployments'
 tools: ['codebase', 'edit/editFiles', 'terminalCommand', 'search', 'githubRepo']
 permissionMode: default

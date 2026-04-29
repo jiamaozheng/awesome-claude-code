@@ -1,6 +1,81 @@
 {
-  "items": [],
+  "items": [
+    {
+      "title": "Daily Issues Report",
+      "description": "Generates a daily summary of open issues and recent activity as a GitHub issue",
+      "path": "workflows/daily-issues-report.md",
+      "triggers": [
+        "schedule"
+      ],
+      "lastUpdated": "2026-04-20T03:09:42.000Z"
+    },
+    {
+      "title": "OSPO Contributors Report",
+      "description": "Monthly contributor activity metrics across an organization's repositories.",
+      "path": "workflows/ospo-contributors-report.md",
+      "triggers": [
+        "schedule",
+        "workflow_dispatch"
+      ],
+      "lastUpdated": "2026-04-20T03:09:42.000Z"
+    },
+    {
+      "title": "OSPO Organization Health Report",
+      "description": "Comprehensive weekly health report for a GitHub organization. Surfaces stale issues/PRs, merge time analysis, contributor leaderboards, and actionable items needing human attention.",
+      "path": "workflows/ospo-org-health.md",
+      "triggers": [
+        "schedule",
+        "workflow_dispatch"
+      ],
+      "lastUpdated": "2026-04-20T03:09:42.000Z"
+    },
+    {
+      "title": "OSPO Stale Repository Report",
+      "description": "Identifies inactive repositories in your organization and generates an archival recommendation report.",
+      "path": "workflows/ospo-stale-repos.md",
+      "triggers": [
+        "schedule",
+        "workflow_dispatch"
+      ],
+      "lastUpdated": "2026-04-20T03:09:42.000Z"
+    },
+    {
+      "title": "OSS Release Compliance Checker",
+      "description": "Analyzes a target repository against open source release requirements and posts a detailed compliance report as an issue comment.",
+      "path": "workflows/ospo-release-compliance-checker.md",
+      "triggers": [
+        "issues",
+        "workflow_dispatch"
+      ],
+      "lastUpdated": "2026-04-20T03:09:42.000Z"
+    },
+    {
+      "title": "Relevance Check",
+      "description": "Slash command to evaluate whether an issue or pull request is still relevant to the project",
+      "path": "workflows/relevance-check.md",
+      "triggers": [
+        "slash_command",
+        "roles"
+      ],
+      "lastUpdated": "2026-04-20T03:09:42.000Z"
+    },
+    {
+      "title": "Relevance Summary",
+      "description": "Manually triggered workflow that summarizes all open issues and PRs with a /relevance-check response into a single issue",
+      "path": "workflows/relevance-summary.md",
+      "triggers": [
+        "workflow_dispatch"
+      ],
+      "lastUpdated": "2026-04-20T03:09:42.000Z"
+    }
+  ],
   "filters": {
-    "triggers": []
+    "triggers": [
+      "issues",
+      "roles",
+      "schedule",
+      "slash_command",
+      "workflow_dispatch"
+    ]
   }
 }

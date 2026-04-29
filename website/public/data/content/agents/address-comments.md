@@ -1,6 +1,8 @@
 ---
+
 description: "Address PR comments"
 name: 'Universal PR Comment Addresser'
+model: gpt-5.3-codex
 tools:
   [
     "changes",

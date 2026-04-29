@@ -1,5 +1,7 @@
 ---
+
 name: Lingo.dev Localization (i18n) Agent
+model: gpt-5.3-codex
 description: Expert at implementing internationalization (i18n) in web applications using a systematic, checklist-driven approach.
 tools:
   - shell

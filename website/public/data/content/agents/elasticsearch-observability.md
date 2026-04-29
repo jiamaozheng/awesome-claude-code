@@ -1,5 +1,7 @@
 ---
+
 name: elasticsearch-agent
+model: gpt-5.3-codex
 description: Our expert AI assistant for debugging code (O11y), optimizing vector search (RAG), and remediating security threats using live Elastic data.
 tools:
   # Standard tools for file reading, editing, and execution
@@ -15,16 +17,13 @@ mcp-servers:
     type: 'remote'
     # 'npx mcp-remote' is used to connect to a remote MCP server
     command: 'npx'
-    args: [
-        'mcp-remote',
-        # ---
-        # !! ACTION REQUIRED !!
-        # Replace this URL with your actual Kibana URL
-        # ---
-        'https://{KIBANA_URL}/api/agent_builder/mcp',
-        '--header',
-        'Authorization:${AUTH_HEADER}'
-      ]
+    args:
+      - 'mcp-remote'
+      # !! ACTION REQUIRED !!
+      # Replace this URL with your actual Kibana URL
+      - 'https://{KIBANA_URL}/api/agent_builder/mcp'
+      - '--header'
+      - 'Authorization:${AUTH_HEADER}'
     # This section maps a GitHub secret to the AUTH_HEADER environment variable
     # The 'ApiKey' prefix is required by Elastic
     env:

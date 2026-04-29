@@ -1,6 +1,8 @@
 ---
+
 description: 'Analyzes codebases to understand structure, testing patterns, and testability. Identifies source files, existing tests, build commands, and testing framework. Works with any language.'
 name: 'Polyglot Test Researcher'
+model: gpt-5.3-codex
 permissionMode: default
 disallowedTools: []
 ---

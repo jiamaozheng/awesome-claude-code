@@ -249,9 +249,9 @@
       "title": "codexer",
       "description": "Advanced Python research assistant with Context 7 MCP integration, focusing on speed, reliability, and 10+ years of software development expertise",
       "path": "instructions/codexer.md",
-      "applyTo": null,
+      "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.144Z"
+      "lastUpdated": "2026-04-29T03:26:10.558Z"
     },
     {
       "title": "coldfusion-cfc",
@@ -427,115 +427,115 @@
     },
     {
       "title": "dataverse-python",
-      "description": "",
+      "description": "Getting-started guide for Dataverse SDK for Python setup, authentication, and foundational CRUD usage.",
       "path": "instructions/dataverse-python.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.461Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-advanced-features",
-      "description": "",
+      "description": "Advanced Dataverse SDK for Python guide covering option sets, filtering, SQL access, metadata operations, and production patterns.",
       "path": "instructions/dataverse-python-advanced-features.md",
-      "applyTo": null,
+      "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.329Z"
+      "lastUpdated": "2026-04-29T03:26:10.558Z"
     },
     {
       "title": "dataverse-python-agentic-workflows",
-      "description": "",
+      "description": "Preview guidance for designing and implementing agentic workflows with the Dataverse SDK for Python.",
       "path": "instructions/dataverse-python-agentic-workflows.md",
-      "applyTo": null,
+      "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.339Z"
+      "lastUpdated": "2026-04-29T03:26:10.558Z"
     },
     {
       "title": "dataverse-python-api-reference",
-      "description": "",
+      "description": "API reference for DataverseClient methods, signatures, and common usage patterns in the Dataverse SDK for Python.",
       "path": "instructions/dataverse-python-api-reference.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.347Z"
+      "lastUpdated": "2026-04-29T03:26:10.583Z"
     },
     {
       "title": "dataverse-python-authentication-security",
-      "description": "",
+      "description": "Authentication and security patterns for the Dataverse SDK for Python using Azure Identity and least-privilege practices.",
       "path": "instructions/dataverse-python-authentication-security.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.358Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-best-practices",
-      "description": "",
+      "description": "Production best practices for Dataverse SDK for Python including setup, reliability, and maintainable implementation patterns.",
       "path": "instructions/dataverse-python-best-practices.md",
-      "applyTo": null,
+      "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.372Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-error-handling",
-      "description": "",
+      "description": "Error handling and troubleshooting guidance for Dataverse SDK for Python with resilient exception patterns.",
       "path": "instructions/dataverse-python-error-handling.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.384Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-file-operations",
-      "description": "",
+      "description": "Practical file upload and file operation patterns for the Dataverse SDK for Python, including chunking strategies.",
       "path": "instructions/dataverse-python-file-operations.md",
-      "applyTo": null,
+      "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.401Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-modules",
-      "description": "",
+      "description": "Complete module reference for the Dataverse SDK for Python package hierarchy and key components.",
       "path": "instructions/dataverse-python-modules.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.410Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-pandas-integration",
-      "description": "",
+      "description": "Guidance for integrating Dataverse SDK for Python with pandas DataFrames for analysis and data workflows.",
       "path": "instructions/dataverse-python-pandas-integration.md",
-      "applyTo": null,
+      "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.417Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-performance-optimization",
-      "description": "",
+      "description": "Performance and optimization guidance for Dataverse SDK for Python including throughput and retry considerations.",
       "path": "instructions/dataverse-python-performance-optimization.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.427Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-real-world-usecases",
-      "description": "",
+      "description": "Real-world templates and use cases for Dataverse SDK for Python integrations and migrations.",
       "path": "instructions/dataverse-python-real-world-usecases.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.436Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-sdk",
-      "description": "",
+      "description": "Official quickstart for configuring and using the Dataverse SDK for Python with authenticated CRUD operations.",
       "path": "instructions/dataverse-python-sdk.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.445Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dataverse-python-testing-debugging",
-      "description": "",
+      "description": "Testing and debugging strategies for Dataverse SDK for Python projects using pytest and Azure-aligned practices.",
       "path": "instructions/dataverse-python-testing-debugging.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.452Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "debian-linux",
@@ -621,9 +621,9 @@
       "title": "dotnet-upgrade",
       "description": "Specialized agent for comprehensive .NET framework upgrades with progressive tracking and validation",
       "path": "instructions/dotnet-upgrade.md",
-      "applyTo": null,
+      "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.543Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "dotnet-wpf",
@@ -906,11 +906,11 @@
     },
     {
       "title": "memory-bank",
-      "description": "",
+      "description": "Memory Bank workflow and file conventions for preserving project context across sessions.",
       "path": "instructions/memory-bank.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-23T04:30:22.816Z"
+      "lastUpdated": "2026-04-29T03:26:10.584Z"
     },
     {
       "title": "mongo-dba",

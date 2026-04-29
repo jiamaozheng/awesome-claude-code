@@ -1,6 +1,8 @@
 ---
+
 description: "Challenges assumptions, finds edge cases, spots over-engineering and logic gaps."
 name: gem-critic
+model: gpt-5.3-codex
 argument-hint: "Enter plan_id, plan_path, scope (plan|code|architecture), and target to critique."
 disable-model-invocation: false
 user-invocable: false

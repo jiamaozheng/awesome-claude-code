@@ -1,6 +1,8 @@
 ---
+
 description: "Refactoring specialist — removes dead code, reduces complexity, consolidates duplicates."
 name: gem-code-simplifier
+model: gpt-5.3-codex
 argument-hint: "Enter task_id, scope (single_file|multiple_files|project_wide), targets (file paths/patterns), and focus (dead_code|complexity|duplication|naming|all)."
 disable-model-invocation: false
 user-invocable: false

@@ -1,4 +1,5 @@
 ---
+description: 'Getting-started guide for Dataverse SDK for Python setup, authentication, and foundational CRUD usage.'
 paths: '**'
 ---
 # Dataverse SDK for Python — Getting Started

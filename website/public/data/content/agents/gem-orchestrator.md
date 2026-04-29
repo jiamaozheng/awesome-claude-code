@@ -1,6 +1,8 @@
 ---
+
 description: "The team lead: Orchestrates research, planning, implementation, and verification."
 name: gem-orchestrator
+model: gpt-5.3-codex
 argument-hint: "Describe your objective or task. Include plan_id if resuming."
 disable-model-invocation: true
 user-invocable: true

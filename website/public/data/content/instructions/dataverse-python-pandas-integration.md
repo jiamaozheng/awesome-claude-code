@@ -1,3 +1,8 @@
+---
+description: 'Guidance for integrating Dataverse SDK for Python with pandas DataFrames for analysis and data workflows.'
+paths: '**'
+---
+
 # Dataverse SDK for Python - Pandas Integration Guide
 
 ## Overview

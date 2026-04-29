@@ -1,5 +1,7 @@
 ---
+
 name: apify-integration-expert
+model: gpt-5.3-codex
 description: "Expert agent for integrating Apify Actors into codebases. Handles Actor selection, workflow design, implementation across JavaScript/TypeScript and Python, testing, and production-ready deployment."
 mcp-servers:
   apify:

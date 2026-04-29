@@ -1,6 +1,8 @@
 ---
+
 description: 'Implements a single phase from the test plan. Writes test files and verifies they compile and pass. Calls builder, tester, and fixer agents as needed.'
 name: 'Polyglot Test Implementer'
+model: gpt-5.3-codex
 permissionMode: default
 disallowedTools: []
 ---

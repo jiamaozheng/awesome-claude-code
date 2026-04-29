@@ -1,6 +1,8 @@
 ---
+
 description: 'Fixes compilation errors in source or test files. Analyzes error messages and applies corrections.'
 name: 'Polyglot Test Fixer'
+model: gpt-5.3-codex
 permissionMode: default
 disallowedTools: []
 ---

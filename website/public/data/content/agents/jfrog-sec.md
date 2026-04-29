@@ -1,5 +1,7 @@
 ---
+
 name: JFrog Security Agent
+model: gpt-5.3-codex
 description: The dedicated Application Security agent for automated security remediation. Verifies package and version compliance, and suggests vulnerability fixes using JFrog security intelligence.
 permissionMode: default
 disallowedTools: []

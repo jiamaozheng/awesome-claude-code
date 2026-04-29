@@ -1,5 +1,7 @@
 ---
+
 name: Scientific Paper Research
+model: gpt-5.3-codex
 description: 'Research agent that searches scientific papers and retrieves structured experimental data from full-text studies using the BGPT MCP server.'
 tools:
   - read

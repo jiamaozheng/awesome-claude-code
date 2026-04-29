@@ -1,6 +1,8 @@
 ---
+
 description: 'Runs test commands for any language and reports results. Discovers test command from project files if not specified.'
 name: 'Polyglot Test Tester'
+model: gpt-5.3-codex
 permissionMode: default
 disallowedTools: []
 ---

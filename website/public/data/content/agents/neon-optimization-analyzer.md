@@ -1,5 +1,7 @@
 ---
+
 name: Neon Performance Analyzer
+model: gpt-5.3-codex
 description: Identify and fix slow Postgres queries automatically using Neon's branching workflow. Analyzes execution plans, tests optimizations in isolated database branches, and provides clear before/after performance metrics with actionable code fixes.
 permissionMode: default
 disallowedTools: []

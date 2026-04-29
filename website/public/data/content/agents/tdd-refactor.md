@@ -1,6 +1,8 @@
 ---
+
 description: "Improve code quality, apply security best practices, and enhance design whilst maintaining green tests and GitHub issue compliance."
 name: "TDD Refactor Phase - Improve Quality & Security"
+model: gpt-5.3-codex
 tools: ["github/*", "search/fileSearch", "edit/editFiles", "execute/runTests", "execute/runInTerminal", "execute/getTerminalOutput", "execute/testFailure", "read/readFile", "read/terminalLastCommand", "read/terminalSelection", "read/problems", "search/codebase"]
 permissionMode: default
 disallowedTools: []

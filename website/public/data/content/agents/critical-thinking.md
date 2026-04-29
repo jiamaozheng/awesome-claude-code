@@ -1,6 +1,8 @@
 ---
+
 description: 'Challenge assumptions and encourage critical thinking to ensure the best possible solution and outcomes.'
 name: 'Critical thinking mode instructions'
+model: gpt-5.3-codex
 tools: ['codebase', 'extensions', 'web/fetch', 'findTestFiles', 'githubRepo', 'problems', 'search', 'searchResults', 'usages']
 permissionMode: default
 disallowedTools: []

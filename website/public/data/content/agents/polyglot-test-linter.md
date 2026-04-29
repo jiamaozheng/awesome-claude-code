@@ -1,6 +1,8 @@
 ---
+
 description: 'Runs code formatting/linting for any language. Discovers lint command from project files if not specified.'
 name: 'Polyglot Test Linter'
+model: gpt-5.3-codex
 permissionMode: default
 disallowedTools: []
 ---

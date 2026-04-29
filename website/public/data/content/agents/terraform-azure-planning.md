@@ -1,6 +1,8 @@
 ---
+
 description: "Act as implementation planner for your Azure Terraform Infrastructure as Code task."
 name: "Azure Terraform Infrastructure Planning"
+model: gpt-5.3-codex
 tools: ["edit/editFiles", "fetch", "todos", "azureterraformbestpractices", "cloudarchitect", "documentation", "get_bestpractices", "microsoft-docs"]
 permissionMode: default
 disallowedTools: []

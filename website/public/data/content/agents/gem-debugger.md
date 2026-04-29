@@ -1,6 +1,8 @@
 ---
+
 description: "Root-cause analysis, stack trace diagnosis, regression bisection, error reproduction."
 name: gem-debugger
+model: gpt-5.3-codex
 argument-hint: "Enter task_id, plan_id, plan_path, and error_context (error message, stack trace, failing test) to diagnose."
 disable-model-invocation: false
 user-invocable: false

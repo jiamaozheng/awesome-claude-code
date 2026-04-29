@@ -1,4 +1,5 @@
 ---
+description: 'Performance and optimization guidance for Dataverse SDK for Python including throughput and retry considerations.'
 paths: '**'
 ---
 
@@ -256,7 +257,7 @@ async def get_accounts_async(client):
     # For now, use sync with executor
     loop = asyncio.get_event_loop()
     accounts = await loop.run_in_executor(
-        None, 
+        None,
         lambda: list(client.get("account"))
     )
     return accounts
@@ -342,12 +343,12 @@ import gc
 
 def process_large_table(client, table_name):
     """Process millions of records without memory issues."""
-    
+
     for page in client.get(table_name, page_size=5000):
         for record in page:
             result = process_record(record)
             save_result(result)
-        
+
         # Force garbage collection between pages
         gc.collect()
 ```
@@ -359,18 +360,18 @@ import pandas as pd
 
 def load_to_dataframe_chunked(client, table_name, chunk_size=10000):
     """Load data to DataFrame in chunks."""
-    
+
     dfs = []
     for page in client.get(table_name, page_size=1000):
         df_chunk = pd.DataFrame(page)
         dfs.append(df_chunk)
-        
+
         # Combine when chunk threshold reached
         if len(dfs) >= chunk_size // 1000:
             df = pd.concat(dfs, ignore_index=True)
             process_chunk(df)
             dfs = []
-    
+
     # Process remaining
     if dfs:
         df = pd.concat(dfs, ignore_index=True)
@@ -389,7 +390,7 @@ from PowerPlatform.Dataverse.core.errors import DataverseError
 
 def call_with_backoff(func, max_retries=3):
     """Call function with exponential backoff for rate limits."""
-    
+
     for attempt in range(max_retries):
         try:
             return func()
@@ -421,16 +422,16 @@ SDK doesn't have transactional guarantees:
 
 def create_with_consistency_check(client, table_name, payloads):
     """Create records and verify all succeeded."""
-    
+
     try:
         ids = client.create(table_name, payloads)
-        
+
         # Verify all records created
         created = client.get(
             table_name,
             filter=f"isof(Microsoft.Dynamics.CRM.{table_name})"
         )
-        
+
         if len(ids) != count_created:
             print(f"⚠️ Only {count_created}/{len(ids)} records created")
             # Handle partial failure

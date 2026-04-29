@@ -1,6 +1,8 @@
 ---
+
 description: 'Activate your personal Microsoft/Azure tutor - learn through guided discovery, not just answers.'
 name: 'Microsoft Study and Learn'
+model: gpt-5.3-codex
 tools: ['microsoft_docs_search', 'microsoft_docs_fetch']
 permissionMode: default
 disallowedTools: []

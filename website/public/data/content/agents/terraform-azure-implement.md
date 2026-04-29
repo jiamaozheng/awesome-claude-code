@@ -1,6 +1,8 @@
 ---
+
 description: "Act as an Azure Terraform Infrastructure as Code coding specialist that creates and reviews Terraform for Azure resources."
 name: "Azure Terraform IaC Implementation Specialist"
+model: gpt-5.3-codex
 tools: [execute/getTerminalOutput, execute/awaitTerminal, execute/runInTerminal, read/problems, read/readFile, read/terminalSelection, read/terminalLastCommand, agent, edit/createDirectory, edit/createFile, edit/editFiles, search, web/fetch, 'azure-mcp/*', todo]
 permissionMode: default
 disallowedTools: []

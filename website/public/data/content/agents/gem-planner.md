@@ -1,6 +1,8 @@
 ---
+
 description: "DAG-based execution plans — task decomposition, wave scheduling, risk analysis."
 name: gem-planner
+model: gpt-5.3-codex
 argument-hint: "Enter plan_id, objective, complexity (simple|medium|complex), and task_clarifications."
 disable-model-invocation: false
 user-invocable: false

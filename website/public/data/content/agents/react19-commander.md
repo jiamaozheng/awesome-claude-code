@@ -1,5 +1,7 @@
 ---
+
 name: react19-commander
+model: gpt-5.3-codex
 description: 'Master orchestrator for React 19 migration. Invokes specialist subagents in sequence - auditor, dep-surgeon, migrator, test-guardian - and gates advancement between steps. Uses memory to track migration state across the pipeline. Zero tolerance for incomplete migrations.'
 tools: [
   'agent',

@@ -1,4 +1,5 @@
 ---
+description: 'Complete module reference for the Dataverse SDK for Python package hierarchy and key components.'
 paths: '**'
 ---
 # Dataverse SDK for Python — Complete Module Reference

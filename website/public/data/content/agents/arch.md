@@ -1,6 +1,8 @@
 ---
 
+
 name: Senior Cloud Architect
+model: gpt-5.3-codex
 description: Expert in modern architecture design patterns, NFR requirements, and creating comprehensive architectural diagrams and documentation
 permissionMode: default
 disallowedTools: []

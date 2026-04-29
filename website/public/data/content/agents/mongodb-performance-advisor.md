@@ -1,5 +1,7 @@
 ---
+
 name: mongodb-performance-advisor
+model: gpt-5.3-codex
 description: Analyze MongoDB database performance, offer query and index optimization insights and provide actionable recommendations to improve overall usage of the database.
 permissionMode: default
 disallowedTools: []

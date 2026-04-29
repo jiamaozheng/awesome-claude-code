@@ -1,4 +1,5 @@
 ---
+description: 'Authentication and security patterns for the Dataverse SDK for Python using Azure Identity and least-privilege practices.'
 paths: '**'
 ---
 
@@ -372,10 +373,10 @@ from PowerPlatform.Dataverse.client import DataverseClient
 def get_client_for_tenant(tenant_id: str) -> DataverseClient:
     """Get DataverseClient for specific tenant."""
     credential = DefaultAzureCredential()
-    
+
     # Dataverse URL contains tenant-specific org
     base_url = f"https://{get_org_for_tenant(tenant_id)}.crm.dynamics.com"
-    
+
     return DataverseClient(
         base_url=base_url,
         credential=credential
@@ -410,7 +411,7 @@ except DataverseError as e:
 from azure.identity import DefaultAzureCredential
 
 try:
-    cred = DefaultAzureCredential(exclude_cli_credential=False, 
+    cred = DefaultAzureCredential(exclude_cli_credential=False,
                                   exclude_powershell_credential=False)
     # Force re-authentication
     import subprocess
@@ -419,7 +420,7 @@ except Exception as e:
     print(f"Authentication failed: {e}")
 ```
 
-### Error: "Invalid Tenant" 
+### Error: "Invalid Tenant"
 
 ```python
 # Verify tenant ID
@@ -462,18 +463,18 @@ client.get("contact")
 ```python
 class DataverseSession:
     """Manages DataverseClient lifecycle."""
-    
+
     def __init__(self, base_url: str):
         from azure.identity import DefaultAzureCredential
-        
+
         self.client = DataverseClient(
             base_url=base_url,
             credential=DefaultAzureCredential()
         )
-    
+
     def __enter__(self):
         return self.client
-    
+
     def __exit__(self, exc_type, exc_val, exc_tb):
         # Cleanup if needed
         pass
@@ -499,12 +500,12 @@ from PowerPlatform.Dataverse.client import DataverseClient
 def get_user_client(user_username: str) -> DataverseClient:
     # User must already be authenticated
     credential = InteractiveBrowserCredential()
-    
+
     client = DataverseClient(
         base_url="https://myorg.crm.dynamics.com",
         credential=credential
     )
-    
+
     # User only sees records they have access to
     return client
 ```

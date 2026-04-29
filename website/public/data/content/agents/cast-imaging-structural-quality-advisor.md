@@ -1,5 +1,7 @@
 ---
+
 name: 'CAST Imaging Structural Quality Advisor Agent'
+model: gpt-5.3-codex
 description: 'Specialized agent for identifying, analyzing, and providing remediation guidance for code quality issues using CAST Imaging'
 mcp-servers:
   imaging-structural-quality:

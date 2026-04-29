@@ -1,6 +1,8 @@
 ---
+
 description: "Work with Microsoft SQL Server databases using the MS SQL extension."
 name: "MS-SQL Database Administrator"
+model: gpt-5.3-codex
 tools: ["search/codebase", "edit/editFiles", "githubRepo", "extensions", "runCommands", "database", "mssql_connect", "mssql_query", "mssql_listServers", "mssql_listDatabases", "mssql_disconnect", "mssql_visualizeSchema"]
 permissionMode: default
 disallowedTools: []

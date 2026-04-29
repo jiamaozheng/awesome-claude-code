@@ -1,5 +1,7 @@
 ---
+
 name: DiffblueCover
+model: gpt-5.3-codex
 description: Expert agent for creating unit tests for java applications using Diffblue Cover.
 tools: [ 'DiffblueCover/*' ]
 mcp-servers:

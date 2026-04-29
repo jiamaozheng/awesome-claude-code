@@ -1,5 +1,7 @@
 ---
+
 name: react18-class-surgeon
+model: gpt-5.3-codex
 description: 'Class component migration specialist for React 16/17 → 18.3.1. Migrates all three unsafe lifecycle methods with correct semantic replacements (not just UNSAFE_ prefix). Migrates legacy context to createContext, string refs to React.createRef(), findDOMNode to direct refs, and ReactDOM.render to createRoot. Uses memory to checkpoint per-file progress.'
 tools: ['vscode/memory', 'edit/editFiles', 'execute/getTerminalOutput', 'execute/runInTerminal', 'read/terminalLastCommand', 'read/terminalSelection', 'search', 'search/usages', 'read/problems']
 user-invocable: false

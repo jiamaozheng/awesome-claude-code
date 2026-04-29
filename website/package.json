@@ -4,14 +4,14 @@
   "description": "Awesome Claude Code website",
   "type": "module",
   "scripts": {
-    "generate:data": "node scripts/generate-data.mjs",
+    "generate:data": "npx -y node@22.12.0 scripts/generate-data.mjs",
     "predev": "npm run generate:data",
     "prebuild": "npm run generate:data",
     "prepreview": "npm run generate:data",
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "npx -y node@22.12.0 node_modules/astro/bin/astro.mjs dev",
+    "build": "npx -y node@22.12.0 node_modules/astro/bin/astro.mjs build",
+    "preview": "npx -y node@22.12.0 node_modules/astro/bin/astro.mjs preview",
+    "astro": "npx -y node@22.12.0 node_modules/astro/bin/astro.mjs"
   },
   "keywords": [
     "github",

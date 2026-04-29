@@ -1,5 +1,7 @@
 ---
+
 name: launchdarkly-flag-cleanup
+model: gpt-5.3-codex
 description: >
   A specialized GitHub Copilot agent that uses the LaunchDarkly MCP server to safely
   automate feature flag cleanup workflows. This agent determines removal readiness,

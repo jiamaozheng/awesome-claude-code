@@ -1,6 +1,8 @@
 ---
+
 description: 'Runs build/compile commands for any language and reports results. Discovers build command from project files if not specified.'
 name: 'Polyglot Test Builder'
+model: gpt-5.3-codex
 permissionMode: default
 disallowedTools: []
 ---

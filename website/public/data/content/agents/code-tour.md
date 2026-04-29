@@ -1,6 +1,8 @@
 ---
+
 description: 'Expert agent for creating and maintaining VSCode CodeTour files with comprehensive schema support and best practices'
 name: 'VSCode Tour Expert'
+model: gpt-5.3-codex
 permissionMode: default
 disallowedTools: []
 ---

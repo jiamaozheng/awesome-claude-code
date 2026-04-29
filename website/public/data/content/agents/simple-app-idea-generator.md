@@ -1,6 +1,8 @@
 ---
+
 description: 'Brainstorm and develop new application ideas through fun, interactive questioning until ready for specification creation.'
 name: 'Idea Generator'
+model: gpt-5.3-codex
 tools: ['changes', 'codebase', 'web/fetch', 'githubRepo', 'openSimpleBrowser', 'problems', 'search', 'searchResults', 'usages', 'microsoft.docs.mcp', 'websearch']
 permissionMode: default
 disallowedTools: []

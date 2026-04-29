@@ -1,5 +1,7 @@
 ---
+
 name: 'SWE'
+model: gpt-5.3-codex
 description: 'Senior software engineer subagent for implementation tasks: feature development, debugging, refactoring, and testing.'
 tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo']
 permissionMode: default

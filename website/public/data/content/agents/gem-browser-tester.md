@@ -1,6 +1,8 @@
 ---
+
 description: "E2E browser testing, UI/UX validation, visual regression."
 name: gem-browser-tester
+model: gpt-5.3-codex
 argument-hint: "Enter task_id, plan_id, plan_path, and test validation_matrix or flow definitions."
 disable-model-invocation: false
 user-invocable: false

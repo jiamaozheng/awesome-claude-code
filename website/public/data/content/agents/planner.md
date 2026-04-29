@@ -1,6 +1,8 @@
 ---
+
 description: "Generate an implementation plan for new features or refactoring existing code."
 name: "Planning mode instructions"
+model: gpt-5.3-codex
 tools: ["codebase", "fetch", "findTestFiles", "githubRepo", "search", "usages"]
 permissionMode: default
 disallowedTools: []

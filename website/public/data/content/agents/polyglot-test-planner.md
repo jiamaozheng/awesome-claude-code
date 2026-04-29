@@ -1,6 +1,8 @@
 ---
+
 description: 'Creates structured test implementation plans from research findings. Organizes tests into phases by priority and complexity. Works with any language.'
 name: 'Polyglot Test Planner'
+model: gpt-5.3-codex
 permissionMode: default
 disallowedTools: []
 ---

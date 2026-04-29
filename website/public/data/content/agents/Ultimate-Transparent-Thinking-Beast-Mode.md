@@ -1,5 +1,7 @@
 ---
+
 name: 'Ultimate Transparent Thinking Beast Mode'
+model: gpt-5.3-codex
 description: 'Ultimate Transparent Thinking Beast Mode'
 permissionMode: default
 disallowedTools: []

@@ -1,6 +1,8 @@
 ---
+
 description: "Expert Clojure pair programmer with REPL-first methodology, architectural oversight, and interactive problem-solving. Enforces quality standards, prevents workarounds, and develops solutions incrementally through live REPL evaluation before file modifications."
 name: "Clojure Interactive Programming"
+model: gpt-5.3-codex
 permissionMode: default
 disallowedTools: []
 ---

@@ -1,5 +1,7 @@
 ---
+
 name: ADR Generator
+model: gpt-5.3-codex
 description: Expert agent for creating comprehensive Architectural Decision Records (ADRs) with structured formatting optimized for AI consumption and human readability.
 permissionMode: default
 disallowedTools: []

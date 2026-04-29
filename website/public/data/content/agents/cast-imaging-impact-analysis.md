@@ -1,5 +1,7 @@
 ---
+
 name: 'CAST Imaging Impact Analysis Agent'
+model: gpt-5.3-codex
 description: 'Specialized agent for comprehensive change impact assessment and risk analysis in software systems using CAST Imaging'
 mcp-servers:
   imaging-impact-analysis:
