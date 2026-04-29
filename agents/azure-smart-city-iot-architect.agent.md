@@ -1,8 +1,8 @@
 ---
-name: 'Azure Smart City IoT Architect'
+name: azure-smart-city-iot-architect
 description: 'Design Azure IoT and Smart City architectures with clear platform engineering reasoning, requiring mandatory review of Azure IoT Edge documentation before recommending edge solutions.'
 tools: ['search', 'search/codebase', 'edit/editFiles', 'fetch', 'runCommands', 'runTasks']
-model: 'GPT-5.3-Codex'
+model: sonnet
 ---
 
 # Azure Smart City IoT Architect

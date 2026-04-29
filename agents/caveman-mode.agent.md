@@ -1,7 +1,7 @@
 ---
 description: 'Terse, low-token responses. Minimal words, no fluff. Full capabilities preserved. Use when: optimize token usage, low-token mode, concise output, caveman mode, reduce verbosity, token-efficient, brief responses.'
-name: 'Caveman Mode'
-model: gpt-5.3-codex
+name: caveman-mode
+model: sonnet
 ---
 
 # Caveman Mode

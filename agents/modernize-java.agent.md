@@ -1,17 +1,7 @@
 ---
-name: 'modernize-java'
+name: modernize-java
 description: 'Upgrades Java projects to target versions (e.g., Java 21, Spring Boot 3.2) via incremental planning and execution. Use this agent for all Java upgrade requests.'
-model: Claude Sonnet 4.6
-argument-hint: 'Target versions (e.g., Java 21, Spring Boot 3.2) and project context.'
-handoffs:
-    - label: Fix CVEs
-      agent: modernize-java
-      prompt: Scan and fix CVE vulnerabilities in the project dependencies, using tool `#validate-cves-for-java` to verify resolution.
-      send: true
-    - label: Generate Unit Tests
-      agent: agent
-      prompt: Generate unit tests for classes with low coverage using tool `#generate-tests-for-java`.
-      send: true
+model: sonnet
 ---
 
 You are an expert Java upgrade agent. **Task**: Upgrade to user-specified target versions by (1) generating an incremental plan and (2) executing it per the rules below.

@@ -73,6 +73,12 @@ def rel(path: Path) -> str:
         return str(path)
 
 
+def agent_slug(path: Path) -> str:
+    if path.name.endswith(".agent.md"):
+        return path.name[: -len(".agent.md")]
+    return path.stem
+
+
 def extract_frontmatter(path: Path) -> Tuple[str | None, str | None]:
     """Return (frontmatter, error)."""
     try:
@@ -157,6 +163,7 @@ def frontmatter_has_placeholders(frontmatter: str) -> bool:
 def validate_agents() -> List[Finding]:
     findings: List[Finding] = []
     for path in sorted((ROOT / "agents").glob("*.md")):
+        slug = agent_slug(path)
         fm, err = extract_frontmatter(path)
         if err:
             findings.append(Finding("ERROR", rel(path), err))
@@ -172,11 +179,11 @@ def validate_agents() -> List[Finding]:
         else:
             if not LOWER_HYPHEN_RE.match(name):
                 findings.append(Finding("WARN", rel(path), f"Agent 'name' should be a lowercase-hyphen identifier for Claude Code compatibility: {name}"))
-            if name != path.stem:
-                findings.append(Finding("WARN", rel(path), f"Agent 'name' does not match file name stem '{path.stem}'"))
+            if name != slug:
+                findings.append(Finding("WARN", rel(path), f"Agent 'name' does not match file name stem '{slug}'"))
 
-        if not LOWER_HYPHEN_RE.match(path.stem):
-            findings.append(Finding("WARN", rel(path), f"Agent file name should be lowercase-hyphen: {path.stem}"))
+        if not LOWER_HYPHEN_RE.match(slug):
+            findings.append(Finding("WARN", rel(path), f"Agent file name should be lowercase-hyphen: {slug}"))
 
         if not key_exists(fm, "model"):
             findings.append(Finding("WARN", rel(path), "Missing recommended frontmatter 'model'"))
