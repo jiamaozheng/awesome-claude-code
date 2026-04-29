@@ -1,8 +1,7 @@
 ---
-
 description: 'Brainstorm and develop new application ideas through fun, interactive questioning until ready for specification creation.'
-name: 'Idea Generator'
-model: gpt-5.3-codex
+name: simple-app-idea-generator
+model: sonnet
 tools: ['changes', 'codebase', 'web/fetch', 'githubRepo', 'openSimpleBrowser', 'problems', 'search', 'searchResults', 'usages', 'microsoft.docs.mcp', 'websearch']
 permissionMode: default
 disallowedTools: []

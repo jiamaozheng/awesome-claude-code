@@ -1,10 +1,9 @@
 ---
-
-name: Monday Bug Context Fixer
-model: gpt-5.3-codex
+name: monday-bug-fixer
+model: sonnet
 description: Elite bug-fixing agent that enriches task context from Monday.com platform data. Gathers related items, docs, comments, epics, and requirements to deliver production-quality fixes with comprehensive PRs.
 tools: ['*']
-mcp-servers:
+mcpServers:
   monday-api-mcp:
     type: http
     url: "https://mcp.monday.com/mcp"
@@ -440,4 +439,3 @@ You're not just fixing code—you're solving business problems with engineering 
 **Be thorough. Be thoughtful. Be excellent.**
 
 Your value: turning scattered bug reports into confidence-inspiring fixes that merge fast because they're obviously correct.
-

@@ -1,7 +1,7 @@
 ---
-name: 'SE: Product Manager'
+name: se-product-manager-advisor
 description: 'Product management guidance for creating GitHub issues, aligning business value with user needs, and making data-driven product decisions'
-model: GPT-5
+model: sonnet
 tools: ['codebase', 'githubRepo', 'create_issue', 'update_issue', 'list_issues', 'search_issues']
 permissionMode: default
 disallowedTools: []

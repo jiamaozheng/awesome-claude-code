@@ -142,7 +142,7 @@ The awesome-copilot repository includes skill folders demonstrating production p
 
 ### Conventional Commits
 
-See [`skills/conventional-commit/SKILL.md`](https://github.com/github/awesome-copilot/tree/main/skills/conventional-commit) for automating commit messages:
+See [`skills/conventional-commit/SKILL.md`](https://github.com/jiamaozheng/awesome-claude-code/tree/main/skills/conventional-commit) for automating commit messages:
 
 ```markdown
 ---
@@ -178,7 +178,7 @@ This skill automates a repetitive task (writing commit messages) with a proven t
 
 ### Diagram Generation with Bundled Assets
 
-See [`skills/excalidraw-diagram-generator/`](https://github.com/github/awesome-copilot/tree/main/skills/excalidraw-diagram-generator) for a skill with rich bundled resources:
+See [`skills/excalidraw-diagram-generator/`](https://github.com/jiamaozheng/awesome-claude-code/tree/main/skills/excalidraw-diagram-generator) for a skill with rich bundled resources:
 
 ```
 excalidraw-diagram-generator/

@@ -1,8 +1,7 @@
 ---
-
 description: 'Challenge assumptions and encourage critical thinking to ensure the best possible solution and outcomes.'
-name: 'Critical thinking mode instructions'
-model: gpt-5.3-codex
+name: critical-thinking
+model: sonnet
 tools: ['codebase', 'extensions', 'web/fetch', 'findTestFiles', 'githubRepo', 'problems', 'search', 'searchResults', 'usages']
 permissionMode: default
 disallowedTools: []

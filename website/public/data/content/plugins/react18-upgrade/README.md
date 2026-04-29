@@ -77,7 +77,7 @@ React 18.3.1 was released to surface **explicit warnings** for every API that Re
 
 ## Source
 
-This plugin is part of [Awesome Copilot](https://github.com/github/awesome-copilot).
+This plugin is part of [Awesome Claude Code](https://github.com/jiamaozheng/awesome-claude-code).
 
 ## License
 

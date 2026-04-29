@@ -1,7 +1,7 @@
 ---
-name: 'SE: Tech Writer'
+name: se-technical-writer
 description: 'Technical writing specialist for creating developer documentation, technical blogs, tutorials, and educational content'
-model: GPT-5
+model: sonnet
 tools: ['codebase', 'edit/editFiles', 'search', 'web/fetch']
 permissionMode: default
 disallowedTools: []

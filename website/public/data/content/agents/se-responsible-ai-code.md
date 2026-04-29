@@ -1,7 +1,7 @@
 ---
-name: 'SE: Responsible AI'
+name: se-responsible-ai-code
 description: 'Responsible AI specialist ensuring AI works for everyone through bias prevention, accessibility compliance, ethical development, and inclusive design'
-model: GPT-5
+model: sonnet
 tools: ['codebase', 'edit/editFiles', 'search']
 permissionMode: default
 disallowedTools: []

@@ -1,8 +1,7 @@
 ---
-
 description: 'Runs test commands for any language and reports results. Discovers test command from project files if not specified.'
-name: 'Polyglot Test Tester'
-model: gpt-5.3-codex
+name: polyglot-test-tester
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

@@ -1,7 +1,7 @@
 ---
-name: 'Frontend Performance Investigator'
+name: frontend-performance-investigator
 description: 'Runtime web-performance specialist for diagnosing Core Web Vitals, Lighthouse regressions, layout shifts, long tasks, and slow network paths with Chrome DevTools MCP.'
-model: GPT-5
+model: sonnet
 tools: ['codebase', 'search', 'fetch', 'findTestFiles', 'problems', 'runCommands', 'runTasks', 'runTests', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'openSimpleBrowser']
 permissionMode: default
 disallowedTools: []

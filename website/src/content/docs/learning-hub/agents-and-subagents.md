@@ -150,10 +150,10 @@ Use one subagent to gather facts and another to implement with those facts. This
 
 This repository already includes a few useful examples of delegation-related syntax:
 
-- [`agents/context7.agent.md`](https://github.com/github/awesome-copilot/blob/main/agents/context7.agent.md) is a concrete example of VS Code-style `handoffs`. It defines a handoff button that can pass work to another agent after research is complete.
-- [`agents/rug-orchestrator.agent.md`](https://github.com/github/awesome-copilot/blob/main/agents/rug-orchestrator.agent.md) is a strong coordinator example. It enables the `agent` tool and restricts delegation with `agents: ['SWE', 'QA']`.
-- [`agents/gem-orchestrator.agent.md`](https://github.com/github/awesome-copilot/blob/main/agents/gem-orchestrator.agent.md) shows invocation control with `user-invocable` and `disable-model-invocation`, which is useful when deciding whether an orchestrator should be directly selectable, delegatable, or both.
-- [`agents/custom-agent-foundry.agent.md`](https://github.com/github/awesome-copilot/blob/main/agents/custom-agent-foundry.agent.md) documents the VS Code `handoffs` shape in its guidance section, which is helpful if you want a template before creating your own coordinator workflow.
+- [`agents/context7.agent.md`](https://github.com/jiamaozheng/awesome-claude-code/blob/main/agents/context7.agent.md) is a concrete example of VS Code-style `handoffs`. It defines a handoff button that can pass work to another agent after research is complete.
+- [`agents/rug-orchestrator.agent.md`](https://github.com/jiamaozheng/awesome-claude-code/blob/main/agents/rug-orchestrator.agent.md) is a strong coordinator example. It enables the `agent` tool and restricts delegation with `agents: ['SWE', 'QA']`.
+- [`agents/gem-orchestrator.agent.md`](https://github.com/jiamaozheng/awesome-claude-code/blob/main/agents/gem-orchestrator.agent.md) shows invocation control with `user-invocable` and `disable-model-invocation`, which is useful when deciding whether an orchestrator should be directly selectable, delegatable, or both.
+- [`agents/custom-agent-foundry.agent.md`](https://github.com/jiamaozheng/awesome-claude-code/blob/main/agents/custom-agent-foundry.agent.md) documents the VS Code `handoffs` shape in its guidance section, which is helpful if you want a template before creating your own coordinator workflow.
 
 ## Important platform nuance: handoffs are not universal
 

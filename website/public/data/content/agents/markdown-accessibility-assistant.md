@@ -1,7 +1,7 @@
 ---
 description: 'Improves the accessibility of markdown files using five GitHub best practices'
-name: Markdown Accessibility Assistant
-model: 'Claude Sonnet 4.6'
+name: markdown-accessibility-assistant
+model: sonnet
 tools:
   - read
   - edit

@@ -1,7 +1,6 @@
 ---
-
-name: Lingo.dev Localization (i18n) Agent
-model: gpt-5.3-codex
+name: lingodotdev-i18n
+model: sonnet
 description: Expert at implementing internationalization (i18n) in web applications using a systematic, checklist-driven approach.
 tools:
   - shell
@@ -9,7 +8,7 @@ tools:
   - edit
   - search
   - lingo/*
-mcp-servers:
+mcpServers:
   lingo:
     type: "sse"
     url: "https://mcp.lingo.dev/main"

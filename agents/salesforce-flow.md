@@ -1,7 +1,7 @@
 ---
-name: 'Salesforce Flow Development'
+name: salesforce-flow
 description: 'Implement business automation using Salesforce Flow following declarative automation best practices.'
-model: claude-3.5-sonnet
+model: sonnet
 tools: ['codebase', 'edit/editFiles', 'terminalCommand', 'search', 'githubRepo']
 permissionMode: default
 disallowedTools: []

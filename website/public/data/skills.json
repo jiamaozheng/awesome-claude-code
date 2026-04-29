@@ -55,7 +55,7 @@
           "path": "skills/acquire-codebase-knowledge/scripts/scan.py"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.053Z"
+      "lastUpdated": "2026-04-29T15:54:47.131Z"
     },
     {
       "id": "add-educational-comments",
@@ -72,7 +72,7 @@
           "path": "skills/add-educational-comments/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.086Z"
+      "lastUpdated": "2026-04-29T15:54:47.135Z"
     },
     {
       "id": "agent-governance",
@@ -89,7 +89,7 @@
           "path": "skills/agent-governance/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.201Z"
+      "lastUpdated": "2026-04-29T15:54:47.137Z"
     },
     {
       "id": "agent-owasp-compliance",
@@ -106,7 +106,7 @@
           "path": "skills/agent-owasp-compliance/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.420Z"
+      "lastUpdated": "2026-04-29T15:54:47.137Z"
     },
     {
       "id": "agent-supply-chain",
@@ -123,7 +123,7 @@
           "path": "skills/agent-supply-chain/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.137Z"
+      "lastUpdated": "2026-04-29T15:54:47.137Z"
     },
     {
       "id": "agentic-eval",
@@ -140,7 +140,7 @@
           "path": "skills/agentic-eval/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.247Z"
+      "lastUpdated": "2026-04-29T15:54:47.138Z"
     },
     {
       "id": "ai-prompt-engineering-safety-review",
@@ -157,7 +157,7 @@
           "path": "skills/ai-prompt-engineering-safety-review/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.544Z"
+      "lastUpdated": "2026-04-29T15:54:47.138Z"
     },
     {
       "id": "appinsights-instrumentation",
@@ -202,7 +202,7 @@
           "path": "skills/appinsights-instrumentation/scripts/appinsights.ps1"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.307Z"
+      "lastUpdated": "2026-04-29T15:54:47.139Z"
     },
     {
       "id": "apple-appstore-reviewer",
@@ -219,7 +219,7 @@
           "path": "skills/apple-appstore-reviewer/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.758Z"
+      "lastUpdated": "2026-04-29T15:54:47.141Z"
     },
     {
       "id": "arch-linux-triage",
@@ -236,7 +236,7 @@
           "path": "skills/arch-linux-triage/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.409Z"
+      "lastUpdated": "2026-04-29T15:54:47.141Z"
     },
     {
       "id": "architecture-blueprint-generator",
@@ -253,7 +253,7 @@
           "path": "skills/architecture-blueprint-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.757Z"
+      "lastUpdated": "2026-04-29T15:54:47.142Z"
     },
     {
       "id": "arize-ai-provider-integration",
@@ -278,7 +278,7 @@
           "path": "skills/arize-ai-provider-integration/references/ax-setup.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.009Z"
+      "lastUpdated": "2026-04-29T15:54:47.143Z"
     },
     {
       "id": "arize-annotation",
@@ -303,7 +303,7 @@
           "path": "skills/arize-annotation/references/ax-setup.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.102Z"
+      "lastUpdated": "2026-04-29T15:54:47.143Z"
     },
     {
       "id": "arize-dataset",
@@ -328,7 +328,7 @@
           "path": "skills/arize-dataset/references/ax-setup.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.970Z"
+      "lastUpdated": "2026-04-29T15:54:47.144Z"
     },
     {
       "id": "arize-evaluator",
@@ -353,7 +353,7 @@
           "path": "skills/arize-evaluator/references/ax-setup.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.136Z"
+      "lastUpdated": "2026-04-29T15:54:47.145Z"
     },
     {
       "id": "arize-experiment",
@@ -378,7 +378,7 @@
           "path": "skills/arize-experiment/references/ax-setup.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.323Z"
+      "lastUpdated": "2026-04-29T15:54:47.146Z"
     },
     {
       "id": "arize-instrumentation",
@@ -399,7 +399,7 @@
           "path": "skills/arize-instrumentation/references/ax-profiles.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.787Z"
+      "lastUpdated": "2026-04-29T15:54:47.147Z"
     },
     {
       "id": "arize-link",
@@ -420,7 +420,7 @@
           "path": "skills/arize-link/references/EXAMPLES.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.424Z"
+      "lastUpdated": "2026-04-29T15:54:47.147Z"
     },
     {
       "id": "arize-prompt-optimization",
@@ -445,7 +445,7 @@
           "path": "skills/arize-prompt-optimization/references/ax-setup.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.143Z"
+      "lastUpdated": "2026-04-29T15:54:47.148Z"
     },
     {
       "id": "arize-trace",
@@ -470,7 +470,7 @@
           "path": "skills/arize-trace/references/ax-setup.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.146Z"
+      "lastUpdated": "2026-04-29T15:54:47.150Z"
     },
     {
       "id": "aspire",
@@ -523,7 +523,7 @@
           "path": "skills/aspire/references/troubleshooting.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.642Z"
+      "lastUpdated": "2026-04-29T15:54:47.151Z"
     },
     {
       "id": "aspnet-minimal-api-openapi",
@@ -540,7 +540,7 @@
           "path": "skills/aspnet-minimal-api-openapi/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.159Z"
+      "lastUpdated": "2026-04-29T15:54:47.153Z"
     },
     {
       "id": "automate-this",
@@ -557,7 +557,7 @@
           "path": "skills/automate-this/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.045Z"
+      "lastUpdated": "2026-04-29T15:54:47.155Z"
     },
     {
       "id": "autoresearch",
@@ -574,7 +574,7 @@
           "path": "skills/autoresearch/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.191Z"
+      "lastUpdated": "2026-04-29T15:54:47.155Z"
     },
     {
       "id": "aws-cdk-python-setup",
@@ -591,7 +591,7 @@
           "path": "skills/aws-cdk-python-setup/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.411Z"
+      "lastUpdated": "2026-04-29T15:54:47.156Z"
     },
     {
       "id": "az-cost-optimize",
@@ -608,7 +608,7 @@
           "path": "skills/az-cost-optimize/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.036Z"
+      "lastUpdated": "2026-04-29T15:54:47.156Z"
     },
     {
       "id": "azure-architecture-autopilot",
@@ -693,7 +693,7 @@
           "path": "skills/azure-architecture-autopilot/scripts/icons.py"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.019Z"
+      "lastUpdated": "2026-04-29T15:54:47.157Z"
     },
     {
       "id": "azure-deployment-preflight",
@@ -722,7 +722,7 @@
           "path": "skills/azure-deployment-preflight/references/VALIDATION-COMMANDS.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.099Z"
+      "lastUpdated": "2026-04-29T15:54:47.176Z"
     },
     {
       "id": "azure-devops-cli",
@@ -767,7 +767,7 @@
           "path": "skills/azure-devops-cli/references/workflows-and-patterns.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.617Z"
+      "lastUpdated": "2026-04-29T15:54:47.177Z"
     },
     {
       "id": "azure-pricing",
@@ -800,7 +800,7 @@
           "path": "skills/azure-pricing/references/SERVICE-NAMES.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.295Z"
+      "lastUpdated": "2026-04-29T15:54:47.179Z"
     },
     {
       "id": "azure-resource-health-diagnose",
@@ -817,7 +817,7 @@
           "path": "skills/azure-resource-health-diagnose/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.520Z"
+      "lastUpdated": "2026-04-29T15:54:47.180Z"
     },
     {
       "id": "azure-resource-visualizer",
@@ -842,7 +842,7 @@
           "path": "skills/azure-resource-visualizer/assets/template-architecture.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.138Z"
+      "lastUpdated": "2026-04-29T15:54:47.181Z"
     },
     {
       "id": "azure-role-selector",
@@ -863,7 +863,7 @@
           "path": "skills/azure-role-selector/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.265Z"
+      "lastUpdated": "2026-04-29T15:54:47.181Z"
     },
     {
       "id": "azure-static-web-apps",
@@ -880,7 +880,7 @@
           "path": "skills/azure-static-web-apps/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.205Z"
+      "lastUpdated": "2026-04-29T15:54:47.184Z"
     },
     {
       "id": "bigquery-pipeline-audit",
@@ -897,7 +897,7 @@
           "path": "skills/bigquery-pipeline-audit/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.732Z"
+      "lastUpdated": "2026-04-29T15:54:47.187Z"
     },
     {
       "id": "boost-prompt",
@@ -914,7 +914,7 @@
           "path": "skills/boost-prompt/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.288Z"
+      "lastUpdated": "2026-04-29T15:54:47.187Z"
     },
     {
       "id": "breakdown-epic-arch",
@@ -931,7 +931,7 @@
           "path": "skills/breakdown-epic-arch/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.106Z"
+      "lastUpdated": "2026-04-29T15:54:47.188Z"
     },
     {
       "id": "breakdown-epic-pm",
@@ -948,7 +948,7 @@
           "path": "skills/breakdown-epic-pm/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.408Z"
+      "lastUpdated": "2026-04-29T15:54:47.188Z"
     },
     {
       "id": "breakdown-feature-implementation",
@@ -965,7 +965,7 @@
           "path": "skills/breakdown-feature-implementation/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.849Z"
+      "lastUpdated": "2026-04-29T15:54:47.189Z"
     },
     {
       "id": "breakdown-feature-prd",
@@ -982,7 +982,7 @@
           "path": "skills/breakdown-feature-prd/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.284Z"
+      "lastUpdated": "2026-04-29T15:54:47.189Z"
     },
     {
       "id": "breakdown-plan",
@@ -999,7 +999,7 @@
           "path": "skills/breakdown-plan/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.193Z"
+      "lastUpdated": "2026-04-29T15:54:47.189Z"
     },
     {
       "id": "breakdown-test",
@@ -1016,7 +1016,7 @@
           "path": "skills/breakdown-test/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.541Z"
+      "lastUpdated": "2026-04-29T15:54:47.189Z"
     },
     {
       "id": "centos-linux-triage",
@@ -1033,7 +1033,7 @@
           "path": "skills/centos-linux-triage/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.350Z"
+      "lastUpdated": "2026-04-29T15:54:47.190Z"
     },
     {
       "id": "chrome-devtools",
@@ -1050,7 +1050,7 @@
           "path": "skills/chrome-devtools/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.743Z"
+      "lastUpdated": "2026-04-29T15:54:47.190Z"
     },
     {
       "id": "cli-mastery",
@@ -1107,7 +1107,7 @@
           "path": "skills/cli-mastery/references/scenarios.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.684Z"
+      "lastUpdated": "2026-04-29T15:54:47.191Z"
     },
     {
       "id": "cloud-design-patterns",
@@ -1160,7 +1160,7 @@
           "path": "skills/cloud-design-patterns/references/security.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.074Z"
+      "lastUpdated": "2026-04-29T15:54:47.193Z"
     },
     {
       "id": "code-exemplars-blueprint-generator",
@@ -1177,7 +1177,7 @@
           "path": "skills/code-exemplars-blueprint-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.318Z"
+      "lastUpdated": "2026-04-29T15:54:47.195Z"
     },
     {
       "id": "code-tour",
@@ -1210,7 +1210,7 @@
           "path": "skills/code-tour/scripts/validate_tour.py"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.142Z"
+      "lastUpdated": "2026-04-29T15:54:47.195Z"
     },
     {
       "id": "codeql",
@@ -1251,7 +1251,7 @@
           "path": "skills/codeql/references/workflow-configuration.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.782Z"
+      "lastUpdated": "2026-04-29T15:54:47.197Z"
     },
     {
       "id": "comment-code-generate-a-tutorial",
@@ -1268,7 +1268,7 @@
           "path": "skills/comment-code-generate-a-tutorial/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.793Z"
+      "lastUpdated": "2026-04-29T15:54:47.198Z"
     },
     {
       "id": "containerize-aspnet-framework",
@@ -1285,7 +1285,7 @@
           "path": "skills/containerize-aspnet-framework/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.105Z"
+      "lastUpdated": "2026-04-29T15:54:47.200Z"
     },
     {
       "id": "containerize-aspnetcore",
@@ -1302,7 +1302,7 @@
           "path": "skills/containerize-aspnetcore/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.134Z"
+      "lastUpdated": "2026-04-29T15:54:47.200Z"
     },
     {
       "id": "context-map",
@@ -1319,7 +1319,7 @@
           "path": "skills/context-map/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.735Z"
+      "lastUpdated": "2026-04-29T15:54:47.201Z"
     },
     {
       "id": "conventional-commit",
@@ -1336,7 +1336,7 @@
           "path": "skills/conventional-commit/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.542Z"
+      "lastUpdated": "2026-04-29T15:54:47.201Z"
     },
     {
       "id": "convert-plaintext-to-md",
@@ -1353,7 +1353,7 @@
           "path": "skills/convert-plaintext-to-md/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.694Z"
+      "lastUpdated": "2026-04-29T15:54:47.201Z"
     },
     {
       "id": "copilot-cli-quickstart",
@@ -1370,7 +1370,7 @@
           "path": "skills/copilot-cli-quickstart/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.690Z"
+      "lastUpdated": "2026-04-29T15:54:47.202Z"
     },
     {
       "id": "copilot-instructions-blueprint-generator",
@@ -1387,7 +1387,7 @@
           "path": "skills/copilot-instructions-blueprint-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.002Z"
+      "lastUpdated": "2026-04-29T15:54:47.202Z"
     },
     {
       "id": "copilot-sdk",
@@ -1404,7 +1404,7 @@
           "path": "skills/copilot-sdk/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.578Z"
+      "lastUpdated": "2026-04-29T15:54:47.203Z"
     },
     {
       "id": "copilot-spaces",
@@ -1421,7 +1421,7 @@
           "path": "skills/copilot-spaces/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.500Z"
+      "lastUpdated": "2026-04-29T15:54:47.203Z"
     },
     {
       "id": "copilot-usage-metrics",
@@ -1454,7 +1454,7 @@
           "path": "skills/copilot-usage-metrics/get-org-user-metrics.sh"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.225Z"
+      "lastUpdated": "2026-04-29T15:54:47.203Z"
     },
     {
       "id": "cosmosdb-datamodeling",
@@ -1471,7 +1471,7 @@
           "path": "skills/cosmosdb-datamodeling/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.721Z"
+      "lastUpdated": "2026-04-29T15:54:47.204Z"
     },
     {
       "id": "create-agentsmd",
@@ -1488,7 +1488,7 @@
           "path": "skills/create-agentsmd/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.737Z"
+      "lastUpdated": "2026-04-29T15:54:47.204Z"
     },
     {
       "id": "create-architectural-decision-record",
@@ -1505,7 +1505,7 @@
           "path": "skills/create-architectural-decision-record/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.794Z"
+      "lastUpdated": "2026-04-29T15:54:47.205Z"
     },
     {
       "id": "create-github-action-workflow-specification",
@@ -1522,7 +1522,7 @@
           "path": "skills/create-github-action-workflow-specification/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.481Z"
+      "lastUpdated": "2026-04-29T15:54:47.205Z"
     },
     {
       "id": "create-github-issue-feature-from-specification",
@@ -1539,7 +1539,7 @@
           "path": "skills/create-github-issue-feature-from-specification/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.736Z"
+      "lastUpdated": "2026-04-29T15:54:47.205Z"
     },
     {
       "id": "create-github-issues-feature-from-implementation-plan",
@@ -1556,7 +1556,7 @@
           "path": "skills/create-github-issues-feature-from-implementation-plan/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.354Z"
+      "lastUpdated": "2026-04-29T15:54:47.205Z"
     },
     {
       "id": "create-github-issues-for-unmet-specification-requirements",
@@ -1573,7 +1573,7 @@
           "path": "skills/create-github-issues-for-unmet-specification-requirements/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.204Z"
+      "lastUpdated": "2026-04-29T15:54:47.206Z"
     },
     {
       "id": "create-github-pull-request-from-specification",
@@ -1590,7 +1590,7 @@
           "path": "skills/create-github-pull-request-from-specification/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.154Z"
+      "lastUpdated": "2026-04-29T15:54:47.206Z"
     },
     {
       "id": "create-implementation-plan",
@@ -1607,7 +1607,7 @@
           "path": "skills/create-implementation-plan/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.516Z"
+      "lastUpdated": "2026-04-29T15:54:47.206Z"
     },
     {
       "id": "create-llms",
@@ -1624,7 +1624,7 @@
           "path": "skills/create-llms/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.041Z"
+      "lastUpdated": "2026-04-29T15:54:47.206Z"
     },
     {
       "id": "create-readme",
@@ -1641,7 +1641,7 @@
           "path": "skills/create-readme/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.521Z"
+      "lastUpdated": "2026-04-29T15:54:47.207Z"
     },
     {
       "id": "create-specification",
@@ -1658,7 +1658,7 @@
           "path": "skills/create-specification/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.108Z"
+      "lastUpdated": "2026-04-29T15:54:47.207Z"
     },
     {
       "id": "create-spring-boot-java-project",
@@ -1675,7 +1675,7 @@
           "path": "skills/create-spring-boot-java-project/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.870Z"
+      "lastUpdated": "2026-04-29T15:54:47.207Z"
     },
     {
       "id": "create-spring-boot-kotlin-project",
@@ -1692,7 +1692,7 @@
           "path": "skills/create-spring-boot-kotlin-project/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.575Z"
+      "lastUpdated": "2026-04-29T15:54:47.208Z"
     },
     {
       "id": "create-technical-spike",
@@ -1709,7 +1709,7 @@
           "path": "skills/create-technical-spike/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.788Z"
+      "lastUpdated": "2026-04-29T15:54:47.208Z"
     },
     {
       "id": "create-tldr-page",
@@ -1726,7 +1726,7 @@
           "path": "skills/create-tldr-page/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.369Z"
+      "lastUpdated": "2026-04-29T15:54:47.208Z"
     },
     {
       "id": "creating-oracle-to-postgres-master-migration-plan",
@@ -1743,7 +1743,7 @@
           "path": "skills/creating-oracle-to-postgres-master-migration-plan/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.621Z"
+      "lastUpdated": "2026-04-29T15:54:47.208Z"
     },
     {
       "id": "creating-oracle-to-postgres-migration-bug-report",
@@ -1764,7 +1764,7 @@
           "path": "skills/creating-oracle-to-postgres-migration-bug-report/references/BUG-REPORT-TEMPLATE.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.813Z"
+      "lastUpdated": "2026-04-29T15:54:47.209Z"
     },
     {
       "id": "creating-oracle-to-postgres-migration-integration-tests",
@@ -1781,7 +1781,7 @@
           "path": "skills/creating-oracle-to-postgres-migration-integration-tests/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.281Z"
+      "lastUpdated": "2026-04-29T15:54:47.209Z"
     },
     {
       "id": "csharp-async",
@@ -1798,7 +1798,7 @@
           "path": "skills/csharp-async/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.587Z"
+      "lastUpdated": "2026-04-29T15:54:47.209Z"
     },
     {
       "id": "csharp-docs",
@@ -1815,7 +1815,7 @@
           "path": "skills/csharp-docs/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.784Z"
+      "lastUpdated": "2026-04-29T15:54:47.210Z"
     },
     {
       "id": "csharp-mcp-server-generator",
@@ -1832,7 +1832,7 @@
           "path": "skills/csharp-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.413Z"
+      "lastUpdated": "2026-04-29T15:54:47.210Z"
     },
     {
       "id": "csharp-mstest",
@@ -1849,7 +1849,7 @@
           "path": "skills/csharp-mstest/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.141Z"
+      "lastUpdated": "2026-04-29T15:54:47.210Z"
     },
     {
       "id": "csharp-nunit",
@@ -1866,7 +1866,7 @@
           "path": "skills/csharp-nunit/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.436Z"
+      "lastUpdated": "2026-04-29T15:54:47.210Z"
     },
     {
       "id": "csharp-tunit",
@@ -1883,7 +1883,7 @@
           "path": "skills/csharp-tunit/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.820Z"
+      "lastUpdated": "2026-04-29T15:54:47.211Z"
     },
     {
       "id": "csharp-xunit",
@@ -1900,7 +1900,7 @@
           "path": "skills/csharp-xunit/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.506Z"
+      "lastUpdated": "2026-04-29T15:54:47.211Z"
     },
     {
       "id": "daily-prep",
@@ -1917,7 +1917,7 @@
           "path": "skills/daily-prep/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.844Z"
+      "lastUpdated": "2026-04-29T15:54:47.211Z"
     },
     {
       "id": "datanalysis-credit-risk",
@@ -1946,7 +1946,7 @@
           "path": "skills/datanalysis-credit-risk/scripts/example.py"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.019Z"
+      "lastUpdated": "2026-04-29T15:54:47.214Z"
     },
     {
       "id": "dataverse-python-advanced-patterns",
@@ -1963,7 +1963,7 @@
           "path": "skills/dataverse-python-advanced-patterns/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.164Z"
+      "lastUpdated": "2026-04-29T15:54:47.215Z"
     },
     {
       "id": "dataverse-python-production-code",
@@ -1980,7 +1980,7 @@
           "path": "skills/dataverse-python-production-code/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.027Z"
+      "lastUpdated": "2026-04-29T15:54:47.217Z"
     },
     {
       "id": "dataverse-python-quickstart",
@@ -1997,7 +1997,7 @@
           "path": "skills/dataverse-python-quickstart/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.177Z"
+      "lastUpdated": "2026-04-29T15:54:47.217Z"
     },
     {
       "id": "dataverse-python-usecase-builder",
@@ -2014,7 +2014,7 @@
           "path": "skills/dataverse-python-usecase-builder/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.020Z"
+      "lastUpdated": "2026-04-29T15:54:47.217Z"
     },
     {
       "id": "debian-linux-triage",
@@ -2031,7 +2031,7 @@
           "path": "skills/debian-linux-triage/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.720Z"
+      "lastUpdated": "2026-04-29T15:54:47.218Z"
     },
     {
       "id": "declarative-agents",
@@ -2048,7 +2048,7 @@
           "path": "skills/declarative-agents/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.519Z"
+      "lastUpdated": "2026-04-29T15:54:47.218Z"
     },
     {
       "id": "dependabot",
@@ -2077,7 +2077,7 @@
           "path": "skills/dependabot/references/pr-commands.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.200Z"
+      "lastUpdated": "2026-04-29T15:54:47.218Z"
     },
     {
       "id": "devops-rollout-plan",
@@ -2094,7 +2094,7 @@
           "path": "skills/devops-rollout-plan/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.362Z"
+      "lastUpdated": "2026-04-29T15:54:47.219Z"
     },
     {
       "id": "documentation-writer",
@@ -2111,7 +2111,7 @@
           "path": "skills/documentation-writer/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.576Z"
+      "lastUpdated": "2026-04-29T15:54:47.219Z"
     },
     {
       "id": "dotnet-best-practices",
@@ -2128,7 +2128,7 @@
           "path": "skills/dotnet-best-practices/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.255Z"
+      "lastUpdated": "2026-04-29T15:54:47.220Z"
     },
     {
       "id": "dotnet-design-pattern-review",
@@ -2145,7 +2145,7 @@
           "path": "skills/dotnet-design-pattern-review/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.133Z"
+      "lastUpdated": "2026-04-29T15:54:47.220Z"
     },
     {
       "id": "dotnet-timezone",
@@ -2170,7 +2170,7 @@
           "path": "skills/dotnet-timezone/references/timezone-index.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.146Z"
+      "lastUpdated": "2026-04-29T15:54:47.220Z"
     },
     {
       "id": "dotnet-upgrade",
@@ -2187,7 +2187,7 @@
           "path": "skills/dotnet-upgrade/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.478Z"
+      "lastUpdated": "2026-04-29T15:54:47.221Z"
     },
     {
       "id": "doublecheck",
@@ -2208,7 +2208,7 @@
           "path": "skills/doublecheck/assets/verification-report-template.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.579Z"
+      "lastUpdated": "2026-04-29T15:54:47.221Z"
     },
     {
       "id": "draw-io-diagram-generator",
@@ -2273,7 +2273,7 @@
           "path": "skills/draw-io-diagram-generator/scripts/validate-drawio.py"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.218Z"
+      "lastUpdated": "2026-04-29T15:54:47.222Z"
     },
     {
       "id": "editorconfig",
@@ -2290,7 +2290,7 @@
           "path": "skills/editorconfig/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.725Z"
+      "lastUpdated": "2026-04-29T15:54:47.225Z"
     },
     {
       "id": "ef-core",
@@ -2307,7 +2307,7 @@
           "path": "skills/ef-core/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.415Z"
+      "lastUpdated": "2026-04-29T15:54:47.225Z"
     },
     {
       "id": "email-drafter",
@@ -2324,7 +2324,7 @@
           "path": "skills/email-drafter/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.010Z"
+      "lastUpdated": "2026-04-29T15:54:47.226Z"
     },
     {
       "id": "entra-agent-user",
@@ -2341,12 +2341,12 @@
           "path": "skills/entra-agent-user/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.040Z"
+      "lastUpdated": "2026-04-29T15:54:47.226Z"
     },
     {
       "id": "eval-driven-dev",
       "title": "eval-driven-dev",
-      "description": "Set up eval-based QA for Python LLM applications: instrument the app, build golden datasets, write and run eval tests, and iterate on failures. ALWAYS USE THIS SKILL when the user asks to set up QA, add tests, add evals, evaluate, benchmark, fix wrong behaviors, improve quality, or do quality assurance for any Python project that calls an LLM model.\n",
+      "description": "Improve AI application with evaluation-driven development. Define eval criteria, instrument the application, build golden datasets, observe and evaluate application runs, analyze results, and produce a concrete action plan for improvements. ALWAYS USE THIS SKILL when the user asks to set up QA, add tests, add evals, evaluate, benchmark, fix wrong behaviors, improve quality, or do quality assurance for any Python project that calls an LLM model.\n",
       "path": "skills/eval-driven-dev",
       "skillFile": "skills/eval-driven-dev/SKILL.md",
       "category": "eval-driven-dev",
@@ -2402,7 +2402,7 @@
           "path": "skills/eval-driven-dev/resources/setup.sh"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.883Z"
+      "lastUpdated": "2026-04-29T15:54:47.226Z"
     },
     {
       "id": "exam-ready",
@@ -2419,7 +2419,7 @@
           "path": "skills/exam-ready/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.107Z"
+      "lastUpdated": "2026-04-29T15:54:47.231Z"
     },
     {
       "id": "excalidraw-diagram-generator",
@@ -2496,7 +2496,7 @@
           "path": "skills/excalidraw-diagram-generator/templates/sequence-diagram-template.excalidraw"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.165Z"
+      "lastUpdated": "2026-04-29T15:54:47.231Z"
     },
     {
       "id": "fabric-lakehouse",
@@ -2521,7 +2521,7 @@
           "path": "skills/fabric-lakehouse/references/pyspark.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.120Z"
+      "lastUpdated": "2026-04-29T15:54:47.236Z"
     },
     {
       "id": "fedora-linux-triage",
@@ -2538,7 +2538,7 @@
           "path": "skills/fedora-linux-triage/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.185Z"
+      "lastUpdated": "2026-04-29T15:54:47.237Z"
     },
     {
       "id": "finalize-agent-prompt",
@@ -2555,7 +2555,7 @@
           "path": "skills/finalize-agent-prompt/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.359Z"
+      "lastUpdated": "2026-04-29T15:54:47.237Z"
     },
     {
       "id": "finnish-humanizer",
@@ -2576,7 +2576,7 @@
           "path": "skills/finnish-humanizer/references/patterns.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.000Z"
+      "lastUpdated": "2026-04-29T15:54:47.238Z"
     },
     {
       "id": "first-ask",
@@ -2593,7 +2593,7 @@
           "path": "skills/first-ask/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.508Z"
+      "lastUpdated": "2026-04-29T15:54:47.238Z"
     },
     {
       "id": "flowstudio-power-automate-build",
@@ -2634,7 +2634,7 @@
           "path": "skills/flowstudio-power-automate-build/references/trigger-types.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.067Z"
+      "lastUpdated": "2026-04-29T15:54:47.239Z"
     },
     {
       "id": "flowstudio-power-automate-debug",
@@ -2659,7 +2659,7 @@
           "path": "skills/flowstudio-power-automate-debug/references/debug-workflow.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.095Z"
+      "lastUpdated": "2026-04-29T15:54:47.241Z"
     },
     {
       "id": "flowstudio-power-automate-governance",
@@ -2676,7 +2676,7 @@
           "path": "skills/flowstudio-power-automate-governance/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.627Z"
+      "lastUpdated": "2026-04-29T15:54:47.241Z"
     },
     {
       "id": "flowstudio-power-automate-mcp",
@@ -2709,7 +2709,7 @@
           "path": "skills/flowstudio-power-automate-mcp/references/tool-reference.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.278Z"
+      "lastUpdated": "2026-04-29T15:54:47.242Z"
     },
     {
       "id": "flowstudio-power-automate-monitoring",
@@ -2726,7 +2726,7 @@
           "path": "skills/flowstudio-power-automate-monitoring/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.262Z"
+      "lastUpdated": "2026-04-29T15:54:47.243Z"
     },
     {
       "id": "fluentui-blazor",
@@ -2759,7 +2759,7 @@
           "path": "skills/fluentui-blazor/references/THEMING.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.819Z"
+      "lastUpdated": "2026-04-29T15:54:47.243Z"
     },
     {
       "id": "folder-structure-blueprint-generator",
@@ -2776,7 +2776,7 @@
           "path": "skills/folder-structure-blueprint-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.572Z"
+      "lastUpdated": "2026-04-29T15:54:47.244Z"
     },
     {
       "id": "foundry-agent-sync",
@@ -2793,7 +2793,7 @@
           "path": "skills/foundry-agent-sync/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.846Z"
+      "lastUpdated": "2026-04-29T15:54:47.245Z"
     },
     {
       "id": "freecad-scripts",
@@ -2830,7 +2830,7 @@
           "path": "skills/freecad-scripts/references/workbenches-and-advanced.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.272Z"
+      "lastUpdated": "2026-04-29T15:54:47.245Z"
     },
     {
       "id": "from-the-other-side-vega",
@@ -2847,7 +2847,7 @@
           "path": "skills/from-the-other-side-vega/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.026Z"
+      "lastUpdated": "2026-04-29T15:54:47.247Z"
     },
     {
       "id": "game-engine",
@@ -2920,7 +2920,7 @@
           "path": "skills/game-engine/references/web-apis.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.566Z"
+      "lastUpdated": "2026-04-29T15:54:47.247Z"
     },
     {
       "id": "gdpr-compliant",
@@ -2945,7 +2945,7 @@
           "path": "skills/gdpr-compliant/references/data-rights.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.132Z"
+      "lastUpdated": "2026-04-29T15:54:47.253Z"
     },
     {
       "id": "gen-specs-as-issues",
@@ -2962,7 +2962,7 @@
           "path": "skills/gen-specs-as-issues/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.584Z"
+      "lastUpdated": "2026-04-29T15:54:47.254Z"
     },
     {
       "id": "generate-custom-instructions-from-codebase",
@@ -2979,7 +2979,7 @@
           "path": "skills/generate-custom-instructions-from-codebase/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.076Z"
+      "lastUpdated": "2026-04-29T15:54:47.254Z"
     },
     {
       "id": "geofeed-tuner",
@@ -3024,7 +3024,7 @@
           "path": "skills/geofeed-tuner/scripts/templates/index.html"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.454Z"
+      "lastUpdated": "2026-04-29T15:54:47.255Z"
     },
     {
       "id": "gh-cli",
@@ -3041,7 +3041,7 @@
           "path": "skills/gh-cli/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.439Z"
+      "lastUpdated": "2026-04-29T15:54:47.258Z"
     },
     {
       "id": "git-commit",
@@ -3058,7 +3058,7 @@
           "path": "skills/git-commit/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.133Z"
+      "lastUpdated": "2026-04-29T15:54:47.258Z"
     },
     {
       "id": "git-flow-branch-creator",
@@ -3075,7 +3075,7 @@
           "path": "skills/git-flow-branch-creator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.037Z"
+      "lastUpdated": "2026-04-29T15:54:47.259Z"
     },
     {
       "id": "github-copilot-starter",
@@ -3092,7 +3092,7 @@
           "path": "skills/github-copilot-starter/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.848Z"
+      "lastUpdated": "2026-04-29T15:54:47.259Z"
     },
     {
       "id": "github-issues",
@@ -3141,7 +3141,7 @@
           "path": "skills/github-issues/references/templates.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.862Z"
+      "lastUpdated": "2026-04-29T16:59:01.931Z"
     },
     {
       "id": "go-mcp-server-generator",
@@ -3158,7 +3158,7 @@
           "path": "skills/go-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.045Z"
+      "lastUpdated": "2026-04-29T15:54:47.261Z"
     },
     {
       "id": "gsap-framer-scroll-animation",
@@ -3183,7 +3183,7 @@
           "path": "skills/gsap-framer-scroll-animation/references/gsap.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.547Z"
+      "lastUpdated": "2026-04-29T15:54:47.262Z"
     },
     {
       "id": "gtm-0-to-1-launch",
@@ -3200,7 +3200,7 @@
           "path": "skills/gtm-0-to-1-launch/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.589Z"
+      "lastUpdated": "2026-04-29T15:54:47.263Z"
     },
     {
       "id": "gtm-ai-gtm",
@@ -3217,7 +3217,7 @@
           "path": "skills/gtm-ai-gtm/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.250Z"
+      "lastUpdated": "2026-04-29T15:54:47.263Z"
     },
     {
       "id": "gtm-board-and-investor-communication",
@@ -3234,7 +3234,7 @@
           "path": "skills/gtm-board-and-investor-communication/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.573Z"
+      "lastUpdated": "2026-04-29T15:54:47.264Z"
     },
     {
       "id": "gtm-developer-ecosystem",
@@ -3251,7 +3251,7 @@
           "path": "skills/gtm-developer-ecosystem/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.438Z"
+      "lastUpdated": "2026-04-29T15:54:47.264Z"
     },
     {
       "id": "gtm-enterprise-account-planning",
@@ -3268,7 +3268,7 @@
           "path": "skills/gtm-enterprise-account-planning/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.628Z"
+      "lastUpdated": "2026-04-29T15:54:47.264Z"
     },
     {
       "id": "gtm-enterprise-onboarding",
@@ -3285,7 +3285,7 @@
           "path": "skills/gtm-enterprise-onboarding/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.686Z"
+      "lastUpdated": "2026-04-29T15:54:47.265Z"
     },
     {
       "id": "gtm-operating-cadence",
@@ -3302,7 +3302,7 @@
           "path": "skills/gtm-operating-cadence/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.525Z"
+      "lastUpdated": "2026-04-29T15:54:47.267Z"
     },
     {
       "id": "gtm-partnership-architecture",
@@ -3319,7 +3319,7 @@
           "path": "skills/gtm-partnership-architecture/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.190Z"
+      "lastUpdated": "2026-04-29T15:54:47.267Z"
     },
     {
       "id": "gtm-positioning-strategy",
@@ -3336,7 +3336,7 @@
           "path": "skills/gtm-positioning-strategy/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.098Z"
+      "lastUpdated": "2026-04-29T15:54:47.267Z"
     },
     {
       "id": "gtm-product-led-growth",
@@ -3353,7 +3353,7 @@
           "path": "skills/gtm-product-led-growth/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.356Z"
+      "lastUpdated": "2026-04-29T15:54:47.268Z"
     },
     {
       "id": "gtm-technical-product-pricing",
@@ -3370,7 +3370,7 @@
           "path": "skills/gtm-technical-product-pricing/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.691Z"
+      "lastUpdated": "2026-04-29T15:54:47.268Z"
     },
     {
       "id": "image-manipulation-image-magick",
@@ -3387,7 +3387,7 @@
           "path": "skills/image-manipulation-image-magick/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.246Z"
+      "lastUpdated": "2026-04-29T15:54:47.269Z"
     },
     {
       "id": "import-infrastructure-as-code",
@@ -3404,7 +3404,7 @@
           "path": "skills/import-infrastructure-as-code/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.724Z"
+      "lastUpdated": "2026-04-29T15:54:47.269Z"
     },
     {
       "id": "integrate-context-matic",
@@ -3421,7 +3421,7 @@
           "path": "skills/integrate-context-matic/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.863Z"
+      "lastUpdated": "2026-04-29T15:54:47.270Z"
     },
     {
       "id": "issue-fields-migration",
@@ -3450,7 +3450,7 @@
           "path": "skills/issue-fields-migration/references/projects-api.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.633Z"
+      "lastUpdated": "2026-04-29T15:54:47.270Z"
     },
     {
       "id": "java-add-graalvm-native-image-support",
@@ -3467,7 +3467,7 @@
           "path": "skills/java-add-graalvm-native-image-support/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.039Z"
+      "lastUpdated": "2026-04-29T15:54:47.271Z"
     },
     {
       "id": "java-docs",
@@ -3484,7 +3484,7 @@
           "path": "skills/java-docs/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.114Z"
+      "lastUpdated": "2026-04-29T15:54:47.271Z"
     },
     {
       "id": "java-junit",
@@ -3501,7 +3501,7 @@
           "path": "skills/java-junit/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.058Z"
+      "lastUpdated": "2026-04-29T15:54:47.272Z"
     },
     {
       "id": "java-mcp-server-generator",
@@ -3518,7 +3518,7 @@
           "path": "skills/java-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.132Z"
+      "lastUpdated": "2026-04-29T15:54:47.272Z"
     },
     {
       "id": "java-refactoring-extract-method",
@@ -3535,7 +3535,7 @@
           "path": "skills/java-refactoring-extract-method/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.535Z"
+      "lastUpdated": "2026-04-29T15:54:47.272Z"
     },
     {
       "id": "java-refactoring-remove-parameter",
@@ -3552,7 +3552,7 @@
           "path": "skills/java-refactoring-remove-parameter/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.022Z"
+      "lastUpdated": "2026-04-29T15:54:47.272Z"
     },
     {
       "id": "java-springboot",
@@ -3569,7 +3569,7 @@
           "path": "skills/java-springboot/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.695Z"
+      "lastUpdated": "2026-04-29T15:54:47.273Z"
     },
     {
       "id": "javascript-typescript-jest",
@@ -3586,7 +3586,7 @@
           "path": "skills/javascript-typescript-jest/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.583Z"
+      "lastUpdated": "2026-04-29T15:54:47.273Z"
     },
     {
       "id": "kotlin-mcp-server-generator",
@@ -3603,7 +3603,7 @@
           "path": "skills/kotlin-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.868Z"
+      "lastUpdated": "2026-04-29T15:54:47.274Z"
     },
     {
       "id": "kotlin-springboot",
@@ -3620,7 +3620,7 @@
           "path": "skills/kotlin-springboot/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.734Z"
+      "lastUpdated": "2026-04-29T15:54:47.274Z"
     },
     {
       "id": "legacy-circuit-mockups",
@@ -3717,7 +3717,7 @@
           "path": "skills/legacy-circuit-mockups/references/t48eeprom-programmer.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.714Z"
+      "lastUpdated": "2026-04-29T15:54:47.274Z"
     },
     {
       "id": "linkedin-post-formatter",
@@ -3738,7 +3738,7 @@
           "path": "skills/linkedin-post-formatter/references/unicode-charmap.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.856Z"
+      "lastUpdated": "2026-04-29T15:54:47.279Z"
     },
     {
       "id": "lsp-setup",
@@ -3759,7 +3759,7 @@
           "path": "skills/lsp-setup/references/lsp-servers.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.790Z"
+      "lastUpdated": "2026-04-29T15:54:47.280Z"
     },
     {
       "id": "make-repo-contribution",
@@ -3784,7 +3784,7 @@
           "path": "skills/make-repo-contribution/assets/pr-template.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.865Z"
+      "lastUpdated": "2026-04-29T15:54:47.280Z"
     },
     {
       "id": "make-skill-template",
@@ -3801,7 +3801,7 @@
           "path": "skills/make-skill-template/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.847Z"
+      "lastUpdated": "2026-04-29T15:54:47.281Z"
     },
     {
       "id": "markdown-to-html",
@@ -3878,7 +3878,7 @@
           "path": "skills/markdown-to-html/references/writing-mathematical-expressions.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.189Z"
+      "lastUpdated": "2026-04-29T15:54:47.281Z"
     },
     {
       "id": "mcp-cli",
@@ -3895,7 +3895,7 @@
           "path": "skills/mcp-cli/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.543Z"
+      "lastUpdated": "2026-04-29T15:54:47.286Z"
     },
     {
       "id": "mcp-copilot-studio-server-generator",
@@ -3912,7 +3912,7 @@
           "path": "skills/mcp-copilot-studio-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.034Z"
+      "lastUpdated": "2026-04-29T15:54:47.287Z"
     },
     {
       "id": "mcp-create-adaptive-cards",
@@ -3929,7 +3929,7 @@
           "path": "skills/mcp-create-adaptive-cards/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.552Z"
+      "lastUpdated": "2026-04-29T15:54:47.287Z"
     },
     {
       "id": "mcp-create-declarative-agent",
@@ -3946,7 +3946,7 @@
           "path": "skills/mcp-create-declarative-agent/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.586Z"
+      "lastUpdated": "2026-04-29T15:54:47.287Z"
     },
     {
       "id": "mcp-deploy-manage-agents",
@@ -3963,7 +3963,7 @@
           "path": "skills/mcp-deploy-manage-agents/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.179Z"
+      "lastUpdated": "2026-04-29T15:54:47.287Z"
     },
     {
       "id": "mcp-security-audit",
@@ -3980,7 +3980,7 @@
           "path": "skills/mcp-security-audit/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.286Z"
+      "lastUpdated": "2026-04-29T15:54:47.288Z"
     },
     {
       "id": "meeting-minutes",
@@ -3997,7 +3997,7 @@
           "path": "skills/meeting-minutes/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.524Z"
+      "lastUpdated": "2026-04-29T15:54:47.288Z"
     },
     {
       "id": "memory-merger",
@@ -4014,7 +4014,7 @@
           "path": "skills/memory-merger/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.182Z"
+      "lastUpdated": "2026-04-29T15:54:47.288Z"
     },
     {
       "id": "mentoring-juniors",
@@ -4031,7 +4031,7 @@
           "path": "skills/mentoring-juniors/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.006Z"
+      "lastUpdated": "2026-04-29T15:54:47.289Z"
     },
     {
       "id": "microsoft-agent-framework",
@@ -4056,7 +4056,7 @@
           "path": "skills/microsoft-agent-framework/references/python.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.366Z"
+      "lastUpdated": "2026-04-29T15:54:47.289Z"
     },
     {
       "id": "microsoft-code-reference",
@@ -4073,7 +4073,7 @@
           "path": "skills/microsoft-code-reference/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.358Z"
+      "lastUpdated": "2026-04-29T15:54:47.290Z"
     },
     {
       "id": "microsoft-docs",
@@ -4090,7 +4090,7 @@
           "path": "skills/microsoft-docs/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.416Z"
+      "lastUpdated": "2026-04-29T15:54:47.290Z"
     },
     {
       "id": "microsoft-skill-creator",
@@ -4111,7 +4111,7 @@
           "path": "skills/microsoft-skill-creator/references/skill-templates.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.079Z"
+      "lastUpdated": "2026-04-29T15:54:47.290Z"
     },
     {
       "id": "migrating-oracle-to-postgres-stored-procedures",
@@ -4128,7 +4128,7 @@
           "path": "skills/migrating-oracle-to-postgres-stored-procedures/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.843Z"
+      "lastUpdated": "2026-04-29T15:54:47.291Z"
     },
     {
       "id": "mkdocs-translations",
@@ -4145,7 +4145,7 @@
           "path": "skills/mkdocs-translations/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.195Z"
+      "lastUpdated": "2026-04-29T15:54:47.293Z"
     },
     {
       "id": "model-recommendation",
@@ -4162,7 +4162,7 @@
           "path": "skills/model-recommendation/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.163Z"
+      "lastUpdated": "2026-04-29T15:54:47.293Z"
     },
     {
       "id": "msstore-cli",
@@ -4179,7 +4179,7 @@
           "path": "skills/msstore-cli/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.845Z"
+      "lastUpdated": "2026-04-29T15:54:47.294Z"
     },
     {
       "id": "multi-stage-dockerfile",
@@ -4196,7 +4196,7 @@
           "path": "skills/multi-stage-dockerfile/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.371Z"
+      "lastUpdated": "2026-04-29T15:54:47.294Z"
     },
     {
       "id": "my-issues",
@@ -4213,7 +4213,7 @@
           "path": "skills/my-issues/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.477Z"
+      "lastUpdated": "2026-04-29T15:54:47.294Z"
     },
     {
       "id": "my-pull-requests",
@@ -4230,7 +4230,7 @@
           "path": "skills/my-pull-requests/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.759Z"
+      "lastUpdated": "2026-04-29T15:54:47.294Z"
     },
     {
       "id": "nano-banana-pro-openrouter",
@@ -4255,7 +4255,7 @@
           "path": "skills/nano-banana-pro-openrouter/scripts/generate_image.py"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.049Z"
+      "lastUpdated": "2026-04-29T15:54:47.295Z"
     },
     {
       "id": "napkin",
@@ -4296,7 +4296,7 @@
           "path": "skills/napkin/assets/step5-response.svg"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.529Z"
+      "lastUpdated": "2026-04-29T15:54:47.295Z"
     },
     {
       "id": "next-intl-add-language",
@@ -4313,7 +4313,7 @@
           "path": "skills/next-intl-add-language/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.004Z"
+      "lastUpdated": "2026-04-29T15:54:47.297Z"
     },
     {
       "id": "noob-mode",
@@ -4338,7 +4338,7 @@
           "path": "skills/noob-mode/references/glossary.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.853Z"
+      "lastUpdated": "2026-04-29T15:54:47.298Z"
     },
     {
       "id": "nuget-manager",
@@ -4355,7 +4355,7 @@
           "path": "skills/nuget-manager/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.577Z"
+      "lastUpdated": "2026-04-29T15:54:47.299Z"
     },
     {
       "id": "onboard-context-matic",
@@ -4372,7 +4372,7 @@
           "path": "skills/onboard-context-matic/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.283Z"
+      "lastUpdated": "2026-04-29T15:54:47.300Z"
     },
     {
       "id": "oo-component-documentation",
@@ -4401,7 +4401,7 @@
           "path": "skills/oo-component-documentation/references/update-mode.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.013Z"
+      "lastUpdated": "2026-04-29T15:54:47.300Z"
     },
     {
       "id": "openapi-to-application-code",
@@ -4418,7 +4418,7 @@
           "path": "skills/openapi-to-application-code/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:24.978Z"
+      "lastUpdated": "2026-04-29T15:54:47.301Z"
     },
     {
       "id": "pdftk-server",
@@ -4455,7 +4455,7 @@
           "path": "skills/pdftk-server/references/third-party-materials.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.811Z"
+      "lastUpdated": "2026-04-29T15:54:47.302Z"
     },
     {
       "id": "penpot-uiux-design",
@@ -4488,7 +4488,7 @@
           "path": "skills/penpot-uiux-design/references/setup-troubleshooting.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.731Z"
+      "lastUpdated": "2026-04-29T15:54:47.303Z"
     },
     {
       "id": "phoenix-cli",
@@ -4505,7 +4505,7 @@
           "path": "skills/phoenix-cli/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.261Z"
+      "lastUpdated": "2026-04-29T15:54:47.304Z"
     },
     {
       "id": "phoenix-evals",
@@ -4658,7 +4658,7 @@
           "path": "skills/phoenix-evals/references/validation.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.404Z"
+      "lastUpdated": "2026-04-29T15:54:47.304Z"
     },
     {
       "id": "phoenix-tracing",
@@ -4795,7 +4795,7 @@
           "path": "skills/phoenix-tracing/references/span-tool.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.842Z"
+      "lastUpdated": "2026-04-29T15:54:47.311Z"
     },
     {
       "id": "php-mcp-server-generator",
@@ -4812,7 +4812,7 @@
           "path": "skills/php-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.719Z"
+      "lastUpdated": "2026-04-29T15:54:47.319Z"
     },
     {
       "id": "planning-oracle-to-postgres-migration-integration-testing",
@@ -4829,7 +4829,7 @@
           "path": "skills/planning-oracle-to-postgres-migration-integration-testing/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.973Z"
+      "lastUpdated": "2026-04-29T15:54:47.320Z"
     },
     {
       "id": "plantuml-ascii",
@@ -4846,7 +4846,7 @@
           "path": "skills/plantuml-ascii/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.071Z"
+      "lastUpdated": "2026-04-29T15:54:47.320Z"
     },
     {
       "id": "playwright-automation-fill-in-form",
@@ -4863,7 +4863,7 @@
           "path": "skills/playwright-automation-fill-in-form/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.021Z"
+      "lastUpdated": "2026-04-29T15:54:47.320Z"
     },
     {
       "id": "playwright-explore-website",
@@ -4880,7 +4880,7 @@
           "path": "skills/playwright-explore-website/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.411Z"
+      "lastUpdated": "2026-04-29T15:54:47.320Z"
     },
     {
       "id": "playwright-generate-test",
@@ -4897,7 +4897,7 @@
           "path": "skills/playwright-generate-test/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.507Z"
+      "lastUpdated": "2026-04-29T15:54:47.321Z"
     },
     {
       "id": "polyglot-test-agent",
@@ -4918,7 +4918,7 @@
           "path": "skills/polyglot-test-agent/unit-test-generation.prompt.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.715Z"
+      "lastUpdated": "2026-04-29T15:54:47.321Z"
     },
     {
       "id": "postgresql-code-review",
@@ -4935,7 +4935,7 @@
           "path": "skills/postgresql-code-review/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.210Z"
+      "lastUpdated": "2026-04-29T15:54:47.321Z"
     },
     {
       "id": "postgresql-optimization",
@@ -4952,7 +4952,7 @@
           "path": "skills/postgresql-optimization/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.088Z"
+      "lastUpdated": "2026-04-29T15:54:47.322Z"
     },
     {
       "id": "power-apps-code-app-scaffold",
@@ -4969,7 +4969,7 @@
           "path": "skills/power-apps-code-app-scaffold/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.522Z"
+      "lastUpdated": "2026-04-29T15:54:47.322Z"
     },
     {
       "id": "power-bi-dax-optimization",
@@ -4986,7 +4986,7 @@
           "path": "skills/power-bi-dax-optimization/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.685Z"
+      "lastUpdated": "2026-04-29T15:54:47.322Z"
     },
     {
       "id": "power-bi-model-design-review",
@@ -5003,7 +5003,7 @@
           "path": "skills/power-bi-model-design-review/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.131Z"
+      "lastUpdated": "2026-04-29T15:54:47.323Z"
     },
     {
       "id": "power-bi-performance-troubleshooting",
@@ -5020,7 +5020,7 @@
           "path": "skills/power-bi-performance-troubleshooting/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.505Z"
+      "lastUpdated": "2026-04-29T15:54:47.323Z"
     },
     {
       "id": "power-bi-report-design-consultation",
@@ -5037,7 +5037,7 @@
           "path": "skills/power-bi-report-design-consultation/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.320Z"
+      "lastUpdated": "2026-04-29T15:54:47.323Z"
     },
     {
       "id": "power-platform-architect",
@@ -5054,7 +5054,7 @@
           "path": "skills/power-platform-architect/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.717Z"
+      "lastUpdated": "2026-04-29T15:54:47.324Z"
     },
     {
       "id": "power-platform-mcp-connector-suite",
@@ -5071,7 +5071,7 @@
           "path": "skills/power-platform-mcp-connector-suite/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.523Z"
+      "lastUpdated": "2026-04-29T15:54:47.324Z"
     },
     {
       "id": "powerbi-modeling",
@@ -5108,7 +5108,7 @@
           "path": "skills/powerbi-modeling/references/STAR-SCHEMA.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.742Z"
+      "lastUpdated": "2026-04-29T15:54:47.324Z"
     },
     {
       "id": "prd",
@@ -5125,7 +5125,7 @@
           "path": "skills/prd/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.864Z"
+      "lastUpdated": "2026-04-29T15:54:47.326Z"
     },
     {
       "id": "premium-frontend-ui",
@@ -5142,7 +5142,7 @@
           "path": "skills/premium-frontend-ui/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.588Z"
+      "lastUpdated": "2026-04-29T15:54:47.326Z"
     },
     {
       "id": "project-workflow-analysis-blueprint-generator",
@@ -5159,7 +5159,7 @@
           "path": "skills/project-workflow-analysis-blueprint-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.869Z"
+      "lastUpdated": "2026-04-29T15:54:47.326Z"
     },
     {
       "id": "prompt-builder",
@@ -5176,7 +5176,7 @@
           "path": "skills/prompt-builder/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.005Z"
+      "lastUpdated": "2026-04-29T15:54:47.326Z"
     },
     {
       "id": "publish-to-pages",
@@ -5205,7 +5205,7 @@
           "path": "skills/publish-to-pages/scripts/publish.sh"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.435Z"
+      "lastUpdated": "2026-04-29T15:54:47.327Z"
     },
     {
       "id": "pytest-coverage",
@@ -5222,7 +5222,7 @@
           "path": "skills/pytest-coverage/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.553Z"
+      "lastUpdated": "2026-04-29T15:54:47.328Z"
     },
     {
       "id": "python-mcp-server-generator",
@@ -5239,7 +5239,7 @@
           "path": "skills/python-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.157Z"
+      "lastUpdated": "2026-04-29T15:54:47.329Z"
     },
     {
       "id": "python-pypi-package-builder",
@@ -5296,7 +5296,7 @@
           "path": "skills/python-pypi-package-builder/scripts/scaffold.py"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.803Z"
+      "lastUpdated": "2026-04-29T15:54:47.329Z"
     },
     {
       "id": "qdrant-clients-sdk",
@@ -5313,7 +5313,7 @@
           "path": "skills/qdrant-clients-sdk/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.046Z"
+      "lastUpdated": "2026-04-29T15:54:47.333Z"
     },
     {
       "id": "qdrant-deployment-options",
@@ -5330,7 +5330,7 @@
           "path": "skills/qdrant-deployment-options/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.355Z"
+      "lastUpdated": "2026-04-29T15:54:47.334Z"
     },
     {
       "id": "horizontal-scaling",
@@ -5347,7 +5347,7 @@
           "path": "skills/qdrant-scaling/scaling-data-volume/horizontal-scaling/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.337Z"
+      "lastUpdated": "2026-04-29T15:54:47.337Z"
     },
     {
       "id": "indexing-performance-optimization",
@@ -5364,7 +5364,7 @@
           "path": "skills/qdrant-performance-optimization/indexing-performance-optimization/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.550Z"
+      "lastUpdated": "2026-04-29T15:54:47.335Z"
     },
     {
       "id": "memory-usage-optimization",
@@ -5381,7 +5381,7 @@
           "path": "skills/qdrant-performance-optimization/memory-usage-optimization/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.548Z"
+      "lastUpdated": "2026-04-29T15:54:47.336Z"
     },
     {
       "id": "minimize-latency",
@@ -5398,7 +5398,7 @@
           "path": "skills/qdrant-scaling/minimize-latency/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.328Z"
+      "lastUpdated": "2026-04-29T15:54:47.336Z"
     },
     {
       "id": "qdrant-model-migration",
@@ -5415,7 +5415,7 @@
           "path": "skills/qdrant-model-migration/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.059Z"
+      "lastUpdated": "2026-04-29T15:54:47.334Z"
     },
     {
       "id": "qdrant-monitoring",
@@ -5440,7 +5440,7 @@
           "path": "skills/qdrant-monitoring/setup/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.055Z"
+      "lastUpdated": "2026-04-29T15:54:47.334Z"
     },
     {
       "id": "debugging",
@@ -5457,7 +5457,7 @@
           "path": "skills/qdrant-monitoring/debugging/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.053Z"
+      "lastUpdated": "2026-04-29T15:54:47.335Z"
     },
     {
       "id": "setup",
@@ -5474,7 +5474,7 @@
           "path": "skills/qdrant-monitoring/setup/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.054Z"
+      "lastUpdated": "2026-04-29T15:54:47.335Z"
     },
     {
       "id": "qdrant-performance-optimization",
@@ -5503,7 +5503,7 @@
           "path": "skills/qdrant-performance-optimization/search-speed-optimization/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.549Z"
+      "lastUpdated": "2026-04-29T15:54:47.335Z"
     },
     {
       "id": "qdrant-scaling",
@@ -5552,7 +5552,7 @@
           "path": "skills/qdrant-scaling/scaling-query-volume/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.337Z"
+      "lastUpdated": "2026-04-29T15:54:47.336Z"
     },
     {
       "id": "scaling-data-volume",
@@ -5585,7 +5585,7 @@
           "path": "skills/qdrant-scaling/scaling-data-volume/vertical-scaling/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.333Z"
+      "lastUpdated": "2026-04-29T15:54:47.337Z"
     },
     {
       "id": "scaling-qps",
@@ -5602,7 +5602,7 @@
           "path": "skills/qdrant-scaling/scaling-qps/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.330Z"
+      "lastUpdated": "2026-04-29T15:54:47.338Z"
     },
     {
       "id": "scaling-query-volume",
@@ -5619,7 +5619,7 @@
           "path": "skills/qdrant-scaling/scaling-query-volume/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.331Z"
+      "lastUpdated": "2026-04-29T15:54:47.338Z"
     },
     {
       "id": "qdrant-search-quality",
@@ -5644,7 +5644,7 @@
           "path": "skills/qdrant-search-quality/search-strategies/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.206Z"
+      "lastUpdated": "2026-04-29T15:54:47.338Z"
     },
     {
       "id": "diagnosis",
@@ -5661,7 +5661,7 @@
           "path": "skills/qdrant-search-quality/diagnosis/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.209Z"
+      "lastUpdated": "2026-04-29T15:54:47.339Z"
     },
     {
       "id": "search-speed-optimization",
@@ -5678,7 +5678,7 @@
           "path": "skills/qdrant-performance-optimization/search-speed-optimization/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.550Z"
+      "lastUpdated": "2026-04-29T15:54:47.336Z"
     },
     {
       "id": "search-strategies",
@@ -5695,7 +5695,7 @@
           "path": "skills/qdrant-search-quality/search-strategies/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.207Z"
+      "lastUpdated": "2026-04-29T15:54:47.339Z"
     },
     {
       "id": "sliding-time-window",
@@ -5712,7 +5712,7 @@
           "path": "skills/qdrant-scaling/scaling-data-volume/sliding-time-window/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.336Z"
+      "lastUpdated": "2026-04-29T15:54:47.337Z"
     },
     {
       "id": "tenant-scaling",
@@ -5729,7 +5729,7 @@
           "path": "skills/qdrant-scaling/scaling-data-volume/tenant-scaling/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.332Z"
+      "lastUpdated": "2026-04-29T15:54:47.338Z"
     },
     {
       "id": "qdrant-version-upgrade",
@@ -5746,7 +5746,7 @@
           "path": "skills/qdrant-version-upgrade/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.805Z"
+      "lastUpdated": "2026-04-29T15:54:47.339Z"
     },
     {
       "id": "vertical-scaling",
@@ -5763,7 +5763,7 @@
           "path": "skills/qdrant-scaling/scaling-data-volume/vertical-scaling/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.334Z"
+      "lastUpdated": "2026-04-29T15:54:47.338Z"
     },
     {
       "id": "quality-playbook",
@@ -5812,7 +5812,7 @@
           "path": "skills/quality-playbook/references/verification.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.191Z"
+      "lastUpdated": "2026-04-29T15:54:47.340Z"
     },
     {
       "id": "quasi-coder",
@@ -5829,7 +5829,7 @@
           "path": "skills/quasi-coder/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.504Z"
+      "lastUpdated": "2026-04-29T15:54:47.342Z"
     },
     {
       "id": "react-audit-grep-patterns",
@@ -5862,7 +5862,7 @@
           "path": "skills/react-audit-grep-patterns/references/test-scans.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.174Z"
+      "lastUpdated": "2026-04-29T15:54:47.342Z"
     },
     {
       "id": "react18-batching-patterns",
@@ -5887,7 +5887,7 @@
           "path": "skills/react18-batching-patterns/references/flushSync-guide.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.149Z"
+      "lastUpdated": "2026-04-29T15:54:47.343Z"
     },
     {
       "id": "react18-dep-compatibility",
@@ -5912,7 +5912,7 @@
           "path": "skills/react18-dep-compatibility/references/router-migration.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.091Z"
+      "lastUpdated": "2026-04-29T15:54:47.344Z"
     },
     {
       "id": "react18-enzyme-to-rtl",
@@ -5937,7 +5937,7 @@
           "path": "skills/react18-enzyme-to-rtl/references/enzyme-api-map.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.034Z"
+      "lastUpdated": "2026-04-29T15:54:47.345Z"
     },
     {
       "id": "react18-legacy-context",
@@ -5966,7 +5966,7 @@
           "path": "skills/react18-legacy-context/references/single-context.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.515Z"
+      "lastUpdated": "2026-04-29T15:54:47.346Z"
     },
     {
       "id": "react18-lifecycle-patterns",
@@ -5995,7 +5995,7 @@
           "path": "skills/react18-lifecycle-patterns/references/componentWillUpdate.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.031Z"
+      "lastUpdated": "2026-04-29T15:54:47.347Z"
     },
     {
       "id": "react18-string-refs",
@@ -6016,7 +6016,7 @@
           "path": "skills/react18-string-refs/references/patterns.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.082Z"
+      "lastUpdated": "2026-04-29T15:54:47.348Z"
     },
     {
       "id": "react19-concurrent-patterns",
@@ -6045,7 +6045,7 @@
           "path": "skills/react19-concurrent-patterns/references/react19-use.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.112Z"
+      "lastUpdated": "2026-04-29T15:54:47.348Z"
     },
     {
       "id": "react19-source-patterns",
@@ -6066,7 +6066,7 @@
           "path": "skills/react19-source-patterns/references/api-migrations.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.419Z"
+      "lastUpdated": "2026-04-29T15:54:47.350Z"
     },
     {
       "id": "react19-test-patterns",
@@ -6083,7 +6083,7 @@
           "path": "skills/react19-test-patterns/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.324Z"
+      "lastUpdated": "2026-04-29T15:54:47.351Z"
     },
     {
       "id": "readme-blueprint-generator",
@@ -6100,7 +6100,7 @@
           "path": "skills/readme-blueprint-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.421Z"
+      "lastUpdated": "2026-04-29T15:54:47.351Z"
     },
     {
       "id": "refactor",
@@ -6117,7 +6117,7 @@
           "path": "skills/refactor/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.178Z"
+      "lastUpdated": "2026-04-29T15:54:47.352Z"
     },
     {
       "id": "refactor-method-complexity-reduce",
@@ -6134,7 +6134,7 @@
           "path": "skills/refactor-method-complexity-reduce/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.590Z"
+      "lastUpdated": "2026-04-29T15:54:47.352Z"
     },
     {
       "id": "refactor-plan",
@@ -6151,7 +6151,7 @@
           "path": "skills/refactor-plan/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.718Z"
+      "lastUpdated": "2026-04-29T15:54:47.352Z"
     },
     {
       "id": "remember",
@@ -6168,7 +6168,7 @@
           "path": "skills/remember/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.083Z"
+      "lastUpdated": "2026-04-29T15:54:47.353Z"
     },
     {
       "id": "remember-interactive-programming",
@@ -6185,7 +6185,7 @@
           "path": "skills/remember-interactive-programming/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.361Z"
+      "lastUpdated": "2026-04-29T15:54:47.352Z"
     },
     {
       "id": "repo-story-time",
@@ -6202,7 +6202,7 @@
           "path": "skills/repo-story-time/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.339Z"
+      "lastUpdated": "2026-04-29T15:54:47.353Z"
     },
     {
       "id": "review-and-refactor",
@@ -6219,7 +6219,7 @@
           "path": "skills/review-and-refactor/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.116Z"
+      "lastUpdated": "2026-04-29T15:54:47.354Z"
     },
     {
       "id": "reviewing-oracle-to-postgres-migration",
@@ -6276,7 +6276,7 @@
           "path": "skills/reviewing-oracle-to-postgres-migration/references/postgres-refcursor-handling.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.088Z"
+      "lastUpdated": "2026-04-29T15:54:47.354Z"
     },
     {
       "id": "roundup",
@@ -6293,7 +6293,7 @@
           "path": "skills/roundup/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.184Z"
+      "lastUpdated": "2026-04-29T15:54:47.357Z"
     },
     {
       "id": "roundup-setup",
@@ -6314,7 +6314,7 @@
           "path": "skills/roundup-setup/references/config-template.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.085Z"
+      "lastUpdated": "2026-04-29T15:54:47.357Z"
     },
     {
       "id": "ruby-mcp-server-generator",
@@ -6331,7 +6331,7 @@
           "path": "skills/ruby-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.822Z"
+      "lastUpdated": "2026-04-29T15:54:47.358Z"
     },
     {
       "id": "ruff-recursive-fix",
@@ -6348,7 +6348,7 @@
           "path": "skills/ruff-recursive-fix/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.509Z"
+      "lastUpdated": "2026-04-29T15:54:47.358Z"
     },
     {
       "id": "rust-mcp-server-generator",
@@ -6365,7 +6365,7 @@
           "path": "skills/rust-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.248Z"
+      "lastUpdated": "2026-04-29T15:54:47.358Z"
     },
     {
       "id": "salesforce-apex-quality",
@@ -6382,7 +6382,7 @@
           "path": "skills/salesforce-apex-quality/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.591Z"
+      "lastUpdated": "2026-04-29T15:54:47.359Z"
     },
     {
       "id": "salesforce-component-standards",
@@ -6399,7 +6399,7 @@
           "path": "skills/salesforce-component-standards/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.422Z"
+      "lastUpdated": "2026-04-29T15:54:47.359Z"
     },
     {
       "id": "salesforce-flow-design",
@@ -6416,7 +6416,7 @@
           "path": "skills/salesforce-flow-design/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.223Z"
+      "lastUpdated": "2026-04-29T15:54:47.359Z"
     },
     {
       "id": "sandbox-npm-install",
@@ -6437,7 +6437,7 @@
           "path": "skills/sandbox-npm-install/scripts/install.sh"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.044Z"
+      "lastUpdated": "2026-04-29T15:54:47.360Z"
     },
     {
       "id": "scaffolding-oracle-to-postgres-migration-test-project",
@@ -6454,7 +6454,7 @@
           "path": "skills/scaffolding-oracle-to-postgres-migration-test-project/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.512Z"
+      "lastUpdated": "2026-04-29T15:54:47.360Z"
     },
     {
       "id": "scoutqa-test",
@@ -6471,7 +6471,7 @@
           "path": "skills/scoutqa-test/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.115Z"
+      "lastUpdated": "2026-04-29T15:54:47.360Z"
     },
     {
       "id": "secret-scanning",
@@ -6500,7 +6500,7 @@
           "path": "skills/secret-scanning/references/push-protection.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.196Z"
+      "lastUpdated": "2026-04-29T15:54:47.361Z"
     },
     {
       "id": "security-review",
@@ -6537,7 +6537,7 @@
           "path": "skills/security-review/references/vulnerable-packages.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.154Z"
+      "lastUpdated": "2026-04-29T15:54:47.361Z"
     },
     {
       "id": "semantic-kernel",
@@ -6562,7 +6562,7 @@
           "path": "skills/semantic-kernel/references/python.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.110Z"
+      "lastUpdated": "2026-04-29T15:54:47.363Z"
     },
     {
       "id": "shuffle-json-data",
@@ -6579,7 +6579,7 @@
           "path": "skills/shuffle-json-data/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.792Z"
+      "lastUpdated": "2026-04-29T15:54:47.364Z"
     },
     {
       "id": "snowflake-semanticview",
@@ -6596,7 +6596,7 @@
           "path": "skills/snowflake-semanticview/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.821Z"
+      "lastUpdated": "2026-04-29T15:54:47.364Z"
     },
     {
       "id": "sponsor-finder",
@@ -6613,7 +6613,7 @@
           "path": "skills/sponsor-finder/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.871Z"
+      "lastUpdated": "2026-04-29T15:54:47.364Z"
     },
     {
       "id": "spring-boot-testing",
@@ -6686,7 +6686,7 @@
           "path": "skills/spring-boot-testing/references/webmvctest.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.499Z"
+      "lastUpdated": "2026-04-29T15:54:47.365Z"
     },
     {
       "id": "sql-code-review",
@@ -6703,7 +6703,7 @@
           "path": "skills/sql-code-review/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.518Z"
+      "lastUpdated": "2026-04-29T15:54:47.370Z"
     },
     {
       "id": "sql-optimization",
@@ -6720,7 +6720,7 @@
           "path": "skills/sql-optimization/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.623Z"
+      "lastUpdated": "2026-04-29T15:54:47.371Z"
     },
     {
       "id": "structured-autonomy-generate",
@@ -6737,7 +6737,7 @@
           "path": "skills/structured-autonomy-generate/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.511Z"
+      "lastUpdated": "2026-04-29T15:54:47.371Z"
     },
     {
       "id": "structured-autonomy-implement",
@@ -6754,7 +6754,7 @@
           "path": "skills/structured-autonomy-implement/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.582Z"
+      "lastUpdated": "2026-04-29T15:54:47.371Z"
     },
     {
       "id": "structured-autonomy-plan",
@@ -6771,7 +6771,7 @@
           "path": "skills/structured-autonomy-plan/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.024Z"
+      "lastUpdated": "2026-04-29T15:54:47.371Z"
     },
     {
       "id": "suggest-awesome-github-copilot-agents",
@@ -6788,7 +6788,7 @@
           "path": "skills/suggest-awesome-github-copilot-agents/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.176Z"
+      "lastUpdated": "2026-04-29T15:54:47.372Z"
     },
     {
       "id": "suggest-awesome-github-copilot-instructions",
@@ -6805,7 +6805,7 @@
           "path": "skills/suggest-awesome-github-copilot-instructions/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.723Z"
+      "lastUpdated": "2026-04-29T15:54:47.372Z"
     },
     {
       "id": "suggest-awesome-github-copilot-skills",
@@ -6822,7 +6822,7 @@
           "path": "skills/suggest-awesome-github-copilot-skills/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.501Z"
+      "lastUpdated": "2026-04-29T15:54:47.372Z"
     },
     {
       "id": "swift-mcp-server-generator",
@@ -6839,7 +6839,7 @@
           "path": "skills/swift-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.370Z"
+      "lastUpdated": "2026-04-29T15:54:47.373Z"
     },
     {
       "id": "technology-stack-blueprint-generator",
@@ -6856,7 +6856,7 @@
           "path": "skills/technology-stack-blueprint-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.057Z"
+      "lastUpdated": "2026-04-29T15:54:47.373Z"
     },
     {
       "id": "terraform-azurerm-set-diff-analyzer",
@@ -6893,7 +6893,7 @@
           "path": "skills/terraform-azurerm-set-diff-analyzer/scripts/analyze_plan.py"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.130Z"
+      "lastUpdated": "2026-04-29T15:54:47.373Z"
     },
     {
       "id": "threat-model-analyst",
@@ -6974,7 +6974,7 @@
           "path": "skills/threat-model-analyst/references/verification-checklist.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.245Z"
+      "lastUpdated": "2026-04-29T15:54:47.375Z"
     },
     {
       "id": "tldr-prompt",
@@ -6991,7 +6991,7 @@
           "path": "skills/tldr-prompt/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.182Z"
+      "lastUpdated": "2026-04-29T15:54:47.383Z"
     },
     {
       "id": "transloadit-media-processing",
@@ -7008,7 +7008,7 @@
           "path": "skills/transloadit-media-processing/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.052Z"
+      "lastUpdated": "2026-04-29T15:54:47.384Z"
     },
     {
       "id": "typescript-mcp-server-generator",
@@ -7025,7 +7025,7 @@
           "path": "skills/typescript-mcp-server-generator/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.194Z"
+      "lastUpdated": "2026-04-29T15:54:47.384Z"
     },
     {
       "id": "typespec-api-operations",
@@ -7042,7 +7042,7 @@
           "path": "skills/typespec-api-operations/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:26.203Z"
+      "lastUpdated": "2026-04-29T15:54:47.385Z"
     },
     {
       "id": "typespec-create-agent",
@@ -7059,7 +7059,7 @@
           "path": "skills/typespec-create-agent/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.526Z"
+      "lastUpdated": "2026-04-29T15:54:47.385Z"
     },
     {
       "id": "typespec-create-api-plugin",
@@ -7076,7 +7076,7 @@
           "path": "skills/typespec-create-api-plugin/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.480Z"
+      "lastUpdated": "2026-04-29T15:54:47.386Z"
     },
     {
       "id": "unit-test-vue-pinia",
@@ -7097,7 +7097,7 @@
           "path": "skills/unit-test-vue-pinia/references/pinia-patterns.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.161Z"
+      "lastUpdated": "2026-04-29T15:54:47.386Z"
     },
     {
       "id": "update-avm-modules-in-bicep",
@@ -7114,7 +7114,7 @@
           "path": "skills/update-avm-modules-in-bicep/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.367Z"
+      "lastUpdated": "2026-04-29T15:54:47.387Z"
     },
     {
       "id": "update-implementation-plan",
@@ -7131,7 +7131,7 @@
           "path": "skills/update-implementation-plan/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.273Z"
+      "lastUpdated": "2026-04-29T15:54:47.387Z"
     },
     {
       "id": "update-llms",
@@ -7148,7 +7148,7 @@
           "path": "skills/update-llms/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.693Z"
+      "lastUpdated": "2026-04-29T15:54:47.387Z"
     },
     {
       "id": "update-markdown-file-index",
@@ -7165,7 +7165,7 @@
           "path": "skills/update-markdown-file-index/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.688Z"
+      "lastUpdated": "2026-04-29T15:54:47.387Z"
     },
     {
       "id": "update-specification",
@@ -7182,7 +7182,7 @@
           "path": "skills/update-specification/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.069Z"
+      "lastUpdated": "2026-04-29T15:54:47.387Z"
     },
     {
       "id": "vscode-ext-commands",
@@ -7199,7 +7199,7 @@
           "path": "skills/vscode-ext-commands/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.624Z"
+      "lastUpdated": "2026-04-29T15:54:47.388Z"
     },
     {
       "id": "vscode-ext-localization",
@@ -7216,7 +7216,7 @@
           "path": "skills/vscode-ext-localization/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.259Z"
+      "lastUpdated": "2026-04-29T15:54:47.388Z"
     },
     {
       "id": "web-coder",
@@ -7297,7 +7297,7 @@
           "path": "skills/web-coder/references/web-protocols-standards.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.122Z"
+      "lastUpdated": "2026-04-29T15:54:47.389Z"
     },
     {
       "id": "web-design-reviewer",
@@ -7322,7 +7322,7 @@
           "path": "skills/web-design-reviewer/references/visual-checklist.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.540Z"
+      "lastUpdated": "2026-04-29T15:54:47.394Z"
     },
     {
       "id": "webapp-testing",
@@ -7343,7 +7343,7 @@
           "path": "skills/webapp-testing/assets/test-helper.js"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.995Z"
+      "lastUpdated": "2026-04-29T15:54:47.394Z"
     },
     {
       "id": "what-context-needed",
@@ -7360,7 +7360,7 @@
           "path": "skills/what-context-needed/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.257Z"
+      "lastUpdated": "2026-04-29T15:54:47.395Z"
     },
     {
       "id": "winapp-cli",
@@ -7377,7 +7377,7 @@
           "path": "skills/winapp-cli/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.620Z"
+      "lastUpdated": "2026-04-29T15:54:47.395Z"
     },
     {
       "id": "winmd-api-search",
@@ -7426,7 +7426,7 @@
           "path": "skills/winmd-api-search/scripts/cache-generator/Program.cs"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.754Z"
+      "lastUpdated": "2026-04-29T15:54:47.396Z"
     },
     {
       "id": "winui3-migration-guide",
@@ -7443,7 +7443,7 @@
           "path": "skills/winui3-migration-guide/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.143Z"
+      "lastUpdated": "2026-04-29T15:54:47.398Z"
     },
     {
       "id": "workiq-copilot",
@@ -7460,7 +7460,7 @@
           "path": "skills/workiq-copilot/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.629Z"
+      "lastUpdated": "2026-04-29T15:54:47.398Z"
     },
     {
       "id": "write-coding-standards-from-file",
@@ -7477,7 +7477,7 @@
           "path": "skills/write-coding-standards-from-file/SKILL.md"
         }
       ],
-      "lastUpdated": "2026-04-23T04:30:25.280Z"
+      "lastUpdated": "2026-04-29T15:54:47.398Z"
     }
   ],
   "filters": {

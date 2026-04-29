@@ -1,8 +1,7 @@
 ---
-
 description: 'Refine the requirement or issue with Acceptance Criteria, Technical Considerations, Edge Cases, and NFRs'
-name: 'Refine Requirement or Issue'
-model: gpt-5.3-codex
+name: refine-issue
+model: sonnet
 tools: [ 'list_issues','githubRepo', 'search', 'add_issue_comment','create_issue','create_issue_comment','update_issue','delete_issue','get_issue', 'search_issues']
 permissionMode: default
 disallowedTools: []

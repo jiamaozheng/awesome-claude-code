@@ -1,10 +1,8 @@
 ---
-
 name: react18-batching-fixer
-model: gpt-5.3-codex
+model: sonnet
 description: 'Automatic batching regression specialist. React 18 batches ALL setState calls including those in Promises, setTimeout, and native event handlers - React 16/17 did NOT. Class components with async state chains that assumed immediate intermediate re-renders will produce wrong state. This agent finds every vulnerable pattern and fixes with flushSync where semantically required.'
 tools: ['vscode/memory', 'edit/editFiles', 'execute/getTerminalOutput', 'execute/runInTerminal', 'read/terminalLastCommand', 'read/terminalSelection', 'search', 'search/usages', 'read/problems']
-user-invocable: false
 permissionMode: default
 disallowedTools: []
 ---

@@ -1,10 +1,9 @@
 ---
-
-name: DiffblueCover
-model: gpt-5.3-codex
+name: diffblue-cover
+model: sonnet
 description: Expert agent for creating unit tests for java applications using Diffblue Cover.
 tools: [ 'DiffblueCover/*' ]
-mcp-servers:
+mcpServers:
   # Checkout the Diffblue Cover MCP server from https://github.com/diffblue/cover-mcp/, and follow
   # the instructions in the README to set it up locally.
   DiffblueCover:

@@ -137,7 +137,7 @@
     },
     {
       "name": "context-matic",
-      "description": "ContextMatic turns your AI agents from API-guessers into API-experts. By feeding agents exact, version-aware SDK methods and typed models for providers like PayPal, Spotify, and Twilio, ContextMatic replaces guesswork and outdated training data with high-fidelity ground truth. This eliminates hallucinations and broken code, ensuring surgical accuracy across 7+ languages so your agents build with precision instead of wasting tokens on trial and error.",
+      "description": "Coding agents hallucinate APIs. ContextMatic gives them curated, versioned API and SDK docs. Ask your agent to \"integrate the payments API\" and it guesses — falling back on outdated training data and generic patterns that don't match your actual SDK. ContextMatic solves this by giving the agent deterministic, version-aware, SDK-native context at the exact moment it's needed.",
       "path": "plugins/context-matic",
       "tags": [
         "api-context",
@@ -669,12 +669,7 @@
       "name": "ospo-sponsorship",
       "description": "Tools and resources for Open Source Program Offices (OSPOs) to identify, evaluate, and manage sponsorship of open source dependencies through GitHub Sponsors, Open Collective, and other funding platforms.",
       "path": "plugins/ospo-sponsorship",
-      "tags": [
-        "ospo",
-        "sponsorship",
-        "open-source",
-        "dependency-funding"
-      ],
+      "tags": [],
       "itemCount": 1,
       "external": false,
       "repository": null,
@@ -1093,12 +1088,7 @@
       "name": "structured-autonomy",
       "description": "Premium planning, thrifty implementation",
       "path": "plugins/structured-autonomy",
-      "tags": [
-        "structured-autonomy",
-        "planning",
-        "implementation",
-        "workflows"
-      ],
+      "tags": [],
       "itemCount": 3,
       "external": false,
       "repository": null,
@@ -1294,7 +1284,6 @@
       "dax",
       "dba",
       "declarative-agents",
-      "dependency-funding",
       "desktop",
       "developer-experience",
       "devops",
@@ -1370,13 +1359,11 @@
       "observability",
       "onboarding",
       "oncall",
-      "open-source",
       "openapi",
       "openinference",
       "optimization",
       "oracle",
       "orchestration",
-      "ospo",
       "owasp",
       "pcf",
       "performance",
@@ -1434,7 +1421,6 @@
       "software-analysis",
       "software-engineering",
       "source-citation",
-      "sponsorship",
       "spring-boot",
       "springboot",
       "sql",
@@ -1443,7 +1429,6 @@
       "sticky-notes",
       "stored-procedures",
       "storytelling",
-      "structured-autonomy",
       "subagents",
       "swift",
       "synthesis",
@@ -1481,7 +1466,6 @@
       "winui3",
       "workflow",
       "workflow-automation",
-      "workflows",
       "xaml"
     ]
   }

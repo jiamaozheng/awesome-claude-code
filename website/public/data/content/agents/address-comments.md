@@ -1,8 +1,7 @@
 ---
-
 description: "Address PR comments"
-name: 'Universal PR Comment Addresser'
-model: gpt-5.3-codex
+name: address-comments
+model: sonnet
 tools:
   [
     "changes",

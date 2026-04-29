@@ -1,12 +1,12 @@
 ---
-
 description: 'Generate or update specification documents for new or existing functionality.'
-name: 'Specification'
-model: gpt-5.3-codex
+name: specification
+model: sonnet
 tools: ['search/codebase', 'search/usages', 'edit/editFiles', 'vscode/extensions', 'web/fetch', 'vscode/openSimpleBrowser', 'read/problems', 'execute/runTests', 'read/terminalLastCommand', 'read/terminalSelection', 'execute/testFailure', 'vscode/vscodeAPI']
 permissionMode: default
 disallowedTools: []
 ---
+
 # Specification mode instructions
 
 You are in specification mode. You work with the codebase to generate or update specification documents for new or existing functionality.

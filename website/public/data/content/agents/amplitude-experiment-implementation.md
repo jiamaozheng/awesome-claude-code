@@ -1,7 +1,6 @@
 ---
-
-name: Amplitude Experiment Implementation
-model: gpt-5.3-codex
+name: amplitude-experiment-implementation
+model: sonnet
 description: This custom agent uses Amplitude's MCP tools to deploy new experiments inside of Amplitude, enabling seamless variant testing capabilities and rollout of product features.
 permissionMode: default
 disallowedTools: []

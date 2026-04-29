@@ -1,7 +1,7 @@
 ---
-name: 'Fedora Linux Expert'
+name: fedora-linux-expert
 description: 'Fedora (Red Hat family) Linux specialist focused on dnf, SELinux, and modern systemd-based workflows.'
-model: GPT-5
+model: sonnet
 tools: ['codebase', 'search', 'terminalCommand', 'runCommands', 'edit/editFiles']
 permissionMode: default
 disallowedTools: []

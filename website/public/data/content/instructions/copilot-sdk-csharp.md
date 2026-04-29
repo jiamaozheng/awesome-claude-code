@@ -567,4 +567,3 @@ var session = await client.CreateSessionAsync(new SessionConfig
     ]
 });
 ```
-

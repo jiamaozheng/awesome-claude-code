@@ -148,7 +148,7 @@ The awesome-copilot-hub repository includes over 120 instruction files demonstra
 
 ### Security Standards
 
-See [security-and-owasp.instructions.md](https://github.com/github/awesome-copilot/blob/main/instructions/security-and-owasp.instructions.md) for comprehensive security guidance:
+See [security-and-owasp.instructions.md](https://github.com/jiamaozheng/awesome-claude-code/blob/main/instructions/security-and-owasp.instructions.md) for comprehensive security guidance:
 
 ```markdown
 ---
@@ -172,7 +172,7 @@ This instruction applies to all files (`applyTo: '**'`), ensuring security aware
 
 ### Framework-Specific Guidance
 
-See [reactjs.instructions.md](https://github.com/github/awesome-copilot/blob/main/instructions/reactjs.instructions.md) for React-specific patterns:
+See [reactjs.instructions.md](https://github.com/jiamaozheng/awesome-claude-code/blob/main/instructions/reactjs.instructions.md) for React-specific patterns:
 
 ```markdown
 ---
@@ -196,7 +196,7 @@ This instruction targets only React component files, providing context-specific 
 
 ### Testing Standards
 
-See [playwright-typescript.instructions.md](https://github.com/github/awesome-copilot/blob/main/instructions/playwright-typescript.instructions.md) for test automation patterns:
+See [playwright-typescript.instructions.md](https://github.com/jiamaozheng/awesome-claude-code/blob/main/instructions/playwright-typescript.instructions.md) for test automation patterns:
 
 ````markdown
 ---
@@ -216,7 +216,7 @@ test('should display error message when login fails', async ({ page }) => {
   await page.fill('#username', 'invalid');
   await page.fill('#password', 'invalid');
   await page.click('#submit');
-  
+
   await expect(page.locator('.error')).toBeVisible();
 });
 ```
@@ -297,19 +297,19 @@ A: No. Instructions are for persistent standards that apply repeatedly. Document
 
 ## Common Pitfalls to Avoid
 
-- ❌ **Too generic**: "Write clean code" doesn't give Claude Code actionable guidance  
+- ❌ **Too generic**: "Write clean code" doesn't give Claude Code actionable guidance
   ✅ **Instead**: Provide specific patterns: "Extract functions longer than 20 lines into smaller, named functions"
 
-- ❌ **Too verbose**: Including entire documentation pages overwhelms the context window  
+- ❌ **Too verbose**: Including entire documentation pages overwhelms the context window
   ✅ **Instead**: Distill key patterns and link to full documentation
 
-- ❌ **Contradictory rules**: Different instructions suggesting opposite approaches  
+- ❌ **Contradictory rules**: Different instructions suggesting opposite approaches
   ✅ **Instead**: Design complementary instructions with clear scopes
 
-- ❌ **Outdated patterns**: Instructions referencing deprecated APIs or old versions  
+- ❌ **Outdated patterns**: Instructions referencing deprecated APIs or old versions
   ✅ **Instead**: Review and update instructions when dependencies change
 
-- ❌ **Missing scope**: Using `applyTo: '**'` for language-specific guidelines  
+- ❌ **Missing scope**: Using `applyTo: '**'` for language-specific guidelines
   ✅ **Instead**: Scope to relevant files: `applyTo: '**/*.py'` for Python-specific rules
 
 ## Next Steps

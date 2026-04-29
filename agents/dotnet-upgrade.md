@@ -1,8 +1,7 @@
 ---
-
 description: 'Perform janitorial tasks on C#/.NET code including cleanup, modernization, and tech debt remediation.'
-name: '.NET Upgrade'
-model: gpt-5.3-codex
+name: dotnet-upgrade
+model: sonnet
 tools: ['codebase', 'edit/editFiles', 'search', 'runCommands', 'runTasks', 'runTests', 'problems', 'changes', 'usages', 'findTestFiles', 'testFailure', 'terminalLastCommand', 'terminalSelection', 'web/fetch', 'microsoft.docs.mcp']
 permissionMode: default
 disallowedTools: []

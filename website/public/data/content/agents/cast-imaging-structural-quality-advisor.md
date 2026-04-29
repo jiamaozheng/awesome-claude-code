@@ -1,9 +1,8 @@
 ---
-
-name: 'CAST Imaging Structural Quality Advisor Agent'
-model: gpt-5.3-codex
+name: cast-imaging-structural-quality-advisor
+model: sonnet
 description: 'Specialized agent for identifying, analyzing, and providing remediation guidance for code quality issues using CAST Imaging'
-mcp-servers:
+mcpServers:
   imaging-structural-quality:
     type: 'http'
     url: 'https://castimaging.io/imaging/mcp/'

@@ -1,7 +1,6 @@
 ---
-
 name: reepl-linkedin
-model: gpt-5.3-codex
+model: sonnet
 description: "AI-powered LinkedIn content creation, scheduling, and analytics agent. Create posts, carousels, and manage your LinkedIn presence with GitHub Copilot."
 permissionMode: default
 disallowedTools: []

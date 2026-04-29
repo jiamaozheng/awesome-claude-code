@@ -1,7 +1,7 @@
 ---
-name: 'Accessibility Runtime Tester'
+name: accessibility-runtime-tester
 description: 'Runtime accessibility specialist for keyboard flows, focus management, dialog behavior, form errors, and evidence-backed WCAG validation in the browser.'
-model: GPT-5
+model: sonnet
 tools: ['codebase', 'search', 'fetch', 'findTestFiles', 'problems', 'runCommands', 'runTasks', 'runTests', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'openSimpleBrowser']
 permissionMode: default
 disallowedTools: []

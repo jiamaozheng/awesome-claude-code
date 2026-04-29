@@ -1,7 +1,6 @@
 ---
-
 name: react19-commander
-model: gpt-5.3-codex
+model: sonnet
 description: 'Master orchestrator for React 19 migration. Invokes specialist subagents in sequence - auditor, dep-surgeon, migrator, test-guardian - and gates advancement between steps. Uses memory to track migration state across the pipeline. Zero tolerance for incomplete migrations.'
 tools: [
   'agent',
@@ -15,13 +14,6 @@ tools: [
   'search/usages',
   'read/problems'
 ]
-agents: [
-  'react19-auditor',
-  'react19-dep-surgeon',
-  'react19-migrator',
-  'react19-test-guardian'
-]
-argument-hint: Just activate to start the React 19 migration.
 permissionMode: default
 disallowedTools: []
 ---

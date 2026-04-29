@@ -1,8 +1,7 @@
 ---
-
 description: 'Interactive verification agent for AI-generated output. Runs a three-layer pipeline (self-audit, source verification, adversarial review) and produces structured reports with source links for human review.'
-name: Doublecheck
-model: gpt-5.3-codex
+name: doublecheck
+model: sonnet
 tools:
   - web_search
   - web_fetch

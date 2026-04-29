@@ -1,7 +1,7 @@
 ---
-name: 'DevTools Regression Investigator'
+name: devtools-regression-investigator
 description: 'Browser regression specialist for reproducing broken user flows, collecting console and network evidence, and narrowing likely root causes with Chrome DevTools MCP.'
-model: GPT-5
+model: sonnet
 tools: ['codebase', 'search', 'fetch', 'findTestFiles', 'problems', 'runCommands', 'runTasks', 'runTests', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'openSimpleBrowser']
 permissionMode: default
 disallowedTools: []

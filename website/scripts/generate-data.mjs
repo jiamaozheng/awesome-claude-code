@@ -31,6 +31,19 @@ function titleFromFile(file) {
   return path.basename(file, path.extname(file));
 }
 
+function humanizeIdentifier(value) {
+  return String(value)
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+function displayTitle(value, fallback) {
+  const source = typeof value === "string" && value.trim() ? value.trim() : fallback;
+  return /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(source) ? humanizeIdentifier(source) : source;
+}
+
 function normalizeArray(value) {
   if (Array.isArray(value)) return value.filter(Boolean).map(String);
   if (typeof value === "string" && value.trim()) return [value.trim()];
@@ -65,7 +78,7 @@ async function buildAgents() {
 
     const stat = await fs.stat(file);
     items.push({
-      title: parsed.data.name || titleFromFile(file),
+      title: displayTitle(parsed.data.name, titleFromFile(file)),
       description: parsed.data.description || "",
       path: relToRepo(file),
       model: model || undefined,

@@ -1,7 +1,7 @@
 ---
-name: 'Salesforce Visualforce Development'
+name: salesforce-visualforce
 description: 'Implement Visualforce pages and controllers following Salesforce MVC architecture and best practices.'
-model: claude-3.5-sonnet
+model: sonnet
 tools: ['codebase', 'edit/editFiles', 'terminalCommand', 'search', 'githubRepo']
 permissionMode: default
 disallowedTools: []

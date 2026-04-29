@@ -1,11 +1,7 @@
 ---
-
 description: "TDD code implementation — features, bugs, refactoring. Never reviews own work."
 name: gem-implementer
-model: gpt-5.3-codex
-argument-hint: "Enter task_id, plan_id, plan_path, and task_definition with tech_stack to implement."
-disable-model-invocation: false
-user-invocable: false
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

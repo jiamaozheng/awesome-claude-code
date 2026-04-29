@@ -192,9 +192,9 @@ describe('UserService', () => {
     it('should return user when found', async () => {
       const user = await createUser({ name: 'Alice' });
       const service = new UserService();
-      
+
       const result = await service.getUserById(user.id);
-      
+
       expect(result).toEqual({
         id: user.id,
         name: 'Alice',
@@ -204,7 +204,7 @@ describe('UserService', () => {
 
     it('should throw NotFoundError when user does not exist', async () => {
       const service = new UserService();
-      
+
       await expect(service.getUserById('nonexistent'))
         .rejects.toThrow(NotFoundError);
     });
@@ -239,13 +239,13 @@ describe('UserService', () => {
 
   describe('getUserById', () => {
     it('should return user with all properties when found', async () => {
-      const user = await createUser({ 
+      const user = await createUser({
         name: 'Alice Johnson',
         email: 'alice@example.com'
       });
-      
+
       const result = await service.getUserById(user.id);
-      
+
       expect(result).toEqual({
         id: user.id,
         name: 'Alice Johnson',
@@ -270,9 +270,9 @@ describe('UserService', () => {
       const user = await createUser();
       const post1 = await createPost({ userId: user.id, title: 'First Post' });
       const post2 = await createPost({ userId: user.id, title: 'Second Post' });
-      
+
       const result = await service.getUserPosts(user.id);
-      
+
       expect(result).toHaveLength(2);
       expect(result[0]).toMatchObject({ title: 'First Post' });
       expect(result[1]).toMatchObject({ title: 'Second Post' });
@@ -280,9 +280,9 @@ describe('UserService', () => {
 
     it('should return empty array when user has no posts', async () => {
       const user = await createUser();
-      
+
       const result = await service.getUserPosts(user.id);
-      
+
       expect(result).toEqual([]);
     });
   });
@@ -328,7 +328,7 @@ resource "azurerm_storage_account" "data" {
 
 ### After: With Terraform Custom Agent
 
-Use a custom agent from the repository [`agents/terraform-azure-implement.agent.md`](https://github.com/github/awesome-copilot/blob/main/agents/terraform-azure-implement.agent.md) (click through to see full definition).
+Use a custom agent from the repository [`agents/terraform-azure-implement.agent.md`](https://github.com/jiamaozheng/awesome-claude-code/blob/main/agents/terraform-azure-implement.agent.md) (click through to see full definition).
 
 Now Claude Code has access to a custom agent that enforces your organization's Terraform best practices for Azure.
 

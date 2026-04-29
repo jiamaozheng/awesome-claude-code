@@ -5,14 +5,8 @@
   "author": {
     "name": "Awesome Copilot Community"
   },
-  "repository": "https://github.com/github/awesome-copilot",
+  "repository": "https://github.com/jiamaozheng/awesome-claude-code",
   "license": "MIT",
-  "keywords": [
-    "structured-autonomy",
-    "planning",
-    "implementation",
-    "workflows"
-  ],
   "skills": [
     "./skills/structured-autonomy-generate",
     "./skills/structured-autonomy-implement",

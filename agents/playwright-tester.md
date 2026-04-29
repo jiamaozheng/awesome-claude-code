@@ -1,8 +1,8 @@
 ---
 description: "Testing mode for Playwright tests"
-name: "Playwright Tester Mode"
+name: playwright-tester
 tools: ["changes", "codebase", "edit/editFiles", "fetch", "findTestFiles", "problems", "runCommands", "runTasks", "runTests", "search", "searchResults", "terminalLastCommand", "terminalSelection", "testFailure", "playwright"]
-model: Claude Sonnet 4
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

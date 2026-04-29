@@ -1,7 +1,7 @@
 ---
 description: 'Expert Shopify development assistant specializing in theme development, Liquid templating, app development, and Shopify APIs'
-name: 'Shopify Expert'
-model: GPT-4.1
+name: shopify-expert
+model: sonnet
 tools: ['codebase', 'terminalCommand', 'edit/editFiles', 'web/fetch', 'githubRepo', 'runTests', 'problems']
 permissionMode: default
 disallowedTools: []

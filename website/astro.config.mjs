@@ -45,7 +45,7 @@ export default defineConfig({
       customCss: ["./src/styles/starlight-overrides.css", "./src/styles/global.css"],
       editLink: {
         baseUrl:
-          "https://github.com/github/awesome-copilot/edit/staged/website/",
+          "https://github.com/jiamaozheng/awesome-claude-code/edit/main/website/",
       },
       sidebar: [
         {

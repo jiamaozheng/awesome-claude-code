@@ -1,8 +1,7 @@
 ---
-
 description: 'Debug your application to find and fix a bug'
-name: 'Debug Mode Instructions'
-model: gpt-5.3-codex
+name: debug
+model: sonnet
 tools: ['edit/editFiles', 'search/codebase', 'search/usages', 'execute/getTerminalOutput', 'execute/runInTerminal', 'read/terminalLastCommand', 'read/terminalSelection', 'read/problems', 'execute/testFailure', 'web/fetch', 'execute/runTests']
 permissionMode: default
 disallowedTools: []

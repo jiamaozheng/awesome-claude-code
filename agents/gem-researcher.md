@@ -1,11 +1,7 @@
 ---
-
 description: "Codebase exploration — patterns, dependencies, architecture discovery."
 name: gem-researcher
-model: gpt-5.3-codex
-argument-hint: "Enter plan_id, objective, focus_area (optional), complexity (simple|medium|complex), and task_clarifications array."
-disable-model-invocation: false
-user-invocable: false
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

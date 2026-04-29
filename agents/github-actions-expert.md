@@ -1,7 +1,6 @@
 ---
-
-name: 'GitHub Actions Expert'
-model: gpt-5.3-codex
+name: github-actions-expert
+model: sonnet
 description: 'GitHub Actions specialist focused on secure CI/CD workflows, action pinning, OIDC authentication, permissions least privilege, and supply-chain security'
 tools: ['github/*', 'search/codebase', 'edit/editFiles', 'execute/runInTerminal', 'read/readFile', 'search/fileSearch']
 permissionMode: default

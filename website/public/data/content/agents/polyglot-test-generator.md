@@ -1,8 +1,7 @@
 ---
-
 description: 'Orchestrates comprehensive test generation using Research-Plan-Implement pipeline. Use when asked to generate tests, write unit tests, improve test coverage, or add tests.'
-name: 'Polyglot Test Generator'
-model: gpt-5.3-codex
+name: polyglot-test-generator
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

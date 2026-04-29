@@ -1,7 +1,6 @@
 ---
-
-name: 'DevOps Expert'
-model: gpt-5.3-codex
+name: devops-expert
+model: sonnet
 description: 'DevOps specialist following the infinity loop principle (Plan → Code → Build → Test → Release → Deploy → Operate → Monitor) with focus on automation, collaboration, and continuous improvement'
 tools: ['codebase', 'edit/editFiles', 'terminalCommand', 'search', 'githubRepo', 'runCommands', 'runTasks']
 permissionMode: default

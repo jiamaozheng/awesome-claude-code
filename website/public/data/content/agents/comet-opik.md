@@ -1,10 +1,9 @@
 ---
-
-name: Comet Opik
-model: gpt-5.3-codex
+name: comet-opik
+model: sonnet
 description: Unified Comet Opik agent for instrumenting LLM apps, managing prompts/projects, auditing prompts, and investigating traces/metrics via the latest Opik MCP server.
 tools: ['read', 'search', 'edit', 'shell', 'opik/*']
-mcp-servers:
+mcpServers:
   opik:
     type: 'local'
     command: 'npx'

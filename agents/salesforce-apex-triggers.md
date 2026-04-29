@@ -1,7 +1,7 @@
 ---
-name: 'Salesforce Apex & Triggers Development'
+name: salesforce-apex-triggers
 description: 'Implement Salesforce business logic using Apex classes and triggers with production-quality code following Salesforce best practices.'
-model: claude-3.5-sonnet
+model: sonnet
 tools: ['codebase', 'edit/editFiles', 'terminalCommand', 'search', 'githubRepo']
 permissionMode: default
 disallowedTools: []

@@ -1,9 +1,7 @@
 ---
-
 description: "Cloud Agent to Turn a single new-feature request into a complete, issue-ready implementation plan without follow-up questions."
-name: "one-shot-feature-issue-planner"
-model: gpt-5.3-codex
-agent: agent
+name: one-shot-feature-issue-planner
+model: sonnet
 tools: ["codebase", "githubRepo", "search", "usages", "web/fetch", "findTestFiles"]
 permissionMode: default
 disallowedTools: []

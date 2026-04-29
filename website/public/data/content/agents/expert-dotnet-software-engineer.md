@@ -1,8 +1,7 @@
 ---
-
 description: "Provide expert .NET software engineering guidance using modern software design patterns."
-name: "Expert .NET software engineer mode instructions"
-model: gpt-5.3-codex
+name: expert-dotnet-software-engineer
+model: sonnet
 tools: ["changes", "codebase", "edit/editFiles", "extensions", "fetch", "findTestFiles", "githubRepo", "new", "openSimpleBrowser", "problems", "runCommands", "runNotebooks", "runTasks", "runTests", "search", "searchResults", "terminalLastCommand", "terminalSelection", "testFailure", "usages", "vscodeAPI", "microsoft.docs.mcp"]
 permissionMode: default
 disallowedTools: []

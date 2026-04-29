@@ -1,8 +1,7 @@
 ---
-
 description: "Systematically research and validate technical spike documents through exhaustive investigation and controlled experimentation."
-name: "Technical spike research mode"
-model: gpt-5.3-codex
+name: research-technical-spike
+model: sonnet
 tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'agent', 'todo']
 permissionMode: default
 disallowedTools: []

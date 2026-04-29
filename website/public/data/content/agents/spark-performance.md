@@ -1,7 +1,6 @@
 ---
-
-name: 'PySpark Expert Agent'
-model: gpt-5.3-codex
+name: spark-performance
+model: sonnet
 description: Diagnose PySpark performance bottlenecks, distributed execution pitfalls, and suggest Spark-native rewrites and safer distributed patterns (incl. mapInPandas guidance).
 permissionMode: default
 disallowedTools: []

@@ -1,7 +1,7 @@
 ---
 description: 'Expert assistant for Drupal development, architecture, and best practices using PHP 8.3+ and modern Drupal patterns'
-name: 'Drupal Expert'
-model: GPT-4.1
+name: drupal-expert
+model: sonnet
 tools: ['codebase', 'terminalCommand', 'edit/editFiles', 'web/fetch', 'githubRepo', 'runTests', 'problems']
 permissionMode: default
 disallowedTools: []

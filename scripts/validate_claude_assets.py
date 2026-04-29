@@ -26,6 +26,37 @@ from typing import Iterable, List, Tuple
 ROOT = Path(__file__).resolve().parents[1]
 
 LOWER_HYPHEN_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+CLAUDE_MODEL_RE = re.compile(r"^(inherit|sonnet|opus|haiku|claude-(?:sonnet|opus|haiku)-[A-Za-z0-9.-]+)$")
+PLACEHOLDER_RE = re.compile(
+    r"\$\{(?!\{|input:|openMarker|closeMarker|github\.workspace|[A-Z0-9_.-]+\})[^}]+\}"
+    r"|<[A-Z][A-Za-z0-9_\-]*>"
+)
+
+OFFICIAL_AGENT_KEYS = {
+    "name",
+    "description",
+    "tools",
+    "disallowedTools",
+    "model",
+    "permissionMode",
+    "maxTurns",
+    "skills",
+    "mcpServers",
+    "hooks",
+    "memory",
+    "background",
+    "effort",
+    "isolation",
+    "color",
+    "initialPrompt",
+}
+
+LEGACY_AGENT_KEY_WARNINGS = {
+    "argument-hint": "Legacy GitHub Copilot frontmatter key 'argument-hint'; Claude Code has no direct equivalent, so keep only if this repo intentionally preserves Copilot metadata",
+    "disable-model-invocation": "Legacy GitHub Copilot frontmatter key 'disable-model-invocation'; review whether this behavior needs a Claude Code replacement or should remain repo-specific metadata",
+    "mcp-servers": "Legacy GitHub Copilot frontmatter key 'mcp-servers'; official Claude Code docs use 'mcpServers'",
+    "user-invocable": "Legacy GitHub Copilot frontmatter key 'user-invocable'; review whether this should remain repo-specific metadata or be removed for Claude Code compatibility",
+}
 
 
 @dataclass
@@ -109,6 +140,20 @@ def key_value(frontmatter: str, key: str) -> str | None:
     return None
 
 
+def frontmatter_keys(frontmatter: str) -> list[str]:
+    keys: list[str] = []
+    for line in frontmatter.splitlines():
+        match = re.match(r"^([A-Za-z0-9_-]+)\s*:", line)
+        if match:
+            keys.append(match.group(1))
+    return keys
+
+
+def frontmatter_has_placeholders(frontmatter: str) -> bool:
+    sanitized = re.sub(r"\$\{\{[^\n]+?\}\}", "", frontmatter)
+    return PLACEHOLDER_RE.search(sanitized) is not None
+
+
 def validate_agents() -> List[Finding]:
     findings: List[Finding] = []
     for path in sorted((ROOT / "agents").glob("*.md")):
@@ -121,11 +166,33 @@ def validate_agents() -> List[Finding]:
         if not desc:
             findings.append(Finding("ERROR", rel(path), "Missing or empty frontmatter 'description'"))
 
-        # Recommended checks
-        if not key_exists(fm, "name"):
-            findings.append(Finding("WARN", rel(path), "Missing recommended frontmatter 'name'"))
+        name = key_value(fm, "name")
+        if not name:
+            findings.append(Finding("WARN", rel(path), "Missing frontmatter 'name'; official Claude Code subagents require a lowercase-hyphen identifier"))
+        else:
+            if not LOWER_HYPHEN_RE.match(name):
+                findings.append(Finding("WARN", rel(path), f"Agent 'name' should be a lowercase-hyphen identifier for Claude Code compatibility: {name}"))
+            if name != path.stem:
+                findings.append(Finding("WARN", rel(path), f"Agent 'name' does not match file name stem '{path.stem}'"))
+
+        if not LOWER_HYPHEN_RE.match(path.stem):
+            findings.append(Finding("WARN", rel(path), f"Agent file name should be lowercase-hyphen: {path.stem}"))
+
         if not key_exists(fm, "model"):
             findings.append(Finding("WARN", rel(path), "Missing recommended frontmatter 'model'"))
+        else:
+            model = key_value(fm, "model")
+            if model and not CLAUDE_MODEL_RE.match(model):
+                findings.append(Finding("WARN", rel(path), f"Model value is not in a standard Claude Code format (inherit/sonnet/opus/haiku/full claude-* id): {model}"))
+
+        if frontmatter_has_placeholders(fm):
+            findings.append(Finding("WARN", rel(path), "Frontmatter appears to contain unresolved template placeholders"))
+
+        for key in frontmatter_keys(fm):
+            if key in LEGACY_AGENT_KEY_WARNINGS:
+                findings.append(Finding("WARN", rel(path), LEGACY_AGENT_KEY_WARNINGS[key]))
+            elif key not in OFFICIAL_AGENT_KEYS:
+                findings.append(Finding("WARN", rel(path), f"Unrecognized agent frontmatter key for official Claude Code docs: {key}"))
 
     return findings
 
@@ -145,6 +212,8 @@ def validate_instructions() -> List[Finding]:
         # Claude-migrated rule uses paths (mapped from applyTo)
         if not key_exists(fm, "paths"):
             findings.append(Finding("ERROR", rel(path), "Missing required frontmatter 'paths'"))
+        if frontmatter_has_placeholders(fm):
+            findings.append(Finding("WARN", rel(path), "Frontmatter appears to contain unresolved template placeholders"))
 
     return findings
 
@@ -177,6 +246,8 @@ def validate_skills() -> List[Finding]:
         else:
             if len(desc) < 10 or len(desc) > 1024:
                 findings.append(Finding("WARN", rel(path), "description length should be 10-1024 characters"))
+        if frontmatter_has_placeholders(fm):
+            findings.append(Finding("WARN", rel(path), "Frontmatter appears to contain unresolved template placeholders"))
 
     return findings
 
@@ -202,6 +273,8 @@ def validate_hooks() -> List[Finding]:
                     findings.append(Finding("ERROR", rel(readme), "Missing or empty frontmatter 'name'"))
                 if not key_value(fm, "description"):
                     findings.append(Finding("ERROR", rel(readme), "Missing or empty frontmatter 'description'"))
+                if frontmatter_has_placeholders(fm):
+                    findings.append(Finding("WARN", rel(readme), "Frontmatter appears to contain unresolved template placeholders"))
 
         if not hooks_json.exists():
             findings.append(Finding("ERROR", rel(hooks_json), "Missing hooks.json"))
@@ -234,6 +307,10 @@ def validate_workflows() -> List[Finding]:
             findings.append(Finding("ERROR", rel(path), "Missing frontmatter 'on'"))
         if not key_exists(fm, "permissions"):
             findings.append(Finding("ERROR", rel(path), "Missing frontmatter 'permissions'"))
+        if not key_exists(fm, "safe-outputs"):
+            findings.append(Finding("WARN", rel(path), "Missing recommended frontmatter 'safe-outputs' for safer Claude Code workflow automation"))
+        if frontmatter_has_placeholders(fm):
+            findings.append(Finding("WARN", rel(path), "Frontmatter appears to contain unresolved template placeholders"))
 
     return findings
 

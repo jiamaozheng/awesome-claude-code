@@ -3,7 +3,6 @@ description: 'Best practices for applying Object-Oriented Programming (OOP) desi
 paths: '**/*.py, **/*.java, **/*.ts, **/*.js, **/*.cs'
 ---
 
-
 # Design Patterns for Object-Oriented Programming for Clean Code
 
 These instructions configure GitHub Copilot to prioritize Gang of Four (GoF) Design Patterns, SOLID principles, and clean Object-Oriented Programming (OOP) practices when generating or refactoring code.

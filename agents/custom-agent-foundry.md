@@ -1,8 +1,7 @@
 ---
 description: 'Expert at designing and creating VS Code custom agents with optimal configurations'
-name: Custom Agent Foundry
-argument-hint: Describe the agent role, purpose, and required capabilities
-model: Claude Sonnet 4.5
+name: custom-agent-foundry
+model: sonnet
 tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'agent', 'github/*', 'todo']
 permissionMode: default
 disallowedTools: []

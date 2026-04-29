@@ -64,7 +64,7 @@ The first three skills call the live Power Automate API. The monitoring and gove
 
 ## Source
 
-This plugin is part of [Awesome Copilot](https://github.com/github/awesome-copilot), a community-driven collection of GitHub Copilot extensions.
+This plugin is part of [Awesome Claude Code](https://github.com/jiamaozheng/awesome-claude-code), a community-driven collection of Claude Code extensions.
 
 Skills source: [ninihen1/power-automate-mcp-skills](https://github.com/ninihen1/power-automate-mcp-skills)
 

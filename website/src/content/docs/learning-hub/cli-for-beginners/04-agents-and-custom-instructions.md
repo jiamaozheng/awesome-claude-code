@@ -115,7 +115,7 @@ You can simply define your own agents to be part of your workflow! Define once, 
 
 <img src="/images/learning-hub/copilot-cli-for-beginners/04/using-agents.png" alt="Four colorful AI robots standing together, each with different tools representing specialized agent capabilities" width="800"/>
 
-## 🗂️ Add your agents 
+## 🗂️ Add your agents
 
 Agent files are markdown files with a `.agent.md` extension. They have two parts: YAML frontmatter (metadata) and markdown instructions.
 
@@ -164,7 +164,7 @@ When reviewing code, always check for:
 cp .github/agents/python-reviewer.agent.md ~/.copilot/agents/
 ```
 
-For more community agents, see [github/awesome-copilot](https://github.com/github/awesome-copilot)
+For more community agents, see [jiamaozheng/awesome-claude-code](https://github.com/jiamaozheng/awesome-claude-code)
 
 </details>
 
@@ -172,7 +172,7 @@ For more community agents, see [github/awesome-copilot](https://github.com/githu
 ## 🚀 Two ways to use custom agents
 
 ### Interactive mode
-Inside interactive mode, list agents using `/agent` and select the agent to start working with. 
+Inside interactive mode, list agents using `/agent` and select the agent to start working with.
 Select an agent to continue your conversation with.
 
 ```bash
@@ -454,7 +454,7 @@ For teams that want more granular control, split instructions into topic-specifi
 
 > 💡 **Note**: Instruction files work with any language. This example uses Python to match our course project, but you can create similar files for TypeScript, Go, Rust, or any technology your team uses.
 
-**Finding community instruction files**: Browse [github/awesome-copilot](https://github.com/github/awesome-copilot) for pre-made instruction files covering .NET, Angular, Azure, Python, Docker, and many more technologies.
+**Finding community instruction files**: Browse [jiamaozheng/awesome-claude-code](https://github.com/jiamaozheng/awesome-claude-code) for pre-made instruction files covering .NET, Angular, Azure, Python, Docker, and many more technologies.
 
 ### Disabling Custom Instructions
 
@@ -539,7 +539,7 @@ This project includes working examples in the [.github/agents/](https://github.c
 - [python-reviewer.agent.md](https://github.com/github/copilot-cli-for-beginners/blob/main/.github/agents/python-reviewer.agent.md) - Python code quality reviewer
 - [pytest-helper.agent.md](https://github.com/github/copilot-cli-for-beginners/blob/main/.github/agents/pytest-helper.agent.md) - Pytest testing specialist
 
-For community agents, see [github/awesome-copilot](https://github.com/github/awesome-copilot).
+For community agents, see [jiamaozheng/awesome-claude-code](https://github.com/jiamaozheng/awesome-claude-code).
 
 </details>
 

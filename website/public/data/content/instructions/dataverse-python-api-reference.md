@@ -2,6 +2,7 @@
 description: 'API reference for DataverseClient methods, signatures, and common usage patterns in the Dataverse SDK for Python.'
 paths: '**'
 ---
+
 # Dataverse SDK for Python — API Reference Guide
 
 ## DataverseClient Class

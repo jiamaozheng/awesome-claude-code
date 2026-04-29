@@ -1,8 +1,7 @@
 ---
-
 description: "Work with PostgreSQL databases using the PostgreSQL extension."
-name: "PostgreSQL Database Administrator"
-model: gpt-5.3-codex
+name: postgresql-dba
+model: sonnet
 tools: ["codebase", "edit/editFiles", "githubRepo", "extensions", "runCommands", "database", "pgsql_bulkLoadCsv", "pgsql_connect", "pgsql_describeCsv", "pgsql_disconnect", "pgsql_listDatabases", "pgsql_listServers", "pgsql_modifyDatabase", "pgsql_open_script", "pgsql_query", "pgsql_visualizeSchema"]
 permissionMode: default
 disallowedTools: []

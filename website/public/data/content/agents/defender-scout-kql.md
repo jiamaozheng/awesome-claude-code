@@ -1,9 +1,8 @@
 ---
-name: 'Defender Scout KQL'
+name: defender-scout-kql
 description: 'Generates, validates, and optimizes KQL queries for Microsoft Defender XDR Advanced Hunting across Endpoint, Identity, Office 365, Cloud Apps, and Identity.'
 tools: ['read', 'search']
-model: 'claude-sonnet-4-5'
-target: 'vscode'
+model: claude-sonnet-4-5
 permissionMode: default
 disallowedTools: []
 ---

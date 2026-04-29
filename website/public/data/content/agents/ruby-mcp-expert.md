@@ -1,7 +1,7 @@
 ---
 description: "Expert assistance for building Model Context Protocol servers in Ruby using the official MCP Ruby SDK gem with Rails integration."
-name: "Ruby MCP Expert"
-model: GPT-4.1
+name: ruby-mcp-expert
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

@@ -1,11 +1,7 @@
 ---
-
 description: "Technical documentation, README files, API docs, diagrams, walkthroughs."
 name: gem-documentation-writer
-model: gpt-5.3-codex
-argument-hint: "Enter task_id, plan_id, plan_path, task_definition with task_type (documentation|walkthrough|update), audience, coverage_matrix."
-disable-model-invocation: false
-user-invocable: false
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

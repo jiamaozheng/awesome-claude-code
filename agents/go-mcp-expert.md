@@ -1,7 +1,7 @@
 ---
-model: GPT-4.1
+model: sonnet
 description: "Expert assistant for building Model Context Protocol (MCP) servers in Go using the official SDK."
-name: "Go MCP Server Development Expert"
+name: go-mcp-expert
 permissionMode: default
 disallowedTools: []
 ---

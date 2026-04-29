@@ -40,7 +40,7 @@ except DataverseError as e:
     print(f"Source: {e.source}")             # "client" or "server"
     print(f"Is Transient: {e.is_transient}") # Can retry?
     print(f"Details: {e.details}")           # Additional context
-
+    
     # Convert to dictionary for logging
     error_dict = e.to_dict()
 ```
@@ -130,7 +130,7 @@ def create_with_retry(client, table_name, payload, max_retries=3):
                 time.sleep(wait_time)
             else:
                 raise
-
+    
     raise Exception(f"Failed after {max_retries} retries")
 ```
 
@@ -220,7 +220,7 @@ def should_retry(error: DataverseError) -> bool:
     """Determine if operation should be retried."""
     if not error.is_transient:
         return False
-
+    
     retryable_codes = {408, 429, 500, 502, 503, 504}
     return error.status_code in retryable_codes
 
@@ -257,9 +257,9 @@ def log_error_for_support(error: DataverseError):
         "is_transient": error.is_transient,
         "details": error.details
     }
-
+    
     print(json.dumps(error_info, indent=2))
-
+    
     # Save to log file or send to monitoring service
     return error_info
 ```
@@ -273,7 +273,7 @@ def bulk_create_with_error_tracking(client, table_name, payloads):
         "succeeded": [],
         "failed": []
     }
-
+    
     for idx, payload in enumerate(payloads):
         try:
             record_ids = client.create(table_name, payload)
@@ -291,7 +291,7 @@ def bulk_create_with_error_tracking(client, table_name, payloads):
                     "status": e.status_code
                 }
             })
-
+    
     return results
 ```
 
@@ -355,10 +355,10 @@ except DataverseError as e:
     if e.details and isinstance(e.details, dict):
         error_code = e.details.get('error', {}).get('code')
         error_message = e.details.get('error', {}).get('message')
-
+        
         print(f"Error Code: {error_code}")
         print(f"Error Message: {error_message}")
-
+        
         # Some errors include nested details
         if 'error' in e.details and 'details' in e.details['error']:
             for detail in e.details['error']['details']:
@@ -489,7 +489,7 @@ from datetime import datetime
 
 class DataverseErrorHandler:
     """Centralized error handling and logging."""
-
+    
     def __init__(self, log_file="dataverse_errors.log"):
         self.logger = logging.getLogger("DataverseSDK")
         handler = logging.FileHandler(log_file)
@@ -499,7 +499,7 @@ class DataverseErrorHandler:
         handler.setFormatter(formatter)
         self.logger.addHandler(handler)
         self.logger.setLevel(logging.ERROR)
-
+    
     def log_error(self, error: DataverseError, context: str = ""):
         """Log error with context for debugging."""
         error_record = {
@@ -507,9 +507,9 @@ class DataverseErrorHandler:
             "context": context,
             "error": error.to_dict()
         }
-
+        
         self.logger.error(json.dumps(error_record, indent=2))
-
+    
     def is_retryable(self, error: DataverseError) -> bool:
         """Check if error should be retried."""
         return error.is_transient and error.status_code in {408, 429, 500, 502, 503, 504}

@@ -1,7 +1,6 @@
 ---
-
-name: 'Terraform IaC Reviewer'
-model: gpt-5.3-codex
+name: terraform-iac-reviewer
+model: sonnet
 description: 'Terraform-focused agent that reviews and creates safer IaC changes with emphasis on state safety, least privilege, module patterns, drift detection, and plan/apply discipline'
 tools: ['codebase', 'edit/editFiles', 'terminalCommand', 'search', 'githubRepo']
 permissionMode: default

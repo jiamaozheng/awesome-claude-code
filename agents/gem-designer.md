@@ -1,11 +1,7 @@
 ---
-
 description: "UI/UX design specialist — layouts, themes, color schemes, design systems, accessibility."
 name: gem-designer
-model: gpt-5.3-codex
-argument-hint: "Enter task_id, plan_id (optional), plan_path (optional), mode (create|validate), scope (component|page|layout|design_system), target, context (framework, library), and constraints (responsive, accessible, dark_mode)."
-disable-model-invocation: false
-user-invocable: false
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

@@ -1,15 +1,804 @@
 {
   "items": [
     {
-      "title": ".NET Self-Learning Architect",
+      "title": "Accessibility",
+      "description": "Expert assistant for web accessibility (WCAG 2.1/2.2), inclusive UX, and a11y testing",
+      "path": "agents/accessibility.md",
+      "model": "sonnet",
+      "tools": [
+        "changes",
+        "codebase",
+        "edit/editFiles",
+        "extensions",
+        "web/fetch",
+        "findTestFiles",
+        "githubRepo",
+        "new",
+        "openSimpleBrowser",
+        "problems",
+        "runCommands",
+        "runTasks",
+        "runTests",
+        "search",
+        "searchResults",
+        "terminalLastCommand",
+        "terminalSelection",
+        "testFailure",
+        "usages",
+        "vscodeAPI"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.517Z"
+    },
+    {
+      "title": "Accessibility Runtime Tester",
+      "description": "Runtime accessibility specialist for keyboard flows, focus management, dialog behavior, form errors, and evidence-backed WCAG validation in the browser.",
+      "path": "agents/accessibility-runtime-tester.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "search",
+        "fetch",
+        "findTestFiles",
+        "problems",
+        "runCommands",
+        "runTasks",
+        "runTests",
+        "terminalLastCommand",
+        "terminalSelection",
+        "testFailure",
+        "openSimpleBrowser"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.517Z"
+    },
+    {
+      "title": "Address Comments",
+      "description": "Address PR comments",
+      "path": "agents/address-comments.md",
+      "model": "sonnet",
+      "tools": [
+        "changes",
+        "codebase",
+        "editFiles",
+        "extensions",
+        "fetch",
+        "findTestFiles",
+        "githubRepo",
+        "new",
+        "openSimpleBrowser",
+        "problems",
+        "runCommands",
+        "runTasks",
+        "runTests",
+        "search",
+        "searchResults",
+        "terminalLastCommand",
+        "terminalSelection",
+        "testFailure",
+        "usages",
+        "vscodeAPI",
+        "microsoft.docs.mcp",
+        "github"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.518Z"
+    },
+    {
+      "title": "Adr Generator",
+      "description": "Expert agent for creating comprehensive Architectural Decision Records (ADRs) with structured formatting optimized for AI consumption and human readability.",
+      "path": "agents/adr-generator.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.518Z"
+    },
+    {
+      "title": "Aem Frontend Specialist",
+      "description": "Expert assistant for developing AEM components using HTL, Tailwind CSS, and Figma-to-code workflows with design system integration",
+      "path": "agents/aem-frontend-specialist.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "edit/editFiles",
+        "web/fetch",
+        "githubRepo",
+        "figma-dev-mode-mcp-server"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.519Z"
+    },
+    {
+      "title": "Agent Governance Reviewer",
+      "description": "AI agent governance expert that reviews code for safety issues, missing governance controls, and helps implement policy enforcement, trust scoring, and audit trails in agent systems.",
+      "path": "agents/agent-governance-reviewer.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "terminalCommand"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.519Z"
+    },
+    {
+      "title": "Amplitude Experiment Implementation",
+      "description": "This custom agent uses Amplitude's MCP tools to deploy new experiments inside of Amplitude, enabling seamless variant testing capabilities and rollout of product features.",
+      "path": "agents/amplitude-experiment-implementation.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.520Z"
+    },
+    {
+      "title": "Api Architect",
+      "description": "Your role is that of an API architect. Help mentor the engineer by providing guidance, support, and working code.",
+      "path": "agents/api-architect.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.520Z"
+    },
+    {
+      "title": "Apify Integration Expert",
+      "description": "Expert agent for integrating Apify Actors into codebases. Handles Actor selection, workflow design, implementation across JavaScript/TypeScript and Python, testing, and production-ready deployment.",
+      "path": "agents/apify-integration-expert.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.521Z"
+    },
+    {
+      "title": "Arch",
+      "description": "Expert in modern architecture design patterns, NFR requirements, and creating comprehensive architectural diagrams and documentation",
+      "path": "agents/arch.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.522Z"
+    },
+    {
+      "title": "Arch Linux Expert",
+      "description": "Arch Linux specialist focused on pacman, rolling-release maintenance, and Arch-centric system administration workflows.",
+      "path": "agents/arch-linux-expert.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "search",
+        "terminalCommand",
+        "runCommands",
+        "edit/editFiles"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.521Z"
+    },
+    {
+      "title": "Arm Migration",
+      "description": "Arm Cloud Migration Assistant accelerates moving x86 workloads to Arm infrastructure. It scans the repository for architecture assumptions, portability issues, container base image and dependency incompatibilities, and recommends Arm-optimized changes. It can drive multi-arch container builds, validate performance, and guide optimization, enabling smooth cross-platform deployment directly inside GitHub.",
+      "path": "agents/arm-migration.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.522Z"
+    },
+    {
+      "title": "Atlassian Requirements To Jira",
+      "description": "Transform requirements documents into structured Jira epics and user stories with intelligent duplicate detection, change management, and user-approved creation workflow.",
+      "path": "agents/atlassian-requirements-to-jira.md",
+      "model": "sonnet",
+      "tools": [
+        "atlassian"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.522Z"
+    },
+    {
+      "title": "Azure Iac Exporter",
+      "description": "Export existing Azure resources to Infrastructure as Code templates via Azure Resource Graph analysis, Azure Resource Manager API calls, and azure-iac-generator integration. Use this skill when the user asks to export, convert, migrate, or extract existing Azure resources to IaC templates (Bicep, ARM Templates, Terraform, Pulumi).",
+      "path": "agents/azure-iac-exporter.md",
+      "model": "sonnet",
+      "tools": [
+        "read",
+        "edit",
+        "search",
+        "web",
+        "execute",
+        "todo",
+        "runSubagent",
+        "azure-mcp/*",
+        "ms-azuretools.vscode-azure-github-copilot/azure_query_azure_resource_graph"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.523Z"
+    },
+    {
+      "title": "Azure Iac Generator",
+      "description": "Central hub for generating Infrastructure as Code (Bicep, ARM, Terraform, Pulumi) with format-specific validation and best practices. Use this skill when the user asks to generate, create, write, or build infrastructure code, deployment code, or IaC templates in any format (Bicep, ARM Templates, Terraform, Pulumi).",
+      "path": "agents/azure-iac-generator.md",
+      "model": "sonnet",
+      "tools": [
+        "vscode",
+        "execute",
+        "read",
+        "edit",
+        "search",
+        "web",
+        "agent",
+        "azure-mcp/azureterraformbestpractices",
+        "azure-mcp/bicepschema",
+        "azure-mcp/search",
+        "pulumi-mcp/get-type",
+        "runSubagent"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.523Z"
+    },
+    {
+      "title": "Azure Logic Apps Expert",
+      "description": "Expert guidance for Azure Logic Apps development focusing on workflow design, integration patterns, and JSON-based Workflow Definition Language.",
+      "path": "agents/azure-logic-apps-expert.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "changes",
+        "edit/editFiles",
+        "search",
+        "runCommands",
+        "microsoft.docs.mcp",
+        "azure_get_code_gen_best_practices",
+        "azure_query_learn"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.523Z"
+    },
+    {
+      "title": "Azure Policy Analyzer",
+      "description": "Analyze Azure Policy compliance posture (NIST SP 800-53, MCSB, CIS, ISO 27001, PCI DSS, SOC 2), auto-discover scope, and return a structured single-pass risk report with evidence and remediation commands.",
+      "path": "agents/azure-policy-analyzer.md",
+      "model": "sonnet",
+      "tools": [
+        "read",
+        "edit",
+        "search",
+        "execute",
+        "web",
+        "todo",
+        "azure-mcp/*",
+        "ms-azuretools.vscode-azure-github-copilot/azure_query_azure_resource_graph"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.524Z"
+    },
+    {
+      "title": "Azure Principal Architect",
+      "description": "Provide expert Azure Principal Architect guidance using Azure Well-Architected Framework principles and Microsoft best practices.",
+      "path": "agents/azure-principal-architect.md",
+      "model": "sonnet",
+      "tools": [
+        "changes",
+        "codebase",
+        "edit/editFiles",
+        "extensions",
+        "fetch",
+        "findTestFiles",
+        "githubRepo",
+        "new",
+        "openSimpleBrowser",
+        "problems",
+        "runCommands",
+        "runTasks",
+        "runTests",
+        "search",
+        "searchResults",
+        "terminalLastCommand",
+        "terminalSelection",
+        "testFailure",
+        "usages",
+        "vscodeAPI",
+        "microsoft.docs.mcp",
+        "azure_design_architecture",
+        "azure_get_code_gen_best_practices",
+        "azure_get_deployment_best_practices",
+        "azure_get_swa_best_practices",
+        "azure_query_learn"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.524Z"
+    },
+    {
+      "title": "Azure Saas Architect",
+      "description": "Provide expert Azure SaaS Architect guidance focusing on multitenant applications using Azure Well-Architected SaaS principles and Microsoft best practices.",
+      "path": "agents/azure-saas-architect.md",
+      "model": "sonnet",
+      "tools": [
+        "changes",
+        "search/codebase",
+        "edit/editFiles",
+        "extensions",
+        "fetch",
+        "findTestFiles",
+        "githubRepo",
+        "new",
+        "openSimpleBrowser",
+        "problems",
+        "runCommands",
+        "runTasks",
+        "runTests",
+        "search",
+        "search/searchResults",
+        "runCommands/terminalLastCommand",
+        "runCommands/terminalSelection",
+        "testFailure",
+        "usages",
+        "vscodeAPI",
+        "microsoft.docs.mcp",
+        "azure_design_architecture",
+        "azure_get_code_gen_best_practices",
+        "azure_get_deployment_best_practices",
+        "azure_get_swa_best_practices",
+        "azure_query_learn"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.525Z"
+    },
+    {
+      "title": "Azure Verified Modules Bicep",
+      "description": "Create, update, or review Azure IaC in Bicep using Azure Verified Modules (AVM).",
+      "path": "agents/azure-verified-modules-bicep.md",
+      "model": "sonnet",
+      "tools": [
+        "changes",
+        "codebase",
+        "edit/editFiles",
+        "extensions",
+        "fetch",
+        "findTestFiles",
+        "githubRepo",
+        "new",
+        "openSimpleBrowser",
+        "problems",
+        "runCommands",
+        "runTasks",
+        "runTests",
+        "search",
+        "searchResults",
+        "terminalLastCommand",
+        "terminalSelection",
+        "testFailure",
+        "usages",
+        "vscodeAPI",
+        "microsoft.docs.mcp",
+        "azure_get_deployment_best_practices",
+        "azure_get_schema_for_Bicep"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.525Z"
+    },
+    {
+      "title": "Azure Verified Modules Terraform",
+      "description": "Create, update, or review Azure IaC in Terraform using Azure Verified Modules (AVM).",
+      "path": "agents/azure-verified-modules-terraform.md",
+      "model": "sonnet",
+      "tools": [
+        "changes",
+        "codebase",
+        "edit/editFiles",
+        "extensions",
+        "fetch",
+        "findTestFiles",
+        "githubRepo",
+        "new",
+        "openSimpleBrowser",
+        "problems",
+        "runCommands",
+        "runTasks",
+        "runTests",
+        "search",
+        "searchResults",
+        "terminalLastCommand",
+        "terminalSelection",
+        "testFailure",
+        "usages",
+        "vscodeAPI",
+        "microsoft.docs.mcp",
+        "azure_get_deployment_best_practices",
+        "azure_get_schema_for_Bicep"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.526Z"
+    },
+    {
+      "title": "Bicep Implement",
+      "description": "Act as an Azure Bicep Infrastructure as Code coding specialist that creates Bicep templates.",
+      "path": "agents/bicep-implement.md",
+      "model": "sonnet",
+      "tools": [
+        "edit/editFiles",
+        "web/fetch",
+        "runCommands",
+        "terminalLastCommand",
+        "get_bicep_best_practices",
+        "azure_get_azure_verified_module",
+        "todos"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.526Z"
+    },
+    {
+      "title": "Bicep Plan",
+      "description": "Act as implementation planner for your Azure Bicep Infrastructure as Code task.",
+      "path": "agents/bicep-plan.md",
+      "model": "sonnet",
+      "tools": [
+        "edit/editFiles",
+        "web/fetch",
+        "microsoft-docs",
+        "azure_design_architecture",
+        "get_bicep_best_practices",
+        "bestpractices",
+        "bicepschema",
+        "azure_get_azure_verified_module",
+        "todos"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.526Z"
+    },
+    {
+      "title": "Blueprint Mode",
+      "description": "Executes structured workflows (Debug, Express, Main, Loop) with strict correctness and maintainability. Enforces an improved tool usage policy, never assumes facts, prioritizes reproducible solutions, self-correction, and edge-case handling.",
+      "path": "agents/blueprint-mode.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.527Z"
+    },
+    {
+      "title": "Cast Imaging Impact Analysis",
+      "description": "Specialized agent for comprehensive change impact assessment and risk analysis in software systems using CAST Imaging",
+      "path": "agents/cast-imaging-impact-analysis.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.527Z"
+    },
+    {
+      "title": "Cast Imaging Software Discovery",
+      "description": "Specialized agent for comprehensive software application discovery and architectural mapping through static code analysis using CAST Imaging",
+      "path": "agents/cast-imaging-software-discovery.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.527Z"
+    },
+    {
+      "title": "Cast Imaging Structural Quality Advisor",
+      "description": "Specialized agent for identifying, analyzing, and providing remediation guidance for code quality issues using CAST Imaging",
+      "path": "agents/cast-imaging-structural-quality-advisor.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.528Z"
+    },
+    {
+      "title": "Centos Linux Expert",
+      "description": "CentOS (Stream/Legacy) Linux specialist focused on RHEL-compatible administration, yum/dnf workflows, and enterprise hardening.",
+      "path": "agents/centos-linux-expert.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "search",
+        "terminalCommand",
+        "runCommands",
+        "edit/editFiles"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.528Z"
+    },
+    {
+      "title": "Clojure Interactive Programming",
+      "description": "Expert Clojure pair programmer with REPL-first methodology, architectural oversight, and interactive problem-solving. Enforces quality standards, prevents workarounds, and develops solutions incrementally through live REPL evaluation before file modifications.",
+      "path": "agents/clojure-interactive-programming.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.528Z"
+    },
+    {
+      "title": "Code Tour",
+      "description": "Expert agent for creating and maintaining VSCode CodeTour files with comprehensive schema support and best practices",
+      "path": "agents/code-tour.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.528Z"
+    },
+    {
+      "title": "Comet Opik",
+      "description": "Unified Comet Opik agent for instrumenting LLM apps, managing prompts/projects, auditing prompts, and investigating traces/metrics via the latest Opik MCP server.",
+      "path": "agents/comet-opik.md",
+      "model": "sonnet",
+      "tools": [
+        "read",
+        "search",
+        "edit",
+        "shell",
+        "opik/*"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.529Z"
+    },
+    {
+      "title": "Context Architect",
+      "description": "An agent that helps plan and execute multi-file changes by identifying relevant context and dependencies",
+      "path": "agents/context-architect.md",
+      "model": "sonnet",
+      "tools": [
+        "search/codebase",
+        "search/usages",
+        "read/problems",
+        "read/readFile",
+        "edit/editFiles",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput",
+        "web/fetch"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.529Z"
+    },
+    {
+      "title": "Context7",
+      "description": "Expert in latest library versions, best practices, and correct syntax using up-to-date documentation",
+      "path": "agents/context7.md",
+      "model": "sonnet",
+      "tools": [
+        "read",
+        "search",
+        "web",
+        "context7/*",
+        "agent/runSubagent"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:21:32.205Z"
+    },
+    {
+      "title": "Critical Thinking",
+      "description": "Challenge assumptions and encourage critical thinking to ensure the best possible solution and outcomes.",
+      "path": "agents/critical-thinking.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "extensions",
+        "web/fetch",
+        "findTestFiles",
+        "githubRepo",
+        "problems",
+        "search",
+        "searchResults",
+        "usages"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.530Z"
+    },
+    {
+      "title": "Csharp Dotnet Janitor",
+      "description": "Perform janitorial tasks on C#/.NET code including cleanup, modernization, and tech debt remediation.",
+      "path": "agents/csharp-dotnet-janitor.md",
+      "model": "sonnet",
+      "tools": [
+        "vscode/extensions",
+        "vscode/getProjectSetupInfo",
+        "vscode/installExtension",
+        "vscode/newWorkspace",
+        "vscode/runCommand",
+        "vscode/vscodeAPI",
+        "execute/getTerminalOutput",
+        "execute/runTask",
+        "execute/createAndRunTask",
+        "execute/runTests",
+        "execute/runInTerminal",
+        "execute/testFailure",
+        "read/terminalSelection",
+        "read/terminalLastCommand",
+        "read/getTaskOutput",
+        "read/problems",
+        "read/readFile",
+        "github/*",
+        "microsoft.docs.mcp/*",
+        "edit/editFiles",
+        "search",
+        "web"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.530Z"
+    },
+    {
+      "title": "Csharp Expert",
+      "description": "An agent designed to assist with software development tasks for .NET projects.",
+      "path": "agents/csharp-expert.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.530Z"
+    },
+    {
+      "title": "Csharp Mcp Expert",
+      "description": "Expert assistant for developing Model Context Protocol (MCP) servers in C#",
+      "path": "agents/csharp-mcp-expert.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.530Z"
+    },
+    {
+      "title": "Custom Agent Foundry",
+      "description": "Expert at designing and creating VS Code custom agents with optimal configurations",
+      "path": "agents/custom-agent-foundry.md",
+      "model": "sonnet",
+      "tools": [
+        "vscode",
+        "execute",
+        "read",
+        "edit",
+        "search",
+        "web",
+        "agent",
+        "github/*",
+        "todo"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.531Z"
+    },
+    {
+      "title": "Debian Linux Expert",
+      "description": "Debian Linux specialist focused on stable system administration, apt-based package management, and Debian policy-aligned practices.",
+      "path": "agents/debian-linux-expert.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "search",
+        "terminalCommand",
+        "runCommands",
+        "edit/editFiles"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.531Z"
+    },
+    {
+      "title": "Debug",
+      "description": "Debug your application to find and fix a bug",
+      "path": "agents/debug.md",
+      "model": "sonnet",
+      "tools": [
+        "edit/editFiles",
+        "search/codebase",
+        "search/usages",
+        "execute/getTerminalOutput",
+        "execute/runInTerminal",
+        "read/terminalLastCommand",
+        "read/terminalSelection",
+        "read/problems",
+        "execute/testFailure",
+        "web/fetch",
+        "execute/runTests"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.531Z"
+    },
+    {
+      "title": "Declarative Agents Architect",
+      "description": "Expert in Microsoft 365 declarative agent architecture, TypeSpec workflows, and v1.5 schema-compliant implementation.",
+      "path": "agents/declarative-agents-architect.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.532Z"
+    },
+    {
+      "title": "Defender Scout Kql",
+      "description": "Generates, validates, and optimizes KQL queries for Microsoft Defender XDR Advanced Hunting across Endpoint, Identity, Office 365, Cloud Apps, and Identity.",
+      "path": "agents/defender-scout-kql.md",
+      "model": "claude-sonnet-4-5",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.532Z"
+    },
+    {
+      "title": "Demonstrate Understanding",
+      "description": "Validate user understanding of code, design patterns, and implementation details through guided questioning.",
+      "path": "agents/demonstrate-understanding.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "web/fetch",
+        "findTestFiles",
+        "githubRepo",
+        "search",
+        "usages"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.532Z"
+    },
+    {
+      "title": "Devils Advocate",
+      "description": "I play the devil's advocate to challenge and stress-test your ideas by finding flaws, risks, and edge cases",
+      "path": "agents/devils-advocate.md",
+      "model": "sonnet",
+      "tools": [
+        "read",
+        "search",
+        "web"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.533Z"
+    },
+    {
+      "title": "Devops Expert",
+      "description": "DevOps specialist following the infinity loop principle (Plan → Code → Build → Test → Release → Deploy → Operate → Monitor) with focus on automation, collaboration, and continuous improvement",
+      "path": "agents/devops-expert.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "edit/editFiles",
+        "terminalCommand",
+        "search",
+        "githubRepo",
+        "runCommands",
+        "runTasks"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.533Z"
+    },
+    {
+      "title": "Devtools Regression Investigator",
+      "description": "Browser regression specialist for reproducing broken user flows, collecting console and network evidence, and narrowing likely root causes with Chrome DevTools MCP.",
+      "path": "agents/devtools-regression-investigator.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "search",
+        "fetch",
+        "findTestFiles",
+        "problems",
+        "runCommands",
+        "runTasks",
+        "runTests",
+        "terminalLastCommand",
+        "terminalSelection",
+        "testFailure",
+        "openSimpleBrowser"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.533Z"
+    },
+    {
+      "title": "Diffblue Cover",
+      "description": "Expert agent for creating unit tests for java applications using Diffblue Cover.",
+      "path": "agents/diffblue-cover.md",
+      "model": "sonnet",
+      "tools": [
+        "DiffblueCover/*"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.533Z"
+    },
+    {
+      "title": "Dotnet Maui",
+      "description": "Support development of .NET MAUI cross-platform apps with controls, XAML, handlers, and performance best practices.",
+      "path": "agents/dotnet-maui.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.534Z"
+    },
+    {
+      "title": "Dotnet Self Learning Architect",
       "description": "Senior .NET architect for complex delivery: designs .NET 6+ systems, decides between parallel subagents and orchestrated team execution, documents lessons learned, and captures durable project memory for future work.",
       "path": "agents/dotnet-self-learning-architect.md",
-      "model": [
-        "GPT-5.3-Codex",
-        "Claude Sonnet 4.6 (copilot)",
-        "Claude Opus 4.6 (copilot)",
-        "Claude Haiku 4.5 (copilot)"
-      ],
+      "model": "sonnet",
       "tools": [
         "vscode/getProjectSetupInfo",
         "vscode/installExtension",
@@ -45,13 +834,13 @@
         "ms-python.python/configurePythonEnvironment"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.242Z"
+      "lastUpdated": "2026-04-29T17:20:15.534Z"
     },
     {
-      "title": ".NET Upgrade",
+      "title": "Dotnet Upgrade",
       "description": "Perform janitorial tasks on C#/.NET code including cleanup, modernization, and tech debt remediation.",
       "path": "agents/dotnet-upgrade.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -70,854 +859,22 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.152Z"
-    },
-    {
-      "title": "Accessibility Expert",
-      "description": "Expert assistant for web accessibility (WCAG 2.1/2.2), inclusive UX, and a11y testing",
-      "path": "agents/accessibility.md",
-      "model": "GPT-4.1",
-      "tools": [
-        "changes",
-        "codebase",
-        "edit/editFiles",
-        "extensions",
-        "web/fetch",
-        "findTestFiles",
-        "githubRepo",
-        "new",
-        "openSimpleBrowser",
-        "problems",
-        "runCommands",
-        "runTasks",
-        "runTests",
-        "search",
-        "searchResults",
-        "terminalLastCommand",
-        "terminalSelection",
-        "testFailure",
-        "usages",
-        "vscodeAPI"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.523Z"
-    },
-    {
-      "title": "Accessibility Runtime Tester",
-      "description": "Runtime accessibility specialist for keyboard flows, focus management, dialog behavior, form errors, and evidence-backed WCAG validation in the browser.",
-      "path": "agents/accessibility-runtime-tester.md",
-      "model": "GPT-5",
-      "tools": [
-        "codebase",
-        "search",
-        "fetch",
-        "findTestFiles",
-        "problems",
-        "runCommands",
-        "runTasks",
-        "runTests",
-        "terminalLastCommand",
-        "terminalSelection",
-        "testFailure",
-        "openSimpleBrowser"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.351Z"
-    },
-    {
-      "title": "ADR Generator",
-      "description": "Expert agent for creating comprehensive Architectural Decision Records (ADRs) with structured formatting optimized for AI consumption and human readability.",
-      "path": "agents/adr-generator.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.196Z"
-    },
-    {
-      "title": "AEM Front-End Specialist",
-      "description": "Expert assistant for developing AEM components using HTL, Tailwind CSS, and Figma-to-code workflows with design system integration",
-      "path": "agents/aem-frontend-specialist.md",
-      "model": "GPT-4.1",
-      "tools": [
-        "codebase",
-        "edit/editFiles",
-        "web/fetch",
-        "githubRepo",
-        "figma-dev-mode-mcp-server"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.282Z"
-    },
-    {
-      "title": "Agent Governance Reviewer",
-      "description": "AI agent governance expert that reviews code for safety issues, missing governance controls, and helps implement policy enforcement, trust scoring, and audit trails in agent systems.",
-      "path": "agents/agent-governance-reviewer.md",
-      "model": "gpt-4o",
-      "tools": [
-        "codebase",
-        "terminalCommand"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.572Z"
-    },
-    {
-      "title": "Amplitude Experiment Implementation",
-      "description": "This custom agent uses Amplitude's MCP tools to deploy new experiments inside of Amplitude, enabling seamless variant testing capabilities and rollout of product features.",
-      "path": "agents/amplitude-experiment-implementation.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.160Z"
-    },
-    {
-      "title": "API Architect",
-      "description": "Your role is that of an API architect. Help mentor the engineer by providing guidance, support, and working code.",
-      "path": "agents/api-architect.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.188Z"
-    },
-    {
-      "title": "apify-integration-expert",
-      "description": "Expert agent for integrating Apify Actors into codebases. Handles Actor selection, workflow design, implementation across JavaScript/TypeScript and Python, testing, and production-ready deployment.",
-      "path": "agents/apify-integration-expert.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.172Z"
-    },
-    {
-      "title": "Arch Linux Expert",
-      "description": "Arch Linux specialist focused on pacman, rolling-release maintenance, and Arch-centric system administration workflows.",
-      "path": "agents/arch-linux-expert.md",
-      "model": "GPT-5",
-      "tools": [
-        "codebase",
-        "search",
-        "terminalCommand",
-        "runCommands",
-        "edit/editFiles"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.977Z"
-    },
-    {
-      "title": "arm-migration-agent",
-      "description": "Arm Cloud Migration Assistant accelerates moving x86 workloads to Arm infrastructure. It scans the repository for architecture assumptions, portability issues, container base image and dependency incompatibilities, and recommends Arm-optimized changes. It can drive multi-arch container builds, validate performance, and guide optimization, enabling smooth cross-platform deployment directly inside GitHub.",
-      "path": "agents/arm-migration.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.176Z"
-    },
-    {
-      "title": "Atlassian Requirements to Jira",
-      "description": "Transform requirements documents into structured Jira epics and user stories with intelligent duplicate detection, change management, and user-approved creation workflow.",
-      "path": "agents/atlassian-requirements-to-jira.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "atlassian"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.188Z"
-    },
-    {
-      "title": "Azure AVM Bicep mode",
-      "description": "Create, update, or review Azure IaC in Bicep using Azure Verified Modules (AVM).",
-      "path": "agents/azure-verified-modules-bicep.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "changes",
-        "codebase",
-        "edit/editFiles",
-        "extensions",
-        "fetch",
-        "findTestFiles",
-        "githubRepo",
-        "new",
-        "openSimpleBrowser",
-        "problems",
-        "runCommands",
-        "runTasks",
-        "runTests",
-        "search",
-        "searchResults",
-        "terminalLastCommand",
-        "terminalSelection",
-        "testFailure",
-        "usages",
-        "vscodeAPI",
-        "microsoft.docs.mcp",
-        "azure_get_deployment_best_practices",
-        "azure_get_schema_for_Bicep"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.178Z"
-    },
-    {
-      "title": "Azure AVM Terraform mode",
-      "description": "Create, update, or review Azure IaC in Terraform using Azure Verified Modules (AVM).",
-      "path": "agents/azure-verified-modules-terraform.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "changes",
-        "codebase",
-        "edit/editFiles",
-        "extensions",
-        "fetch",
-        "findTestFiles",
-        "githubRepo",
-        "new",
-        "openSimpleBrowser",
-        "problems",
-        "runCommands",
-        "runTasks",
-        "runTests",
-        "search",
-        "searchResults",
-        "terminalLastCommand",
-        "terminalSelection",
-        "testFailure",
-        "usages",
-        "vscodeAPI",
-        "microsoft.docs.mcp",
-        "azure_get_deployment_best_practices",
-        "azure_get_schema_for_Bicep"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.186Z"
-    },
-    {
-      "title": "Azure Logic Apps Expert Mode",
-      "description": "Expert guidance for Azure Logic Apps development focusing on workflow design, integration patterns, and JSON-based Workflow Definition Language.",
-      "path": "agents/azure-logic-apps-expert.md",
-      "model": "gpt-4",
-      "tools": [
-        "codebase",
-        "changes",
-        "edit/editFiles",
-        "search",
-        "runCommands",
-        "microsoft.docs.mcp",
-        "azure_get_code_gen_best_practices",
-        "azure_query_learn"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.034Z"
-    },
-    {
-      "title": "Azure Policy Analyzer",
-      "description": "Analyze Azure Policy compliance posture (NIST SP 800-53, MCSB, CIS, ISO 27001, PCI DSS, SOC 2), auto-discover scope, and return a structured single-pass risk report with evidence and remediation commands.",
-      "path": "agents/azure-policy-analyzer.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "read",
-        "edit",
-        "search",
-        "execute",
-        "web",
-        "todo",
-        "azure-mcp/*",
-        "ms-azuretools.vscode-azure-github-copilot/azure_query_azure_resource_graph"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.182Z"
-    },
-    {
-      "title": "Azure Principal Architect mode instructions",
-      "description": "Provide expert Azure Principal Architect guidance using Azure Well-Architected Framework principles and Microsoft best practices.",
-      "path": "agents/azure-principal-architect.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "changes",
-        "codebase",
-        "edit/editFiles",
-        "extensions",
-        "fetch",
-        "findTestFiles",
-        "githubRepo",
-        "new",
-        "openSimpleBrowser",
-        "problems",
-        "runCommands",
-        "runTasks",
-        "runTests",
-        "search",
-        "searchResults",
-        "terminalLastCommand",
-        "terminalSelection",
-        "testFailure",
-        "usages",
-        "vscodeAPI",
-        "microsoft.docs.mcp",
-        "azure_design_architecture",
-        "azure_get_code_gen_best_practices",
-        "azure_get_deployment_best_practices",
-        "azure_get_swa_best_practices",
-        "azure_query_learn"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.179Z"
-    },
-    {
-      "title": "Azure SaaS Architect mode instructions",
-      "description": "Provide expert Azure SaaS Architect guidance focusing on multitenant applications using Azure Well-Architected SaaS principles and Microsoft best practices.",
-      "path": "agents/azure-saas-architect.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "changes",
-        "search/codebase",
-        "edit/editFiles",
-        "extensions",
-        "fetch",
-        "findTestFiles",
-        "githubRepo",
-        "new",
-        "openSimpleBrowser",
-        "problems",
-        "runCommands",
-        "runTasks",
-        "runTests",
-        "search",
-        "search/searchResults",
-        "runCommands/terminalLastCommand",
-        "runCommands/terminalSelection",
-        "testFailure",
-        "usages",
-        "vscodeAPI",
-        "microsoft.docs.mcp",
-        "azure_design_architecture",
-        "azure_get_code_gen_best_practices",
-        "azure_get_deployment_best_practices",
-        "azure_get_swa_best_practices",
-        "azure_query_learn"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.191Z"
-    },
-    {
-      "title": "Azure Terraform IaC Implementation Specialist",
-      "description": "Act as an Azure Terraform Infrastructure as Code coding specialist that creates and reviews Terraform for Azure resources.",
-      "path": "agents/terraform-azure-implement.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "execute/getTerminalOutput",
-        "execute/awaitTerminal",
-        "execute/runInTerminal",
-        "read/problems",
-        "read/readFile",
-        "read/terminalSelection",
-        "read/terminalLastCommand",
-        "agent",
-        "edit/createDirectory",
-        "edit/createFile",
-        "edit/editFiles",
-        "search",
-        "web/fetch",
-        "azure-mcp/*",
-        "todo"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.183Z"
-    },
-    {
-      "title": "Azure Terraform Infrastructure Planning",
-      "description": "Act as implementation planner for your Azure Terraform Infrastructure as Code task.",
-      "path": "agents/terraform-azure-planning.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "edit/editFiles",
-        "fetch",
-        "todos",
-        "azureterraformbestpractices",
-        "cloudarchitect",
-        "documentation",
-        "get_bestpractices",
-        "microsoft-docs"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.193Z"
-    },
-    {
-      "title": "azure-iac-exporter",
-      "description": "Export existing Azure resources to Infrastructure as Code templates via Azure Resource Graph analysis, Azure Resource Manager API calls, and azure-iac-generator integration. Use this skill when the user asks to export, convert, migrate, or extract existing Azure resources to IaC templates (Bicep, ARM Templates, Terraform, Pulumi).",
-      "path": "agents/azure-iac-exporter.md",
-      "model": "Claude Sonnet 4.5",
-      "tools": [
-        "read",
-        "edit",
-        "search",
-        "web",
-        "execute",
-        "todo",
-        "runSubagent",
-        "azure-mcp/*",
-        "ms-azuretools.vscode-azure-github-copilot/azure_query_azure_resource_graph"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.607Z"
-    },
-    {
-      "title": "azure-iac-generator",
-      "description": "Central hub for generating Infrastructure as Code (Bicep, ARM, Terraform, Pulumi) with format-specific validation and best practices. Use this skill when the user asks to generate, create, write, or build infrastructure code, deployment code, or IaC templates in any format (Bicep, ARM Templates, Terraform, Pulumi).",
-      "path": "agents/azure-iac-generator.md",
-      "model": "Claude Sonnet 4.5",
-      "tools": [
-        "vscode",
-        "execute",
-        "read",
-        "edit",
-        "search",
-        "web",
-        "agent",
-        "azure-mcp/azureterraformbestpractices",
-        "azure-mcp/bicepschema",
-        "azure-mcp/search",
-        "pulumi-mcp/get-type",
-        "runSubagent"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.424Z"
-    },
-    {
-      "title": "Bicep Planning",
-      "description": "Act as implementation planner for your Azure Bicep Infrastructure as Code task.",
-      "path": "agents/bicep-plan.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "edit/editFiles",
-        "web/fetch",
-        "microsoft-docs",
-        "azure_design_architecture",
-        "get_bicep_best_practices",
-        "bestpractices",
-        "bicepschema",
-        "azure_get_azure_verified_module",
-        "todos"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.164Z"
-    },
-    {
-      "title": "Bicep Specialist",
-      "description": "Act as an Azure Bicep Infrastructure as Code coding specialist that creates Bicep templates.",
-      "path": "agents/bicep-implement.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "edit/editFiles",
-        "web/fetch",
-        "runCommands",
-        "terminalLastCommand",
-        "get_bicep_best_practices",
-        "azure_get_azure_verified_module",
-        "todos"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.196Z"
-    },
-    {
-      "title": "Blueprint Mode",
-      "description": "Executes structured workflows (Debug, Express, Main, Loop) with strict correctness and maintainability. Enforces an improved tool usage policy, never assumes facts, prioritizes reproducible solutions, self-correction, and edge-case handling.",
-      "path": "agents/blueprint-mode.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.190Z"
-    },
-    {
-      "title": "C# Expert",
-      "description": "An agent designed to assist with software development tasks for .NET projects.",
-      "path": "agents/csharp-expert.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.163Z"
-    },
-    {
-      "title": "C# MCP Server Expert",
-      "description": "Expert assistant for developing Model Context Protocol (MCP) servers in C#",
-      "path": "agents/csharp-mcp-expert.md",
-      "model": "GPT-4.1",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.560Z"
-    },
-    {
-      "title": "C#/.NET Janitor",
-      "description": "Perform janitorial tasks on C#/.NET code including cleanup, modernization, and tech debt remediation.",
-      "path": "agents/csharp-dotnet-janitor.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "vscode/extensions",
-        "vscode/getProjectSetupInfo",
-        "vscode/installExtension",
-        "vscode/newWorkspace",
-        "vscode/runCommand",
-        "vscode/vscodeAPI",
-        "execute/getTerminalOutput",
-        "execute/runTask",
-        "execute/createAndRunTask",
-        "execute/runTests",
-        "execute/runInTerminal",
-        "execute/testFailure",
-        "read/terminalSelection",
-        "read/terminalLastCommand",
-        "read/getTaskOutput",
-        "read/problems",
-        "read/readFile",
-        "github/*",
-        "microsoft.docs.mcp/*",
-        "edit/editFiles",
-        "search",
-        "web"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.160Z"
-    },
-    {
-      "title": "C++ Expert",
-      "description": "Provide expert C++ software engineering guidance using modern C++ and industry best practices.",
-      "path": "agents/expert-cpp-software-engineer.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "changes",
-        "codebase",
-        "edit/editFiles",
-        "extensions",
-        "web/fetch",
-        "findTestFiles",
-        "githubRepo",
-        "new",
-        "openSimpleBrowser",
-        "problems",
-        "runCommands",
-        "runNotebooks",
-        "runTasks",
-        "runTests",
-        "search",
-        "searchResults",
-        "terminalLastCommand",
-        "terminalSelection",
-        "testFailure",
-        "usages",
-        "vscodeAPI",
-        "microsoft.docs.mcp"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.153Z"
-    },
-    {
-      "title": "CAST Imaging Impact Analysis Agent",
-      "description": "Specialized agent for comprehensive change impact assessment and risk analysis in software systems using CAST Imaging",
-      "path": "agents/cast-imaging-impact-analysis.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.159Z"
-    },
-    {
-      "title": "CAST Imaging Software Discovery Agent",
-      "description": "Specialized agent for comprehensive software application discovery and architectural mapping through static code analysis using CAST Imaging",
-      "path": "agents/cast-imaging-software-discovery.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.162Z"
-    },
-    {
-      "title": "CAST Imaging Structural Quality Advisor Agent",
-      "description": "Specialized agent for identifying, analyzing, and providing remediation guidance for code quality issues using CAST Imaging",
-      "path": "agents/cast-imaging-structural-quality-advisor.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.161Z"
-    },
-    {
-      "title": "CentOS Linux Expert",
-      "description": "CentOS (Stream/Legacy) Linux specialist focused on RHEL-compatible administration, yum/dnf workflows, and enterprise hardening.",
-      "path": "agents/centos-linux-expert.md",
-      "model": "GPT-4.1",
-      "tools": [
-        "codebase",
-        "search",
-        "terminalCommand",
-        "runCommands",
-        "edit/editFiles"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.058Z"
-    },
-    {
-      "title": "Clojure Interactive Programming",
-      "description": "Expert Clojure pair programmer with REPL-first methodology, architectural oversight, and interactive problem-solving. Enforces quality standards, prevents workarounds, and develops solutions incrementally through live REPL evaluation before file modifications.",
-      "path": "agents/clojure-interactive-programming.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.156Z"
-    },
-    {
-      "title": "Comet Opik",
-      "description": "Unified Comet Opik agent for instrumenting LLM apps, managing prompts/projects, auditing prompts, and investigating traces/metrics via the latest Opik MCP server.",
-      "path": "agents/comet-opik.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "read",
-        "search",
-        "edit",
-        "shell",
-        "opik/*"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.166Z"
-    },
-    {
-      "title": "Context Architect",
-      "description": "An agent that helps plan and execute multi-file changes by identifying relevant context and dependencies",
-      "path": "agents/context-architect.md",
-      "model": "GPT-5",
-      "tools": [
-        "search/codebase",
-        "search/usages",
-        "read/problems",
-        "read/readFile",
-        "edit/editFiles",
-        "execute/runInTerminal",
-        "execute/getTerminalOutput",
-        "web/fetch"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.876Z"
-    },
-    {
-      "title": "Context7-Expert",
-      "description": "Expert in latest library versions, best practices, and correct syntax using up-to-date documentation",
-      "path": "agents/context7.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "read",
-        "search",
-        "web",
-        "context7/*",
-        "agent/runSubagent"
-      ],
-      "hasHandoffs": true,
-      "lastUpdated": "2026-04-29T03:52:31.154Z"
-    },
-    {
-      "title": "Create PRD Chat Mode",
-      "description": "Generate a comprehensive Product Requirements Document (PRD) in Markdown, detailing user stories, acceptance criteria, technical considerations, and metrics. Optionally create GitHub issues upon user confirmation.",
-      "path": "agents/prd.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "codebase",
-        "edit/editFiles",
-        "fetch",
-        "findTestFiles",
-        "list_issues",
-        "githubRepo",
-        "search",
-        "add_issue_comment",
-        "create_issue",
-        "update_issue",
-        "get_issue",
-        "search_issues"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.156Z"
-    },
-    {
-      "title": "Critical thinking mode instructions",
-      "description": "Challenge assumptions and encourage critical thinking to ensure the best possible solution and outcomes.",
-      "path": "agents/critical-thinking.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "codebase",
-        "extensions",
-        "web/fetch",
-        "findTestFiles",
-        "githubRepo",
-        "problems",
-        "search",
-        "searchResults",
-        "usages"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.195Z"
-    },
-    {
-      "title": "Custom Agent Foundry",
-      "description": "Expert at designing and creating VS Code custom agents with optimal configurations",
-      "path": "agents/custom-agent-foundry.md",
-      "model": "Claude Sonnet 4.5",
-      "tools": [
-        "vscode",
-        "execute",
-        "read",
-        "edit",
-        "search",
-        "web",
-        "agent",
-        "github/*",
-        "todo"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.264Z"
-    },
-    {
-      "title": "Debian Linux Expert",
-      "description": "Debian Linux specialist focused on stable system administration, apt-based package management, and Debian policy-aligned practices.",
-      "path": "agents/debian-linux-expert.md",
-      "model": "Claude Sonnet 4",
-      "tools": [
-        "codebase",
-        "search",
-        "terminalCommand",
-        "runCommands",
-        "edit/editFiles"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.956Z"
-    },
-    {
-      "title": "Debug Mode Instructions",
-      "description": "Debug your application to find and fix a bug",
-      "path": "agents/debug.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "edit/editFiles",
-        "search/codebase",
-        "search/usages",
-        "execute/getTerminalOutput",
-        "execute/runInTerminal",
-        "read/terminalLastCommand",
-        "read/terminalSelection",
-        "read/problems",
-        "execute/testFailure",
-        "web/fetch",
-        "execute/runTests"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.153Z"
-    },
-    {
-      "title": "Declarative Agents Architect",
-      "description": "Expert in Microsoft 365 declarative agent architecture, TypeSpec workflows, and v1.5 schema-compliant implementation.",
-      "path": "agents/declarative-agents-architect.md",
-      "model": "GPT-4.1",
-      "tools": [
-        "codebase"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:26:10.584Z"
-    },
-    {
-      "title": "Defender Scout KQL",
-      "description": "Generates, validates, and optimizes KQL queries for Microsoft Defender XDR Advanced Hunting across Endpoint, Identity, Office 365, Cloud Apps, and Identity.",
-      "path": "agents/defender-scout-kql.md",
-      "model": "claude-sonnet-4-5",
-      "tools": [
-        "read",
-        "search"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.275Z"
-    },
-    {
-      "title": "Demonstrate Understanding mode instructions",
-      "description": "Validate user understanding of code, design patterns, and implementation details through guided questioning.",
-      "path": "agents/demonstrate-understanding.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "codebase",
-        "web/fetch",
-        "findTestFiles",
-        "githubRepo",
-        "search",
-        "usages"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.170Z"
-    },
-    {
-      "title": "Devils Advocate",
-      "description": "I play the devil's advocate to challenge and stress-test your ideas by finding flaws, risks, and edge cases",
-      "path": "agents/devils-advocate.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "read",
-        "search",
-        "web"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.163Z"
-    },
-    {
-      "title": "DevOps Expert",
-      "description": "DevOps specialist following the infinity loop principle (Plan → Code → Build → Test → Release → Deploy → Operate → Monitor) with focus on automation, collaboration, and continuous improvement",
-      "path": "agents/devops-expert.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "codebase",
-        "edit/editFiles",
-        "terminalCommand",
-        "search",
-        "githubRepo",
-        "runCommands",
-        "runTasks"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.170Z"
-    },
-    {
-      "title": "DevTools Regression Investigator",
-      "description": "Browser regression specialist for reproducing broken user flows, collecting console and network evidence, and narrowing likely root causes with Chrome DevTools MCP.",
-      "path": "agents/devtools-regression-investigator.md",
-      "model": "GPT-5",
-      "tools": [
-        "codebase",
-        "search",
-        "fetch",
-        "findTestFiles",
-        "problems",
-        "runCommands",
-        "runTasks",
-        "runTests",
-        "terminalLastCommand",
-        "terminalSelection",
-        "testFailure",
-        "openSimpleBrowser"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.768Z"
-    },
-    {
-      "title": "DiffblueCover",
-      "description": "Expert agent for creating unit tests for java applications using Diffblue Cover.",
-      "path": "agents/diffblue-cover.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "DiffblueCover/*"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.191Z"
+      "lastUpdated": "2026-04-29T17:20:15.534Z"
     },
     {
       "title": "Doublecheck",
       "description": "Interactive verification agent for AI-generated output. Runs a three-layer pipeline (self-audit, source verification, adversarial review) and produces structured reports with source links for human review.",
       "path": "agents/doublecheck.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "web_search",
         "web_fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.189Z"
+      "lastUpdated": "2026-04-29T17:20:15.534Z"
     },
     {
-      "title": "droid",
+      "title": "Droid",
       "description": "Provides installation guidance, usage examples, and automation patterns for the Droid CLI, with emphasis on droid exec for CI/CD and non-interactive automation",
       "path": "agents/droid.md",
       "model": "claude-sonnet-4-5-20250929",
@@ -928,13 +885,13 @@
         "shell"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.161Z"
+      "lastUpdated": "2026-04-29T17:20:15.535Z"
     },
     {
       "title": "Drupal Expert",
       "description": "Expert assistant for Drupal development, architecture, and best practices using PHP 8.3+ and modern Drupal patterns",
       "path": "agents/drupal-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "terminalCommand",
@@ -945,22 +902,22 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.649Z"
+      "lastUpdated": "2026-04-29T17:20:15.535Z"
     },
     {
       "title": "Dynatrace Expert",
       "description": "The Dynatrace Expert Agent integrates observability and security capabilities directly into GitHub workflows, enabling development teams to investigate incidents, validate deployments, triage errors, detect performance regressions, validate releases, and manage security vulnerabilities by autonomously analysing traces, logs, and Dynatrace findings. This enables targeted and precise remediation of identified issues directly within the repository.",
       "path": "agents/dynatrace-expert.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.171Z"
+      "lastUpdated": "2026-04-29T17:20:15.535Z"
     },
     {
-      "title": "elasticsearch-agent",
+      "title": "Elasticsearch Observability",
       "description": "Our expert AI assistant for debugging code (O11y), optimizing vector search (RAG), and remediating security threats using live Elastic data.",
       "path": "agents/elasticsearch-observability.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "read",
         "edit",
@@ -968,13 +925,13 @@
         "elastic-mcp/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T04:19:52.424Z"
+      "lastUpdated": "2026-04-29T17:20:15.536Z"
     },
     {
-      "title": "Electron Code Review Mode Instructions",
+      "title": "Electron Angular Native",
       "description": "Code Review Mode tailored for Electron app with Node.js backend (main), Angular frontend (render), and native integration layer (e.g., AppleScript, shell, or native tooling). Services in other repos are not reviewed here.",
       "path": "agents/electron-angular-native.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "editFiles",
@@ -991,7 +948,7 @@
         "git_status"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.164Z"
+      "lastUpdated": "2026-04-29T17:20:15.536Z"
     },
     {
       "title": "Ember",
@@ -1000,13 +957,45 @@
       "model": "claude-opus-4.6",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.995Z"
+      "lastUpdated": "2026-04-29T17:20:15.536Z"
     },
     {
-      "title": "Expert .NET software engineer mode instructions",
+      "title": "Expert Cpp Software Engineer",
+      "description": "Provide expert C++ software engineering guidance using modern C++ and industry best practices.",
+      "path": "agents/expert-cpp-software-engineer.md",
+      "model": "sonnet",
+      "tools": [
+        "changes",
+        "codebase",
+        "edit/editFiles",
+        "extensions",
+        "web/fetch",
+        "findTestFiles",
+        "githubRepo",
+        "new",
+        "openSimpleBrowser",
+        "problems",
+        "runCommands",
+        "runNotebooks",
+        "runTasks",
+        "runTests",
+        "search",
+        "searchResults",
+        "terminalLastCommand",
+        "terminalSelection",
+        "testFailure",
+        "usages",
+        "vscodeAPI",
+        "microsoft.docs.mcp"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.536Z"
+    },
+    {
+      "title": "Expert Dotnet Software Engineer",
       "description": "Provide expert .NET software engineering guidance using modern software design patterns.",
       "path": "agents/expert-dotnet-software-engineer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -1032,41 +1021,45 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.192Z"
+      "lastUpdated": "2026-04-29T17:20:15.537Z"
     },
     {
-      "title": "Expert Nuxt Developer",
-      "description": "Expert Nuxt developer specializing in Nuxt 3, Nitro, server routes, data fetching strategies, and performance optimization with Vue 3 and TypeScript",
-      "path": "agents/nuxt-expert.md",
-      "model": "Claude Sonnet 4.5",
+      "title": "Expert Nextjs Developer",
+      "description": "Expert Next.js 16 developer specializing in App Router, Server Components, Cache Components, Turbopack, and modern React patterns with TypeScript",
+      "path": "agents/expert-nextjs-developer.md",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
         "edit/editFiles",
         "extensions",
         "fetch",
+        "findTestFiles",
         "githubRepo",
         "new",
         "openSimpleBrowser",
         "problems",
         "runCommands",
+        "runNotebooks",
         "runTasks",
+        "runTests",
         "search",
         "searchResults",
         "terminalLastCommand",
         "terminalSelection",
         "testFailure",
         "usages",
-        "vscodeAPI"
+        "vscodeAPI",
+        "figma-dev-mode-mcp-server"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.410Z"
+      "lastUpdated": "2026-04-29T17:20:15.537Z"
     },
     {
       "title": "Expert React Frontend Engineer",
       "description": "Expert React 19.2 frontend engineer specializing in modern hooks, Server Components, Actions, TypeScript, and performance optimization",
       "path": "agents/expert-react-frontend-engineer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -1091,43 +1084,13 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.169Z"
-    },
-    {
-      "title": "Expert Vue.js Frontend Engineer",
-      "description": "Expert Vue.js frontend engineer specializing in Vue 3 Composition API, reactivity, state management, testing, and performance with TypeScript",
-      "path": "agents/vuejs-expert.md",
-      "model": "Claude Sonnet 4.5",
-      "tools": [
-        "search/changes",
-        "search/codebase",
-        "edit/editFiles",
-        "vscode/extensions",
-        "web/fetch",
-        "web/githubRepo",
-        "vscode/getProjectSetupInfo",
-        "vscode/installExtension",
-        "vscode/newWorkspace",
-        "vscode/runCommand",
-        "read/problems",
-        "execute/getTerminalOutput",
-        "execute/runInTerminal",
-        "read/terminalLastCommand",
-        "read/terminalSelection",
-        "execute/createAndRunTask",
-        "search/searchResults",
-        "execute/testFailure",
-        "search/usages",
-        "vscode/vscodeAPI"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.833Z"
+      "lastUpdated": "2026-04-29T17:20:15.537Z"
     },
     {
       "title": "Fedora Linux Expert",
       "description": "Fedora (Red Hat family) Linux specialist focused on dnf, SELinux, and modern systemd-based workflows.",
       "path": "agents/fedora-linux-expert.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "search",
@@ -1136,13 +1099,13 @@
         "edit/editFiles"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.167Z"
+      "lastUpdated": "2026-04-29T17:20:15.538Z"
     },
     {
       "title": "Frontend Performance Investigator",
       "description": "Runtime web-performance specialist for diagnosing Core Web Vitals, Lighthouse regressions, layout shifts, long tasks, and slow network paths with Chrome DevTools MCP.",
       "path": "agents/frontend-performance-investigator.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "search",
@@ -1158,148 +1121,148 @@
         "openSimpleBrowser"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.266Z"
+      "lastUpdated": "2026-04-29T17:20:15.538Z"
     },
     {
-      "title": "gem-browser-tester",
+      "title": "Gem Browser Tester",
       "description": "E2E browser testing, UI/UX validation, visual regression.",
       "path": "agents/gem-browser-tester.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.161Z"
+      "lastUpdated": "2026-04-29T17:20:15.538Z"
     },
     {
-      "title": "gem-code-simplifier",
+      "title": "Gem Code Simplifier",
       "description": "Refactoring specialist — removes dead code, reduces complexity, consolidates duplicates.",
       "path": "agents/gem-code-simplifier.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.190Z"
+      "lastUpdated": "2026-04-29T17:20:15.539Z"
     },
     {
-      "title": "gem-critic",
+      "title": "Gem Critic",
       "description": "Challenges assumptions, finds edge cases, spots over-engineering and logic gaps.",
       "path": "agents/gem-critic.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.197Z"
+      "lastUpdated": "2026-04-29T17:20:15.539Z"
     },
     {
-      "title": "gem-debugger",
+      "title": "Gem Debugger",
       "description": "Root-cause analysis, stack trace diagnosis, regression bisection, error reproduction.",
       "path": "agents/gem-debugger.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.157Z"
+      "lastUpdated": "2026-04-29T17:20:15.539Z"
     },
     {
-      "title": "gem-designer",
+      "title": "Gem Designer",
       "description": "UI/UX design specialist — layouts, themes, color schemes, design systems, accessibility.",
       "path": "agents/gem-designer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.152Z"
+      "lastUpdated": "2026-04-29T17:20:15.540Z"
     },
     {
-      "title": "gem-designer-mobile",
+      "title": "Gem Designer Mobile",
       "description": "Mobile UI/UX specialist — HIG, Material Design, safe areas, touch targets.",
       "path": "agents/gem-designer-mobile.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.154Z"
+      "lastUpdated": "2026-04-29T17:20:15.540Z"
     },
     {
-      "title": "gem-devops",
+      "title": "Gem Devops",
       "description": "Infrastructure deployment, CI/CD pipelines, container management.",
       "path": "agents/gem-devops.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.168Z"
+      "lastUpdated": "2026-04-29T17:20:15.540Z"
     },
     {
-      "title": "gem-documentation-writer",
+      "title": "Gem Documentation Writer",
       "description": "Technical documentation, README files, API docs, diagrams, walkthroughs.",
       "path": "agents/gem-documentation-writer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.194Z"
+      "lastUpdated": "2026-04-29T17:20:15.541Z"
     },
     {
-      "title": "gem-implementer",
+      "title": "Gem Implementer",
       "description": "TDD code implementation — features, bugs, refactoring. Never reviews own work.",
       "path": "agents/gem-implementer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.191Z"
+      "lastUpdated": "2026-04-29T17:20:15.542Z"
     },
     {
-      "title": "gem-implementer-mobile",
+      "title": "Gem Implementer Mobile",
       "description": "Mobile implementation — React Native, Expo, Flutter with TDD.",
       "path": "agents/gem-implementer-mobile.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.184Z"
+      "lastUpdated": "2026-04-29T17:20:15.541Z"
     },
     {
-      "title": "gem-mobile-tester",
+      "title": "Gem Mobile Tester",
       "description": "Mobile E2E testing — Detox, Maestro, iOS/Android simulators.",
       "path": "agents/gem-mobile-tester.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.181Z"
+      "lastUpdated": "2026-04-29T17:20:15.543Z"
     },
     {
-      "title": "gem-orchestrator",
+      "title": "Gem Orchestrator",
       "description": "The team lead: Orchestrates research, planning, implementation, and verification.",
       "path": "agents/gem-orchestrator.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.177Z"
+      "lastUpdated": "2026-04-29T17:20:15.543Z"
     },
     {
-      "title": "gem-planner",
+      "title": "Gem Planner",
       "description": "DAG-based execution plans — task decomposition, wave scheduling, risk analysis.",
       "path": "agents/gem-planner.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.171Z"
+      "lastUpdated": "2026-04-29T17:20:15.543Z"
     },
     {
-      "title": "gem-researcher",
+      "title": "Gem Researcher",
       "description": "Codebase exploration — patterns, dependencies, architecture discovery.",
       "path": "agents/gem-researcher.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.177Z"
+      "lastUpdated": "2026-04-29T17:20:15.543Z"
     },
     {
-      "title": "gem-reviewer",
+      "title": "Gem Reviewer",
       "description": "Security auditing, code review, OWASP scanning, PRD compliance verification.",
       "path": "agents/gem-reviewer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.162Z"
+      "lastUpdated": "2026-04-29T17:20:15.544Z"
     },
     {
-      "title": "Gilfoyle Code Review Mode",
+      "title": "Gilfoyle",
       "description": "Code review and analysis with the sardonic wit and technical elitism of Bertram Gilfoyle from Silicon Valley. Prepare for brutal honesty about your code.",
       "path": "agents/gilfoyle.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -1316,13 +1279,13 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.187Z"
+      "lastUpdated": "2026-04-29T17:20:15.544Z"
     },
     {
-      "title": "GitHub Actions Expert",
+      "title": "Github Actions Expert",
       "description": "GitHub Actions specialist focused on secure CI/CD workflows, action pinning, OIDC authentication, permissions least privilege, and supply-chain security",
       "path": "agents/github-actions-expert.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "github/*",
         "search/codebase",
@@ -1332,13 +1295,13 @@
         "search/fileSearch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.193Z"
+      "lastUpdated": "2026-04-29T17:20:15.544Z"
     },
     {
-      "title": "GitHub Actions Node Runtime Upgrade",
+      "title": "Github Actions Node Upgrade",
       "description": "Upgrade a GitHub Actions JavaScript/TypeScript action to a newer Node runtime version (e.g., node20 to node24) with major version bump, CI updates, and full validation",
       "path": "agents/github-actions-node-upgrade.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -1346,19 +1309,19 @@
         "search"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.189Z"
+      "lastUpdated": "2026-04-29T17:20:15.544Z"
     },
     {
-      "title": "Go MCP Server Development Expert",
+      "title": "Go Mcp Expert",
       "description": "Expert assistant for building Model Context Protocol (MCP) servers in Go using the official SDK.",
       "path": "agents/go-mcp-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.392Z"
+      "lastUpdated": "2026-04-29T17:20:15.545Z"
     },
     {
-      "title": "High-Level Big Picture Architect (HLBPA)",
+      "title": "Hlbpa",
       "description": "Your perfect AI chat mode for high-level architectural documentation and review. Perfect for targeted updates after a story or researching that legacy system when nobody remembers what it's supposed to be doing.",
       "path": "agents/hlbpa.md",
       "model": "claude-sonnet-4",
@@ -1379,34 +1342,13 @@
         "copilotCodingAgent"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.555Z"
+      "lastUpdated": "2026-04-29T17:20:15.545Z"
     },
     {
-      "title": "Idea Generator",
-      "description": "Brainstorm and develop new application ideas through fun, interactive questioning until ready for specification creation.",
-      "path": "agents/simple-app-idea-generator.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "changes",
-        "codebase",
-        "web/fetch",
-        "githubRepo",
-        "openSimpleBrowser",
-        "problems",
-        "search",
-        "searchResults",
-        "usages",
-        "microsoft.docs.mcp",
-        "websearch"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.158Z"
-    },
-    {
-      "title": "Implementation Plan Generation Mode",
+      "title": "Implementation Plan",
       "description": "Generate an implementation plan for new features or refactoring existing code.",
       "path": "agents/implementation-plan.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "search/codebase",
         "search/usages",
@@ -1430,40 +1372,84 @@
         "execute/runTask"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.178Z"
+      "lastUpdated": "2026-04-29T17:20:15.545Z"
     },
     {
-      "title": "Java MCP Expert",
+      "title": "Insiders A11y Tracker",
+      "description": "Specialized agent for tracking and analyzing accessibility improvements in VS Code Insiders builds",
+      "path": "agents/insiders-a11y-tracker.md",
+      "model": "sonnet",
+      "tools": [
+        "github/search_issues",
+        "github/issue_read",
+        "read"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.546Z"
+    },
+    {
+      "title": "Janitor",
+      "description": "Perform janitorial tasks on any codebase including cleanup, simplification, and tech debt remediation.",
+      "path": "agents/janitor.md",
+      "model": "sonnet",
+      "tools": [
+        "vscode/extensions",
+        "vscode/getProjectSetupInfo",
+        "vscode/installExtension",
+        "vscode/newWorkspace",
+        "vscode/runCommand",
+        "vscode/vscodeAPI",
+        "execute/getTerminalOutput",
+        "execute/runTask",
+        "execute/createAndRunTask",
+        "execute/runTests",
+        "execute/runInTerminal",
+        "execute/testFailure",
+        "execute/getTaskOutput",
+        "read/terminalSelection",
+        "read/terminalLastCommand",
+        "read/problems",
+        "read/readFile",
+        "github/*",
+        "edit/editFiles",
+        "search",
+        "web"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.546Z"
+    },
+    {
+      "title": "Java Mcp Expert",
       "description": "Expert assistance for building Model Context Protocol servers in Java using reactive streams, the official MCP Java SDK, and Spring Boot integration.",
       "path": "agents/java-mcp-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.079Z"
+      "lastUpdated": "2026-04-29T17:20:15.546Z"
     },
     {
-      "title": "JFrog Security Agent",
+      "title": "Jfrog Sec",
       "description": "The dedicated Application Security agent for automated security remediation. Verifies package and version compliance, and suggests vulnerability fixes using JFrog security intelligence.",
       "path": "agents/jfrog-sec.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.173Z"
+      "lastUpdated": "2026-04-29T17:20:15.546Z"
     },
     {
-      "title": "Kotlin MCP Server Development Expert",
+      "title": "Kotlin Mcp Expert",
       "description": "Expert assistant for building Model Context Protocol (MCP) servers in Kotlin using the official SDK.",
       "path": "agents/kotlin-mcp-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.144Z"
+      "lastUpdated": "2026-04-29T17:20:15.546Z"
     },
     {
       "title": "Kusto Assistant",
       "description": "Expert KQL assistant for live Azure Data Explorer analysis via Azure MCP server",
       "path": "agents/kusto-assistant.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -1487,13 +1473,13 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.175Z"
+      "lastUpdated": "2026-04-29T17:20:15.547Z"
     },
     {
       "title": "Laravel Expert Agent",
       "description": "Expert Laravel development assistant specializing in modern Laravel 12+ applications with Eloquent, Artisan, testing, and best practices",
       "path": "agents/laravel-expert-agent.md",
-      "model": "GPT-4.1 | 'gpt-5' | 'Claude Sonnet 4.5'",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "terminalCommand",
@@ -1505,24 +1491,24 @@
         "search"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.904Z"
+      "lastUpdated": "2026-04-29T17:20:15.547Z"
     },
     {
-      "title": "launchdarkly-flag-cleanup",
+      "title": "Launchdarkly Flag Cleanup",
       "description": "A specialized GitHub Copilot agent that uses the LaunchDarkly MCP server to safely automate feature flag cleanup workflows. This agent determines removal readiness, identifies the correct forward value, and creates PRs that preserve production behavior while removing obsolete flags and updating stale defaults.\n",
       "path": "agents/launchdarkly-flag-cleanup.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.179Z"
+      "lastUpdated": "2026-04-29T17:20:15.547Z"
     },
     {
-      "title": "Lingo.dev Localization (i18n) Agent",
+      "title": "Lingodotdev I18n",
       "description": "Expert at implementing internationalization (i18n) in web applications using a systematic, checklist-driven approach.",
       "path": "agents/lingodotdev-i18n.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "shell",
         "read",
@@ -1531,25 +1517,25 @@
         "lingo/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.165Z"
+      "lastUpdated": "2026-04-29T17:20:15.548Z"
     },
     {
-      "title": "LinkedIn Post Writer",
+      "title": "Linkedin Post Writer",
       "description": "Draft and format compelling LinkedIn posts with Unicode bold/italic styling, visual separators, and engagement-optimized structure. Transforms raw content, technical material, images, or ideas into copy-paste-ready LinkedIn posts.",
       "path": "agents/linkedin-post-writer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.161Z"
+      "lastUpdated": "2026-04-29T17:20:15.548Z"
     },
     {
       "title": "Markdown Accessibility Assistant",
       "description": "Improves the accessibility of markdown files using five GitHub best practices",
       "path": "agents/markdown-accessibility-assistant.md",
-      "model": "Claude Sonnet 4.6",
+      "model": "sonnet",
       "tools": [
         "read",
         "edit",
@@ -1557,31 +1543,22 @@
         "execute"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.984Z"
+      "lastUpdated": "2026-04-29T17:20:15.548Z"
     },
     {
-      "title": "MAUI Expert",
-      "description": "Support development of .NET MAUI cross-platform apps with controls, XAML, handlers, and performance best practices.",
-      "path": "agents/dotnet-maui.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.155Z"
-    },
-    {
-      "title": "MCP M365 Agent Expert",
+      "title": "Mcp M365 Agent Expert",
       "description": "Expert assistant for building MCP-based declarative agents for Microsoft 365 Copilot with Model Context Protocol integration",
       "path": "agents/mcp-m365-agent-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.972Z"
+      "lastUpdated": "2026-04-29T17:20:15.549Z"
     },
     {
-      "title": "Mentor mode",
+      "title": "Mentor",
       "description": "Help mentor the engineer by providing guidance and support.",
       "path": "agents/mentor.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "web/fetch",
@@ -1591,13 +1568,32 @@
         "usages"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.181Z"
+      "lastUpdated": "2026-04-29T17:20:15.549Z"
+    },
+    {
+      "title": "Mentoring Juniors",
+      "description": "Socratic mentor for junior developers. Guides through questions, never gives direct answers. Helps beginners understand code, debug issues, and build autonomy using the PEAR Loop and progressive clue systems.",
+      "path": "agents/mentoring-juniors.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "editFiles",
+        "fetch",
+        "problems",
+        "runCommands",
+        "search",
+        "terminalLastCommand",
+        "terminalSelection",
+        "usages"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.549Z"
     },
     {
       "title": "Meta Agentic Project Scaffold",
       "description": "Meta agentic project creation assistant to help users create and manage project workflows effectively.",
       "path": "agents/meta-agentic-project-scaffold.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -1626,13 +1622,13 @@
         "copilotCodingAgent"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.155Z"
+      "lastUpdated": "2026-04-29T17:20:15.549Z"
     },
     {
       "title": "Microsoft Learn Contributor",
       "description": "Microsoft Learn Contributor chatmode for editing and writing Microsoft Learn documentation following Microsoft Writing Style Guide and authoring best practices.",
-      "path": "agents/microsoft_learn_contributor.md",
-      "model": "gpt-5.3-codex",
+      "path": "agents/microsoft-learn-contributor.md",
+      "model": "sonnet",
       "tools": [
         "changes",
         "search/codebase",
@@ -1645,25 +1641,25 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.154Z"
+      "lastUpdated": "2026-04-29T17:21:32.206Z"
     },
     {
-      "title": "Microsoft Study and Learn",
+      "title": "Microsoft Study Mode",
       "description": "Activate your personal Microsoft/Azure tutor - learn through guided discovery, not just answers.",
       "path": "agents/microsoft-study-mode.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "microsoft_docs_search",
         "microsoft_docs_fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.166Z"
+      "lastUpdated": "2026-04-29T17:20:15.550Z"
     },
     {
-      "title": "Modernization Agent",
+      "title": "Modernization",
       "description": "Human-in-the-loop modernization assistant for analyzing, documenting, and planning complete project modernization with architectural recommendations.",
       "path": "agents/modernization.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "search",
         "read",
@@ -1679,33 +1675,33 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.792Z"
+      "lastUpdated": "2026-04-29T17:20:15.550Z"
     },
     {
-      "title": "Monday Bug Context Fixer",
+      "title": "Monday Bug Fixer",
       "description": "Elite bug-fixing agent that enriches task context from Monday.com platform data. Gathers related items, docs, comments, epics, and requirements to deliver production-quality fixes with comprehensive PRs.",
       "path": "agents/monday-bug-fixer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.167Z"
+      "lastUpdated": "2026-04-29T17:20:15.551Z"
     },
     {
-      "title": "mongodb-performance-advisor",
+      "title": "Mongodb Performance Advisor",
       "description": "Analyze MongoDB database performance, offer query and index optimization insights and provide actionable recommendations to improve overall usage of the database.",
       "path": "agents/mongodb-performance-advisor.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.185Z"
+      "lastUpdated": "2026-04-29T17:20:15.551Z"
     },
     {
-      "title": "MS-SQL Database Administrator",
+      "title": "Ms Sql Dba",
       "description": "Work with Microsoft SQL Server databases using the MS SQL extension.",
       "path": "agents/ms-sql-dba.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "search/codebase",
         "edit/editFiles",
@@ -1721,13 +1717,13 @@
         "mssql_visualizeSchema"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.176Z"
+      "lastUpdated": "2026-04-29T17:20:15.551Z"
     },
     {
-      "title": "neo4j-docker-client-generator",
+      "title": "Neo4j Docker Client Generator",
       "description": "AI agent that generates simple, high-quality Python Neo4j client libraries from GitHub issues with proper best practices",
       "path": "agents/neo4j-docker-client-generator.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "read",
         "edit",
@@ -1738,72 +1734,68 @@
         "neo4j-local/neo4j-local-write_neo4j_cypher"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.169Z"
+      "lastUpdated": "2026-04-29T17:20:15.551Z"
     },
     {
       "title": "Neon Migration Specialist",
       "description": "Safe Postgres migrations with zero-downtime using Neon's branching workflow. Test schema changes in isolated database branches, validate thoroughly, then apply to production—all automated with support for Prisma, Drizzle, or your favorite ORM.",
       "path": "agents/neon-migration-specialist.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.160Z"
+      "lastUpdated": "2026-04-29T17:20:15.552Z"
     },
     {
-      "title": "Neon Performance Analyzer",
+      "title": "Neon Optimization Analyzer",
       "description": "Identify and fix slow Postgres queries automatically using Neon's branching workflow. Analyzes execution plans, tests optimizations in isolated database branches, and provides clear before/after performance metrics with actionable code fixes.",
       "path": "agents/neon-optimization-analyzer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.151Z"
+      "lastUpdated": "2026-04-29T17:20:15.552Z"
     },
     {
-      "title": "Next.js Expert",
-      "description": "Expert Next.js 16 developer specializing in App Router, Server Components, Cache Components, Turbopack, and modern React patterns with TypeScript",
-      "path": "agents/expert-nextjs-developer.md",
-      "model": "GPT-4.1",
+      "title": "Nuxt Expert",
+      "description": "Expert Nuxt developer specializing in Nuxt 3, Nitro, server routes, data fetching strategies, and performance optimization with Vue 3 and TypeScript",
+      "path": "agents/nuxt-expert.md",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
         "edit/editFiles",
         "extensions",
         "fetch",
-        "findTestFiles",
         "githubRepo",
         "new",
         "openSimpleBrowser",
         "problems",
         "runCommands",
-        "runNotebooks",
         "runTasks",
-        "runTests",
         "search",
         "searchResults",
         "terminalLastCommand",
         "terminalSelection",
         "testFailure",
         "usages",
-        "vscodeAPI",
-        "figma-dev-mode-mcp-server"
+        "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.821Z"
+      "lastUpdated": "2026-04-29T17:20:15.552Z"
     },
     {
-      "title": "octopus-release-notes-with-mcp",
+      "title": "Octopus Deploy Release Notes Mcp",
       "description": "Generate release notes for a release in Octopus Deploy. The tools for this MCP server provide access to the Octopus Deploy APIs.",
       "path": "agents/octopus-deploy-release-notes-mcp.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.192Z"
+      "lastUpdated": "2026-04-29T17:20:15.552Z"
     },
     {
-      "title": "one-shot-feature-issue-planner",
+      "title": "One Shot Feature Issue Planner",
       "description": "Cloud Agent to Turn a single new-feature request into a complete, issue-ready implementation plan without follow-up questions.",
       "path": "agents/one-shot-feature-issue-planner.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "githubRepo",
@@ -1813,26 +1805,26 @@
         "findTestFiles"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.158Z"
+      "lastUpdated": "2026-04-29T17:20:15.553Z"
     },
     {
-      "title": "OpenAPI to Application Generator",
+      "title": "Openapi To Application",
       "description": "Expert assistant for generating working applications from OpenAPI specifications",
       "path": "agents/openapi-to-application.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
         "search/codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.773Z"
+      "lastUpdated": "2026-04-29T17:20:15.553Z"
     },
     {
-      "title": "Oracle-to-PostgreSQL Migration Expert",
+      "title": "Oracle To Postgres Migration Expert",
       "description": "Agent for Oracle-to-PostgreSQL application migrations. Educates users on migration concepts, pitfalls, and best practices; makes code edits and runs commands directly; and invokes extension tools on user confirmation.",
       "path": "agents/oracle-to-postgres-migration-expert.md",
-      "model": "Claude Sonnet 4.6 (copilot)",
+      "model": "sonnet",
       "tools": [
         "vscode/installExtension",
         "vscode/memory",
@@ -1848,13 +1840,13 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.798Z"
+      "lastUpdated": "2026-04-29T17:20:15.553Z"
     },
     {
-      "title": "PagerDuty Incident Responder",
+      "title": "Pagerduty Incident Responder",
       "description": "Responds to PagerDuty incidents by analyzing incident context, identifying recent code changes, and suggesting fixes via GitHub PRs.",
       "path": "agents/pagerduty-incident-responder.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "read",
         "search",
@@ -1876,22 +1868,22 @@
         "pagerduty/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.195Z"
+      "lastUpdated": "2026-04-29T17:20:15.553Z"
     },
     {
-      "title": "PHP MCP Expert",
+      "title": "Php Mcp Expert",
       "description": "Expert assistant for PHP MCP server development using the official PHP SDK with attribute-based discovery",
       "path": "agents/php-mcp-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.865Z"
+      "lastUpdated": "2026-04-29T17:20:15.554Z"
     },
     {
       "title": "Pimcore Expert",
       "description": "Expert Pimcore development assistant specializing in CMS, DAM, PIM, and E-Commerce solutions with Symfony integration",
       "path": "agents/pimcore-expert.md",
-      "model": "GPT-4.1 | 'gpt-5' | 'Claude Sonnet 4.5'",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "terminalCommand",
@@ -1902,13 +1894,13 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.212Z"
+      "lastUpdated": "2026-04-29T17:20:15.554Z"
     },
     {
-      "title": "Plan Mode - Strategic Planning & Architecture",
+      "title": "Plan",
       "description": "Strategic planning and architecture assistant focused on thoughtful analysis before implementation. Helps developers understand codebases, clarify requirements, and develop comprehensive implementation strategies.",
       "path": "agents/plan.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "search/codebase",
         "vscode/extensions",
@@ -1919,13 +1911,13 @@
         "vscode/vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.186Z"
+      "lastUpdated": "2026-04-29T17:20:15.555Z"
     },
     {
-      "title": "Planning mode instructions",
+      "title": "Planner",
       "description": "Generate an implementation plan for new features or refactoring existing code.",
       "path": "agents/planner.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "fetch",
@@ -1935,13 +1927,13 @@
         "usages"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.186Z"
+      "lastUpdated": "2026-04-29T17:20:15.555Z"
     },
     {
-      "title": "Platform SRE for Kubernetes",
+      "title": "Platform Sre Kubernetes",
       "description": "SRE-focused Kubernetes specialist prioritizing reliability, safe rollouts/rollbacks, security defaults, and operational verification for production-grade deployments",
       "path": "agents/platform-sre-kubernetes.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -1950,13 +1942,13 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.179Z"
+      "lastUpdated": "2026-04-29T17:20:15.555Z"
     },
     {
-      "title": "Playwright Tester Mode",
+      "title": "Playwright Tester",
       "description": "Testing mode for Playwright tests",
       "path": "agents/playwright-tester.md",
-      "model": "Claude Sonnet 4",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -1975,85 +1967,85 @@
         "playwright"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.159Z"
+      "lastUpdated": "2026-04-29T17:20:15.556Z"
     },
     {
       "title": "Polyglot Test Builder",
       "description": "Runs build/compile commands for any language and reports results. Discovers build command from project files if not specified.",
       "path": "agents/polyglot-test-builder.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.165Z"
+      "lastUpdated": "2026-04-29T17:20:15.556Z"
     },
     {
       "title": "Polyglot Test Fixer",
       "description": "Fixes compilation errors in source or test files. Analyzes error messages and applies corrections.",
       "path": "agents/polyglot-test-fixer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.173Z"
+      "lastUpdated": "2026-04-29T17:20:15.556Z"
     },
     {
       "title": "Polyglot Test Generator",
       "description": "Orchestrates comprehensive test generation using Research-Plan-Implement pipeline. Use when asked to generate tests, write unit tests, improve test coverage, or add tests.",
       "path": "agents/polyglot-test-generator.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.176Z"
+      "lastUpdated": "2026-04-29T17:20:15.556Z"
     },
     {
       "title": "Polyglot Test Implementer",
       "description": "Implements a single phase from the test plan. Writes test files and verifies they compile and pass. Calls builder, tester, and fixer agents as needed.",
       "path": "agents/polyglot-test-implementer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.187Z"
+      "lastUpdated": "2026-04-29T17:20:15.557Z"
     },
     {
       "title": "Polyglot Test Linter",
       "description": "Runs code formatting/linting for any language. Discovers lint command from project files if not specified.",
       "path": "agents/polyglot-test-linter.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.185Z"
+      "lastUpdated": "2026-04-29T17:20:15.557Z"
     },
     {
       "title": "Polyglot Test Planner",
       "description": "Creates structured test implementation plans from research findings. Organizes tests into phases by priority and complexity. Works with any language.",
       "path": "agents/polyglot-test-planner.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.192Z"
+      "lastUpdated": "2026-04-29T17:20:15.557Z"
     },
     {
       "title": "Polyglot Test Researcher",
       "description": "Analyzes codebases to understand structure, testing patterns, and testability. Identifies source files, existing tests, build commands, and testing framework. Works with any language.",
       "path": "agents/polyglot-test-researcher.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.170Z"
+      "lastUpdated": "2026-04-29T17:20:15.558Z"
     },
     {
       "title": "Polyglot Test Tester",
       "description": "Runs test commands for any language and reports results. Discovers test command from project files if not specified.",
       "path": "agents/polyglot-test-tester.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.164Z"
+      "lastUpdated": "2026-04-29T17:20:15.559Z"
     },
     {
-      "title": "PostgreSQL Database Administrator",
+      "title": "Postgresql Dba",
       "description": "Work with PostgreSQL databases using the PostgreSQL extension.",
       "path": "agents/postgresql-dba.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -2073,13 +2065,13 @@
         "pgsql_visualizeSchema"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.196Z"
+      "lastUpdated": "2026-04-29T17:20:15.559Z"
     },
     {
-      "title": "Power BI Data Modeling Expert Mode",
+      "title": "Power Bi Data Modeling Expert",
       "description": "Expert Power BI data modeling guidance using star schema principles, relationship design, and Microsoft best practices for optimal model performance and usability.",
       "path": "agents/power-bi-data-modeling-expert.md",
-      "model": "gpt-4.1",
+      "model": "sonnet",
       "tools": [
         "changes",
         "search/codebase",
@@ -2104,13 +2096,13 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.785Z"
+      "lastUpdated": "2026-04-29T17:20:15.559Z"
     },
     {
-      "title": "Power BI DAX Expert Mode",
+      "title": "Power Bi Dax Expert",
       "description": "Expert Power BI DAX guidance using Microsoft best practices for performance, readability, and maintainability of DAX formulas and calculations.",
       "path": "agents/power-bi-dax-expert.md",
-      "model": "gpt-4.1",
+      "model": "sonnet",
       "tools": [
         "changes",
         "search/codebase",
@@ -2135,13 +2127,13 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.449Z"
+      "lastUpdated": "2026-04-29T17:20:15.559Z"
     },
     {
-      "title": "Power BI Performance Expert Mode",
+      "title": "Power Bi Performance Expert",
       "description": "Expert Power BI performance optimization guidance for troubleshooting, monitoring, and improving the performance of Power BI models, reports, and queries.",
       "path": "agents/power-bi-performance-expert.md",
-      "model": "gpt-4.1",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -2166,13 +2158,13 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.068Z"
+      "lastUpdated": "2026-04-29T17:20:15.560Z"
     },
     {
-      "title": "Power BI Visualization Expert Mode",
+      "title": "Power Bi Visualization Expert",
       "description": "Expert Power BI report design and visualization guidance using Microsoft best practices for creating effective, performant, and user-friendly reports and dashboards.",
       "path": "agents/power-bi-visualization-expert.md",
-      "model": "gpt-4.1",
+      "model": "sonnet",
       "tools": [
         "changes",
         "search/codebase",
@@ -2197,31 +2189,53 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.762Z"
+      "lastUpdated": "2026-04-29T17:20:15.560Z"
     },
     {
       "title": "Power Platform Expert",
       "description": "Power Platform expert providing guidance on Code Apps, canvas apps, Dataverse, connectors, and Power Platform best practices",
       "path": "agents/power-platform-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.809Z"
+      "lastUpdated": "2026-04-29T17:20:15.560Z"
     },
     {
-      "title": "Power Platform MCP Integration Expert",
+      "title": "Power Platform Mcp Integration Expert",
       "description": "Expert in Power Platform custom connector development with MCP integration for Copilot Studio - comprehensive knowledge of schemas, protocols, and integration patterns",
       "path": "agents/power-platform-mcp-integration-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.429Z"
+      "lastUpdated": "2026-04-29T17:20:15.561Z"
     },
     {
-      "title": "Principal software engineer",
+      "title": "Prd",
+      "description": "Generate a comprehensive Product Requirements Document (PRD) in Markdown, detailing user stories, acceptance criteria, technical considerations, and metrics. Optionally create GitHub issues upon user confirmation.",
+      "path": "agents/prd.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "edit/editFiles",
+        "fetch",
+        "findTestFiles",
+        "list_issues",
+        "githubRepo",
+        "search",
+        "add_issue_comment",
+        "create_issue",
+        "update_issue",
+        "get_issue",
+        "search_issues"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.561Z"
+    },
+    {
+      "title": "Principal Software Engineer",
       "description": "Provide principal-level software engineering guidance with focus on engineering excellence, technical leadership, and pragmatic implementation.",
       "path": "agents/principal-software-engineer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "agent",
         "edit",
@@ -2234,13 +2248,13 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.175Z"
+      "lastUpdated": "2026-04-29T17:20:15.561Z"
     },
     {
       "title": "Project Architecture Planner",
       "description": "Holistic software architecture planner that evaluates tech stacks, designs scalability roadmaps, performs cloud-agnostic cost analysis, reviews existing codebases, and delivers interactive Mermaid diagrams with HTML preview and draw.io export",
       "path": "agents/project-architecture-planner.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "search",
@@ -2255,13 +2269,13 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.625Z"
+      "lastUpdated": "2026-04-29T17:20:15.561Z"
     },
     {
       "title": "Prompt Builder",
       "description": "Expert prompt engineering and validation system for creating high-quality prompts - Brought to you by microsoft/edge-ai",
       "path": "agents/prompt-builder.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -2279,40 +2293,31 @@
         "context7"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.180Z"
+      "lastUpdated": "2026-04-29T17:20:15.562Z"
     },
     {
       "title": "Prompt Engineer",
       "description": "A specialized chat mode for analyzing and improving prompts. Every user input is treated as a prompt to be improved. It first provides a detailed analysis of the original prompt within a <reasoning> tag, evaluating it against a systematic framework based on OpenAI's prompt engineering best practices. Following the analysis, it generates a new, improved prompt.",
       "path": "agents/prompt-engineer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.155Z"
+      "lastUpdated": "2026-04-29T17:20:15.562Z"
     },
     {
-      "title": "PySpark Expert Agent",
-      "description": "Diagnose PySpark performance bottlenecks, distributed execution pitfalls, and suggest Spark-native rewrites and safer distributed patterns (incl. mapInPandas guidance).",
-      "path": "agents/spark-performance.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.170Z"
-    },
-    {
-      "title": "Python MCP Server Expert",
+      "title": "Python Mcp Expert",
       "description": "Expert assistant for developing Model Context Protocol (MCP) servers in Python",
       "path": "agents/python-mcp-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.778Z"
+      "lastUpdated": "2026-04-29T17:20:15.562Z"
     },
     {
       "title": "Python Notebook Sample Builder",
       "description": "Custom agent for building Python Notebooks in VS Code that demonstrate Azure and AI features",
       "path": "agents/python-notebook-sample-builder.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode",
         "execute",
@@ -2332,13 +2337,13 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.163Z"
+      "lastUpdated": "2026-04-29T17:20:15.562Z"
     },
     {
-      "title": "QA",
+      "title": "Qa Subagent",
       "description": "Meticulous QA subagent for test planning, bug hunting, edge-case analysis, and implementation verification.",
       "path": "agents/qa-subagent.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode",
         "execute",
@@ -2350,13 +2355,13 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.173Z"
+      "lastUpdated": "2026-04-29T17:20:15.563Z"
     },
     {
-      "title": "react18-auditor",
+      "title": "React18 Auditor",
       "description": "Deep-scan specialist for React 16/17 class-component codebases targeting React 18.3.1. Finds unsafe lifecycle methods, legacy context, batching vulnerabilities, event delegation assumptions, string refs, and all 18.3.1 deprecation surface. Reads everything, touches nothing. Saves .github/react18-audit.md.",
       "path": "agents/react18-auditor.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode/memory",
         "search",
@@ -2369,13 +2374,13 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.174Z"
+      "lastUpdated": "2026-04-29T17:20:15.563Z"
     },
     {
-      "title": "react18-batching-fixer",
+      "title": "React18 Batching Fixer",
       "description": "Automatic batching regression specialist. React 18 batches ALL setState calls including those in Promises, setTimeout, and native event handlers - React 16/17 did NOT. Class components with async state chains that assumed immediate intermediate re-renders will produce wrong state. This agent finds every vulnerable pattern and fixes with flushSync where semantically required.",
       "path": "agents/react18-batching-fixer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode/memory",
         "edit/editFiles",
@@ -2388,13 +2393,13 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.176Z"
+      "lastUpdated": "2026-04-29T17:20:15.563Z"
     },
     {
-      "title": "react18-class-surgeon",
+      "title": "React18 Class Surgeon",
       "description": "Class component migration specialist for React 16/17 → 18.3.1. Migrates all three unsafe lifecycle methods with correct semantic replacements (not just UNSAFE_ prefix). Migrates legacy context to createContext, string refs to React.createRef(), findDOMNode to direct refs, and ReactDOM.render to createRoot. Uses memory to checkpoint per-file progress.",
       "path": "agents/react18-class-surgeon.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode/memory",
         "edit/editFiles",
@@ -2407,13 +2412,13 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.167Z"
+      "lastUpdated": "2026-04-29T17:20:15.564Z"
     },
     {
-      "title": "react18-commander",
+      "title": "React18 Commander",
       "description": "Master orchestrator for React 16/17 → 18.3.1 migration. Designed for class-component-heavy codebases. Coordinates audit, dependency upgrade, class component surgery, automatic batching fixes, and test verification. Uses memory to gate each phase and resume interrupted sessions. 18.3.1 is the target - it surface-exposes every deprecation that React 19 will remove, so the output is a codebase ready for the React 19 orchestra next.",
       "path": "agents/react18-commander.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "agent",
         "vscode/memory",
@@ -2427,13 +2432,13 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.193Z"
+      "lastUpdated": "2026-04-29T17:20:15.564Z"
     },
     {
-      "title": "react18-dep-surgeon",
+      "title": "React18 Dep Surgeon",
       "description": "Dependency upgrade specialist for React 16/17 → 18.3.1. Pins to 18.3.1 exactly (not 18.x latest). Upgrades RTL to v14, Apollo 3.8+, Emotion 11.10+, react-router v6. Detects and blocks on Enzyme (no React 18 support). Returns GO/NO-GO to commander.",
       "path": "agents/react18-dep-surgeon.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode/memory",
         "edit/editFiles",
@@ -2445,13 +2450,13 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.152Z"
+      "lastUpdated": "2026-04-29T17:20:15.564Z"
     },
     {
-      "title": "react18-test-guardian",
+      "title": "React18 Test Guardian",
       "description": "Test suite fixer and verifier for React 16/17 → 18.3.1 migration. Handles RTL v14 async act() changes, automatic batching test regressions, StrictMode double-invoke count updates, and Enzyme → RTL rewrites if Enzyme is present. Loops until zero test failures. Invoked as subagent by react18-commander.",
       "path": "agents/react18-test-guardian.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode/memory",
         "edit/editFiles",
@@ -2464,13 +2469,13 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.154Z"
+      "lastUpdated": "2026-04-29T17:20:15.565Z"
     },
     {
-      "title": "react19-auditor",
+      "title": "React19 Auditor",
       "description": "Deep-scan specialist that identifies every React 19 breaking change and deprecated pattern across the entire codebase. Produces a prioritized migration report at .github/react19-audit.md. Reads everything, touches nothing. Invoked as a subagent by react19-commander.",
       "path": "agents/react19-auditor.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode/memory",
         "search",
@@ -2483,13 +2488,13 @@
         "edit/editFiles"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.187Z"
+      "lastUpdated": "2026-04-29T17:20:15.565Z"
     },
     {
-      "title": "react19-commander",
+      "title": "React19 Commander",
       "description": "Master orchestrator for React 19 migration. Invokes specialist subagents in sequence - auditor, dep-surgeon, migrator, test-guardian - and gates advancement between steps. Uses memory to track migration state across the pipeline. Zero tolerance for incomplete migrations.",
       "path": "agents/react19-commander.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "agent",
         "vscode/memory",
@@ -2503,13 +2508,13 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.187Z"
+      "lastUpdated": "2026-04-29T17:23:10.249Z"
     },
     {
-      "title": "react19-dep-surgeon",
+      "title": "React19 Dep Surgeon",
       "description": "Dependency upgrade specialist. Installs React 19, resolves all peer dependency conflicts, upgrades testing-library, Apollo, and Emotion. Uses memory to log each upgrade step. Returns GO/NO-GO to the commander. Invoked as a subagent by react19-commander.",
       "path": "agents/react19-dep-surgeon.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode/memory",
         "edit/editFiles",
@@ -2521,13 +2526,13 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.162Z"
+      "lastUpdated": "2026-04-29T17:20:15.566Z"
     },
     {
-      "title": "react19-migrator",
+      "title": "React19 Migrator",
       "description": "Source code migration engine. Rewrites every deprecated React pattern to React 19 APIs - forwardRef, defaultProps, ReactDOM.render, legacy context, string refs, useRef(). Uses memory to checkpoint progress per file. Never touches test files. Returns zero-deprecated-pattern confirmation to commander.",
       "path": "agents/react19-migrator.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode/memory",
         "edit/editFiles",
@@ -2540,13 +2545,13 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.184Z"
+      "lastUpdated": "2026-04-29T17:20:15.566Z"
     },
     {
-      "title": "react19-test-guardian",
+      "title": "React19 Test Guardian",
       "description": "Test suite fixer and verification specialist. Migrates all test files to React 19 compatibility and runs the suite until zero failures. Uses memory to track per-file fix progress and failure history. Does not stop until npm test reports 0 failures. Invoked as a subagent by react19-commander.",
       "path": "agents/react19-test-guardian.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode/memory",
         "edit/editFiles",
@@ -2559,22 +2564,22 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.169Z"
+      "lastUpdated": "2026-04-29T17:20:15.566Z"
     },
     {
-      "title": "reepl-linkedin",
+      "title": "Reepl Linkedin",
       "description": "AI-powered LinkedIn content creation, scheduling, and analytics agent. Create posts, carousels, and manage your LinkedIn presence with GitHub Copilot.",
       "path": "agents/reepl-linkedin.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.163Z"
+      "lastUpdated": "2026-04-29T17:20:15.566Z"
     },
     {
-      "title": "Refine Requirement or Issue",
+      "title": "Refine Issue",
       "description": "Refine the requirement or issue with Acceptance Criteria, Technical Considerations, Edge Cases, and NFRs",
       "path": "agents/refine-issue.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "list_issues",
         "githubRepo",
@@ -2588,13 +2593,13 @@
         "search_issues"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.192Z"
+      "lastUpdated": "2026-04-29T17:20:15.567Z"
     },
     {
-      "title": "Repo Architect Agent",
+      "title": "Repo Architect",
       "description": "Bootstraps and validates agentic project structures for GitHub Copilot (VS Code) and OpenCode CLI workflows. Run after `opencode /init` or VS Code Copilot initialization to scaffold proper folder hierarchies, instructions, agents, skills, and prompts.",
       "path": "agents/repo-architect.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -2607,22 +2612,40 @@
         "terminalLastCommand"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.197Z"
+      "lastUpdated": "2026-04-29T17:20:15.567Z"
     },
     {
-      "title": "Ruby MCP Expert",
+      "title": "Research Technical Spike",
+      "description": "Systematically research and validate technical spike documents through exhaustive investigation and controlled experimentation.",
+      "path": "agents/research-technical-spike.md",
+      "model": "sonnet",
+      "tools": [
+        "vscode",
+        "execute",
+        "read",
+        "edit",
+        "search",
+        "web",
+        "agent",
+        "todo"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.567Z"
+    },
+    {
+      "title": "Ruby Mcp Expert",
       "description": "Expert assistance for building Model Context Protocol servers in Ruby using the official MCP Ruby SDK gem with Rails integration.",
       "path": "agents/ruby-mcp-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.311Z"
+      "lastUpdated": "2026-04-29T17:20:15.568Z"
     },
     {
-      "title": "RUG",
+      "title": "Rug Orchestrator",
       "description": "Pure orchestration agent that decomposes requests, delegates all work to subagents, validates outcomes, and repeats until complete.",
       "path": "agents/rug-orchestrator.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode",
         "execute",
@@ -2634,22 +2657,22 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.195Z"
+      "lastUpdated": "2026-04-29T17:20:15.568Z"
     },
     {
-      "title": "Rust MCP Expert",
+      "title": "Rust Mcp Expert",
       "description": "Expert assistant for Rust MCP server development using the rmcp SDK with tokio async runtime",
       "path": "agents/rust-mcp-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.190Z"
+      "lastUpdated": "2026-04-29T17:20:15.568Z"
     },
     {
-      "title": "Salesforce Apex & Triggers Development",
+      "title": "Salesforce Apex Triggers",
       "description": "Implement Salesforce business logic using Apex classes and triggers with production-quality code following Salesforce best practices.",
       "path": "agents/salesforce-apex-triggers.md",
-      "model": "claude-3.5-sonnet",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -2658,13 +2681,28 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.503Z"
+      "lastUpdated": "2026-04-29T17:20:15.569Z"
     },
     {
-      "title": "Salesforce Expert Agent",
+      "title": "Salesforce Aura Lwc",
+      "description": "Implement Salesforce UI components using Lightning Web Components and Aura components following Lightning framework best practices.",
+      "path": "agents/salesforce-aura-lwc.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "edit/editFiles",
+        "terminalCommand",
+        "search",
+        "githubRepo"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.569Z"
+    },
+    {
+      "title": "Salesforce Expert",
       "description": "Provide expert Salesforce Platform guidance, including Apex Enterprise Patterns, LWC, integration, and Aura-to-LWC migration.",
       "path": "agents/salesforce-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [
         "vscode",
         "execute",
@@ -2677,13 +2715,13 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.909Z"
+      "lastUpdated": "2026-04-29T17:20:15.569Z"
     },
     {
-      "title": "Salesforce Flow Development",
+      "title": "Salesforce Flow",
       "description": "Implement business automation using Salesforce Flow following declarative automation best practices.",
       "path": "agents/salesforce-flow.md",
-      "model": "claude-3.5-sonnet",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -2692,28 +2730,13 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.509Z"
+      "lastUpdated": "2026-04-29T17:20:15.570Z"
     },
     {
-      "title": "Salesforce UI Development (Aura & LWC)",
-      "description": "Implement Salesforce UI components using Lightning Web Components and Aura components following Lightning framework best practices.",
-      "path": "agents/salesforce-aura-lwc.md",
-      "model": "claude-3.5-sonnet",
-      "tools": [
-        "codebase",
-        "edit/editFiles",
-        "terminalCommand",
-        "search",
-        "githubRepo"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.939Z"
-    },
-    {
-      "title": "Salesforce Visualforce Development",
+      "title": "Salesforce Visualforce",
       "description": "Implement Visualforce pages and controllers following Salesforce MVC architecture and best practices.",
       "path": "agents/salesforce-visualforce.md",
-      "model": "claude-3.5-sonnet",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -2722,13 +2745,13 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.231Z"
+      "lastUpdated": "2026-04-29T17:20:15.570Z"
     },
     {
       "title": "Scientific Paper Research",
       "description": "Research agent that searches scientific papers and retrieves structured experimental data from full-text studies using the BGPT MCP server.",
       "path": "agents/scientific-paper-research.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "read",
         "edit",
@@ -2736,27 +2759,13 @@
         "bgpt/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.175Z"
+      "lastUpdated": "2026-04-29T17:20:15.571Z"
     },
     {
-      "title": "SE: Architect",
-      "description": "System architecture review specialist with Well-Architected frameworks, design validation, and scalability analysis for AI and distributed systems",
-      "path": "agents/se-system-architecture-reviewer.md",
-      "model": "GPT-5",
-      "tools": [
-        "codebase",
-        "edit/editFiles",
-        "search",
-        "web/fetch"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.804Z"
-    },
-    {
-      "title": "SE: DevOps/CI",
+      "title": "Se Gitops Ci Specialist",
       "description": "DevOps specialist for CI/CD pipelines, deployment debugging, and GitOps workflows focused on making deployments boring and reliable",
       "path": "agents/se-gitops-ci-specialist.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -2765,13 +2774,13 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.840Z"
+      "lastUpdated": "2026-04-29T17:20:15.571Z"
     },
     {
-      "title": "SE: Product Manager",
+      "title": "Se Product Manager Advisor",
       "description": "Product management guidance for creating GitHub issues, aligning business value with user needs, and making data-driven product decisions",
       "path": "agents/se-product-manager-advisor.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "githubRepo",
@@ -2781,26 +2790,26 @@
         "search_issues"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.211Z"
+      "lastUpdated": "2026-04-29T17:20:15.571Z"
     },
     {
-      "title": "SE: Responsible AI",
+      "title": "Se Responsible Ai Code",
       "description": "Responsible AI specialist ensuring AI works for everyone through bias prevention, accessibility compliance, ethical development, and inclusive design",
       "path": "agents/se-responsible-ai-code.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
         "search"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.871Z"
+      "lastUpdated": "2026-04-29T17:20:15.572Z"
     },
     {
-      "title": "SE: Security",
+      "title": "Se Security Reviewer",
       "description": "Security-focused code review specialist with OWASP Top 10, Zero Trust, LLM security, and enterprise security standards",
       "path": "agents/se-security-reviewer.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -2808,13 +2817,27 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.339Z"
+      "lastUpdated": "2026-04-29T17:20:15.572Z"
     },
     {
-      "title": "SE: Tech Writer",
+      "title": "Se System Architecture Reviewer",
+      "description": "System architecture review specialist with Well-Architected frameworks, design validation, and scalability analysis for AI and distributed systems",
+      "path": "agents/se-system-architecture-reviewer.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "edit/editFiles",
+        "search",
+        "web/fetch"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.572Z"
+    },
+    {
+      "title": "Se Technical Writer",
       "description": "Technical writing specialist for creating developer documentation, technical blogs, tutorials, and educational content",
       "path": "agents/se-technical-writer.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -2822,13 +2845,13 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.950Z"
+      "lastUpdated": "2026-04-29T17:20:15.573Z"
     },
     {
-      "title": "SE: UX Designer",
+      "title": "Se Ux Ui Designer",
       "description": "Jobs-to-be-Done analysis, user journey mapping, and UX research artifacts for Figma and design workflows",
       "path": "agents/se-ux-ui-designer.md",
-      "model": "GPT-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -2836,13 +2859,13 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.749Z"
+      "lastUpdated": "2026-04-29T17:20:15.573Z"
     },
     {
-      "title": "Search & AI Optimization Expert",
+      "title": "Search Ai Optimization Expert",
       "description": "Expert guidance for modern search optimization: SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization (GEO) with AI-ready content strategies",
       "path": "agents/search-ai-optimization-expert.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "web/fetch",
@@ -2852,41 +2875,13 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.177Z"
-    },
-    {
-      "title": "Senior Cloud Architect",
-      "description": "Expert in modern architecture design patterns, NFR requirements, and creating comprehensive architectural diagrams and documentation",
-      "path": "agents/arch.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.188Z"
-    },
-    {
-      "title": "Sensei - Junior Mentor",
-      "description": "Socratic mentor for junior developers. Guides through questions, never gives direct answers. Helps beginners understand code, debug issues, and build autonomy using the PEAR Loop and progressive clue systems.",
-      "path": "agents/mentoring-juniors.md",
-      "model": "gpt-4.1",
-      "tools": [
-        "codebase",
-        "editFiles",
-        "fetch",
-        "problems",
-        "runCommands",
-        "search",
-        "terminalLastCommand",
-        "terminalSelection",
-        "usages"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.720Z"
+      "lastUpdated": "2026-04-29T17:20:15.573Z"
     },
     {
       "title": "Shopify Expert",
       "description": "Expert Shopify development assistant specializing in theme development, Liquid templating, app development, and Shopify APIs",
       "path": "agents/shopify-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "terminalCommand",
@@ -2897,13 +2892,34 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.633Z"
+      "lastUpdated": "2026-04-29T17:20:15.574Z"
     },
     {
-      "title": "Software Engineer Agent",
+      "title": "Simple App Idea Generator",
+      "description": "Brainstorm and develop new application ideas through fun, interactive questioning until ready for specification creation.",
+      "path": "agents/simple-app-idea-generator.md",
+      "model": "sonnet",
+      "tools": [
+        "changes",
+        "codebase",
+        "web/fetch",
+        "githubRepo",
+        "openSimpleBrowser",
+        "problems",
+        "search",
+        "searchResults",
+        "usages",
+        "microsoft.docs.mcp",
+        "websearch"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.574Z"
+    },
+    {
+      "title": "Software Engineer Agent V1",
       "description": "Expert-level software engineering agent. Deliver production-ready, maintainable code. Execute systematically and specification-driven. Document comprehensively. Operate autonomously and adaptively.",
       "path": "agents/software-engineer-agent-v1.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "search/codebase",
@@ -2928,13 +2944,22 @@
         "github"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.189Z"
+      "lastUpdated": "2026-04-29T17:20:15.574Z"
+    },
+    {
+      "title": "Spark Performance",
+      "description": "Diagnose PySpark performance bottlenecks, distributed execution pitfalls, and suggest Spark-native rewrites and safer distributed patterns (incl. mapInPandas guidance).",
+      "path": "agents/spark-performance.md",
+      "model": "sonnet",
+      "tools": [],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.575Z"
     },
     {
       "title": "Specification",
       "description": "Generate or update specification documents for new or existing functionality.",
       "path": "agents/specification.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "search/codebase",
         "search/usages",
@@ -2950,13 +2975,13 @@
         "vscode/vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.153Z"
+      "lastUpdated": "2026-04-29T17:20:15.575Z"
     },
     {
-      "title": "stackhawk-security-onboarding",
+      "title": "Stackhawk Security Onboarding",
       "description": "Automatically set up StackHawk security testing for your repository with generated configuration and GitHub Actions workflow",
       "path": "agents/stackhawk-security-onboarding.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "read",
         "edit",
@@ -2965,13 +2990,13 @@
         "stackhawk-mcp/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.184Z"
+      "lastUpdated": "2026-04-29T17:20:15.576Z"
     },
     {
-      "title": "SWE",
+      "title": "Swe Subagent",
       "description": "Senior software engineer subagent for implementation tasks: feature development, debugging, refactoring, and testing.",
       "path": "agents/swe-subagent.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "vscode",
         "execute",
@@ -2983,22 +3008,22 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.178Z"
+      "lastUpdated": "2026-04-29T17:20:15.576Z"
     },
     {
-      "title": "Swift MCP Expert",
+      "title": "Swift Mcp Expert",
       "description": "Expert assistance for building Model Context Protocol servers in Swift using modern concurrency features and the official MCP Swift SDK.",
       "path": "agents/swift-mcp-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.165Z"
+      "lastUpdated": "2026-04-29T17:20:15.576Z"
     },
     {
-      "title": "Task Planner Instructions",
+      "title": "Task Planner",
       "description": "Task planner for creating actionable implementation plans - Brought to you by microsoft/edge-ai",
       "path": "agents/task-planner.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "search/codebase",
@@ -3026,13 +3051,13 @@
         "context7"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.196Z"
+      "lastUpdated": "2026-04-29T17:20:15.577Z"
     },
     {
-      "title": "Task Researcher Instructions",
+      "title": "Task Researcher",
       "description": "Task research specialist for comprehensive project analysis - Brought to you by microsoft/edge-ai",
       "path": "agents/task-researcher.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -3060,10 +3085,10 @@
         "context7"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.172Z"
+      "lastUpdated": "2026-04-29T17:20:15.577Z"
     },
     {
-      "title": "TaxCore Technical Writer",
+      "title": "Taxcore Technical Writer",
       "description": "A domain-expert technical writer for the TaxCore electronic fiscal invoicing ecosystem. Use this agent to create, improve, or review documentation for TaxCore applications — including the Secure Element Reader, smart card workflows, fiscal invoicing concepts, audit processes, and PKI/SE security topics. Covers end-user guides, developer docs, reference material, and setup guides across all TaxCore-related surfaces.",
       "path": "agents/taxcore-technical-writer.md",
       "model": "claude-sonnet-4.6",
@@ -3071,13 +3096,13 @@
         "codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:32:59.921Z"
+      "lastUpdated": "2026-04-29T17:20:15.577Z"
     },
     {
-      "title": "TDD Green Phase - Make Tests Pass Quickly",
+      "title": "Tdd Green",
       "description": "Implement minimal code to satisfy GitHub issue requirements and make failing tests pass without over-engineering.",
       "path": "agents/tdd-green.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "github/*",
         "search/fileSearch",
@@ -3093,13 +3118,13 @@
         "search/codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.181Z"
+      "lastUpdated": "2026-04-29T17:20:15.577Z"
     },
     {
-      "title": "TDD Red Phase - Write Failing Tests First",
+      "title": "Tdd Red",
       "description": "Guide test-first development by writing failing tests that describe desired behaviour from GitHub issue context before implementation exists.",
       "path": "agents/tdd-red.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "github/*",
         "search/fileSearch",
@@ -3115,13 +3140,13 @@
         "search/codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.160Z"
+      "lastUpdated": "2026-04-29T17:20:15.578Z"
     },
     {
-      "title": "TDD Refactor Phase - Improve Quality & Security",
+      "title": "Tdd Refactor",
       "description": "Improve code quality, apply security best practices, and enhance design whilst maintaining green tests and GitHub issue compliance.",
       "path": "agents/tdd-refactor.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "github/*",
         "search/fileSearch",
@@ -3137,13 +3162,13 @@
         "search/codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.168Z"
+      "lastUpdated": "2026-04-29T17:20:15.578Z"
     },
     {
-      "title": "Technical Debt Remediation Plan",
+      "title": "Tech Debt Remediation Plan",
       "description": "Generate technical debt remediation plans for code, tests, and documentation.",
       "path": "agents/tech-debt-remediation-plan.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -3168,31 +3193,13 @@
         "github"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.185Z"
+      "lastUpdated": "2026-04-29T17:20:15.578Z"
     },
     {
-      "title": "Technical spike research mode",
-      "description": "Systematically research and validate technical spike documents through exhaustive investigation and controlled experimentation.",
-      "path": "agents/research-technical-spike.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "vscode",
-        "execute",
-        "read",
-        "edit",
-        "search",
-        "web",
-        "agent",
-        "todo"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.172Z"
-    },
-    {
-      "title": "technical-content-evaluator",
+      "title": "Technical Content Evaluator",
       "description": "Elite technical content editor and curriculum architect for evaluating technical training materials, documentation, and educational content. Reviews for technical accuracy, pedagogical excellence, content flow, code validation, and ensures A-grade quality standards.",
       "path": "agents/technical-content-evaluator.md",
-      "model": "Claude Sonnet 4.5 (copilot)",
+      "model": "sonnet",
       "tools": [
         "edit",
         "search",
@@ -3204,13 +3211,13 @@
         "runSubagent"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.112Z"
+      "lastUpdated": "2026-04-29T17:20:15.579Z"
     },
     {
-      "title": "Terraform Agent",
+      "title": "Terraform",
       "description": "Terraform infrastructure specialist with automated HCP Terraform workflows. Leverages Terraform MCP server for registry integration, workspace management, and run orchestration. Generates compliant code using latest provider/module versions, manages private registries, automates variable sets, and orchestrates infrastructure deployments with proper validation and security practices.",
       "path": "agents/terraform.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "read",
         "edit",
@@ -3219,13 +3226,56 @@
         "terraform/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.178Z"
+      "lastUpdated": "2026-04-29T17:20:15.580Z"
     },
     {
-      "title": "Terraform IaC Reviewer",
+      "title": "Terraform Azure Implement",
+      "description": "Act as an Azure Terraform Infrastructure as Code coding specialist that creates and reviews Terraform for Azure resources.",
+      "path": "agents/terraform-azure-implement.md",
+      "model": "sonnet",
+      "tools": [
+        "execute/getTerminalOutput",
+        "execute/awaitTerminal",
+        "execute/runInTerminal",
+        "read/problems",
+        "read/readFile",
+        "read/terminalSelection",
+        "read/terminalLastCommand",
+        "agent",
+        "edit/createDirectory",
+        "edit/createFile",
+        "edit/editFiles",
+        "search",
+        "web/fetch",
+        "azure-mcp/*",
+        "todo"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.579Z"
+    },
+    {
+      "title": "Terraform Azure Planning",
+      "description": "Act as implementation planner for your Azure Terraform Infrastructure as Code task.",
+      "path": "agents/terraform-azure-planning.md",
+      "model": "sonnet",
+      "tools": [
+        "edit/editFiles",
+        "fetch",
+        "todos",
+        "azureterraformbestpractices",
+        "cloudarchitect",
+        "documentation",
+        "get_bestpractices",
+        "microsoft-docs"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-04-29T17:20:15.579Z"
+    },
+    {
+      "title": "Terraform Iac Reviewer",
       "description": "Terraform-focused agent that reviews and creates safer IaC changes with emphasis on state safety, least privilege, module patterns, drift detection, and plan/apply discipline",
       "path": "agents/terraform-iac-reviewer.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "edit/editFiles",
@@ -3234,137 +3284,82 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.159Z"
+      "lastUpdated": "2026-04-29T17:20:15.580Z"
     },
     {
       "title": "Terratest Module Testing",
       "description": "Generate and refactor Go Terratest suites for Terraform modules, including CI-safe patterns, staged tests, and negative-path validation.",
       "path": "agents/terratest-module-testing.md",
-      "model": "gpt-5",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "terminalCommand"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.172Z"
+      "lastUpdated": "2026-04-29T17:20:15.580Z"
     },
     {
       "title": "Thinking Beast Mode",
       "description": "A transcendent coding agent with quantum cognitive architecture, adversarial intelligence, and unrestricted creative freedom.",
       "path": "agents/thinking-beast-mode.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.168Z"
+      "lastUpdated": "2026-04-29T17:20:15.581Z"
     },
     {
-      "title": "TypeScript MCP Server Expert",
+      "title": "Typescript Mcp Expert",
       "description": "Expert assistant for developing Model Context Protocol (MCP) servers in TypeScript",
       "path": "agents/typescript-mcp-expert.md",
-      "model": "GPT-4.1",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.009Z"
+      "lastUpdated": "2026-04-29T17:20:15.581Z"
     },
     {
       "title": "Ultimate Transparent Thinking Beast Mode",
       "description": "Ultimate Transparent Thinking Beast Mode",
       "path": "agents/ultimate-transparent-thinking-beast-mode.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.159Z"
+      "lastUpdated": "2026-04-29T17:20:15.582Z"
     },
     {
-      "title": "Universal Janitor",
-      "description": "Perform janitorial tasks on any codebase including cleanup, simplification, and tech debt remediation.",
-      "path": "agents/janitor.md",
-      "model": "gpt-5.3-codex",
+      "title": "Vuejs Expert",
+      "description": "Expert Vue.js frontend engineer specializing in Vue 3 Composition API, reactivity, state management, testing, and performance with TypeScript",
+      "path": "agents/vuejs-expert.md",
+      "model": "sonnet",
       "tools": [
+        "search/changes",
+        "search/codebase",
+        "edit/editFiles",
         "vscode/extensions",
+        "web/fetch",
+        "web/githubRepo",
         "vscode/getProjectSetupInfo",
         "vscode/installExtension",
         "vscode/newWorkspace",
         "vscode/runCommand",
-        "vscode/vscodeAPI",
-        "execute/getTerminalOutput",
-        "execute/runTask",
-        "execute/createAndRunTask",
-        "execute/runTests",
-        "execute/runInTerminal",
-        "execute/testFailure",
-        "execute/getTaskOutput",
-        "read/terminalSelection",
-        "read/terminalLastCommand",
         "read/problems",
-        "read/readFile",
-        "github/*",
-        "edit/editFiles",
-        "search",
-        "web"
+        "execute/getTerminalOutput",
+        "execute/runInTerminal",
+        "read/terminalLastCommand",
+        "read/terminalSelection",
+        "execute/createAndRunTask",
+        "search/searchResults",
+        "execute/testFailure",
+        "search/usages",
+        "vscode/vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.174Z"
+      "lastUpdated": "2026-04-29T17:20:15.582Z"
     },
     {
-      "title": "Universal PR Comment Addresser",
-      "description": "Address PR comments",
-      "path": "agents/address-comments.md",
-      "model": "gpt-5.3-codex",
-      "tools": [
-        "changes",
-        "codebase",
-        "editFiles",
-        "extensions",
-        "fetch",
-        "findTestFiles",
-        "githubRepo",
-        "new",
-        "openSimpleBrowser",
-        "problems",
-        "runCommands",
-        "runTasks",
-        "runTests",
-        "search",
-        "searchResults",
-        "terminalLastCommand",
-        "terminalSelection",
-        "testFailure",
-        "usages",
-        "vscodeAPI",
-        "microsoft.docs.mcp",
-        "github"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.194Z"
-    },
-    {
-      "title": "VS Code Insiders Accessibility Tracker",
-      "description": "Specialized agent for tracking and analyzing accessibility improvements in VS Code Insiders builds",
-      "path": "agents/insiders-a11y-tracker.md",
-      "model": "Claude Sonnet 4.5",
-      "tools": [
-        "github/search_issues",
-        "github/issue_read",
-        "read"
-      ],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.069Z"
-    },
-    {
-      "title": "VSCode Tour Expert",
-      "description": "Expert agent for creating and maintaining VSCode CodeTour files with comprehensive schema support and best practices",
-      "path": "agents/code-tour.md",
-      "model": "gpt-5.3-codex",
-      "tools": [],
-      "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.179Z"
-    },
-    {
-      "title": "WG Code Alchemist",
+      "title": "Wg Code Alchemist",
       "description": "Ask WG Code Alchemist to transform your code with Clean Code principles and SOLID design",
       "path": "agents/wg-code-alchemist.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "search/codebase",
@@ -3388,13 +3383,13 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.164Z"
+      "lastUpdated": "2026-04-29T17:20:15.582Z"
     },
     {
-      "title": "WG Code Sentinel",
+      "title": "Wg Code Sentinel",
       "description": "Ask WG Code Sentinel to review your code for security issues.",
       "path": "agents/wg-code-sentinel.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [
         "changes",
         "codebase",
@@ -3418,19 +3413,19 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.195Z"
+      "lastUpdated": "2026-04-29T17:20:15.583Z"
     },
     {
-      "title": "WinForms Expert",
+      "title": "Winforms Expert",
       "description": "Support development of .NET (OOP) WinForms Designer compatible Apps.",
       "path": "agents/winforms-expert.md",
-      "model": "gpt-5.3-codex",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T03:52:31.158Z"
+      "lastUpdated": "2026-04-29T17:20:15.583Z"
     },
     {
-      "title": "WinUI 3 Expert",
+      "title": "Winui3 Expert",
       "description": "Expert agent for WinUI 3 and Windows App SDK development. Prevents common UWP-to-WinUI 3 API mistakes, guides XAML controls, MVVM patterns, windowing, threading, app lifecycle, dialogs, and deployment for desktop Windows apps.",
       "path": "agents/winui3-expert.md",
       "model": "claude-sonnet-4-20250514",
@@ -3440,34 +3435,18 @@
         "microsoft_docs_fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-23T04:33:00.296Z"
+      "lastUpdated": "2026-04-29T17:20:15.584Z"
     }
   ],
   "filters": {
     "models": [
-      "Claude Haiku 4.5 (copilot)",
-      "Claude Opus 4.6 (copilot)",
-      "Claude Sonnet 4",
-      "Claude Sonnet 4.5",
-      "Claude Sonnet 4.5 (copilot)",
-      "Claude Sonnet 4.6",
-      "Claude Sonnet 4.6 (copilot)",
-      "GPT-4.1",
-      "GPT-4.1 | 'gpt-5' | 'Claude Sonnet 4.5'",
-      "GPT-5",
-      "GPT-5.3-Codex",
-      "claude-3.5-sonnet",
       "claude-opus-4.6",
       "claude-sonnet-4",
       "claude-sonnet-4-20250514",
       "claude-sonnet-4-5",
       "claude-sonnet-4-5-20250929",
       "claude-sonnet-4.6",
-      "gpt-4",
-      "gpt-4.1",
-      "gpt-4o",
-      "gpt-5",
-      "gpt-5.3-codex"
+      "sonnet"
     ],
     "tools": [
       "*",

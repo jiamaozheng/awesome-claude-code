@@ -1,7 +1,6 @@
 ---
-
-name: 'QA'
-model: gpt-5.3-codex
+name: qa-subagent
+model: sonnet
 description: 'Meticulous QA subagent for test planning, bug hunting, edge-case analysis, and implementation verification.'
 tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo']
 permissionMode: default

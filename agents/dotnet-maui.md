@@ -1,7 +1,6 @@
 ---
-
-name: MAUI Expert
-model: gpt-5.3-codex
+name: dotnet-maui
+model: sonnet
 description: Support development of .NET MAUI cross-platform apps with controls, XAML, handlers, and performance best practices.
 permissionMode: default
 disallowedTools: []

@@ -1,8 +1,7 @@
 ---
-
 description: "Expert KQL assistant for live Azure Data Explorer analysis via Azure MCP server"
-name: 'Kusto Assistant'
-model: gpt-5.3-codex
+name: kusto-assistant
+model: sonnet
 tools:
   [
     "changes",

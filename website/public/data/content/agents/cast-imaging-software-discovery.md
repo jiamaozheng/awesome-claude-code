@@ -1,9 +1,8 @@
 ---
-
-name: 'CAST Imaging Software Discovery Agent'
-model: gpt-5.3-codex
+name: cast-imaging-software-discovery
+model: sonnet
 description: 'Specialized agent for comprehensive software application discovery and architectural mapping through static code analysis using CAST Imaging'
-mcp-servers:
+mcpServers:
   imaging-structural-search:
     type: 'http'
     url: 'https://castimaging.io/imaging/mcp/'

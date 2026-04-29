@@ -1,8 +1,7 @@
 ---
-
 description: 'Transform requirements documents into structured Jira epics and user stories with intelligent duplicate detection, change management, and user-approved creation workflow.'
-name: 'Atlassian Requirements to Jira'
-model: gpt-5.3-codex
+name: atlassian-requirements-to-jira
+model: sonnet
 tools: ['atlassian']
 permissionMode: default
 disallowedTools: []

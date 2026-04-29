@@ -1,14 +1,13 @@
 ---
-
-name: Scientific Paper Research
-model: gpt-5.3-codex
+name: scientific-paper-research
+model: sonnet
 description: 'Research agent that searches scientific papers and retrieves structured experimental data from full-text studies using the BGPT MCP server.'
 tools:
   - read
   - edit
   - search
   - bgpt/*
-mcp-servers:
+mcpServers:
   bgpt:
     type: "sse"
     url: "https://bgpt.pro/mcp/sse"

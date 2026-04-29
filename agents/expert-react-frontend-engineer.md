@@ -1,8 +1,7 @@
 ---
-
 description: "Expert React 19.2 frontend engineer specializing in modern hooks, Server Components, Actions, TypeScript, and performance optimization"
-name: "Expert React Frontend Engineer"
-model: gpt-5.3-codex
+name: expert-react-frontend-engineer
+model: sonnet
 tools: ["changes", "codebase", "edit/editFiles", "extensions", "fetch", "findTestFiles", "githubRepo", "new", "openSimpleBrowser", "problems", "runCommands", "runTasks", "runTests", "search", "searchResults", "terminalLastCommand", "terminalSelection", "testFailure", "usages", "vscodeAPI", "microsoft.docs.mcp"]
 permissionMode: default
 disallowedTools: []

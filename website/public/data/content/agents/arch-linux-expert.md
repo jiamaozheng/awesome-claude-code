@@ -1,7 +1,7 @@
 ---
-name: 'Arch Linux Expert'
+name: arch-linux-expert
 description: 'Arch Linux specialist focused on pacman, rolling-release maintenance, and Arch-centric system administration workflows.'
-model: GPT-5
+model: sonnet
 tools: ['codebase', 'search', 'terminalCommand', 'runCommands', 'edit/editFiles']
 permissionMode: default
 disallowedTools: []

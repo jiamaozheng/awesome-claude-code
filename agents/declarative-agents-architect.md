@@ -1,7 +1,7 @@
 ---
-name: 'Declarative Agents Architect'
+name: declarative-agents-architect
 description: 'Expert in Microsoft 365 declarative agent architecture, TypeSpec workflows, and v1.5 schema-compliant implementation.'
-model: GPT-4.1
+model: sonnet
 tools: ['codebase']
 permissionMode: default
 disallowedTools: []

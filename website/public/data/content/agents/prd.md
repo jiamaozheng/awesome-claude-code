@@ -1,8 +1,7 @@
 ---
-
 description: "Generate a comprehensive Product Requirements Document (PRD) in Markdown, detailing user stories, acceptance criteria, technical considerations, and metrics. Optionally create GitHub issues upon user confirmation."
-name: "Create PRD Chat Mode"
-model: gpt-5.3-codex
+name: prd
+model: sonnet
 tools: ["codebase", "edit/editFiles", "fetch", "findTestFiles", "list_issues", "githubRepo", "search", "add_issue_comment", "create_issue", "update_issue", "get_issue", "search_issues"]
 permissionMode: default
 disallowedTools: []

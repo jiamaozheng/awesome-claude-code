@@ -1,8 +1,8 @@
 ---
 description: "Generate and refactor Go Terratest suites for Terraform modules, including CI-safe patterns, staged tests, and negative-path validation."
-model: "gpt-5"
+model: sonnet
 tools: ["codebase", "terminalCommand"]
-name: "Terratest Module Testing"
+name: terratest-module-testing
 permissionMode: default
 disallowedTools: []
 ---

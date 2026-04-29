@@ -28,7 +28,7 @@ By the end of this chapter, you'll be able to:
 
 ## 🧩 Real-World Analogy: Power Tools
 
-A general-purpose drill is useful, but specialized attachments make it powerful. 
+A general-purpose drill is useful, but specialized attachments make it powerful.
 <img src="/images/learning-hub/copilot-cli-for-beginners/05/power-tools-analogy.png" alt="Power Tools - Skills Extend Claude Code's Capabilities" width="800"/>
 
 
@@ -558,21 +558,21 @@ Plugins can bundle multiple capabilities together - a single plugin might includ
 
 Pre-made skills are also available from community repositories:
 
-- **[Awesome Claude Code](https://github.com/github/awesome-copilot)** - Official Claude Code resources including skills documentation and examples
+- **[Awesome Claude Code](https://github.com/jiamaozheng/awesome-claude-code)** - Official Claude Code resources including skills documentation and examples
 
 ### Installing a Community Skill Manually
 
 If you find a skill in a GitHub repository, copy its folder into your skills directory:
 
 ```bash
-# Clone the awesome-copilot repository
-git clone https://github.com/github/awesome-copilot.git /tmp/awesome-copilot
+# Clone the awesome-claude-code repository
+git clone https://github.com/jiamaozheng/awesome-claude-code.git /tmp/awesome-claude-code
 
 # Copy a specific skill to your project
-cp -r /tmp/awesome-copilot/skills/code-checklist .github/skills/
+cp -r /tmp/awesome-claude-code/skills/code-checklist .github/skills/
 
 # Or for personal use across all projects
-cp -r /tmp/awesome-copilot/skills/code-checklist ~/.copilot/skills/
+cp -r /tmp/awesome-claude-code/skills/code-checklist ~/.copilot/skills/
 ```
 
 > ⚠️ **Review before installing**: Always read a skill's `SKILL.md` before copying it into your project. Skills control what Claude Code does, and a malicious skill could instruct it to run harmful commands or modify code in unexpected ways.

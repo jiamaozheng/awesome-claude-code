@@ -1,8 +1,7 @@
 ---
-
 description: 'Validate user understanding of code, design patterns, and implementation details through guided questioning.'
-name: 'Demonstrate Understanding mode instructions'
-model: gpt-5.3-codex
+name: demonstrate-understanding
+model: sonnet
 tools: ['codebase', 'web/fetch', 'findTestFiles', 'githubRepo', 'search', 'usages']
 permissionMode: default
 disallowedTools: []

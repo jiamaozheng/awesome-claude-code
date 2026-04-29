@@ -1,7 +1,7 @@
 ---
-name: 'CentOS Linux Expert'
+name: centos-linux-expert
 description: 'CentOS (Stream/Legacy) Linux specialist focused on RHEL-compatible administration, yum/dnf workflows, and enterprise hardening.'
-model: GPT-4.1
+model: sonnet
 tools: ['codebase', 'search', 'terminalCommand', 'runCommands', 'edit/editFiles']
 permissionMode: default
 disallowedTools: []

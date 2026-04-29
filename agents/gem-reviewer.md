@@ -1,11 +1,7 @@
 ---
-
 description: "Security auditing, code review, OWASP scanning, PRD compliance verification."
 name: gem-reviewer
-model: gpt-5.3-codex
-argument-hint: "Enter task_id, plan_id, plan_path, review_scope (plan|task|wave), and review criteria for compliance and security audit."
-disable-model-invocation: false
-user-invocable: false
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

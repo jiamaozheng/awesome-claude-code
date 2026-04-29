@@ -1,7 +1,6 @@
 ---
-
-name: WinForms Expert
-model: gpt-5.3-codex
+name: winforms-expert
+model: sonnet
 description: Support development of .NET (OOP) WinForms Designer compatible Apps.
 #version: 2025-10-24a
 permissionMode: default

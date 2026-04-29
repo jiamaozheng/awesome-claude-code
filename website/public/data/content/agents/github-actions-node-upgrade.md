@@ -1,7 +1,6 @@
 ---
-
-name: 'GitHub Actions Node Runtime Upgrade'
-model: gpt-5.3-codex
+name: github-actions-node-upgrade
+model: sonnet
 description: 'Upgrade a GitHub Actions JavaScript/TypeScript action to a newer Node runtime version (e.g., node20 to node24) with major version bump, CI updates, and full validation'
 tools: ['codebase', 'edit/editFiles', 'terminalCommand', 'search']
 permissionMode: default

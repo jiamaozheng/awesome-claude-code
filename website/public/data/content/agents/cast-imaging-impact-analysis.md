@@ -1,9 +1,8 @@
 ---
-
-name: 'CAST Imaging Impact Analysis Agent'
-model: gpt-5.3-codex
+name: cast-imaging-impact-analysis
+model: sonnet
 description: 'Specialized agent for comprehensive change impact assessment and risk analysis in software systems using CAST Imaging'
-mcp-servers:
+mcpServers:
   imaging-impact-analysis:
     type: 'http'
     url: 'https://castimaging.io/imaging/mcp/'

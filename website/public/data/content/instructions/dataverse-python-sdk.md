@@ -2,6 +2,7 @@
 description: 'Official quickstart for configuring and using the Dataverse SDK for Python with authenticated CRUD operations.'
 paths: '**'
 ---
+
 # Dataverse SDK for Python — Official Quickstart
 
 This instruction summarizes Microsoft Learn guidance for the Dataverse SDK for Python (preview) and provides copyable snippets.

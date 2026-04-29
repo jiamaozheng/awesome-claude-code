@@ -14,7 +14,7 @@
   "author": {
     "name": "Tim Hanewich"
   },
-  "repository": "https://github.com/github/awesome-copilot",
+  "repository": "https://github.com/jiamaozheng/awesome-claude-code",
   "license": "MIT",
   "skills": [
     "./skills/power-platform-architect"

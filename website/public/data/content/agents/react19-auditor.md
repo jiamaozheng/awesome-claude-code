@@ -1,10 +1,8 @@
 ---
-
 name: react19-auditor
-model: gpt-5.3-codex
+model: sonnet
 description: 'Deep-scan specialist that identifies every React 19 breaking change and deprecated pattern across the entire codebase. Produces a prioritized migration report at .github/react19-audit.md. Reads everything, touches nothing. Invoked as a subagent by react19-commander.'
 tools: ['vscode/memory', 'search', 'search/usages', 'web/fetch', 'execute/getTerminalOutput', 'execute/runInTerminal', 'read/terminalLastCommand', 'read/terminalSelection', 'edit/editFiles']
-user-invocable: false
 permissionMode: default
 disallowedTools: []
 ---

@@ -1,8 +1,7 @@
 ---
-
 description: 'Expert prompt engineering and validation system for creating high-quality prompts - Brought to you by microsoft/edge-ai'
-name: 'Prompt Builder'
-model: gpt-5.3-codex
+name: prompt-builder
+model: sonnet
 tools: ['codebase', 'edit/editFiles', 'web/fetch', 'githubRepo', 'problems', 'runCommands', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'usages', 'terraform', 'Microsoft Docs', 'context7']
 permissionMode: default
 disallowedTools: []

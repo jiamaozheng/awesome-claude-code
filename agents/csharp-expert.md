@@ -1,7 +1,6 @@
 ---
-
-name: "C# Expert"
-model: gpt-5.3-codex
+name: csharp-expert
+model: sonnet
 description: An agent designed to assist with software development tasks for .NET projects.
 # version: 2026-01-20a
 permissionMode: default

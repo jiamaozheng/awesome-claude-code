@@ -13,7 +13,7 @@
   "author": {
     "name": "Awesome Copilot Community"
   },
-  "repository": "https://github.com/github/awesome-copilot",
+  "repository": "https://github.com/jiamaozheng/awesome-claude-code",
   "license": "MIT",
   "agents": [
     "./agents"

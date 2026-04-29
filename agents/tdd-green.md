@@ -1,8 +1,7 @@
 ---
-
 description: 'Implement minimal code to satisfy GitHub issue requirements and make failing tests pass without over-engineering.'
-name: 'TDD Green Phase - Make Tests Pass Quickly'
-model: gpt-5.3-codex
+name: tdd-green
+model: sonnet
 tools: ['github/*', 'search/fileSearch', 'edit/editFiles', 'execute/runTests', 'execute/runInTerminal', 'execute/getTerminalOutput', 'execute/testFailure', 'read/readFile', 'read/terminalLastCommand', 'read/terminalSelection', 'read/problems', 'search/codebase']
 permissionMode: default
 disallowedTools: []

@@ -1,7 +1,7 @@
 ---
-model: GPT-4.1
+model: sonnet
 description: "Expert assistant for building Model Context Protocol (MCP) servers in Kotlin using the official SDK."
-name: "Kotlin MCP Server Development Expert"
+name: kotlin-mcp-expert
 permissionMode: default
 disallowedTools: []
 ---

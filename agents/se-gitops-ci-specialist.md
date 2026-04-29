@@ -1,7 +1,7 @@
 ---
-name: 'SE: DevOps/CI'
+name: se-gitops-ci-specialist
 description: 'DevOps specialist for CI/CD pipelines, deployment debugging, and GitOps workflows focused on making deployments boring and reliable'
-model: GPT-5
+model: sonnet
 tools: ['codebase', 'edit/editFiles', 'terminalCommand', 'search', 'githubRepo']
 permissionMode: default
 disallowedTools: []

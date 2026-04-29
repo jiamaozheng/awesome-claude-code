@@ -1,7 +1,7 @@
 ---
 description: "Expert assistant for developing Model Context Protocol (MCP) servers in C#"
-name: "C# MCP Server Expert"
-model: GPT-4.1
+name: csharp-mcp-expert
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

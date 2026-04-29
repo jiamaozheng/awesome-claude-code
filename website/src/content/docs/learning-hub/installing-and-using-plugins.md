@@ -175,7 +175,7 @@ Or from an interactive session:
 /plugin install database-data-management@awesome-copilot
 ```
 
-> **Deprecation notice**: Installing plugins directly from a GitHub repository URL, raw URL, or local file path (e.g., `copilot plugin install github/awesome-copilot`) is deprecated and will be removed in a future release. Use marketplace-based installation instead.
+> **Deprecation notice**: Installing plugins directly from a GitHub repository URL, raw URL, or local file path (e.g., `copilot plugin install github/jiamaozheng/awesome-claude-code`) is deprecated and will be removed in a future release. Use marketplace-based installation instead.
 
 ### From VS Code
 
@@ -227,7 +227,7 @@ You don't need to do any additional configuration after installing — the plugi
 
 ## Plugins from This Repository
 
-This repository (`awesome-copilot`) serves as both a collection of individual resources _and_ a plugin marketplace. You can use it in two ways:
+This repository serves as both a collection of individual resources _and_ a plugin marketplace. You can use it in two ways:
 
 ### Install Individual Plugins
 

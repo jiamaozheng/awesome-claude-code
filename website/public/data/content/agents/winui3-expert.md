@@ -1,5 +1,5 @@
 ---
-name: WinUI 3 Expert
+name: winui3-expert
 description: 'Expert agent for WinUI 3 and Windows App SDK development. Prevents common UWP-to-WinUI 3 API mistakes, guides XAML controls, MVVM patterns, windowing, threading, app lifecycle, dialogs, and deployment for desktop Windows apps.'
 model: claude-sonnet-4-20250514
 tools:

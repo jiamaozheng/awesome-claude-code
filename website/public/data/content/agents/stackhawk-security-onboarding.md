@@ -1,10 +1,9 @@
 ---
-
 name: stackhawk-security-onboarding
-model: gpt-5.3-codex
+model: sonnet
 description: Automatically set up StackHawk security testing for your repository with generated configuration and GitHub Actions workflow
 tools: ['read', 'edit', 'search', 'shell', 'stackhawk-mcp/*']
-mcp-servers:
+mcpServers:
   stackhawk-mcp:
     type: 'local'
     command: 'uvx'

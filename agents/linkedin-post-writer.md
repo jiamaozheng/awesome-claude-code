@@ -1,7 +1,6 @@
 ---
-
-name: "LinkedIn Post Writer"
-model: gpt-5.3-codex
+name: linkedin-post-writer
+model: sonnet
 description: "Draft and format compelling LinkedIn posts with Unicode bold/italic styling, visual separators, and engagement-optimized structure. Transforms raw content, technical material, images, or ideas into copy-paste-ready LinkedIn posts."
 tools: ["codebase", "fetch"]
 permissionMode: default

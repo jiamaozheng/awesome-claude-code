@@ -5,8 +5,8 @@ import instructionsData from "../../public/data/instructions.json";
 import skillsData from "../../public/data/skills.json";
 
 // Base URL for absolute links (to raw GitHub content)
-const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/github/awesome-copilot/main";
-const WEBSITE_BASE = "https://awesome-copilot.github.com";
+const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/jiamaozheng/awesome-claude-code/main";
+const WEBSITE_BASE = "https://jiamaozheng.github.io/awesome-claude-code";
 
 const normalizeDescription = (value?: string) =>
   (value || "No description available").replace(/\s+/g, " ").trim();
@@ -95,9 +95,9 @@ export const GET: APIRoute = async () => {
 
   // Add repository information
   content += "## Repository\n\n";
-  content += "- **GitHub**: https://github.com/github/awesome-copilot\n";
+  content += "- **GitHub**: https://github.com/jiamaozheng/awesome-claude-code\n";
   content += "- **License**: MIT\n";
-  content += "- **Website**: https://awesome-copilot.github.com\n";
+  content += "- **Website**: https://jiamaozheng.github.io/awesome-claude-code\n";
 
   return new Response(content, {
     headers: { "Content-Type": "text/plain; charset=utf-8" },

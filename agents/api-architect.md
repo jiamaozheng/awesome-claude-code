@@ -1,8 +1,7 @@
 ---
-
 description: 'Your role is that of an API architect. Help mentor the engineer by providing guidance, support, and working code.'
-name: 'API Architect'
-model: gpt-5.3-codex
+name: api-architect
+model: sonnet
 permissionMode: default
 disallowedTools: []
 ---

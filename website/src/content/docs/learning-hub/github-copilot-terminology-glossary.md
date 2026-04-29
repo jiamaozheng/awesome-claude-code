@@ -265,4 +265,4 @@ tools: ['codebase', 'terminalCommand', 'github']
 
 ---
 
-**Have a term you'd like to see added?** Contributions are welcome! See our [Contributing Guidelines](https://github.com/github/awesome-copilot/blob/main/CONTRIBUTING.md) for how to suggest additions to this glossary.
+**Have a term you'd like to see added?** Contributions are welcome! See our [Contributing Guidelines](https://github.com/jiamaozheng/awesome-claude-code/blob/main/CONTRIBUTING.md) for how to suggest additions to this glossary.
