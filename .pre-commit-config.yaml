@@ -18,3 +18,10 @@ repos:
         entry: python3 scripts/validate_plugins.py
         language: system
         pass_filenames: false
+
+      - id: lint-readme
+        name: Lint README.md for stale content
+        entry: python3 scripts/lint_readme.py
+        language: system
+        pass_filenames: false
+        files: ^README\.md$
