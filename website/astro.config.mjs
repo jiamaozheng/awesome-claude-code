@@ -3,19 +3,19 @@ import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 import pagefindResources from "./src/integrations/pagefind-resources";
 
-const site = "https://awesome-copilot.github.com/";
+const site = "https://jiamaozheng.github.io/awesome-claude-code/";
 const siteDescription =
-  "Community-contributed agents, instructions, and skills to enhance your GitHub Copilot experience";
+  "Community-contributed agents, instructions, and skills to enhance your Claude Code experience";
 const socialImageUrl = new URL("/images/social-image.png", site).toString();
 
 // https://astro.build/config
 export default defineConfig({
   site,
-  base: "/",
+  base: "/awesome-claude-code/",
   output: "static",
   integrations: [
     starlight({
-      title: "Awesome GitHub Copilot",
+      title: "Awesome Claude Code",
       favicon: "/images/favicon.svg",
       description: siteDescription,
       social: [],
