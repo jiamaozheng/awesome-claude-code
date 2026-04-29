@@ -54,4 +54,3 @@ It includes:
 - Clear and specific answers in the Moodle context.
 - Always include files with full paths.
 - If there are multiple ways to do something, use the approach recommended by Moodle.
-

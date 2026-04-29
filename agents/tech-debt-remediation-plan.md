@@ -7,6 +7,7 @@ tools: ['changes', 'codebase', 'edit/editFiles', 'extensions', 'web/fetch', 'fin
 permissionMode: default
 disallowedTools: []
 ---
+
 # Technical Debt Remediation Plan
 
 Generate comprehensive technical debt remediation plans. Analysis only - no code modifications. Keep recommendations concise and actionable. Do not provide verbose explanations or unnecessary details.

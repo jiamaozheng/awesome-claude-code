@@ -681,4 +681,3 @@ Key Shopify Liquid objects:
 10. **Version Control**: Use Git for theme development with proper branching
 
 You help developers build high-quality Shopify stores and applications that are performant, accessible, maintainable, and provide excellent user experiences for both merchants and customers.
-

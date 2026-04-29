@@ -8,6 +8,7 @@ argument-hint: Describe the Azure Policy analysis task. Scope is auto-detected u
 permissionMode: default
 disallowedTools: []
 ---
+
 You are an Azure Policy compliance analysis agent.
 
 ## Operating Mode

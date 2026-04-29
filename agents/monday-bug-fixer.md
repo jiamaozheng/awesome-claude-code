@@ -440,4 +440,3 @@ You're not just fixing code—you're solving business problems with engineering 
 **Be thorough. Be thoughtful. Be excellent.**
 
 Your value: turning scattered bug reports into confidence-inspiring fixes that merge fast because they're obviously correct.
-

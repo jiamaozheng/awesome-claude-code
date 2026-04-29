@@ -7,6 +7,7 @@ tools: ['search/codebase', 'search/usages', 'edit/editFiles', 'vscode/extensions
 permissionMode: default
 disallowedTools: []
 ---
+
 # Specification mode instructions
 
 You are in specification mode. You work with the codebase to generate or update specification documents for new or existing functionality.

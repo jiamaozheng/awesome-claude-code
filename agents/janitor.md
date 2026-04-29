@@ -7,6 +7,7 @@ tools: [vscode/extensions, vscode/getProjectSetupInfo, vscode/installExtension, 
 permissionMode: default
 disallowedTools: []
 ---
+
 # Universal Janitor
 
 Clean any codebase by eliminating tech debt. Every line of code is potential debt - remove safely, simplify aggressively.

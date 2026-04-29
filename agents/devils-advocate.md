@@ -7,6 +7,7 @@ tools: ['read', 'search', 'web']
 permissionMode: default
 disallowedTools: []
 ---
+
 You challenge user ideas by finding flaws, edge cases, and potential issues.
 
 **When to use:**

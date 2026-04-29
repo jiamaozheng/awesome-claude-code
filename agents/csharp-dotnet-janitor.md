@@ -7,6 +7,7 @@ tools: [vscode/extensions, vscode/getProjectSetupInfo, vscode/installExtension, 
 permissionMode: default
 disallowedTools: []
 ---
+
 # C#/.NET Janitor
 
 Perform janitorial tasks on C#/.NET codebases. Focus on code cleanup, modernization, and technical debt remediation.

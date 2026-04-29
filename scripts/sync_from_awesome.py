@@ -17,6 +17,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
+MIGRATED_FRONTMATTER_KINDS = {"agent", "instruction"}
+
+
 @dataclass
 class Row:
     kind: str
@@ -36,10 +39,45 @@ def _load_rows(inventory_path: Path) -> list[Row]:
     return rows
 
 
-def _copy_file(src: Path, dst: Path, dry_run: bool) -> None:
+def _split_frontmatter(text: str) -> tuple[str | None, str]:
+    if not text.startswith("---\n") and not text.startswith("---\r\n"):
+        return None, text
+
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return None, text
+
+    end_idx = None
+    for i in range(1, len(lines)):
+        if lines[i].strip() == "---":
+            end_idx = i
+            break
+
+    if end_idx is None:
+        return None, text
+
+    frontmatter = "\n".join(lines[1:end_idx])
+    body = "\n".join(lines[end_idx + 1 :])
+    return frontmatter, body
+
+
+def _copy_file(kind: str, src: Path, dst: Path, dry_run: bool) -> None:
     if dry_run:
         return
+
     dst.parent.mkdir(parents=True, exist_ok=True)
+
+    if kind in MIGRATED_FRONTMATTER_KINDS and dst.exists():
+        src_text = src.read_text(encoding="utf-8")
+        dst_text = dst.read_text(encoding="utf-8")
+        dst_frontmatter, _ = _split_frontmatter(dst_text)
+        _, src_body = _split_frontmatter(src_text)
+
+        if dst_frontmatter is not None:
+            merged_text = f"---\n{dst_frontmatter}\n---\n\n{src_body.lstrip()}"
+            dst.write_text(merged_text, encoding="utf-8")
+            return
+
     shutil.copy2(src, dst)
 
 
@@ -154,7 +192,7 @@ def main() -> int:
             print(f"MISSING SOURCE: {src_rel}")
             continue
 
-        _copy_file(src_now, dst_now, args.dry_run)
+        _copy_file(row.kind, src_now, dst_now, args.dry_run)
         copied += 1
         action = "WOULD COPY" if args.dry_run else "COPIED"
         print(f"{action}: {src_rel} -> {dst_rel}")

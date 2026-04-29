@@ -134,7 +134,7 @@ for page in accounts:
 ```python
 # SQL queries are read-only but powerful for analytics
 sql = """
-SELECT
+SELECT 
     a.name as AccountName,
     a.creditlimit,
     COUNT(c.contactid) as ContactCount
@@ -336,7 +336,7 @@ for page in client.get("account", top=batch_size, filter="statecode eq 0"):
                 "id": account['accountid'],
                 "accountmanagerid": "senior-manager-guid"
             })
-
+    
     # Batch update
     for update in batch_updates:
         client.update("account", update['id'], {"accountmanagerid": update['accountmanagerid']})
@@ -358,7 +358,7 @@ def safe_update(table, record_id, data, check_field=None, check_value=None):
             if record.get(check_field) != check_value:
                 print(f"Condition not met: {check_field} != {check_value}")
                 return False
-
+        
         client.update(table, record_id, data)
         return True
     except DataverseError as e:
@@ -571,15 +571,15 @@ def delete_table_safe(table_name):
         if not table_info:
             print(f"Table {table_name} not found")
             return False
-
+        
         # Delete
         client.delete_table(table_name)
         print(f"✓ Deleted table: {table_name}")
-
+        
         # Clear cache
         client.flush_cache()
         return True
-
+        
     except MetadataError as e:
         print(f"❌ Failed to delete table: {e}")
         return False
@@ -626,7 +626,7 @@ try:
         }
     )
     print(f"✓ Created table: {table_info['table_schema_name']}")
-
+    
     # 2. Create records
     print("\nCreating tasks...")
     tasks = [
@@ -654,7 +654,7 @@ try:
     ]
     task_ids = client.create("new_ProjectTask", tasks)
     print(f"✓ Created {len(task_ids)} tasks")
-
+    
     # 3. Query and filter
     print("\nQuerying high-priority tasks...")
     high_priority = client.get(
@@ -665,7 +665,7 @@ try:
     for page in high_priority:
         for task in page:
             print(f"  - {task['new_title']}: {task['new_estimatedhours']} hours")
-
+    
     # 4. Update records
     print("\nUpdating task status...")
     client.update("new_ProjectTask", task_ids[1], {
@@ -673,15 +673,15 @@ try:
         "new_EstimatedHours": 85.5
     })
     print("✓ Updated task status")
-
+    
     # 5. Cleanup
     print("\nCleaning up...")
     client.delete_table("new_ProjectTask")
     print("✓ Deleted table")
-
+    
     # Clear cache
     client.flush_cache()
-
+    
 except (MetadataError, DataverseError) as e:
     print(f"❌ Error: {e}")
 ```

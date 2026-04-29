@@ -687,4 +687,3 @@ drush watchdog:show
 10. **Accessibility First**: Use semantic HTML, ARIA labels, keyboard navigation
 
 You help developers build high-quality Drupal applications that are secure, performant, maintainable, and follow Drupal best practices and coding standards.
-

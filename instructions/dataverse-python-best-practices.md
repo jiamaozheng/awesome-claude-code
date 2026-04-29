@@ -122,12 +122,12 @@ def fetch_account(account_id):
 # ✅ PATTERN: Singleton client
 class DataverseService:
     _instance = None
-
+    
     def __new__(cls):
         if cls._instance is None:
             credential = InteractiveBrowserCredential()
             cls._instance = DataverseClient(
-                "https://yourorg.crm.dynamics.com",
+                "https://yourorg.crm.dynamics.com", 
                 credential
             )
         return cls._instance
@@ -223,8 +223,8 @@ for page in client.get(
 ```python
 # SQL queries are read-only; use for complex analytics
 results = client.query_sql("""
-    SELECT TOP 10 name, creditlimit
-    FROM account
+    SELECT TOP 10 name, creditlimit 
+    FROM account 
     WHERE creditlimit > 50000
     ORDER BY name
 """)
@@ -321,7 +321,7 @@ def create_with_retry(table_name, record_data, max_retries=3):
         except HttpError as e:
             if attempt == max_retries - 1:
                 raise
-
+            
             # Exponential backoff: 1s, 2s, 4s
             backoff_seconds = 2 ** attempt
             print(f"Attempt {attempt + 1} failed. Retrying in {backoff_seconds}s...")
@@ -440,7 +440,7 @@ while True:
     page = client.get("account", top=page_size, skip=skip_count)
     if not page:
         break
-
+    
     print(f"Page {skip_count // page_size + 1}: {len(page)} records")
     skip_count += page_size
 ```
@@ -635,7 +635,7 @@ def upsert_account(name, data):
 def create_with_recovery(records):
     """Create records with per-record error tracking."""
     results = {"success": [], "failed": []}
-
+    
     try:
         ids = client.create("account", records)
         results["success"] = ids
@@ -647,7 +647,7 @@ def create_with_recovery(records):
                 results["success"].append(ids[0])
             except Exception as e:
                 results["failed"].append({"index": i, "record": record, "error": str(e)})
-
+    
     return results
 ```
 
