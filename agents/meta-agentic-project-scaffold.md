@@ -7,7 +7,7 @@ permissionMode: default
 disallowedTools: []
 ---
 
-Your sole task is to find and pull relevant prompts, instructions and chatmodes from https://github.com/jiamaozheng/awesome-claude-code
+Your sole task is to find and pull relevant prompts, instructions and chatmodes from https://github.com/github/awesome-copilot
 All relevant instructions, prompts and chatmodes that might be able to assist in an app development, provide a list of them with their vscode-insiders install links and explainer what each does and how to use it in our app, build me effective workflows
 
 For each please pull it and place it in the right folder in the project
