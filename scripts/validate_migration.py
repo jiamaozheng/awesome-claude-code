@@ -125,6 +125,11 @@ def validate_inventory_targets_exist(rows: Iterable[dict]) -> List[Issue]:
             continue
         t = Path(row["target"])
         if not t.exists():
+            # If the source also doesn't exist locally this is a "pending" row
+            # added to track a new upstream file not yet synced — skip it.
+            s = Path(row["source"])
+            if not s.exists():
+                continue
             issues.append(Issue("HIGH", rel(INVENTORY), f"Line {row['line']}: missing target file {row['target']}"))
             continue
         if not t.is_file():
@@ -141,7 +146,11 @@ def validate_inventory_vs_artifacts(rows: Iterable[dict], artifacts: Dict[str, S
         rtype = row["type"]
         if rtype not in KNOWN_TYPES:
             continue
-        inventory_targets_by_type[rtype].add(str(Path(row["target"]).resolve()))
+        t = Path(row["target"])
+        # Skip pending rows (target doesn't exist yet and neither does source locally)
+        if not t.exists() and not Path(row["source"]).exists():
+            continue
+        inventory_targets_by_type[rtype].add(str(t.resolve()))
 
     for rtype in sorted(KNOWN_TYPES):
         expected = artifacts[rtype]
