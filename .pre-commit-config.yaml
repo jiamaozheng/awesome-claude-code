@@ -1,0 +1,20 @@
+repos:
+  - repo: local
+    hooks:
+      - id: validate-migration
+        name: Validate migration inventory and artifacts
+        entry: python3 scripts/validate_migration.py
+        language: system
+        pass_filenames: false
+
+      - id: validate-claude-assets
+        name: Validate Claude customization assets and best practices
+        entry: python3 scripts/validate_claude_assets.py
+        language: system
+        pass_filenames: false
+
+      - id: validate-plugins
+        name: Validate plugin manifests and inventory
+        entry: python3 scripts/validate_plugins.py
+        language: system
+        pass_filenames: false

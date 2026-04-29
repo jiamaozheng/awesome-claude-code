@@ -1,0 +1,35 @@
+name: Validate Plugins
+
+on:
+  pull_request:
+    paths:
+      - "plugins/**"
+      - "docs/migration-inventory.csv"
+      - "scripts/validate_plugins.py"
+      - ".github/workflows/validate-plugins.yml"
+  push:
+    branches:
+      - main
+      - staged
+    paths:
+      - "plugins/**"
+      - "docs/migration-inventory.csv"
+      - "scripts/validate_plugins.py"
+      - ".github/workflows/validate-plugins.yml"
+  workflow_dispatch:
+
+jobs:
+  plugin-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate plugin manifests and migration inventory
+        run: python3 scripts/validate_plugins.py

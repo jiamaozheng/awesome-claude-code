@@ -1,0 +1,285 @@
+#!/usr/bin/env python3
+"""Validate Claude customization assets for required structure and best practices.
+
+Scope:
+- agents/*.md
+- instructions/*.md
+- skills/**/SKILL.md
+- hooks/*/{README.md,hooks.json}
+- workflows/*.md
+
+Behavior:
+- Fails on ERROR findings
+- Reports WARN findings for recommended best practices
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Iterable, List, Tuple
+
+ROOT = Path(__file__).resolve().parents[1]
+
+LOWER_HYPHEN_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
+
+@dataclass
+class Finding:
+    level: str  # ERROR | WARN
+    path: str
+    message: str
+
+
+def rel(path: Path) -> str:
+    try:
+        return str(path.relative_to(ROOT))
+    except ValueError:
+        return str(path)
+
+
+def extract_frontmatter(path: Path) -> Tuple[str | None, str | None]:
+    """Return (frontmatter, error)."""
+    try:
+        text = path.read_text(encoding="utf-8")
+    except Exception as exc:  # noqa: BLE001
+        return None, f"Failed to read file: {exc}"
+
+    # Must start with ---
+    if not text.startswith("---\n") and not text.startswith("---\r\n"):
+        return None, "Missing YAML frontmatter at file start"
+
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return None, "Invalid YAML frontmatter start delimiter"
+
+    end_idx = None
+    for i in range(1, len(lines)):
+        if lines[i].strip() == "---":
+            end_idx = i
+            break
+
+    if end_idx is None:
+        return None, "Missing YAML frontmatter end delimiter"
+
+    fm = "\n".join(lines[1:end_idx])
+    return fm, None
+
+
+def key_exists(frontmatter: str, key: str) -> bool:
+    return re.search(rf"(?m)^\s*{re.escape(key)}\s*:", frontmatter) is not None
+
+
+def key_value(frontmatter: str, key: str) -> str | None:
+    lines = frontmatter.splitlines()
+    key_re = re.compile(rf"^\s*{re.escape(key)}\s*:\s*(.*)$")
+
+    for i, line in enumerate(lines):
+        m = key_re.match(line)
+        if not m:
+            continue
+
+        value = m.group(1).strip()
+
+        # YAML block scalar support: description: | or description: >
+        if value in {"|", ">"} or value.startswith("|-") or value.startswith("|+") or value.startswith(">-") or value.startswith(">+"):
+            block_lines: list[str] = []
+            j = i + 1
+            while j < len(lines):
+                next_line = lines[j]
+                if next_line.startswith(" ") or next_line.startswith("\t") or next_line == "":
+                    block_lines.append(next_line)
+                    j += 1
+                    continue
+                break
+            block = "\n".join(block_lines).strip()
+            return block if block else None
+
+        # remove inline comments
+        value = re.sub(r"\s+#.*$", "", value).strip()
+        # strip quotes
+        if (value.startswith("\"") and value.endswith("\"")) or (value.startswith("'") and value.endswith("'")):
+            value = value[1:-1]
+        return value or None
+
+    return None
+
+
+def validate_agents() -> List[Finding]:
+    findings: List[Finding] = []
+    for path in sorted((ROOT / "agents").glob("*.md")):
+        fm, err = extract_frontmatter(path)
+        if err:
+            findings.append(Finding("ERROR", rel(path), err))
+            continue
+
+        desc = key_value(fm, "description")
+        if not desc:
+            findings.append(Finding("ERROR", rel(path), "Missing or empty frontmatter 'description'"))
+
+        # Recommended checks
+        if not key_exists(fm, "name"):
+            findings.append(Finding("WARN", rel(path), "Missing recommended frontmatter 'name'"))
+        if not key_exists(fm, "model"):
+            findings.append(Finding("WARN", rel(path), "Missing recommended frontmatter 'model'"))
+
+    return findings
+
+
+def validate_instructions() -> List[Finding]:
+    findings: List[Finding] = []
+    for path in sorted((ROOT / "instructions").glob("*.md")):
+        fm, err = extract_frontmatter(path)
+        if err:
+            findings.append(Finding("ERROR", rel(path), err))
+            continue
+
+        desc = key_value(fm, "description")
+        if not desc:
+            findings.append(Finding("ERROR", rel(path), "Missing or empty frontmatter 'description'"))
+
+        # Claude-migrated rule uses paths (mapped from applyTo)
+        if not key_exists(fm, "paths"):
+            findings.append(Finding("ERROR", rel(path), "Missing required frontmatter 'paths'"))
+
+    return findings
+
+
+def validate_skills() -> List[Finding]:
+    findings: List[Finding] = []
+    for path in sorted((ROOT / "skills").glob("**/SKILL.md")):
+        fm, err = extract_frontmatter(path)
+        if err:
+            findings.append(Finding("ERROR", rel(path), err))
+            continue
+
+        folder = path.parent.name
+        rel_parts = path.relative_to(ROOT).parts
+        # Top-level skill: skills/<name>/SKILL.md
+        is_top_level_skill = len(rel_parts) == 3 and rel_parts[0] == "skills"
+
+        name = key_value(fm, "name")
+        if not name:
+            findings.append(Finding("ERROR", rel(path), "Missing or empty frontmatter 'name'"))
+        else:
+            if is_top_level_skill and name != folder:
+                findings.append(Finding("ERROR", rel(path), f"'name' ({name}) must match folder name ({folder})"))
+            if not LOWER_HYPHEN_RE.match(name):
+                findings.append(Finding("ERROR", rel(path), f"'name' must be lowercase-hyphen: {name}"))
+
+        desc = key_value(fm, "description")
+        if not desc:
+            findings.append(Finding("ERROR", rel(path), "Missing or empty frontmatter 'description'"))
+        else:
+            if len(desc) < 10 or len(desc) > 1024:
+                findings.append(Finding("WARN", rel(path), "description length should be 10-1024 characters"))
+
+    return findings
+
+
+def validate_hooks() -> List[Finding]:
+    findings: List[Finding] = []
+    hooks_root = ROOT / "hooks"
+    if not hooks_root.exists():
+        return findings
+
+    for d in sorted([p for p in hooks_root.iterdir() if p.is_dir()]):
+        readme = d / "README.md"
+        hooks_json = d / "hooks.json"
+
+        if not readme.exists():
+            findings.append(Finding("ERROR", rel(readme), "Missing README.md"))
+        else:
+            fm, err = extract_frontmatter(readme)
+            if err:
+                findings.append(Finding("ERROR", rel(readme), err))
+            else:
+                if not key_value(fm, "name"):
+                    findings.append(Finding("ERROR", rel(readme), "Missing or empty frontmatter 'name'"))
+                if not key_value(fm, "description"):
+                    findings.append(Finding("ERROR", rel(readme), "Missing or empty frontmatter 'description'"))
+
+        if not hooks_json.exists():
+            findings.append(Finding("ERROR", rel(hooks_json), "Missing hooks.json"))
+        else:
+            try:
+                json.loads(hooks_json.read_text(encoding="utf-8"))
+            except Exception as exc:  # noqa: BLE001
+                findings.append(Finding("ERROR", rel(hooks_json), f"Invalid JSON: {exc}"))
+
+    return findings
+
+
+def validate_workflows() -> List[Finding]:
+    findings: List[Finding] = []
+    workflows_dir = ROOT / "workflows"
+    if not workflows_dir.exists():
+        return findings
+
+    for path in sorted(workflows_dir.glob("*.md")):
+        fm, err = extract_frontmatter(path)
+        if err:
+            findings.append(Finding("ERROR", rel(path), err))
+            continue
+
+        if not key_value(fm, "name"):
+            findings.append(Finding("ERROR", rel(path), "Missing or empty frontmatter 'name'"))
+        if not key_value(fm, "description"):
+            findings.append(Finding("ERROR", rel(path), "Missing or empty frontmatter 'description'"))
+        if not key_exists(fm, "on"):
+            findings.append(Finding("ERROR", rel(path), "Missing frontmatter 'on'"))
+        if not key_exists(fm, "permissions"):
+            findings.append(Finding("ERROR", rel(path), "Missing frontmatter 'permissions'"))
+
+    return findings
+
+
+def print_report(findings: Iterable[Finding], strict: bool) -> int:
+    findings = list(findings)
+    errors = [f for f in findings if f.level == "ERROR"]
+    warnings = [f for f in findings if f.level == "WARN"]
+
+    print("Claude asset validation summary:")
+    print(f"- errors: {len(errors)}")
+    print(f"- warnings: {len(warnings)}")
+
+    if findings:
+        print("\nFindings:")
+        level_order = {"ERROR": 0, "WARN": 1}
+        for f in sorted(findings, key=lambda x: (level_order.get(x.level, 9), x.path, x.message)):
+            print(f"- [{f.level}] {f.path}: {f.message}")
+
+    if not errors:
+        print("\n✅ Claude asset validation passed")
+        if strict and warnings:
+            print("⚠️ Strict mode enabled: warnings are treated as failures")
+            return 1
+        return 0
+
+    return 1
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Validate Claude customization assets and best practices")
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Treat warnings as failures",
+    )
+    args = parser.parse_args()
+
+    findings: List[Finding] = []
+    findings.extend(validate_agents())
+    findings.extend(validate_instructions())
+    findings.extend(validate_skills())
+    findings.extend(validate_hooks())
+    findings.extend(validate_workflows())
+    return print_report(findings, strict=args.strict)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

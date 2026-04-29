@@ -1,0 +1,157 @@
+{
+  "items": [
+    {
+      "id": "dependency-license-checker",
+      "title": "Dependency License Checker",
+      "description": "Scans newly added dependencies for license compliance (GPL, AGPL, etc.) at session end",
+      "path": "hooks/dependency-license-checker",
+      "readmeFile": "hooks/dependency-license-checker/README.md",
+      "hooks": [
+        "sessionEnd"
+      ],
+      "tags": [
+        "compliance",
+        "license",
+        "dependencies",
+        "session-end"
+      ],
+      "assets": [
+        "check-licenses.sh"
+      ],
+      "lastUpdated": "2026-04-23T04:30:26.267Z"
+    },
+    {
+      "id": "governance-audit",
+      "title": "Governance Audit",
+      "description": "Scans Copilot agent prompts for threat signals and logs governance events",
+      "path": "hooks/governance-audit",
+      "readmeFile": "hooks/governance-audit/README.md",
+      "hooks": [
+        "sessionStart",
+        "sessionEnd",
+        "userPromptSubmitted"
+      ],
+      "tags": [
+        "security",
+        "governance",
+        "audit",
+        "safety"
+      ],
+      "assets": [
+        "audit-prompt.sh",
+        "audit-session-end.sh",
+        "audit-session-start.sh"
+      ],
+      "lastUpdated": "2026-04-23T04:30:26.270Z"
+    },
+    {
+      "id": "secrets-scanner",
+      "title": "Secrets Scanner",
+      "description": "Scans files modified during a Copilot coding agent session for leaked secrets, credentials, and sensitive data",
+      "path": "hooks/secrets-scanner",
+      "readmeFile": "hooks/secrets-scanner/README.md",
+      "hooks": [
+        "sessionEnd"
+      ],
+      "tags": [
+        "security",
+        "secrets",
+        "scanning",
+        "session-end"
+      ],
+      "assets": [
+        "scan-secrets.sh"
+      ],
+      "lastUpdated": "2026-04-23T04:30:26.254Z"
+    },
+    {
+      "id": "session-auto-commit",
+      "title": "Session Auto-Commit",
+      "description": "Automatically commits and pushes changes when a Copilot coding agent session ends",
+      "path": "hooks/session-auto-commit",
+      "readmeFile": "hooks/session-auto-commit/README.md",
+      "hooks": [
+        "sessionEnd"
+      ],
+      "tags": [
+        "automation",
+        "git",
+        "productivity"
+      ],
+      "assets": [
+        "auto-commit.sh"
+      ],
+      "lastUpdated": "2026-04-23T04:30:26.256Z"
+    },
+    {
+      "id": "session-logger",
+      "title": "Session Logger",
+      "description": "Logs all Copilot coding agent session activity for audit and analysis",
+      "path": "hooks/session-logger",
+      "readmeFile": "hooks/session-logger/README.md",
+      "hooks": [
+        "sessionStart",
+        "sessionEnd",
+        "userPromptSubmitted"
+      ],
+      "tags": [
+        "logging",
+        "audit",
+        "analytics"
+      ],
+      "assets": [
+        "log-prompt.sh",
+        "log-session-end.sh",
+        "log-session-start.sh"
+      ],
+      "lastUpdated": "2026-04-23T04:30:26.252Z"
+    },
+    {
+      "id": "tool-guardian",
+      "title": "Tool Guardian",
+      "description": "Blocks dangerous tool operations (destructive file ops, force pushes, DB drops) before the Copilot coding agent executes them",
+      "path": "hooks/tool-guardian",
+      "readmeFile": "hooks/tool-guardian/README.md",
+      "hooks": [
+        "preToolUse"
+      ],
+      "tags": [
+        "security",
+        "safety",
+        "preToolUse",
+        "guardrails"
+      ],
+      "assets": [
+        "guard-tool.sh"
+      ],
+      "lastUpdated": "2026-04-23T04:30:26.241Z"
+    }
+  ],
+  "filters": {
+    "hooks": [
+      "preToolUse",
+      "sessionEnd",
+      "sessionStart",
+      "userPromptSubmitted"
+    ],
+    "tags": [
+      "analytics",
+      "audit",
+      "automation",
+      "compliance",
+      "dependencies",
+      "git",
+      "governance",
+      "guardrails",
+      "license",
+      "logging",
+      "preToolUse",
+      "productivity",
+      "safety",
+      "scanning",
+      "secrets",
+      "security",
+      "session-end"
+    ]
+  }
+}

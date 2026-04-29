@@ -1,0 +1,7 @@
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/agent-memory-local/
+node_modules/
+website/dist/
+website/.astro/
+.upstream/

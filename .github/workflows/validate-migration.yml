@@ -1,0 +1,65 @@
+name: Validate Migration
+
+on:
+  pull_request:
+    paths:
+      - "instructions/**"
+      - "agents/**"
+      - "skills/**"
+      - "hooks/**"
+      - "workflows/**"
+      - "plugins/**"
+      - "docs/migration-inventory.csv"
+      - "scripts/validate_migration.py"
+      - "scripts/validate_claude_assets.py"
+      - ".github/workflows/validate-migration.yml"
+  push:
+    branches:
+      - main
+      - staged
+    paths:
+      - "instructions/**"
+      - "agents/**"
+      - "skills/**"
+      - "hooks/**"
+      - "workflows/**"
+      - "plugins/**"
+      - "docs/migration-inventory.csv"
+      - "scripts/validate_migration.py"
+      - "scripts/validate_claude_assets.py"
+      - ".github/workflows/validate-migration.yml"
+  workflow_dispatch:
+
+jobs:
+  migration-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate migration inventory and artifact consistency
+        run: python3 scripts/validate_migration.py
+
+      - name: Validate Claude asset frontmatter and best practices
+        run: python3 scripts/validate_claude_assets.py
+
+  claude-assets-strict:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate Claude assets in strict mode
+        run: python3 scripts/validate_claude_assets.py --strict
