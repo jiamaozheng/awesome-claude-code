@@ -68,6 +68,8 @@ Hooks run all three validators before each commit (configured in `.pre-commit-co
 
 A website is available at `website/`.
 
+Requires Node.js 22 or newer.
+
 ```bash
 cd website
 npm install
