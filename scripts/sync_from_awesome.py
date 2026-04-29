@@ -18,6 +18,7 @@ from pathlib import Path
 
 
 MIGRATED_FRONTMATTER_KINDS = {"agent", "instruction"}
+DEFAULT_AGENT_MODEL = "gpt-5.3-codex"
 
 
 @dataclass
@@ -82,8 +83,30 @@ def _normalize_instruction_frontmatter(frontmatter: str) -> str:
     return "\n".join(out)
 
 
+def _normalize_agent_frontmatter(frontmatter: str) -> str:
+    """Ensure agent frontmatter includes a model key for strict validation."""
+    lines = frontmatter.splitlines()
+    has_model = any(line.strip().startswith("model:") for line in lines)
+    if has_model:
+        return frontmatter
+    return "\n".join([*lines, f"model: {DEFAULT_AGENT_MODEL}"])
+
+
 def _copy_with_frontmatter(frontmatter: str, body: str, dst: Path) -> None:
     dst.write_text(f"---\n{frontmatter}\n---\n\n{body.lstrip()}", encoding="utf-8")
+
+
+def _copy_plugin_bundle(src_manifest: Path, dst_manifest: Path) -> None:
+    """Copy entire plugin directory for plugin manifest inventory rows."""
+    src_plugin_root = src_manifest.parents[2]
+    dst_plugin_root = dst_manifest.parents[2]
+    for src_file in src_plugin_root.rglob("*"):
+        if not src_file.is_file():
+            continue
+        rel = src_file.relative_to(src_plugin_root)
+        dst_file = dst_plugin_root / rel
+        dst_file.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src_file, dst_file)
 
 
 def _copy_file(kind: str, src: Path, dst: Path, dry_run: bool) -> None:
@@ -91,6 +114,10 @@ def _copy_file(kind: str, src: Path, dst: Path, dry_run: bool) -> None:
         return
 
     dst.parent.mkdir(parents=True, exist_ok=True)
+
+    if kind == "plugin" and src.name == "plugin.json" and src.parts[-3:] == (".github", "plugin", "plugin.json"):
+        _copy_plugin_bundle(src, dst)
+        return
 
     if kind in MIGRATED_FRONTMATTER_KINDS and dst.exists():
         src_text = src.read_text(encoding="utf-8")
@@ -107,6 +134,14 @@ def _copy_file(kind: str, src: Path, dst: Path, dry_run: bool) -> None:
         src_frontmatter, src_body = _split_frontmatter(src_text)
         if src_frontmatter is not None:
             normalized = _normalize_instruction_frontmatter(src_frontmatter)
+            _copy_with_frontmatter(normalized, src_body, dst)
+            return
+
+    if kind == "agent":
+        src_text = src.read_text(encoding="utf-8")
+        src_frontmatter, src_body = _split_frontmatter(src_text)
+        if src_frontmatter is not None:
+            normalized = _normalize_agent_frontmatter(src_frontmatter)
             _copy_with_frontmatter(normalized, src_body, dst)
             return
 
