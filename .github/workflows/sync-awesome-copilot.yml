@@ -1,5 +1,7 @@
 name: Sync Awesome Copilot Upstream
 
+# No-op touch to force GitHub Actions to re-index this workflow.
+
 on:
   schedule:
     - cron: "0 3 * * *"
