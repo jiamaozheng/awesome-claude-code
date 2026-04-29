@@ -61,6 +61,31 @@ def _split_frontmatter(text: str) -> tuple[str | None, str]:
     return frontmatter, body
 
 
+def _normalize_instruction_frontmatter(frontmatter: str) -> str:
+    """Convert upstream instruction frontmatter to repository schema.
+
+    Upstream instruction files use `applyTo`; this repo validates `paths`.
+    """
+    lines = frontmatter.splitlines()
+    has_paths = any(line.strip().startswith("paths:") for line in lines)
+    if has_paths:
+        return frontmatter
+
+    out: list[str] = []
+    for line in lines:
+        stripped = line.lstrip()
+        indent = line[: len(line) - len(stripped)]
+        if stripped.startswith("applyTo:"):
+            out.append(f"{indent}paths:{stripped[len('applyTo:'):]}")
+        else:
+            out.append(line)
+    return "\n".join(out)
+
+
+def _copy_with_frontmatter(frontmatter: str, body: str, dst: Path) -> None:
+    dst.write_text(f"---\n{frontmatter}\n---\n\n{body.lstrip()}", encoding="utf-8")
+
+
 def _copy_file(kind: str, src: Path, dst: Path, dry_run: bool) -> None:
     if dry_run:
         return
@@ -74,8 +99,15 @@ def _copy_file(kind: str, src: Path, dst: Path, dry_run: bool) -> None:
         _, src_body = _split_frontmatter(src_text)
 
         if dst_frontmatter is not None:
-            merged_text = f"---\n{dst_frontmatter}\n---\n\n{src_body.lstrip()}"
-            dst.write_text(merged_text, encoding="utf-8")
+            _copy_with_frontmatter(dst_frontmatter, src_body, dst)
+            return
+
+    if kind == "instruction":
+        src_text = src.read_text(encoding="utf-8")
+        src_frontmatter, src_body = _split_frontmatter(src_text)
+        if src_frontmatter is not None:
+            normalized = _normalize_instruction_frontmatter(src_frontmatter)
+            _copy_with_frontmatter(normalized, src_body, dst)
             return
 
     shutil.copy2(src, dst)
