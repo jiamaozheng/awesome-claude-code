@@ -1,6 +1,6 @@
 ---
 title: 'Automating with Hooks'
-description: 'Learn how to use hooks to automate lifecycle events like formatting, linting, and governance checks during Copilot agent sessions.'
+description: 'Learn how to use hooks to automate lifecycle events like formatting, linting, and governance checks during Claude Code agent sessions.'
 authors:
   - Claude Code Learning Hub Team
 lastUpdated: 2026-04-16
@@ -16,13 +16,13 @@ prerequisites:
   - Basic understanding of Claude Code agents
 ---
 
-Hooks let you run automated scripts at key moments during a Copilot agent session — when a session starts or ends, when the user submits a prompt, or before and after the agent uses a tool. They're the glue between Copilot's AI capabilities and your team's existing tooling: linters, formatters, governance scanners, and notification systems.
+Hooks let you run automated scripts at key moments during a Claude Code agent session — when a session starts or ends, when the user submits a prompt, or before and after the agent uses a tool. They're the glue between Claude Code's AI capabilities and your team's existing tooling: linters, formatters, governance scanners, and notification systems.
 
 This article explains how hooks work, how to configure them, and practical patterns for common automation needs.
 
 ## What Are Hooks?
 
-Hooks are shell commands or scripts that run automatically in response to lifecycle events during a Copilot agent session. They execute outside the AI model, they're deterministic, repeatable, and under your full control.
+Hooks are shell commands or scripts that run automatically in response to lifecycle events during a Claude Code agent session. They execute outside the AI model, they're deterministic, repeatable, and under your full control.
 
 **Key characteristics**:
 - Hooks run as shell commands on the user's machine
@@ -37,7 +37,7 @@ Hooks are shell commands or scripts that run automatically in response to lifecy
 | Use Case | Best Tool |
 |----------|-----------|
 | Run a linter after every code change | **Hook** |
-| Teach Copilot your coding standards | **Instruction** |
+| Teach Claude Code your coding standards | **Instruction** |
 | Automate a multi-step workflow | **Skill** or **Agent** |
 | Scan prompts for sensitive data | **Hook** |
 | Format code before committing | **Hook** |
@@ -58,7 +58,7 @@ hooks/
         └── check.sh
 ```
 
-> Note: Not all of these files are required for a generalised hook implementation. In your own repository, hooks are stored as JSON files in `.github/hooks/` (e.g., `.github/hooks/my-hook.json`). The folder structure above with README.md is specific to the Awesome Copilot repository for documentation purposes.
+> Note: Not all of these files are required for a generalised hook implementation. In your own repository, hooks are stored as JSON files in `.github/hooks/` (e.g., `.github/hooks/my-hook.json`). The folder structure above with README.md is specific to the Awesome Claude Code repository for documentation purposes.
 
 
 ### hooks.json
@@ -185,7 +185,7 @@ Each hook entry supports these fields:
 
 ### README.md
 
-The README provides metadata and documentation for the Awesome Copilot repository. While not required in your own implementation, it serves as a useful way to document them for your team.
+The README provides metadata and documentation for the Awesome Claude Code repository. While not required in your own implementation, it serves as a useful way to document them for your team.
 
 ```markdown
 ---
@@ -416,7 +416,7 @@ Send a Slack or Teams notification when an agent session completes:
     "sessionEnd": [
       {
         "type": "command",
-        "bash": "curl -X POST \"$SLACK_WEBHOOK_URL\" -H 'Content-Type: application/json' -d '{\"text\": \"Copilot agent session completed\"}'",
+        "bash": "curl -X POST \"$SLACK_WEBHOOK_URL\" -H 'Content-Type: application/json' -d '{\"text\": \"Claude Code agent session completed\"}'",
         "cwd": ".",
         "env": {
           "SLACK_WEBHOOK_URL": "${input:slackWebhook}"
@@ -452,7 +452,7 @@ This is especially useful in multi-agent workflows where subagents may not autom
 
 ### Plugin Hook Environment Variables
 
-When hooks are defined inside a **plugin**, Copilot CLI automatically injects two extra environment variables so scripts can locate project-specific and plugin-specific directories:
+When hooks are defined inside a **plugin**, Claude Code CLI automatically injects two extra environment variables so scripts can locate project-specific and plugin-specific directories:
 
 | Variable | Description |
 |----------|-------------|
@@ -527,7 +527,7 @@ echo "Pre-commit checks passed ✅"
 A: There are several supported locations, loaded in order of precedence:
 
 - **Repository-level** (shared with team): `.github/hooks/*.json` in your repository — all JSON files in this folder are loaded automatically
-- **Claude/Copilot project settings**: `.claude/settings.json` and `.claude/settings.local.json` — hooks defined here are applied to the current repository without committing them to `.github/`
+- **Claude/Claude Code project settings**: `.claude/settings.json` and `.claude/settings.local.json` — hooks defined here are applied to the current repository without committing them to `.github/`
 - **Global settings**: `settings.json` or `settings.local.json` (user-level CLI config)
 - **Legacy config**: `config.json` (also supported)
 
@@ -545,14 +545,14 @@ A: The hook is terminated and the agent continues. Set `timeoutSec` appropriatel
 
 A: Yes. Hooks for the same event run in the order they appear in the array. If any hook fails (non-zero exit), subsequent hooks for that event may be skipped.
 
-**Q: Do hooks work with the Copilot coding agent?**
+**Q: Do hooks work with the Claude Code coding agent?**
 
-A: Yes. Hooks are especially valuable with the coding agent because they provide deterministic guardrails for autonomous operations. See [Using the Copilot Coding Agent](../using-copilot-coding-agent/) for details.
+A: Yes. Hooks are especially valuable with the coding agent because they provide deterministic guardrails for autonomous operations. See [Using the Claude Code Coding Agent](../using-copilot-coding-agent/) for details.
 
 ## Next Steps
 
 - **Explore Examples**: Browse the [Hooks Directory](../../hooks/) for ready-to-use hook configurations
 - **Build Agents**: [Building Custom Agents](../building-custom-agents/) — Create agents that complement hooks
-- **Automate Further**: [Using the Copilot Coding Agent](../using-copilot-coding-agent/) — Run hooks in autonomous agent sessions
+- **Automate Further**: [Using the Claude Code Coding Agent](../using-copilot-coding-agent/) — Run hooks in autonomous agent sessions
 
 ---

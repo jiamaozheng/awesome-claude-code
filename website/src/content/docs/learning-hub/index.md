@@ -23,7 +23,7 @@ Interactive samples and recipes to learn by doing. Jump into the
 [Cookbook](cookbook/) for code samples, recipes,
 and examples you can use right away.
 
-## Copilot CLI for Beginners
+## Claude Code CLI for Beginners
 
-Looking for a guided path into Claude Code from the terminal? Explore Copilot CLI for Beginners! You can work through a 
+Looking for a guided path into Claude Code from the terminal? Explore Claude Code CLI for Beginners! You can work through a 
 [text based experience](cli-for-beginners/) for a text-based experience, or the [YouTube video series](https://www.youtube.com/watch?v=BDxRhhs36ns&list=PL0lo9MOBetEHvO-spzKBAITkkTqv4RvNl).

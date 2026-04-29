@@ -19,7 +19,7 @@ prerequisites:
   - Familiarity with agents, skills, and instructions
 ---
 
-Custom agents are specialized assistants that give Claude Code a focused persona, specific tool access, and domain expertise. Unlike instructions (which apply passively) or skills (which handle individual tasks), agents define a complete working style—they shape how Copilot thinks, what tools it reaches for, and how it communicates throughout an entire session.
+Custom agents are specialized assistants that give Claude Code a focused persona, specific tool access, and domain expertise. Unlike instructions (which apply passively) or skills (which handle individual tasks), agents define a complete working style—they shape how Claude Code thinks, what tools it reaches for, and how it communicates throughout an entire session.
 
 This article shows you how to design, structure, and deploy effective agents for your team's workflows.
 
@@ -32,7 +32,7 @@ Custom agents are Markdown files (`*.agent.md`) that configure Claude Code with:
 - **Guardrails**: Boundaries and conventions the agent follows
 - **A model preference**: Which AI model powers the agent (optional but recommended)
 
-When a user selects a custom agent in VS Code or assigns it to an issue via the Copilot coding agent, the agent's configuration shapes the entire interaction.
+When a user selects a custom agent in VS Code or assigns it to an issue via the Claude Code coding agent, the agent's configuration shapes the entire interaction.
 
 **Key Points**:
 - Agents persist across a conversation—they maintain their persona and context
@@ -262,7 +262,7 @@ Keep agents focused—one persona per file. If you find an agent trying to do to
 
 **Q: How do I select a custom agent?**
 
-A: In VS Code, open Copilot Chat and use the agent picker dropdown at the top of the chat panel. Your custom agents appear alongside built-in options. You can also `@mention` an agent by name.
+A: In VS Code, open Claude Code Chat and use the agent picker dropdown at the top of the chat panel. Your custom agents appear alongside built-in options. You can also `@mention` an agent by name.
 
 **Q: Can agents use skills?**
 
@@ -272,9 +272,9 @@ A: Yes. Agents can discover and invoke skills during a conversation based on the
 
 A: Start with 2–3 agents for your most common workflows. Add more as patterns emerge. Typical teams have 3–8 agents covering areas like code review, infrastructure, testing, and documentation.
 
-**Q: Can I use an agent with the Copilot coding agent?**
+**Q: Can I use an agent with the Claude Code coding agent?**
 
-A: Yes. When you assign an issue to Copilot, you can specify which agent should handle it. The agent's persona and tool access apply to the autonomous coding session. See [Using the Copilot Coding Agent](../using-copilot-coding-agent/) for details.
+A: Yes. When you assign an issue to Claude Code, you can specify which agent should handle it. The agent's persona and tool access apply to the autonomous coding session. See [Using the Claude Code Coding Agent](../using-copilot-coding-agent/) for details.
 
 **Q: Should agents include code examples?**
 
@@ -298,7 +298,7 @@ A: Yes, when defining output format or coding patterns. Show what you expect the
 
 - **Explore Repository Examples**: Browse the [Agents Directory](../../agents/) for production agent definitions
 - **Connect External Tools**: [Understanding MCP Servers](../understanding-mcp-servers/) — Give agents access to databases, APIs, and more
-- **Automate with Coding Agent**: [Using the Copilot Coding Agent](../using-copilot-coding-agent/) — Run agents autonomously on issues
+- **Automate with Coding Agent**: [Using the Claude Code Coding Agent](../using-copilot-coding-agent/) — Run agents autonomously on issues
 - **Add Reusable Tasks**: [Creating Effective Skills](../creating-effective-skills/) — Build tasks agents can discover and invoke
 
 ---

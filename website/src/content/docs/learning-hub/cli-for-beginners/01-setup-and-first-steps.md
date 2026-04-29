@@ -26,17 +26,17 @@ By the end of this chapter, you'll be able to:
 
 ---
 
-# Your First Copilot CLI Experience
+# Your First Claude Code CLI Experience
 
 <img src="/images/learning-hub/copilot-cli-for-beginners/01/first-copilot-experience.png" alt="Developer sitting at a desk with code on the monitor and glowing particles representing AI assistance" width="800"/>
 
-Jump right in and see what Copilot CLI can do.
+Jump right in and see what Claude Code CLI can do.
 
 ---
 
 ## Getting Comfortable: Your First Prompts
 
-Before diving into the impressive demos, let's start with some simple prompts you can try right now. **No code repository needed**! Just open a terminal and start Copilot CLI:
+Before diving into the impressive demos, let's start with some simple prompts you can try right now. **No code repository needed**! Just open a terminal and start Claude Code CLI:
 
 ```bash
 copilot
@@ -64,9 +64,9 @@ Notice how natural it feels. Just ask questions like you would to a colleague. W
 
 Now let's see why developers are calling this "having a senior engineer on speed dial."
 
-> 📖 **Reading the Examples**: Lines starting with `>` are prompts you type inside an interactive Copilot CLI session. Lines without a `>` prefix are shell commands you run in your terminal.
+> 📖 **Reading the Examples**: Lines starting with `>` are prompts you type inside an interactive Claude Code CLI session. Lines without a `>` prefix are shell commands you run in your terminal.
 
-> 💡 **About Example Outputs**: The sample outputs shown throughout this course are illustrative. Because Copilot CLI's responses vary each time, your results will differ in wording, formatting, and detail. Focus on the *type* of information returned, not the exact text.
+> 💡 **About Example Outputs**: The sample outputs shown throughout this course are illustrative. Because Claude Code CLI's responses vary each time, your results will differ in wording, formatting, and detail. Focus on the *type* of information returned, not the exact text.
 
 ### Demo 1: Code Review in Seconds
 
@@ -77,7 +77,7 @@ The course includes sample files with intentional code quality issues. Let's rev
 git clone https://github.com/github/copilot-cli-for-beginners
 cd copilot-cli-for-beginners
 
-# Start Copilot
+# Start Claude Code
 copilot
 ```
 
@@ -87,7 +87,7 @@ Once inside the interactive session:
 > Review @samples/book-app-project/book_app.py for code quality issues and suggest improvements
 ```
 
-> 💡 **What's the `@`?** The `@` symbol tells Copilot CLI to read a file. You'll learn all about this in Chapter 02. For now, just copy the command exactly as shown.
+> 💡 **What's the `@`?** The `@` symbol tells Claude Code CLI to read a file. You'll learn all about this in Chapter 02. For now, just copy the command exactly as shown.
 
 ---
 
@@ -108,7 +108,7 @@ Once inside the interactive session:
 
 ### Demo 2: Explain Confusing Code
 
-Ever stared at code wondering what it does? Try this in your Copilot CLI session:
+Ever stared at code wondering what it does? Try this in your Claude Code CLI session:
 
 ```
 > Explain what @samples/book-app-project/books.py does in simple terms
@@ -127,7 +127,7 @@ Ever stared at code wondering what it does? Try this in your Copilot CLI session
 
 ---
 
-**What happens**: (your output will differ) Copilot CLI reads the file, understands the code, and explains it in plain English.
+**What happens**: (your output will differ) Claude Code CLI reads the file, understands the code, and explains it in plain English.
 
 ```
 This is a book collection management module using Python dataclasses.
@@ -197,11 +197,11 @@ When you're done exploring, exit the session:
 
 # Modes and Commands
 
-<img src="/images/learning-hub/copilot-cli-for-beginners/01/modes-and-commands.png" alt="Futuristic control panel with glowing screens, dials, and equalizers representing Copilot CLI modes and commands" width="800"/>
+<img src="/images/learning-hub/copilot-cli-for-beginners/01/modes-and-commands.png" alt="Futuristic control panel with glowing screens, dials, and equalizers representing Claude Code CLI modes and commands" width="800"/>
 
-You've just seen what Copilot CLI can do. Now let's understand *how* to use these capabilities effectively. The key is knowing which of the three interaction modes to use for different situations.
+You've just seen what Claude Code CLI can do. Now let's understand *how* to use these capabilities effectively. The key is knowing which of the three interaction modes to use for different situations.
 
-> 💡 **Note**: Copilot CLI also has an **Autopilot** mode where it works through tasks without waiting for your input. It's powerful but requires granting full permissions and uses premium requests autonomously. This course focuses on the three modes below. We'll point you to Autopilot once you're comfortable with the basics.
+> 💡 **Note**: Claude Code CLI also has an **Autopilot** mode where it works through tasks without waiting for your input. It's powerful but requires granting full permissions and uses premium requests autonomously. This course focuses on the three modes below. We'll point you to Autopilot once you're comfortable with the basics.
 
 ---
 
@@ -316,11 +316,11 @@ Step 4: Test the flow
 Proceed with implementation? [Y/n]
 ```
 
-**Key insight**: Plan mode lets you review and modify the approach before any code is written. Once a plan is complete, you can even tell Copilot CLI to save it to a file for later reference. For example, "Save this plan to `mark_as_read_plan.md`" would create a markdown file with the plan details.
+**Key insight**: Plan mode lets you review and modify the approach before any code is written. Once a plan is complete, you can even tell Claude Code CLI to save it to a file for later reference. For example, "Save this plan to `mark_as_read_plan.md`" would create a markdown file with the plan details.
 
 > 💡 **Want something more complex?** Try: `/plan Add search and filter capabilities to the book app`. Plan mode scales from simple features to full applications.
 
-> 📚 **Autopilot mode**: You may have noticed Shift+Tab cycles through a third mode called **Autopilot**. In autopilot mode, Copilot works through an entire plan without waiting for your input after each step — like handing a task to a colleague and saying "let me know when you're finished." The typical workflow is plan → accept → autopilot, which means you need to be good at writing plans first. Get comfortable with Interactive and Plan modes, then see the [official docs](https://docs.github.com/copilot/concepts/agents/copilot-cli/autopilot) when you're ready.
+> 📚 **Autopilot mode**: You may have noticed Shift+Tab cycles through a third mode called **Autopilot**. In autopilot mode, Claude Code works through an entire plan without waiting for your input after each step — like handing a task to a colleague and saying "let me know when you're finished." The typical workflow is plan → accept → autopilot, which means you need to be good at writing plans first. Get comfortable with Interactive and Plan modes, then see the [official docs](https://docs.github.com/copilot/concepts/agents/copilot-cli/autopilot) when you're ready.
 
 ---
 
@@ -357,7 +357,7 @@ git commit -m "$COMMIT_MSG"
 # Review a file
 copilot --allow-all -p "Review @myfile.py for issues"
 ```
-> ⚠️ **About `--allow-all`**: This flag skips all permission prompts, letting Copilot CLI read files, run commands, and access URLs without asking first. This is necessary for programmatic mode (`-p`) since there's no interactive session to approve actions. Only use `--allow-all` with prompts you've written yourself and in directories you trust. Never use it with untrusted input or in sensitive directories.
+> ⚠️ **About `--allow-all`**: This flag skips all permission prompts, letting Claude Code CLI read files, run commands, and access URLs without asking first. This is necessary for programmatic mode (`-p`) since there's no interactive session to approve actions. Only use `--allow-all` with prompts you've written yourself and in directories you trust. Never use it with untrusted input or in sensitive directories.
 
 </details>
 
@@ -389,7 +389,7 @@ That's it for getting started! As you become comfortable, you can explore additi
 
 | Command | What It Does |
 |---------|--------------|
-| `/init` | Initialize Copilot instructions for your repository |
+| `/init` | Initialize Claude Code instructions for your repository |
 | `/agent` | Browse and select from available agents |
 | `/skills` | Manage skills for enhanced capabilities |
 | `/mcp` | Manage MCP server configuration |
@@ -401,7 +401,7 @@ That's it for getting started! As you become comfortable, you can explore additi
 | Command | What It Does |
 |---------|--------------|
 | `/model` | Show or switch AI model |
-| `/delegate` | Hand off task to Copilot coding agent on GitHub (agent in the cloud) |
+| `/delegate` | Hand off task to Claude Code coding agent on GitHub (agent in the cloud) |
 | `/fleet` | Split a complex task into parallel subtasks for faster completion |
 | `/tasks` | View background subagents and detached shell sessions |
 
@@ -463,7 +463,7 @@ copilot
 
 ### Switching Models
 
-Copilot CLI supports multiple AI models from OpenAI, Anthropic, Google, and others. The models available to you depend on your subscription level and region. Use `/model` to see your options and switch between them:
+Claude Code CLI supports multiple AI models from OpenAI, Anthropic, Google, and others. The models available to you depend on your subscription level and region. Use `/model` to see your options and switch between them:
 
 ```bash
 copilot
@@ -490,7 +490,7 @@ Time to put what you've learned into action.
 
 ### Interactive Exploration
 
-Start Copilot and use follow-up prompts to iteratively improve the book app:
+Start Claude Code and use follow-up prompts to iteratively improve the book app:
 
 ```bash
 copilot
@@ -506,7 +506,7 @@ copilot
 
 ### Plan a Feature
 
-Use `/plan` to have Copilot CLI map out an implementation before writing any code:
+Use `/plan` to have Claude Code CLI map out an implementation before writing any code:
 
 ```bash
 copilot
@@ -520,7 +520,7 @@ copilot
 
 ### Automate with Programmatic Mode
 
-The `-p` flag lets you run Copilot CLI directly from your terminal without entering interactive mode. Copy and paste the following script into your terminal (not inside Copilot) from the repository root to review all Python files in the book app.
+The `-p` flag lets you run Claude Code CLI directly from your terminal without entering interactive mode. Copy and paste the following script into your terminal (not inside Claude Code) from the repository root to review all Python files in the book app.
 
 ```bash
 # Review all Python files in the book app
@@ -560,7 +560,7 @@ After completing the demos, try these variations:
 The hands-on examples focused on reviewing and refactoring `book_app.py`. Now practice the same skills on a different file, `utils.py`:
 
 1. Start an interactive session: `copilot`
-2. Ask Copilot CLI to summarize the file: `@samples/book-app-project/utils.py What does each function in this file do?`
+2. Ask Claude Code CLI to summarize the file: `@samples/book-app-project/utils.py What does each function in this file do?`
 3. Ask it to add input validation: "Add validation to `get_user_choice()` so it handles empty input and non-numeric entries"
 4. Ask it to improve error handling: "What happens if `get_book_details()` receives an empty string for the title? Add guards for that."
 5. Ask for a docstring: "Add a comprehensive docstring to `get_book_details()` with parameter descriptions and return values"
@@ -581,7 +581,7 @@ The hands-on examples focused on reviewing and refactoring `book_app.py`. Now pr
 ```
 
 **Common issues:**
-- If Copilot CLI asks clarifying questions, just answer them naturally
+- If Claude Code CLI asks clarifying questions, just answer them naturally
 - The context carries forward, so each prompt builds on the previous
 - Use `/clear` if you want to start over
 
@@ -606,9 +606,9 @@ The examples used `/plan` for a search feature and `-p` for batch reviews. Now t
 
 | Mistake | What Happens | Fix |
 |---------|--------------|-----|
-| Typing `exit` instead of `/exit` | Copilot CLI treats "exit" as a prompt, not a command | Slash commands always start with `/` |
+| Typing `exit` instead of `/exit` | Claude Code CLI treats "exit" as a prompt, not a command | Slash commands always start with `/` |
 | Using `-p` for multi-turn conversations | Each `-p` call is isolated with no memory of previous calls | Use interactive mode (`copilot`) for conversations that build on context |
-| Forgetting quotes around prompts with `$` or `!` | Shell interprets special characters before Copilot CLI sees them | Wrap prompts in quotes: `copilot -p "What does $HOME mean?"` |
+| Forgetting quotes around prompts with `$` or `!` | Shell interprets special characters before Claude Code CLI sees them | Wrap prompts in quotes: `copilot -p "What does $HOME mean?"` |
 
 ### Troubleshooting
 
@@ -637,12 +637,12 @@ The examples used `/plan` for a search feature and `-p` for batch reviews. Now t
 
 ## ➡️ What's Next
 
-Now that you understand the three modes, let's learn how to give Copilot CLI context about your code.
+Now that you understand the three modes, let's learn how to give Claude Code CLI context about your code.
 
 In **[Chapter 02: Context and Conversations](../02-context-and-conversations/)**, you'll learn:
 
 - The `@` syntax for referencing files and directories
 - Session management with `--resume` and `--continue`
-- How context management makes Copilot CLI truly powerful
+- How context management makes Claude Code CLI truly powerful
 
 ---

@@ -8,11 +8,11 @@ lastUpdated: 2026-03-20
 
 ![Chapter 06: MCP Servers](/images/learning-hub/copilot-cli-for-beginners/06/chapter-header.png)
 
-> **What if Copilot could read your GitHub issues, check your database, and create PRs... all from the terminal?**
+> **What if Claude Code could read your GitHub issues, check your database, and create PRs... all from the terminal?**
 
-So far, Copilot can only work with what you give it directly: files you reference with `@`, conversation history, and its own training data. But what if it could reach out on its own to check your GitHub repository, browse your project files, or look up the latest documentation for a library?
+So far, Claude Code can only work with what you give it directly: files you reference with `@`, conversation history, and its own training data. But what if it could reach out on its own to check your GitHub repository, browse your project files, or look up the latest documentation for a library?
 
-That's what MCP (Model Context Protocol) does. It's a way to connect Copilot to external services so it has access to live, real-world data. Each service Copilot connects to is called an "MCP server." In this chapter, you'll set up a few of these connections and see how they make Copilot dramatically more useful.
+That's what MCP (Model Context Protocol) does. It's a way to connect Claude Code to external services so it has access to live, real-world data. Each service Claude Code connects to is called an "MCP server." In this chapter, you'll set up a few of these connections and see how they make Claude Code dramatically more useful.
 
 > 💡 **Already familiar with MCP?** [Jump to the quick start](#-use-the-built-in-github-mcp) to confirm it's working and start configuring servers.
 
@@ -42,11 +42,11 @@ Think of MCP servers like browser extensions. Your browser on its own can displa
 | Grammarly | Writing analysis service | **Context7 MCP** → library documentation |
 | File manager | Cloud storage | **Filesystem MCP** → local project files |
 
-Without extensions, your browser is still useful, but with them, it becomes a powerhouse. MCP servers do the same for Copilot. They connect it to real, live data sources so it can read your GitHub issues, explore your file system, fetch up-to-date documentation, and more.
+Without extensions, your browser is still useful, but with them, it becomes a powerhouse. MCP servers do the same for Claude Code. They connect it to real, live data sources so it can read your GitHub issues, explore your file system, fetch up-to-date documentation, and more.
 
-***MCP servers connect Copilot to the outside world: GitHub, repositories, documentation, and more***
+***MCP servers connect Claude Code to the outside world: GitHub, repositories, documentation, and more***
 
-> 💡 **Key insight**: Without MCP, Copilot can only see files you explicitly share with `@`. With MCP, it can proactively explore your project, check your GitHub repo, and look up documentation, all automatically.
+> 💡 **Key insight**: Without MCP, Claude Code can only see files you explicitly share with `@`. With MCP, it can proactively explore your project, check your GitHub repo, and look up documentation, all automatically.
 
 ---
 
@@ -63,7 +63,7 @@ copilot
 > List the recent commits in this repository
 ```
 
-If Copilot returns real commit data, you've just seen MCP in action. That's the GitHub MCP server reaching out to GitHub on your behalf. But GitHub is just *one* server. This chapter shows you how to add more (filesystem access, up-to-date documentation, and others) so Copilot can do even more.
+If Claude Code returns real commit data, you've just seen MCP in action. That's the GitHub MCP server reaching out to GitHub on your behalf. But GitHub is just *one* server. This chapter shows you how to add more (filesystem access, up-to-date documentation, and others) so Claude Code can do even more.
 
 ---
 
@@ -117,7 +117,7 @@ Labels: bug, priority-high
 Description: Users report that passwords containing...
 ```
 
-MCP makes Copilot aware of your actual development environment.
+MCP makes Claude Code aware of your actual development environment.
 
 > 📚 **Official Documentation**: [About MCP](https://docs.github.com/copilot/concepts/context/mcp) for a deeper look at how MCP works with Claude Code.
 
@@ -177,12 +177,12 @@ The GitHub MCP server is built-in and requires no setup. Below are additional se
 
 | I want to... | Jump to |
 |---|---|
-| Let Copilot browse my project files | [Filesystem Server](#filesystem-server) |
+| Let Claude Code browse my project files | [Filesystem Server](#filesystem-server) |
 | Get up-to-date library documentation | [Context7 Server](#context7-server-documentation) |
 | Explore optional extras (custom servers, web_fetch) | [Beyond the Basics](#beyond-the-basics) |
 
 <details>
-<summary><strong>Filesystem Server</strong> - Let Copilot explore your project files</summary>
+<summary><strong>Filesystem Server</strong> - Let Claude Code explore your project files</summary>
 <a id="filesystem-server"></a>
 
 ### Filesystem Server
@@ -200,9 +200,9 @@ The GitHub MCP server is built-in and requires no setup. Below are additional se
 }
 ```
 
-> 💡 **The `.` path**: The `.` means "current directory". Copilot can access files relative to where you launched it. In a Codespace, this is your workspace root. You can also use an absolute path like `/workspaces/copilot-cli-for-beginners` if you prefer.
+> 💡 **The `.` path**: The `.` means "current directory". Claude Code can access files relative to where you launched it. In a Codespace, this is your workspace root. You can also use an absolute path like `/workspaces/copilot-cli-for-beginners` if you prefer.
 
-Add this to your `~/.copilot/mcp-config.json` and restart Copilot.
+Add this to your `~/.copilot/mcp-config.json` and restart Claude Code.
 
 </details>
 
@@ -212,7 +212,7 @@ Add this to your `~/.copilot/mcp-config.json` and restart Copilot.
 
 ### Context7 Server (Documentation)
 
-Context7 gives Copilot access to up-to-date documentation for popular frameworks and libraries. Instead of relying on training data that might be outdated, Copilot fetches the actual current documentation.
+Context7 gives Claude Code access to up-to-date documentation for popular frameworks and libraries. Instead of relying on training data that might be outdated, Claude Code fetches the actual current documentation.
 
 ```json
 {
@@ -231,7 +231,7 @@ Context7 gives Copilot access to up-to-date documentation for popular frameworks
 - ✅ **No account needed** 
 - ✅ **Your code stays local**
 
-Add this to your `~/.copilot/mcp-config.json` and restart Copilot.
+Add this to your `~/.copilot/mcp-config.json` and restart Claude Code.
 
 </details>
 
@@ -243,9 +243,9 @@ These are optional extras for when you're comfortable with the core servers abov
 
 ### Microsoft Learn MCP Server
 
-Every MCP server you've seen so far (filesystem, Context7) runs locally on your machine. But MCP servers can also run remotely, meaning you just point Copilot CLI at a URL and it handles the rest. No `npx` or `python`, no local process, no dependencies to install.
+Every MCP server you've seen so far (filesystem, Context7) runs locally on your machine. But MCP servers can also run remotely, meaning you just point Claude Code CLI at a URL and it handles the rest. No `npx` or `python`, no local process, no dependencies to install.
 
-The [Microsoft Learn MCP Server](https://github.com/microsoftdocs/mcp) is a good example. It gives Copilot CLI direct access to official Microsoft documentation (Azure, Microsoft Foundry and other AI topics, .NET, Microsoft 365, and much more) so it can search docs, fetch full pages, and find official code samples instead of relying on a model's training data.
+The [Microsoft Learn MCP Server](https://github.com/microsoftdocs/mcp) is a good example. It gives Claude Code CLI direct access to official Microsoft documentation (Azure, Microsoft Foundry and other AI topics, .NET, Microsoft 365, and much more) so it can search docs, fetch full pages, and find official code samples instead of relying on a model's training data.
 
 - ✅ **No API key required** 
 - ✅ **No account needed** 
@@ -278,9 +278,9 @@ copilot
 
 ### Web Access with `web_fetch`
 
-Copilot CLI includes a built-in `web_fetch` tool that can fetch content from any URL. This is useful for pulling in READMEs, API docs, or release notes without leaving your terminal. No MCP server needed.
+Claude Code CLI includes a built-in `web_fetch` tool that can fetch content from any URL. This is useful for pulling in READMEs, API docs, or release notes without leaving your terminal. No MCP server needed.
 
-You can control which URLs are accessible via `~/.copilot/config.json` (general Copilot settings), which is separate from `~/.copilot/mcp-config.json` (MCP server definitions).
+You can control which URLs are accessible via `~/.copilot/config.json` (general Claude Code settings), which is separate from `~/.copilot/mcp-config.json` (MCP server definitions).
 
 ```json
 {
@@ -306,7 +306,7 @@ copilot
 
 ### Building a Custom MCP Server
 
-Want to connect Copilot to your own APIs, databases, or internal tools? You can build a custom MCP server in Python. This is completely optional since the pre-built servers (GitHub, filesystem, Context7) cover most use cases.
+Want to connect Claude Code to your own APIs, databases, or internal tools? You can build a custom MCP server in Python. This is completely optional since the pre-built servers (GitHub, filesystem, Context7) cover most use cases.
 
 📖 See the [Custom MCP Server Guide](https://github.com/github/copilot-cli-for-beginners/blob/main/06-mcp-servers/mcp-custom-server.md) for a complete walkthrough using the book app as an example.
 
@@ -370,7 +370,7 @@ Now that you have MCP servers configured, let's see what they can do.
 
 ### GitHub Server (Built-in)
 
-The GitHub MCP server is **built-in**. If you logged into Copilot (which you did during initial setup), it already works. No configuration needed!
+The GitHub MCP server is **built-in**. If you logged into Claude Code (which you did during initial setup), it already works. No configuration needed!
 
 > 💡 **Not working?** Run `/login` to re-authenticate with GitHub.
 
@@ -378,7 +378,7 @@ The GitHub MCP server is **built-in**. If you logged into Copilot (which you did
 <summary><strong>Authentication in Dev Containers</strong></summary>
 
 - **GitHub Codespaces** (recommended): Authentication is automatic. The `gh` CLI inherits your Codespace token. No action needed.
-- **Local dev container (Docker)**: Run `gh auth login` after the container starts, then restart Copilot.
+- **Local dev container (Docker)**: Run `gh auth login` after the container starts, then restart Claude Code.
 
 **Troubleshooting authentication:**
 ```bash
@@ -441,7 +441,7 @@ Found 1 file:
 
 ### Filesystem Server
 
-Once configured, the filesystem MCP provides tools that Copilot can use automatically:
+Once configured, the filesystem MCP provides tools that Claude Code can use automatically:
 
 ```bash
 copilot
@@ -503,7 +503,7 @@ Best practices:
 
 > How can I apply this to the book app's test file?
 
-# Copilot now knows the official pytest patterns
+# Claude Code now knows the official pytest patterns
 # and can apply them to samples/book-app-project/tests/test_books.py
 ```
 
@@ -549,7 +549,7 @@ These workflows show why developers say "I never want to work without this again
 
 <img src="/images/learning-hub/copilot-cli-for-beginners/06/issue-to-pr-workflow.png" alt="Issue to PR Workflow using MCP - Shows the complete flow from getting a GitHub issue through creating a pull request" width="800"/>
 
-*Complete MCP workflow: GitHub MCP retrieves repo data, Filesystem MCP finds code, Context7 MCP provides best practices, and Copilot handles analysis*
+*Complete MCP workflow: GitHub MCP retrieves repo data, Filesystem MCP finds code, Context7 MCP provides best practices, and Claude Code handles analysis*
 
 Each example below is self-contained. **Pick one that interests you, or read them all.**
 
@@ -638,7 +638,7 @@ Description: The add_book function accepts any year value...
 
 > @samples/book-app-project/books.py Fix the issue described in issue #1
 
-[Copilot implements year validation in add_book()]
+[Claude Code implements year validation in add_book()]
 
 > Run the tests to make sure the fix works
 
@@ -734,9 +734,9 @@ copilot
 > What functions are defined in each file?
 ```
 
-**Expected result**: Copilot lists `book_app.py`, `books.py`, and `utils.py` with their functions.
+**Expected result**: Claude Code lists `book_app.py`, `books.py`, and `utils.py` with their functions.
 
-> 💡 **Don't have filesystem MCP configured yet?** Create the config file from the [Complete Configuration](#complete-configuration-file) section above. Then restart Copilot.
+> 💡 **Don't have filesystem MCP configured yet?** Create the config file from the [Complete Configuration](#complete-configuration-file) section above. Then restart Claude Code.
 
 ---
 
@@ -752,7 +752,7 @@ copilot
 > What branches exist in this repository?
 ```
 
-**Expected result**: Copilot shows recent commit messages and branch names from the GitHub remote.
+**Expected result**: Claude Code shows recent commit messages and branch names from the GitHub remote.
 
 > ⚠️ **In a Codespace?** This works automatically. Authentication is inherited. If you're on a local clone, make sure `gh auth status` shows you're logged in.
 
@@ -770,7 +770,7 @@ copilot
 > file was last modified.
 ```
 
-**Expected result**: Copilot reads the JSON file (filesystem MCP), lists the 5 books including "The Hobbit", "1984", "Dune", "To Kill a Mockingbird", and "Mysterious Book", then queries GitHub for commit history.
+**Expected result**: Claude Code reads the JSON file (filesystem MCP), lists the 5 books including "The Hobbit", "1984", "Dune", "To Kill a Mockingbird", and "Mysterious Book", then queries GitHub for commit history.
 
 **Self-Check**: You understand MCP when you can explain why "Check my repo's commit history" is better than manually running `git log` and pasting the output into your prompt.
 
@@ -780,23 +780,23 @@ copilot
 
 ### Main Challenge: Book App MCP Exploration
 
-Practice using MCP servers together on the book app project. Complete these steps in a single Copilot session:
+Practice using MCP servers together on the book app project. Complete these steps in a single Claude Code session:
 
 1. **Verify MCP is working**: Run `/mcp show` and confirm at least the GitHub server is enabled
 2. **Set up filesystem MCP** (if not already done): Create `~/.copilot/mcp-config.json` with the filesystem server configuration
-3. **Explore the code**: Ask Copilot to use the filesystem server to:
+3. **Explore the code**: Ask Claude Code to use the filesystem server to:
    - List all functions in `samples/book-app-project/books.py`
    - Check which functions in `samples/book-app-project/utils.py` are missing type hints
    - Read `samples/book-app-project/data.json` and identify any data quality issues (hint: look at the last entry)
-4. **Check repository activity**: Ask Copilot to use GitHub MCP to:
+4. **Check repository activity**: Ask Claude Code to use GitHub MCP to:
    - List recent commits that touched files in `samples/book-app-project/`
    - Check if there are any open issues or pull requests
-5. **Combine servers**: In a single prompt, ask Copilot to:
+5. **Combine servers**: In a single prompt, ask Claude Code to:
    - Read the test file at `samples/book-app-project/tests/test_books.py`
    - Compare the tested functions against all functions in `books.py`
    - Summarize what test coverage is missing
 
-**Success criteria**: You can seamlessly combine filesystem and GitHub MCP data in a single Copilot session, and you can explain what each MCP server contributed to the response.
+**Success criteria**: You can seamlessly combine filesystem and GitHub MCP data in a single Claude Code session, and you can explain what each MCP server contributed to the response.
 
 <details>
 <summary>💡 Hints (click to expand)</summary>
@@ -830,7 +830,7 @@ An empty author and year of 0. That's the data quality issue!
 
 The tests in `test_books.py` cover: `add_book`, `mark_as_read`, `remove_book`, `get_unread_books`, and `find_book_by_title`. Functions like `load_books`, `save_books`, and `list_books` don't have direct tests. The CLI functions in `book_app.py` and helpers in `utils.py` have no tests at all.
 
-**If MCP isn't working:** Restart Copilot after editing the config file.
+**If MCP isn't working:** Restart Claude Code after editing the config file.
 
 </details>
 
@@ -915,7 +915,7 @@ For most of this course, `/mcp show` is all you need. The other commands become 
 
 ## 🔑 Key Takeaways
 
-1. **MCP** connects Copilot to external services (GitHub, filesystem, documentation)
+1. **MCP** connects Claude Code to external services (GitHub, filesystem, documentation)
 2. **GitHub MCP is built-in** - no configuration needed, just `/login`
 3. **Filesystem and Context7** are configured via `~/.copilot/mcp-config.json`
 4. **Multi-server workflows** combine data from multiple sources in a single session

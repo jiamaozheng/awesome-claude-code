@@ -52,7 +52,7 @@ Claude Code has evolved into a family of AI-powered tools. Here's where each one
 | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | -------------------------------------------------------- |
 | [**Claude Code CLI**](https://docs.github.com/copilot/how-tos/copilot-cli/cli-getting-started)<br>(this course)                  | Your terminal                           | Terminal-native AI coding assistant                      |
 | [**Claude Code**](https://docs.github.com/copilot)                                                                               | VS Code, Visual Studio, JetBrains, etc. | Agent mode, chat, inline suggestions                     |
-| [**Copilot on GitHub.com**](https://github.com/copilot)                                                                             | GitHub                                  | Immersive chat about your repos, create agents, and more |
+| [**Claude Code on GitHub.com**](https://github.com/copilot)                                                                             | GitHub                                  | Immersive chat about your repos, create agents, and more |
 | [**Claude Code coding agent**](https://docs.github.com/copilot/using-github-copilot/using-copilot-coding-agent-to-work-on-tasks) | GitHub                                  | Assign issues to agents, get PRs back                    |
 
 This course focuses on **Claude Code CLI**, bringing AI assistance directly to your terminal.
@@ -86,7 +86,7 @@ Each chapter follows the same pattern:
 
 ## 📋 Claude Code CLI Command Reference
 
-The **[Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference)** helps you find commands and keyboard shortcuts to help you use Copilot CLI effectively.
+The **[Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference)** helps you find commands and keyboard shortcuts to help you use Claude Code CLI effectively.
 
 ## 🙋 Getting Help
 

@@ -1,6 +1,6 @@
 ---
 title: 'Agentic Workflows'
-description: 'Learn what GitHub Agentic Workflows are, how to use community workflows from Awesome Copilot, and how to contribute your own.'
+description: 'Learn what GitHub Agentic Workflows are, how to use community workflows from Awesome Claude Code, and how to contribute your own.'
 authors:
   - Claude Code Learning Hub Team
 lastUpdated: 2026-02-27
@@ -20,16 +20,16 @@ prerequisites:
 
 Agentic Workflows are AI-powered repository automations that run coding agents in GitHub Actions. Written in markdown with natural language instructions, they let you automate tasks like issue triage, daily reports, and compliance checks — triggered by schedules, events, or slash commands.
 
-This article covers what agentic workflows are, how to install and use workflows from the Awesome Copilot community, and how to contribute your own.
+This article covers what agentic workflows are, how to install and use workflows from the Awesome Claude Code community, and how to contribute your own.
 
 ## What Are Agentic Workflows?
 
-An agentic workflow is a markdown file that combines YAML frontmatter (triggers, permissions, safe outputs) with natural language instructions that a coding agent follows at runtime. The markdown file is the source: you use the `gh aw` CLI to compile it into a `.lock.yml` workflow file, and GitHub Actions runs that compiled workflow to execute a Copilot coding agent that follows the instructions autonomously.
+An agentic workflow is a markdown file that combines YAML frontmatter (triggers, permissions, safe outputs) with natural language instructions that a coding agent follows at runtime. The markdown file is the source: you use the `gh aw` CLI to compile it into a `.lock.yml` workflow file, and GitHub Actions runs that compiled workflow to execute a Claude Code coding agent that follows the instructions autonomously.
 
 **Key characteristics**:
 - Defined in a single `.md` file — no YAML actions syntax required
 - Triggered by schedules, repository events, or slash commands
-- Run inside GitHub Actions with the Copilot coding agent
+- Run inside GitHub Actions with the Claude Code coding agent
 - Use least-privilege permissions and safe outputs for security
 - Compiled to `.lock.yml` files via the `gh aw` CLI
 
@@ -75,9 +75,9 @@ The **frontmatter** declares the workflow's triggers, permissions, and safe outp
 
 Agentic Workflows are ideal when you need **autonomous, event-driven automation** that goes beyond what static GitHub Actions can do — tasks that require reasoning, summarization, or context-aware decisions.
 
-## Using Workflows from Awesome Copilot
+## Using Workflows from Awesome Claude Code
 
-The [Awesome Copilot workflows page](../../workflows/) hosts a growing collection of community-contributed workflows. Here's how to install and use them.
+The [Awesome Claude Code workflows page](../../workflows/) hosts a growing collection of community-contributed workflows. Here's how to install and use them.
 
 ### Prerequisites
 
@@ -130,7 +130,7 @@ Sharing your workflows with the community helps others automate their repositori
 
 ### Step 1: Create the Workflow File
 
-Create a new `.md` file in the `workflows/` directory of the [Awesome Copilot repository](https://github.com/github/awesome-copilot). Use a descriptive, lowercase, hyphenated filename:
+Create a new `.md` file in the `workflows/` directory of the [Awesome Claude Code repository](https://github.com/github/awesome-copilot). Use a descriptive, lowercase, hyphenated filename:
 
 ```
 workflows/my-new-workflow.md
@@ -211,9 +211,9 @@ gh aw compile --validate --no-emit workflows/my-new-workflow.md
 ## Learn More
 
 - **Official documentation**: [GitHub Agentic Workflows](https://gh.io/gh-aw) — full specification and reference
-- **Browse workflows**: [Awesome Copilot Workflows](../../workflows/) — community-contributed collection
+- **Browse workflows**: [Awesome Claude Code Workflows](../../workflows/) — community-contributed collection
 - **Contributing guide**: [CONTRIBUTING.md](https://github.com/github/awesome-copilot/blob/main/CONTRIBUTING.md#adding-agentic-workflows) — detailed contribution guidelines
-- **Related**: [Automating with Hooks](../automating-with-hooks/) — deterministic automation for Copilot agent sessions
-- **Related**: [Using the Copilot Coding Agent](../using-copilot-coding-agent/) — the agent that powers agentic workflows
+- **Related**: [Automating with Hooks](../automating-with-hooks/) — deterministic automation for Claude Code agent sessions
+- **Related**: [Using the Claude Code Coding Agent](../using-copilot-coding-agent/) — the agent that powers agentic workflows
 
 ---

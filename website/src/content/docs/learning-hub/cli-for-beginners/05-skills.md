@@ -8,9 +8,9 @@ lastUpdated: 2026-03-20
 
 ![Chapter 05: Skills System](/images/learning-hub/copilot-cli-for-beginners/05/chapter-header.png)
 
-> **What if Copilot could automatically apply your team's best practices without you having to explain them every time?**
+> **What if Claude Code could automatically apply your team's best practices without you having to explain them every time?**
 
-In this chapter, you'll learn about Agent Skills: folders of instructions that Copilot automatically loads when relevant to your task. While agents change *how* Copilot thinks, skills teach Copilot *specific ways to complete tasks*. You'll create a security audit skill that Copilot applies whenever you ask about security, build team-standard review criteria that ensure consistent code quality, and learn how skills work across Copilot CLI, VS Code, and the Copilot coding agent.
+In this chapter, you'll learn about Agent Skills: folders of instructions that Claude Code automatically loads when relevant to your task. While agents change *how* Claude Code thinks, skills teach Claude Code *specific ways to complete tasks*. You'll create a security audit skill that Claude Code applies whenever you ask about security, build team-standard review criteria that ensure consistent code quality, and learn how skills work across Claude Code CLI, VS Code, and the Claude Code coding agent.
 
 
 ## 🎯 Learning Objectives
@@ -29,10 +29,10 @@ By the end of this chapter, you'll be able to:
 ## 🧩 Real-World Analogy: Power Tools
 
 A general-purpose drill is useful, but specialized attachments make it powerful. 
-<img src="/images/learning-hub/copilot-cli-for-beginners/05/power-tools-analogy.png" alt="Power Tools - Skills Extend Copilot's Capabilities" width="800"/>
+<img src="/images/learning-hub/copilot-cli-for-beginners/05/power-tools-analogy.png" alt="Power Tools - Skills Extend Claude Code's Capabilities" width="800"/>
 
 
-Skills work the same way. Just like swapping drill bits for different jobs, you can add skills to Copilot for different tasks:
+Skills work the same way. Just like swapping drill bits for different jobs, you can add skills to Claude Code for different tasks:
 
 | Skill Attachment | Purpose |
 |------------|---------|
@@ -43,13 +43,13 @@ Skills work the same way. Just like swapping drill bits for different jobs, you 
 
 
 
-*Skills are specialized attachments that extend what Copilot can do*
+*Skills are specialized attachments that extend what Claude Code can do*
 
 ---
 
 # How Skills Work
 
-<img src="/images/learning-hub/copilot-cli-for-beginners/05/how-skills-work.png" alt="Glowing RPG-style skill icons connected by light trails on a starfield background representing Copilot skills" width="800"/>
+<img src="/images/learning-hub/copilot-cli-for-beginners/05/how-skills-work.png" alt="Glowing RPG-style skill icons connected by light trails on a starfield background representing Claude Code skills" width="800"/>
 
 Learn what skills are, why they matter, and how they differ from agents and MCP.
 
@@ -62,34 +62,34 @@ Learn what skills are, why they matter, and how they differ from agents and MCP.
    copilot
    > /skills list
    ```
-   This shows all skills Copilot can find in your project and personal folders.
+   This shows all skills Claude Code can find in your project and personal folders.
 
 2. **Look at a real skill file:** Check out our provided [code-checklist SKILL.md](https://github.com/github/copilot-cli-for-beginners/blob/main/.github/skills/code-checklist/SKILL.md) to see the pattern. It's just YAML frontmatter plus markdown instructions.
 
-3. **Understand the core concept:** Skills are task-specific instructions that Copilot loads *automatically* when your prompt matches the skill's description. You don't need to activate them, just ask naturally.
+3. **Understand the core concept:** Skills are task-specific instructions that Claude Code loads *automatically* when your prompt matches the skill's description. You don't need to activate them, just ask naturally.
 
 
 ## Understanding Skills
 
-Agent Skills are folders containing instructions, scripts, and resources that Copilot **automatically loads when relevant** to your task. Copilot reads your prompt, checks if any skills match, and applies the relevant instructions automatically.
+Agent Skills are folders containing instructions, scripts, and resources that Claude Code **automatically loads when relevant** to your task. Claude Code reads your prompt, checks if any skills match, and applies the relevant instructions automatically.
 
 ```bash
 copilot
 
 > Check books.py against our quality checklist
-# Copilot detects this matches your "code-checklist" skill
+# Claude Code detects this matches your "code-checklist" skill
 # and automatically applies its Python quality checklist
 
 > Generate tests for the BookCollection class
-# Copilot loads your "pytest-gen" skill
+# Claude Code loads your "pytest-gen" skill
 # and applies your preferred test structure
 
 > What are the code quality issues in this file?
-# Copilot loads your "code-checklist" skill
+# Claude Code loads your "code-checklist" skill
 # and checks against your team's standards
 ```
 
-> 💡 **Key Insight**: Skills are **automatically triggered** based on your prompt matching the skill's description. Just ask naturally and Copilot applies relevant skills behind the scenes. You can also invoke skills directly as well which you'll learn about next.
+> 💡 **Key Insight**: Skills are **automatically triggered** based on your prompt matching the skill's description. Just ask naturally and Claude Code applies relevant skills behind the scenes. You can also invoke skills directly as well which you'll learn about next.
 
 > 🧰 **Ready-to-use templates**: Check out the [.github/skills](https://github.com/github/copilot-cli-for-beginners/tree/main/.github/skills/) folder for simple copy-paste skills you can try out.
 
@@ -115,7 +115,7 @@ This gives you explicit control when you want to ensure a specific skill is used
 
 ### How Do I Know a Skill Was Used?
 
-You can ask Copilot directly:
+You can ask Claude Code directly:
 
 ```bash
 > What skills did you use for that response?
@@ -179,14 +179,14 @@ copilot
 ```
 
 **What happens behind the scenes**:
-1. Copilot sees "code quality" and "issues" in your prompt
+1. Claude Code sees "code quality" and "issues" in your prompt
 2. Checks skill descriptions, finds your `code-checklist` skill matches
 3. Automatically loads your team's quality checklist
 4. Applies all checks without you listing them
 
-<img src="/images/learning-hub/copilot-cli-for-beginners/05/skill-auto-discovery-flow.png" alt="How Skills Auto-Trigger - 4-step flow showing how Copilot automatically matches your prompt to the right skill" width="800"/>
+<img src="/images/learning-hub/copilot-cli-for-beginners/05/skill-auto-discovery-flow.png" alt="How Skills Auto-Trigger - 4-step flow showing how Claude Code automatically matches your prompt to the right skill" width="800"/>
 
-*Just ask naturally. Copilot matches your prompt to the right skill and applies it automatically.*
+*Just ask naturally. Claude Code matches your prompt to the right skill and applies it automatically.*
 
 **Output**:
 ```
@@ -237,7 +237,7 @@ copilot
 > Can you review this PR?
 ```
 
-Copilot automatically loads your team's `pr-review` skill and checks all 10 points:
+Claude Code automatically loads your team's `pr-review` skill and checks all 10 points:
 
 ```
 PR Review: feature/user-auth
@@ -277,9 +277,9 @@ Build your own skills from SKILL.md files.
 
 Skills are stored in `.github/skills/` (project-specific) or `~/.copilot/skills/` (user level).
 
-### How Copilot Finds Skills
+### How Claude Code Finds Skills
 
-Copilot automatically scans these locations for skills:
+Claude Code automatically scans these locations for skills:
 
 | Location | Scope |
 |----------|-------|
@@ -294,7 +294,7 @@ Each skill lives in its own folder with a `SKILL.md` file. You can optionally in
 .github/skills/
 └── my-skill/
     ├── SKILL.md           # Required: Skill definition and instructions
-    ├── examples/          # Optional: Example files Copilot can reference
+    ├── examples/          # Optional: Example files Claude Code can reference
     │   └── sample.py
     └── scripts/           # Optional: Scripts the skill can use
         └── validate.sh
@@ -348,7 +348,7 @@ Provide issues as a numbered list with severity:
 | Property | Required | Description |
 |----------|----------|-------------|
 | `name` | **Yes** | Unique identifier (lowercase, hyphens for spaces) |
-| `description` | **Yes** | What the skill does and when Copilot should use it |
+| `description` | **Yes** | What the skill does and when Claude Code should use it |
 | `license` | No | License that applies to this skill |
 
 > 📖 **Official docs**: [About Agent Skills](https://docs.github.com/copilot/concepts/agents/about-agent-skills)
@@ -407,7 +407,7 @@ EOF
 copilot
 
 > @samples/book-app-project/ Check this code for security vulnerabilities
-# Copilot detects "security vulnerabilities" matches your skill
+# Claude Code detects "security vulnerabilities" matches your skill
 # and automatically applies its OWASP checklist
 ```
 
@@ -432,7 +432,7 @@ Security Audit: book-app-project
 
 ## Writing Good Skill Descriptions
 
-The `description` field in your SKILL.md is crucial! It's how Copilot decides whether to load your skill:
+The `description` field in your SKILL.md is crucial! It's how Claude Code decides whether to load your skill:
 
 ```markdown
 ---
@@ -518,11 +518,11 @@ Description: Security-focused code review checking OWASP Top 10 vulnerabilities
 
 ### When to Use `/skills reload`
 
-After creating or editing a skill's SKILL.md file, run `/skills reload` to pick up the changes without restarting Copilot:
+After creating or editing a skill's SKILL.md file, run `/skills reload` to pick up the changes without restarting Claude Code:
 
 ```bash
 # Edit your skill file
-# Then in Copilot:
+# Then in Claude Code:
 > /skills reload
 Skills reloaded successfully.
 ```
@@ -535,7 +535,7 @@ Skills reloaded successfully.
 
 ### Using Plugins to Install Skills
 
-> 💡 **What are plugins?** Plugins are installable packages that can bundle skills, agents, and MCP server configurations together. Think of them as "app store" extensions for Copilot CLI.
+> 💡 **What are plugins?** Plugins are installable packages that can bundle skills, agents, and MCP server configurations together. Think of them as "app store" extensions for Claude Code CLI.
 
 The `/plugin` command lets you browse and install these packages:
 
@@ -558,7 +558,7 @@ Plugins can bundle multiple capabilities together - a single plugin might includ
 
 Pre-made skills are also available from community repositories:
 
-- **[Awesome Copilot](https://github.com/github/awesome-copilot)** - Official Claude Code resources including skills documentation and examples
+- **[Awesome Claude Code](https://github.com/github/awesome-copilot)** - Official Claude Code resources including skills documentation and examples
 
 ### Installing a Community Skill Manually
 
@@ -575,7 +575,7 @@ cp -r /tmp/awesome-copilot/skills/code-checklist .github/skills/
 cp -r /tmp/awesome-copilot/skills/code-checklist ~/.copilot/skills/
 ```
 
-> ⚠️ **Review before installing**: Always read a skill's `SKILL.md` before copying it into your project. Skills control what Copilot does, and a malicious skill could instruct it to run harmful commands or modify code in unexpected ways.
+> ⚠️ **Review before installing**: Always read a skill's `SKILL.md` before copying it into your project. Skills control what Claude Code does, and a malicious skill could instruct it to run harmful commands or modify code in unexpected ways.
 
 ---
 
@@ -693,7 +693,7 @@ EOF
 
 3. **Team Skill Challenge**: Think about your team's code review checklist. Could you encode it as a skill? Write down 3 things the skill should always check.
 
-**Self-Check**: You understand skills when you can explain why the `description` field matters (it's how Copilot decides whether to load your skill).
+**Self-Check**: You understand skills when you can explain why the `description` field matters (it's how Claude Code decides whether to load your skill).
 
 ---
 
@@ -703,7 +703,7 @@ EOF
 
 The examples above created `pytest-gen` and `pr-review` skills. Now practice creating a completely different kind of skill: one for generating formatted output from data.
 
-1. List your current skills: Run Copilot and pass it `/skills list`. You can also use `ls .github/skills/` to see project skills or `ls ~/.copilot/skills/` for personal skills.
+1. List your current skills: Run Claude Code and pass it `/skills list`. You can also use `ls .github/skills/` to see project skills or `ls ~/.copilot/skills/` for personal skills.
 2. Create a `book-summary` skill at `.github/skills/book-summary/SKILL.md` that generates a formatted markdown summary of the book collection
 3. Your skill should have:
    - Clear name and description (description is crucial for matching!)
@@ -713,7 +713,7 @@ The examples above created `pytest-gen` and `pr-review` skills. Now practice cre
 5. Verify the skill auto-triggers by checking `/skills list`
 6. Try invoking it directly with `/book-summary Summarize the books in this collection`
 
-**Success criteria**: You have a working `book-summary` skill that Copilot automatically applies when you ask about the book collection.
+**Success criteria**: You have a working `book-summary` skill that Claude Code automatically applies when you ask about the book collection.
 
 <details>
 <summary>💡 Hints (click to expand)</summary>
@@ -778,7 +778,7 @@ copilot
 
 ### Troubleshooting
 
-**Skill not being used** - If Copilot isn't using your skill when expected:
+**Skill not being used** - If Claude Code isn't using your skill when expected:
 
 1. **Check the description**: Does it match how you're asking?
    ```markdown
@@ -818,10 +818,10 @@ copilot
 
 Run `/skills reload` after creating or editing skills to ensure changes are picked up.
 
-**Testing if a skill loads** - Ask Copilot directly:
+**Testing if a skill loads** - Ask Claude Code directly:
 ```bash
 > What skills do you have available for checking code quality?
-# Copilot will describe relevant skills it found
+# Claude Code will describe relevant skills it found
 ```
 
 **How do I know my skill is actually working?**
@@ -846,7 +846,7 @@ Run `/skills reload` after creating or editing skills to ensure changes are pick
 
 ## 🔑 Key Takeaways
 
-1. **Skills are automatic**: Copilot loads them when your prompt matches the skill's description
+1. **Skills are automatic**: Claude Code loads them when your prompt matches the skill's description
 2. **Direct invocation**: You can also invoke skills directly with `/skill-name` as a slash command
 3. **SKILL.md format**: YAML frontmatter (name, description, optional license) plus markdown instructions
 4. **Location matters**: `.github/skills/` for project/team sharing, `~/.copilot/skills/` for personal use
@@ -858,7 +858,7 @@ Run `/skills reload` after creating or editing skills to ensure changes are pick
 
 ## ➡️ What's Next
 
-Skills extend what Copilot can do with auto-loaded instructions. But what about connecting to external services? That's where MCP comes in.
+Skills extend what Claude Code can do with auto-loaded instructions. But what about connecting to external services? That's where MCP comes in.
 
 In **[Chapter 06: MCP Servers](../06-mcp-servers/)**, you'll learn:
 

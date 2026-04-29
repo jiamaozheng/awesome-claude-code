@@ -4,7 +4,7 @@
 
 tools:
   - id: mcp-server
-    name: Awesome Copilot MCP Server
+    name: Awesome Claude Code MCP Server
     description: >-
       A Model Context Protocol (MCP) Server that provides prompts for searching and installing
       prompts, instructions, agents, and skills directly from this repository. Makes it easy
@@ -112,7 +112,7 @@ tools:
     name: APM - Agent Package Manager
     description: >-
       npm for AI coding agents. The package manager for AGENTS.md, Agent Skills, and MCP servers.
-      One package installs to every AI agent (Copilot, Cursor, Claude, Codex, Gemini) in their
+      One package installs to every AI agent (Claude Code, Cursor, Claude, Codex, Gemini) in their
       native format.
     category: CLI Tools
     featured: true
@@ -123,7 +123,7 @@ tools:
       github: https://github.com/danielmeppiel/apm
       pypi: https://pypi.org/project/apm-cli/
     features:
-      - "📦 Universal packages: One install works for Copilot, Cursor, Claude, and more"
+      - "📦 Universal packages: One install works for Claude Code, Cursor, Claude, and more"
       - "🔧 Skills & Instructions: Install guardrails and capabilities"
       - "🔌 MCP Server management: Configure and manage MCP servers"
       - "🏗️ Create packages: Share your standards and workflows"
@@ -167,7 +167,7 @@ tools:
       marketplace: https://marketplace.visualstudio.com/items?itemName=AmadeusITGroup.prompt-registry
     features:
       - "🎨 Visual Marketplace: Browse bundles with search, filters, and one-click install"
-      - "🔌 Multi-Source: Connect to GitHub, local directories, APM, or Awesome Copilot"
+      - "🔌 Multi-Source: Connect to GitHub, local directories, APM, or Awesome Claude Code"
       - "📦 Version Management: Track versions and enable automatic updates"
       - "👥 Profiles & Hubs: Organize bundles by project/team"
       - "🌍 Cross-Platform: Works on macOS, Linux, and Windows"
@@ -182,7 +182,7 @@ tools:
     name: GitHub Node for Visual Studio
     description: >-
       Adds GitHub and MCP Servers nodes to Solution Explorer in Visual Studio. Quickly access
-      and manage GitHub-specific files like workflows, Copilot instructions, and agents, plus
+      and manage GitHub-specific files like workflows, Claude Code instructions, and agents, plus
       MCP server configurations - all without leaving Visual Studio.
     category: Visual Studio Extensions
     featured: false
@@ -193,7 +193,7 @@ tools:
       marketplace: https://marketplace.visualstudio.com/items?itemName=MadsKristensen.GitHubNode
     features:
       - "📁 GitHub Node: Easy access to .github folder contents in Solution Explorer"
-      - "➕ Quick Create: Add Copilot instructions, agents, prompts, skills, and workflows"
+      - "➕ Quick Create: Add Claude Code instructions, agents, prompts, skills, and workflows"
       - "🔌 MCP Servers Node: Centralized access to MCP configurations"
       - "🔄 Git Status Icons: See file status directly in the tree view"
       - "🌐 Open on GitHub: Quick link to view files on GitHub.com"
@@ -215,7 +215,7 @@ tools:
     featured: true
     requirements:
       - Internet connection to access Context7 platform
-      - GitHub repository with Copilot customizations (prompts, instructions, agents, or skills)
+      - GitHub repository with Claude Code customizations (prompts, instructions, agents, or skills)
     links:
       documentation: https://context7.com/github/awesome-copilot
     features:
@@ -224,7 +224,7 @@ tools:
       - "✅ Validation: Built-in tools for validating collection manifests and file structure"
       - "📝 Documentation Generation: Auto-generate README files and discovery interfaces"
       - "🎯 Trust Scoring: Verification and reliability scoring for community contributions"
-      - "🔗 Deep Integration: Works with awesome-copilot and other Copilot customization repositories"
+      - "🔗 Deep Integration: Works with awesome-copilot and other Claude Code customization repositories"
     tags:
       - documentation
       - discovery
@@ -237,7 +237,7 @@ tools:
     name: VS Code Agent Manager
     description: >-
       VS Code Agent Manager is the essential toolkit for supercharging your Claude Code experience.
-      Effortlessly discover, install, and manage custom Copilot Agents directly within VS Code.
+      Effortlessly discover, install, and manage custom Claude Code Agents directly within VS Code.
     category: VS Code Extensions
     featured: true
     requirements:
@@ -309,7 +309,7 @@ tools:
       - launchagent
 
   - id: copilot-swarm-orchestrator
-    name: Copilot Swarm Orchestrator
+    name: Claude Code Swarm Orchestrator
     description: >-
       Parallel AI workflow orchestrator for Claude Code CLI. Coordinates multiple
       specialized agents across wave-based execution with dependency-aware scheduling,

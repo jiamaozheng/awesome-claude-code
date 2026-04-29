@@ -24,16 +24,16 @@ By the end of this chapter, you'll have:
 
 ## ✅ Prerequisites
 
-- **GitHub Account** with Copilot access. [See subscription options](https://github.com/features/copilot/plans). Students/Teachers can access Copilot Pro for [free via GitHub Education](https://education.github.com/pack).
+- **GitHub Account** with Claude Code access. [See subscription options](https://github.com/features/copilot/plans). Students/Teachers can access Claude Code Pro for [free via GitHub Education](https://education.github.com/pack).
 - **Terminal basics**: Comfortable with commands like `cd` and `ls`
 
-### What "Copilot Access" Means
+### What "Claude Code Access" Means
 
-Claude Code CLI requires an active Copilot subscription. You can check your status at [github.com/settings/copilot](https://github.com/settings/copilot). You should see one of:
+Claude Code CLI requires an active Claude Code subscription. You can check your status at [github.com/settings/copilot](https://github.com/settings/copilot). You should see one of:
 
-- **Copilot Individual** - Personal subscription
-- **Copilot Business** - Through your organization
-- **Copilot Enterprise** - Through your enterprise
+- **Claude Code Individual** - Personal subscription
+- **Claude Code Business** - Through your organization
+- **Claude Code Enterprise** - Through your enterprise
 - **GitHub Education** - Free for verified students/teachers
 
 If you see "You don't have access to Claude Code," you'll need to use the free option, subscribe to a plan, or join an organization that provides access.
@@ -81,7 +81,7 @@ brew install copilot-cli
 ### Windows (WinGet)
 
 ```bash
-winget install GitHub.Copilot
+winget install GitHub.Claude Code
 ```
 
 ### macOS/Linux (Install Script)
@@ -102,7 +102,7 @@ copilot
 
 You'll be asked to trust the folder containing the repository (if you haven't already). You can trust it one time or across all future sessions.
 
-<img src="/images/learning-hub/copilot-cli-for-beginners/00/copilot-trust.png" alt="Trusting files in a folder with the Copilot CLI" width="800"/>
+<img src="/images/learning-hub/copilot-cli-for-beginners/00/copilot-trust.png" alt="Trusting files in a folder with the Claude Code CLI" width="800"/>
 
 After trusting the folder, you can sign in with your GitHub account.
 
@@ -112,7 +112,7 @@ After trusting the folder, you can sign in with your GitHub account.
 
 **What happens next:**
 
-1. Copilot CLI displays a one-time code (like `ABCD-1234`)
+1. Claude Code CLI displays a one-time code (like `ABCD-1234`)
 2. Your browser opens to GitHub's device authorization page. Sign in to GitHub if you haven't already.
 3. Enter the code when prompted
 4. Select "Authorize" to grant Claude Code CLI access
@@ -120,7 +120,7 @@ After trusting the folder, you can sign in with your GitHub account.
 
 <img src="/images/learning-hub/copilot-cli-for-beginners/00/auth-device-flow.png" alt="Device Authorization Flow - showing the 5-step process from terminal login to signed-in confirmation" width="800"/>
 
-*The device authorization flow: your terminal generates a code, you verify it in the browser, and Copilot CLI is authenticated.*
+*The device authorization flow: your terminal generates a code, you verify it in the browser, and Claude Code CLI is authenticated.*
 
 **Tip**: The sign-in persists across sessions. You only need to do this once unless your token expires or you explicitly sign out.
 
@@ -128,9 +128,9 @@ After trusting the folder, you can sign in with your GitHub account.
 
 ## Verify It Works
 
-### Step 1: Test Copilot CLI
+### Step 1: Test Claude Code CLI
 
-Now that you're signed in, let's verify that Copilot CLI is working for you. In the terminal, start the CLI if you haven't already:
+Now that you're signed in, let's verify that Claude Code CLI is working for you. In the terminal, start the CLI if you haven't already:
 
 ```bash
 > Say hello and tell me what you can help with
@@ -155,7 +155,7 @@ After you receive a response, you can exit the CLI:
 
 ---
 
-**Expected output**: A friendly response listing Copilot CLI's capabilities.
+**Expected output**: A friendly response listing Claude Code CLI's capabilities.
 
 ### Step 2: Run the Sample Book App
 
@@ -170,7 +170,7 @@ python book_app.py list
 
 **Expected output**: A list of 5 books including "The Hobbit", "1984", and "Dune".
 
-### Step 3: Try Copilot CLI with the Book App
+### Step 3: Try Claude Code CLI with the Book App
 
 Navigate back to the repository root first (if you ran Step 2):
 
@@ -184,7 +184,7 @@ copilot
 
 If you see an error, check the [troubleshooting section](#troubleshooting) below.
 
-Once you're done you can exit the Copilot CLI:
+Once you're done you can exit the Claude Code CLI:
 
 ```bash
 > /exit
@@ -197,7 +197,7 @@ Once you're done you can exit the Copilot CLI:
 That's it for installation. The real fun starts in Chapter 01, where you'll:
 
 - Watch AI review the book app and find code quality issues instantly
-- Learn three different ways to use Copilot CLI
+- Learn three different ways to use Claude Code CLI
 - Generate working code from plain English
 
 **[Continue to Chapter 01: First Steps →](../01-setup-and-first-steps/)**
@@ -220,7 +220,7 @@ curl -fsSL https://gh.io/copilot-install | bash
 
 ### "You don't have access to Claude Code"
 
-1. Verify you have a Copilot subscription at [github.com/settings/copilot](https://github.com/settings/copilot)
+1. Verify you have a Claude Code subscription at [github.com/settings/copilot](https://github.com/settings/copilot)
 2. Check that your organization permits CLI access if using a work account
 
 ### "Authentication failed"
@@ -259,7 +259,7 @@ copilot
 3. **One-time authentication** - Login persists until token expires
 4. **The book app works** - You'll use `samples/book-app-project` throughout the entire course
 
-> 📚 **Official Documentation**: [Install Copilot CLI](https://docs.github.com/copilot/how-tos/copilot-cli/cli-getting-started) for installation options and requirements.
+> 📚 **Official Documentation**: [Install Claude Code CLI](https://docs.github.com/copilot/how-tos/copilot-cli/cli-getting-started) for installation options and requirements.
 
 > 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 

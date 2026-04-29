@@ -26,7 +26,7 @@ Skills are folders containing a `SKILL.md` file and optional bundled assets. The
 
 - **Name**: A kebab-case identifier that doubles as the `/command` users invoke (e.g., `/generate-tests`)
 - **Description**: What the skill accomplishes and when it should be triggered
-- **Instructions**: The detailed workflow Copilot executes
+- **Instructions**: The detailed workflow Claude Code executes
 - **Asset references**: Links to bundled templates, scripts, schemas, and reference documents
 
 **Key advantages over the older prompt file format**:
@@ -44,7 +44,7 @@ Skills are folders containing a `SKILL.md` file and optional bundled assets. The
 
 **Skills vs Agents**:
 - Skills are task-focused capabilities; agents are specialized personas
-- Skills work with standard Copilot tools and bundle their own assets; agents may require MCP servers or custom integrations
+- Skills work with standard Claude Code tools and bundle their own assets; agents may require MCP servers or custom integrations
 - Use skills for repeatable tasks; use agents for complex multi-step workflows that need persistent state
 
 ## Anatomy of a Skill
@@ -112,7 +112,7 @@ Use [templates/test-template.ts](templates/test-template.ts) as a starting struc
 
 ## Frontmatter Configuration
 
-The YAML frontmatter controls how Copilot discovers and executes your skill.
+The YAML frontmatter controls how Claude Code discovers and executes your skill.
 
 ### Required Fields
 
@@ -359,7 +359,7 @@ A: Yes! Skills are folders, not single files. You can bundle reference documents
 
 **Q: How do I share skills with my team?**
 
-A: Store skill folders in your repository's `.github/skills/` directory. They're automatically available to all team members with Copilot access when working in that repository.
+A: Store skill folders in your repository's `.github/skills/` directory. They're automatically available to all team members with Claude Code access when working in that repository.
 
 **Q: Can agents chain multiple skills?**
 

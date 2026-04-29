@@ -10,7 +10,7 @@ lastUpdated: 2026-03-20
 
 > **Everything you learned combines here. Go from idea to merged PR in a single session.**
 
-In this chapter, you'll bring together everything you've learned into complete workflows. You'll build features using multi-agent collaboration, set up pre-commit hooks that catch security issues before they're committed, integrate Copilot into CI/CD pipelines, and go from feature idea to merged PR in a single terminal session. This is where Claude Code CLI becomes a genuine force multiplier.
+In this chapter, you'll bring together everything you've learned into complete workflows. You'll build features using multi-agent collaboration, set up pre-commit hooks that catch security issues before they're committed, integrate Claude Code into CI/CD pipelines, and go from feature idea to merged PR in a single terminal session. This is where Claude Code CLI becomes a genuine force multiplier.
 
 > 💡 **Note**: This chapter shows how to combine everything you've learned. **You don't need agents, skills, or MCP to be productive (although they can be very helpful).** The core workflow — describe, plan, implement, test, review, ship — works with just the built-in features from Chapters 00-03.
 
@@ -51,13 +51,13 @@ Let's start by walking through a scenario that modifies code, generates tests, r
 Instead of switching between your editor, terminal, test runner, and GitHub UI and losing context each time, you can combine all your tools in one terminal session. We'll break down this pattern in the [Integration Pattern](#the-integration-pattern-for-power-users) section below.
 
 ```bash
-# Start Copilot in interactive mode
+# Start Claude Code in interactive mode
 copilot
 
 > I need to add a "list unread" command to the book app that shows only
 > books where read is False. What files need to change?
 
-# Copilot creates high-level plan...
+# Claude Code creates high-level plan...
 
 # SWITCH TO PYTHON-REVIEWER AGENT
 > /agent
@@ -103,7 +103,7 @@ copilot
 # If review passes, use /pr to operate on the pull request for the current branch
 > /pr [view|create|fix|auto]
 
-# Or ask naturally if you want Copilot to draft it from the terminal
+# Or ask naturally if you want Claude Code to draft it from the terminal
 > Create a pull request titled "Feature: Add list unread books command"
 ```
 
@@ -111,7 +111,7 @@ copilot
 
 **The key insight**: You directed specialists like an architect. They handled the details. You handled the vision.
 
-> 💡 **Going further**: For large multi-step plans like this, try `/fleet` to let Copilot run independent subtasks in parallel. See the [official docs](https://docs.github.com/copilot/concepts/agents/copilot-cli/fleet) for details.
+> 💡 **Going further**: For large multi-step plans like this, try `/fleet` to let Claude Code run independent subtasks in parallel. See the [official docs](https://docs.github.com/copilot/concepts/agents/copilot-cli/fleet) for details.
 
 ---
 
@@ -179,7 +179,7 @@ copilot
 >
 > ⚠️ **Performance note**: This hook calls `copilot -p` for each staged file, which takes several seconds per file. For large commits, consider limiting to critical files or running reviews manually with `/review` instead.
 
-A **git hook** is a script that Git runs automatically at certain points, For example, right before a commit. You can use this to run automated checks on your code. Here's how to set up an automated Copilot review on your commits:
+A **git hook** is a script that Git runs automatically at certain points, For example, right before a commit. You can use this to run automated checks on your code. Here's how to set up an automated Claude Code review on your commits:
 
 ```bash
 # Create a pre-commit hook
@@ -190,14 +190,14 @@ cat > .git/hooks/pre-commit << 'EOF'
 STAGED=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.py$')
 
 if [ -n "$STAGED" ]; then
-  echo "Running Copilot review on staged files..."
+  echo "Running Claude Code review on staged files..."
 
   for file in $STAGED; do
     echo "Reviewing $file..."
 
     # Use timeout to prevent hanging (60 seconds per file)
     # --allow-all auto-approves file reads/writes so the hook can run unattended.
-    # Only use this in automated scripts. In interactive sessions, let Copilot ask for permission.
+    # Only use this in automated scripts. In interactive sessions, let Claude Code ask for permission.
     REVIEW=$(timeout 60 copilot --allow-all -p "Quick security review of @$file - critical issues only" 2>/dev/null)
 
     # Check if timeout occurred
@@ -224,7 +224,7 @@ chmod +x .git/hooks/pre-commit
 
 > 📚 **Official Documentation**: [Use hooks](https://docs.github.com/copilot/how-tos/copilot-cli/use-hooks) and [Hooks configuration reference](https://docs.github.com/copilot/reference/hooks-configuration) for the complete hooks API.
 >
-> 💡 **Built-in alternative**: Copilot CLI also has a built-in hooks system (`copilot hooks`) that can run automatically on events like pre-commit. The manual git hook above gives you full control, while the built-in system is simpler to configure. See the docs above to decide which approach fits your workflow.
+> 💡 **Built-in alternative**: Claude Code CLI also has a built-in hooks system (`copilot hooks`) that can run automatically on events like pre-commit. The manual git hook above gives you full control, while the built-in system is simpler to configure. See the docs above to decide which approach fits your workflow.
 
 Now every commit gets a quick security review:
 
@@ -233,7 +233,7 @@ git add samples/book-app-project/books.py
 git commit -m "Update book collection methods"
 
 # Output:
-# Running Copilot review on staged files...
+# Running Claude Code review on staged files...
 # Reviewing samples/book-app-project/books.py...
 # Critical issues found in samples/book-app-project/books.py:
 # - Line 15: File path injection vulnerability in load_from_file
@@ -248,7 +248,7 @@ git commit -m "Update book collection methods"
 When joining a new project, combine context, agents, and MCP to ramp up fast:
 
 ```bash
-# Start Copilot in interactive mode
+# Start Claude Code in interactive mode
 copilot
 
 # PHASE 1: Get the big picture with context
@@ -341,9 +341,9 @@ copilot
 # Less effective: Everything in one long session
 ```
 
-### 4. Make Workflows Reusable with Copilot
+### 4. Make Workflows Reusable with Claude Code
 
-Instead of just documenting workflows in a wiki, encode them directly in your repo where Copilot can use them:
+Instead of just documenting workflows in a wiki, encode them directly in your repo where Claude Code can use them:
 
 - **Custom instructions** (`.github/copilot-instructions.md`): Always-on guidance for coding standards, architecture rules, and build/test/deploy steps. Every session follows them automatically.
 - **Prompt files** (`.github/prompts/`): Reusable, parameterized prompts your team can share — like templates for code reviews, component generation, or PR descriptions.
@@ -375,7 +375,7 @@ Include: Summary, Changes Made, Testing Done, Screenshots Needed"
 
 ### CI/CD Integration
 
-For teams with existing CI/CD pipelines, you can automate Copilot reviews on every pull request using GitHub Actions. This includes posting review comments automatically and filtering for critical issues.
+For teams with existing CI/CD pipelines, you can automate Claude Code reviews on every pull request using GitHub Actions. This includes posting review comments automatically and filtering for critical issues.
 
 > 📖 **Learn more**: See [CI/CD Integration](https://github.com/github/copilot-cli-for-beginners/blob/main/appendices/ci-cd-integration.md) for complete GitHub Actions workflows, configuration options, and troubleshooting tips.
 
@@ -414,7 +414,7 @@ After completing the demos, try these variations:
 
 The hands-on examples walked through building a "list unread books" feature. Now practice the full workflow on a different feature: **search books by year range**:
 
-1. Start Copilot and gather context: `@samples/book-app-project/books.py`
+1. Start Claude Code and gather context: `@samples/book-app-project/books.py`
 2. Plan with `/plan Add a "search by year" command that lets users find books published between two years`
 3. Implement a `find_by_year_range(start_year, end_year)` method in `BookCollection`
 4. Add a `handle_search_year()` function in `book_app.py` that prompts the user for start and end years
@@ -425,7 +425,7 @@ The hands-on examples walked through building a "list unread books" feature. Now
 
 Document your workflow as you go.
 
-**Success criteria**: You've completed the feature from idea to commit using Copilot CLI, including planning, implementation, tests, documentation, and review.
+**Success criteria**: You've completed the feature from idea to commit using Claude Code CLI, including planning, implementation, tests, documentation, and review.
 
 > 💡 **Bonus**: If you have agents set up from Chapter 04, try creating and using custom agents. For example, an error-handler agent for implementation review and a doc-writer agent for the README update.
 
@@ -487,7 +487,7 @@ Congratulations! You've learned:
 
 | Chapter | What You Learned |
 |---------|-------------------|
-| 00 | Copilot CLI installation and Quick Start |
+| 00 | Claude Code CLI installation and Quick Start |
 | 01 | Three modes of interaction |
 | 02 | Context management with @ syntax |
 | 03 | Development workflows |
@@ -502,7 +502,7 @@ You're now equipped to use Claude Code CLI as a genuine force multiplier in your
 
 Your learning doesn't stop here:
 
-1. **Practice daily**: Use Copilot CLI for real work
+1. **Practice daily**: Use Claude Code CLI for real work
 2. **Build custom tools**: Create agents and skills for your specific needs
 3. **Share knowledge**: Help your team adopt these workflows
 4. **Stay updated**: Follow Claude Code updates for new features

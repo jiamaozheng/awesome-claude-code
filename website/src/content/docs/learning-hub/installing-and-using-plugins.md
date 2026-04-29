@@ -94,12 +94,12 @@ Plugins are especially valuable when you want to:
 
 ## Finding Plugins
 
-Plugins are collected in **marketplaces** — registries you can browse and install from. Both Copilot CLI and VS Code come with two marketplaces registered by default — **no setup required**:
+Plugins are collected in **marketplaces** — registries you can browse and install from. Both Claude Code CLI and VS Code come with two marketplaces registered by default — **no setup required**:
 
 - **`copilot-plugins`** — Official Claude Code plugins
 - **`awesome-copilot`** — Community-contributed plugins from this repository
 
-### Browsing in Copilot CLI
+### Browsing in Claude Code CLI
 
 List your registered marketplaces:
 
@@ -113,7 +113,7 @@ Browse plugins in a specific marketplace:
 copilot plugin marketplace browse awesome-copilot
 ```
 
-Or from within an interactive Copilot session:
+Or from within an interactive Claude Code session:
 
 ```
 /plugin marketplace browse awesome-copilot
@@ -161,7 +161,7 @@ With this in place, team members automatically get the `my-org-plugins` marketpl
 
 ## Installing Plugins
 
-### From Copilot CLI
+### From Claude Code CLI
 
 Reference a plugin by name and marketplace:
 
@@ -201,7 +201,7 @@ copilot plugin uninstall my-plugin
 
 ### Loading Plugins from a Local Directory
 
-You can load plugins directly from a local directory without installing them from a marketplace, using the `--plugin-dir` flag when starting Copilot:
+You can load plugins directly from a local directory without installing them from a marketplace, using the `--plugin-dir` flag when starting Claude Code:
 
 ```bash
 copilot --plugin-dir /path/to/my-plugin
@@ -216,7 +216,7 @@ Plugins loaded this way appear in `/plugin list` under a separate **External Plu
 
 ## How Plugins Work at Runtime
 
-When you install a plugin, its components become available to Copilot CLI automatically:
+When you install a plugin, its components become available to Claude Code CLI automatically:
 
 - **Agents** appear in your agent selection (use with `/agent` or the agents dropdown)
 - **Skills** are loaded automatically when relevant to your current task
@@ -249,7 +249,7 @@ If you only need a single agent or skill (rather than a full plugin), you can st
 - Copy a skill folder into `.github/skills/`
 - Copy a hook configuration into `.github/hooks/`
 
-See [Using the Copilot Coding Agent](../using-copilot-coding-agent/) for details on this approach.
+See [Using the Claude Code Coding Agent](../using-copilot-coding-agent/) for details on this approach.
 
 ## Best Practices
 
@@ -264,7 +264,7 @@ See [Using the Copilot Coding Agent](../using-copilot-coding-agent/) for details
 
 **Q: Do plugins work with the coding agent on GitHub.com?**
 
-A: Plugins are specific to Claude Code CLI and the VS Code extension (currently Insiders). For the coding agent on GitHub.com, add agents, skills, and hooks directly to your repository (via a plugin if you prefer!). See [Using the Copilot Coding Agent](../using-copilot-coding-agent/) for details.
+A: Plugins are specific to Claude Code CLI and the VS Code extension (currently Insiders). For the coding agent on GitHub.com, add agents, skills, and hooks directly to your repository (via a plugin if you prefer!). See [Using the Claude Code Coding Agent](../using-copilot-coding-agent/) for details.
 
 **Q: Can I use plugins and repository-level configuration together?**
 
@@ -280,7 +280,7 @@ A: Yes. You can create a private plugin marketplace in an internal GitHub reposi
 
 **Q: What happens if I uninstall a plugin?**
 
-A: The plugin's agents, skills, and hooks are removed from Copilot, and any cached plugin data stored on disk is also cleaned up. Any work already done with those tools is unaffected — only future sessions lose access.
+A: The plugin's agents, skills, and hooks are removed from Claude Code, and any cached plugin data stored on disk is also cleaned up. Any work already done with those tools is unaffected — only future sessions lose access.
 
 ## Next Steps
 

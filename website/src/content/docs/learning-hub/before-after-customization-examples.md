@@ -16,7 +16,7 @@ relatedArticles:
   - ./defining-custom-instructions.md
 ---
 
-The power of Claude Code customization becomes clear when you see concrete examples of how agents, skills, and instructions transform everyday development workflows. This article presents real-world scenarios showing the dramatic difference between default Copilot behavior and customized experiences that align with your team's standards, tools, and practices.
+The power of Claude Code customization becomes clear when you see concrete examples of how agents, skills, and instructions transform everyday development workflows. This article presents real-world scenarios showing the dramatic difference between default Claude Code behavior and customized experiences that align with your team's standards, tools, and practices.
 
 > Note: The following examples illustrate typical before-and-after scenarios. The actual before and after code may vary depending on the model used and any other context present at generation time.
 
@@ -29,7 +29,7 @@ Without customization, Claude Code generates generic HTTP request code that may 
 ```typescript
 // user-api.ts
 async function getUser(userId: string) {
-  // Default Copilot suggestion
+  // Default Claude Code suggestion
   const response = await fetch(`https://api.example.com/users/${userId}`);
   const data = await response.json();
   return data;
@@ -81,7 +81,7 @@ async function fetchResource<T>(endpoint: string): Promise<T> {
 ```
 ````
 
-Now Copilot generates code aligned with your team's patterns:
+Now Claude Code generates code aligned with your team's patterns:
 
 ```typescript
 // user-api.ts
@@ -118,7 +118,7 @@ async function getUser(userId: string): Promise<User> {
 
 ### Before: Basic Test Structure
 
-Default Copilot test suggestions are often generic and miss project-specific patterns:
+Default Claude Code test suggestions are often generic and miss project-specific patterns:
 
 ```typescript
 // user-service.test.ts
@@ -215,7 +215,7 @@ describe('UserService', () => {
 Generate tests following this pattern for the selected code.
 ````
 
-Now when you select code and use `/generate-tests`, or when an agent detects a testing need, Copilot produces comprehensive test suites:
+Now when you select code and use `/generate-tests`, or when an agent detects a testing need, Claude Code produces comprehensive test suites:
 
 ```typescript
 // user-service.test.ts
@@ -330,7 +330,7 @@ resource "azurerm_storage_account" "data" {
 
 Use a custom agent from the repository [`agents/terraform-azure-implement.agent.md`](https://github.com/github/awesome-copilot/blob/main/agents/terraform-azure-implement.agent.md) (click through to see full definition).
 
-Now Copilot has access to a custom agent that enforces your organization's Terraform best practices for Azure.
+Now Claude Code has access to a custom agent that enforces your organization's Terraform best practices for Azure.
 
 ```hcl
 # storage.tf

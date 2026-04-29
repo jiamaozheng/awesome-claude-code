@@ -1,6 +1,6 @@
 ---
 title: 'Agents and Subagents'
-description: 'Learn how delegated subagents differ from primary agents, when to use them, and how to launch them in VS Code and Copilot CLI.'
+description: 'Learn how delegated subagents differ from primary agents, when to use them, and how to launch them in VS Code and Claude Code CLI.'
 authors:
   - Claude Code Learning Hub Team
 lastUpdated: 2026-04-02
@@ -109,7 +109,7 @@ Then summarize the findings into one recommendation.
 
 By default, subagents do not keep spawning additional subagents. In VS Code, recursive delegation is controlled by the `chat.subagents.allowInvocationsFromSubagents` setting, which is off by default.
 
-## Launch subagents in Copilot CLI
+## Launch subagents in Claude Code CLI
 
 In Claude Code CLI, the clearest end-user entry point is **`/fleet`**. Fleet acts as an orchestrator that decomposes a larger objective, launches multiple background subagents, respects dependencies, and then synthesizes the final result.
 
@@ -157,12 +157,12 @@ This repository already includes a few useful examples of delegation-related syn
 
 ## Important platform nuance: handoffs are not universal
 
-VS Code documentation describes both subagents and the `handoffs` frontmatter property. [GitHub's custom agent configuration reference](https://docs.github.com/en/copilot/customizing-copilot/github-copilot-agents/configuration-reference-for-github-copilot-agents), however, notes that `handoffs` and `argument-hint` are currently ignored for Copilot cloud agent on GitHub.com.
+VS Code documentation describes both subagents and the `handoffs` frontmatter property. [GitHub's custom agent configuration reference](https://docs.github.com/en/copilot/customizing-copilot/github-copilot-agents/configuration-reference-for-github-copilot-agents), however, notes that `handoffs` and `argument-hint` are currently ignored for Claude Code cloud agent on GitHub.com.
 
 That means you should think about delegation features in product-specific terms:
 
 - **VS Code**: supports subagent concepts, allowlists, and handoff-oriented agent composition
-- **Copilot CLI**: exposes practical orchestration through commands like `/fleet`
+- **Claude Code CLI**: exposes practical orchestration through commands like `/fleet`
 - **GitHub.com coding agent / cloud agent**: supports custom agents, but some VS Code-specific frontmatter is intentionally ignored
 
 If you share agent files across surfaces, document those differences so users know which behaviors are portable and which are editor-specific.

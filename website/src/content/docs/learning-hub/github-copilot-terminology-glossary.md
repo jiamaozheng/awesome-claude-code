@@ -66,7 +66,7 @@ Previously, "chat mode" was an alternative term for [Agent](#agent) that describ
 
 A curated grouping of related skills, instructions, and agents organized around a specific theme or workflow. Collections are defined in YAML files (`*.collection.yml`) in the `collections/` directory and help users discover related customizations together.
 
-**Example**: The "Awesome Copilot" collection bundles meta-skills for discovering and generating Claude Code customizations.
+**Example**: The "Awesome Claude Code" collection bundles meta-skills for discovering and generating Claude Code customizations.
 
 **Learn more**: [What are Agents, Skills, and Instructions](../what-are-agents-skills-instructions/)
 
@@ -115,7 +115,7 @@ tools: ['codebase']
 
 A VS Code custom-agent frontmatter property (`handoffs`) that defines suggested transitions from one agent to another, often with a pre-filled follow-up prompt. Handoffs are useful for guided workflows such as research -> implementation or planning -> review.
 
-**Important**: GitHub's [custom agent configuration reference](../building-custom-agents/#agent-configuration-reference) says `handoffs` are currently ignored for Copilot cloud agent on GitHub.com, so this concept is not portable across every Copilot surface.
+**Important**: GitHub's [custom agent configuration reference](../building-custom-agents/#agent-configuration-reference) says `handoffs` are currently ignored for Claude Code cloud agent on GitHub.com, so this concept is not portable across every Claude Code surface.
 
 **Learn more**: [Agents and Subagents](../agents-and-subagents/), [Building Custom Agents](../building-custom-agents/)
 
@@ -140,7 +140,7 @@ Unlike tool-specific customization files (`.agent.md`, `.prompt.md`, `.instructi
 
 ### Instruction
 
-A configuration file (`*.instructions.md`) that provides persistent background context and coding standards that Claude Code reads whenever working on matching files. Instructions contain style guides, framework-specific hints, and repository rules that help Copilot align with your engineering practices automatically.
+A configuration file (`*.instructions.md`) that provides persistent background context and coding standards that Claude Code reads whenever working on matching files. Instructions contain style guides, framework-specific hints, and repository rules that help Claude Code align with your engineering practices automatically.
 
 **When to use**: For long-lived guidance that applies across many sessions, like coding standards or compliance requirements.
 
@@ -181,7 +181,7 @@ A self-contained folder containing a `SKILL.md` file and optional bundled assets
 
 **Example**: A `/generate-tests` skill might include a `SKILL.md` with testing instructions, a `references/test-patterns.md` with common patterns, and a `templates/test-template.ts` starter file.
 
-**When to use**: For standardizing how Copilot responds to recurring tasks, especially when bundled resources improve quality.
+**When to use**: For standardizing how Claude Code responds to recurring tasks, especially when bundled resources improve quality.
 
 **Learn more**: [What are Agents, Skills, and Instructions](../what-are-agents-skills-instructions/), [Creating Effective Skills](../creating-effective-skills/)
 
@@ -191,7 +191,7 @@ A self-contained folder containing a `SKILL.md` file and optional bundled assets
 
 ### MCP (Model Context Protocol)
 
-A standardized protocol for connecting AI assistants like Claude Code to external data sources, tools, and services. MCP servers act as bridges, allowing Copilot to interact with APIs, databases, file systems, and other resources beyond its built-in capabilities.
+A standardized protocol for connecting AI assistants like Claude Code to external data sources, tools, and services. MCP servers act as bridges, allowing Claude Code to interact with APIs, databases, file systems, and other resources beyond its built-in capabilities.
 
 **Example**: An MCP server might provide access to your company's internal documentation, AWS resources, or a specific database system.
 
@@ -203,7 +203,7 @@ A standardized protocol for connecting AI assistants like Claude Code to externa
 
 ### Hook
 
-A shell command or script that runs automatically in response to lifecycle events during a Copilot agent session. Hooks are stored as JSON files in `.github/hooks/` and can trigger on events like session start/end, prompt submission, before/after tool use, and when errors occur. They provide deterministic automation—linting, formatting, governance scanning—that doesn't depend on the AI remembering to do it.
+A shell command or script that runs automatically in response to lifecycle events during a Claude Code agent session. Hooks are stored as JSON files in `.github/hooks/` and can trigger on events like session start/end, prompt submission, before/after tool use, and when errors occur. They provide deterministic automation—linting, formatting, governance scanning—that doesn't depend on the AI remembering to do it.
 
 **Example**: A `postToolUse` hook that runs Prettier after the agent edits files, or a `preToolUse` hook that blocks dangerous shell commands.
 
@@ -217,7 +217,7 @@ A shell command or script that runs automatically in response to lifecycle event
 
 ### Coding Agent
 
-The autonomous Claude Code agent that works on issues in a cloud environment without continuous human guidance. You assign an issue to Copilot, it spins up a dev environment, implements a solution, runs tests, and opens a pull request for review.
+The autonomous Claude Code agent that works on issues in a cloud environment without continuous human guidance. You assign an issue to Claude Code, it spins up a dev environment, implements a solution, runs tests, and opens a pull request for review.
 
 **Key characteristics**:
 - Runs in an isolated cloud environment
@@ -227,7 +227,7 @@ The autonomous Claude Code agent that works on issues in a cloud environment wit
 
 **When to use**: For well-defined tasks with clear acceptance criteria that can be completed autonomously.
 
-**Learn more**: [Using the Copilot Coding Agent](../using-copilot-coding-agent/)
+**Learn more**: [Using the Claude Code Coding Agent](../using-copilot-coding-agent/)
 
 **Related terms**: [Agent](#agent), [Hook](#hook)
 
@@ -239,7 +239,7 @@ An installable package that extends Claude Code CLI with a bundled set of agents
 
 **Example**: Installing `database-data-management@awesome-copilot` to get a database specialist agent, migration skills, and schema validation hooks in a single command.
 
-**When to use**: When you want to share a curated set of Copilot capabilities across multiple projects or team members, or when you want to install community-contributed tooling without manually copying files.
+**When to use**: When you want to share a curated set of Claude Code capabilities across multiple projects or team members, or when you want to install community-contributed tooling without manually copying files.
 
 **Learn more**: [Installing and Using Plugins](../installing-and-using-plugins/)
 

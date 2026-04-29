@@ -1,5 +1,5 @@
 /**
- * Fuzzy search implementation for the Awesome Copilot website
+ * Fuzzy search implementation for the Awesome Claude Code website
  * Simple substring matching on title and description with scoring
  */
 

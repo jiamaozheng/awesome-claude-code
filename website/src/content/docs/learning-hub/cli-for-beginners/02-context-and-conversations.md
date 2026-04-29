@@ -1,6 +1,6 @@
 ---
 title: '02 · Context and Conversations'
-description: 'Learn how to give Copilot CLI richer context and build stronger multi-turn conversations.'
+description: 'Learn how to give Claude Code CLI richer context and build stronger multi-turn conversations.'
 authors:
   - Claude Code Learning Hub Team
 lastUpdated: 2026-03-20
@@ -10,7 +10,7 @@ lastUpdated: 2026-03-20
 
 > **What if AI could see your entire codebase, not just one file at a time?**
 
-In this chapter, you'll unlock the real power of Claude Code CLI: context. You'll learn to use the `@` syntax to reference files and directories, giving Copilot CLI deep understanding of your codebase. You'll discover how to maintain conversations across sessions, resume work days later exactly where you left off, and see how cross-file analysis catches bugs that single-file reviews miss entirely.
+In this chapter, you'll unlock the real power of Claude Code CLI: context. You'll learn to use the `@` syntax to reference files and directories, giving Claude Code CLI deep understanding of your codebase. You'll discover how to maintain conversations across sessions, resume work days later exactly where you left off, and see how cross-file analysis catches bugs that single-file reviews miss entirely.
 
 ## 🎯 Learning Objectives
 
@@ -30,7 +30,7 @@ By the end of this chapter, you'll be able to:
 
 <img src="/images/learning-hub/copilot-cli-for-beginners/02/colleague-context-analogy.png" alt="Context Makes the Difference - Without vs With Context" width="800"/>
 
-*Just like your colleagues, Copilot CLI isn't a mind reader. Providing more information helps humans and Copilot alike provide targeted support!*
+*Just like your colleagues, Claude Code CLI isn't a mind reader. Providing more information helps humans and Claude Code alike provide targeted support!*
 
 Imagine explaining a bug to a colleague:
 
@@ -38,13 +38,13 @@ Imagine explaining a bug to a colleague:
 
 > **With context**: "Look at `books.py`, especially the `find_book_by_title` function. It's not doing case-insensitive matching."
 
-To provide context to Copilot CLI use *the `@` syntax* to point Copilot CLI at specific files.
+To provide context to Claude Code CLI use *the `@` syntax* to point Claude Code CLI at specific files.
 
 ---
 
 # Essential: Basic Context
 
-<img src="/images/learning-hub/copilot-cli-for-beginners/02/essential-basic-context.png" alt="Glowing code blocks connected by light trails representing how context flows through Copilot CLI conversations" width="800"/>
+<img src="/images/learning-hub/copilot-cli-for-beginners/02/essential-basic-context.png" alt="Glowing code blocks connected by light trails representing how context flows through Claude Code CLI conversations" width="800"/>
 
 This section covers everything you need to work effectively with context. Master these basics first.
 
@@ -52,7 +52,7 @@ This section covers everything you need to work effectively with context. Master
 
 ## The @ Syntax
 
-The `@` symbol references files and directories in your prompts. It's how you tell Copilot CLI "look at this file."
+The `@` symbol references files and directories in your prompts. It's how you tell Claude Code CLI "look at this file."
 
 > 💡 **Note**: All examples in this course use the `samples/` folder included in this repository, so you can try every command directly.
 
@@ -158,7 +158,7 @@ copilot
 
 ---
 
-**What Copilot CLI discovers**:
+**What Claude Code CLI discovers**:
 
 ```
 Cross-Module Analysis
@@ -195,7 +195,7 @@ Cross-Module Analysis
 
 <img src="/images/learning-hub/copilot-cli-for-beginners/02/codebase-understanding.png" alt="Split-screen comparison showing manual code review taking 1 hour versus AI-assisted analysis taking 10 seconds" width="800" />
 
-New to a project? Learn about it quickly using Copilot CLI.
+New to a project? Learn about it quickly using Claude Code CLI.
 
 ```bash
 copilot
@@ -231,7 +231,7 @@ copilot
 
 > @samples/book-app-project/books.py Review this file for potential bugs
 
-# Copilot CLI now has the full file content and can give specific feedback:
+# Claude Code CLI now has the full file content and can give specific feedback:
 # "Line 49: Case-sensitive comparison may miss books..."
 # "Line 29: JSON decode errors are caught but data corruption isn't logged..."
 
@@ -247,15 +247,15 @@ copilot
 
 > @samples/book-app-project/books.py What does this module do?
 
-# Copilot CLI reads books.py and understands the BookCollection class
+# Claude Code CLI reads books.py and understands the BookCollection class
 
 > @samples/book-app-project/ Give me an overview of the code structure
 
-# Copilot CLI scans the directory and summarizes
+# Claude Code CLI scans the directory and summarizes
 
 > How does the app save and load books?
 
-# Copilot CLI can trace through the code it's already seen
+# Claude Code CLI can trace through the code it's already seen
 ```
 
 <details>
@@ -275,7 +275,7 @@ copilot
 > @samples/book-app-project/book_app.py @samples/book-app-project/utils.py
 > I see duplicate display functions: show_books() and print_books(). Help me consolidate these.
 
-# Copilot CLI sees both files and can suggest how to merge the duplicate code
+# Claude Code CLI sees both files and can suggest how to merge the duplicate code
 ```
 
 ---
@@ -317,7 +317,7 @@ copilot --resume abc123
 
 > 💡 **How do I find a session ID?** You don't need to memorize them. Running `copilot --resume` without an ID shows an interactive list of your previous sessions, their names, IDs, and when they were last active. Just pick the one you want.
 >
-> **What about multiple terminals?** Each terminal window is its own session with its own context. If you have Copilot CLI open in three terminals, that's three separate sessions. Running `--resume` from any terminal lets you browse all of them. The `--continue` flag grabs whichever session was closed most recently, no matter which terminal it was in.
+> **What about multiple terminals?** Each terminal window is its own session with its own context. If you have Claude Code CLI open in three terminals, that's three separate sessions. Running `--resume` from any terminal lets you browse all of them. The `--continue` flag grabs whichever session was closed most recently, no matter which terminal it was in.
 >
 > **Can I switch sessions without restarting?** Yes. Use the `/resume` slash command from inside an active session:
 > ```
@@ -338,7 +338,7 @@ copilot
 
 ### Check and Manage Context
 
-As you add files and conversation, Copilot CLI's [context window](https://github.com/github/copilot-cli-for-beginners/blob/main/GLOSSARY.md#context-window) fills up. Two commands help you stay in control:
+As you add files and conversation, Claude Code CLI's [context window](https://github.com/github/copilot-cli-for-beginners/blob/main/GLOSSARY.md#context-window) fills up. Two commands help you stay in control:
 
 ```bash
 copilot
@@ -400,7 +400,7 @@ Issue #1 (duplicate functions) was fixed on Monday.
 > Let's tackle issue #2 next
 ```
 
-**What makes this powerful**: Days later, Copilot CLI remembers:
+**What makes this powerful**: Days later, Claude Code CLI remembers:
 - The exact file you were working on
 - The numbered list of issues
 - Which ones you've already addressed
@@ -434,7 +434,7 @@ These topics build on the essentials above. **Pick what interests you, or skip a
 
 ### Additional @ Patterns
 
-For power users, Copilot CLI supports wildcard patterns and image references:
+For power users, Claude Code CLI supports wildcard patterns and image references:
 
 | Pattern | What It Does |
 |---------|--------------|
@@ -489,24 +489,24 @@ copilot
 
 > @samples/book-app-project/books.py Review the BookCollection class
 
-Copilot CLI: "The class looks functional, but I notice:
+Claude Code CLI: "The class looks functional, but I notice:
 1. Missing type hints on some methods
 2. No validation for empty title/author
 3. Could benefit from better error handling"
 
 > Add type hints to all methods
 
-Copilot CLI: "Here's the class with complete type hints..."
+Claude Code CLI: "Here's the class with complete type hints..."
 [Shows typed version]
 
 > Now improve error handling
 
-Copilot CLI: "Building on the typed version, here's improved error handling..."
+Claude Code CLI: "Building on the typed version, here's improved error handling..."
 [Adds validation and proper exceptions]
 
 > Generate tests for this final version
 
-Copilot CLI: "Based on the class with types and error handling..."
+Claude Code CLI: "Based on the class with types and error handling..."
 [Generates comprehensive tests]
 ```
 
@@ -670,7 +670,7 @@ This staged approach keeps context focused and efficient.
 
 ### Working with Images
 
-You can include images in your conversations using the `@` syntax, or simply **paste from your clipboard** (Cmd+V / Ctrl+V). Copilot CLI can analyze screenshots, mockups, and diagrams to help with UI debugging, design implementation, and error analysis.
+You can include images in your conversations using the `@` syntax, or simply **paste from your clipboard** (Cmd+V / Ctrl+V). Claude Code CLI can analyze screenshots, mockups, and diagrams to help with UI debugging, design implementation, and error analysis.
 
 ```bash
 copilot
@@ -705,7 +705,7 @@ copilot
 
 > @samples/book-app-project/ Give me a code quality review of this project
 
-# Copilot CLI will identify issues like:
+# Claude Code CLI will identify issues like:
 # - Duplicate display functions
 # - Missing input validation
 # - Inconsistent error handling
@@ -721,7 +721,7 @@ copilot
 > /rename book-app-review
 > @samples/book-app-project/books.py Let's add input validation for empty titles
 
-[Copilot CLI suggests validation approach]
+[Claude Code CLI suggests validation approach]
 
 > Implement that fix
 > Now consolidate the duplicate display functions in @samples/book-app-project/
@@ -810,7 +810,7 @@ Then resume with: `copilot --continue`
 
 | Mistake | What Happens | Fix |
 |---------|--------------|-----|
-| Forgetting `@` before filenames | Copilot CLI treats "books.py" as plain text | Use `@samples/book-app-project/books.py` to reference files |
+| Forgetting `@` before filenames | Claude Code CLI treats "books.py" as plain text | Use `@samples/book-app-project/books.py` to reference files |
 | Expecting sessions to persist automatically | Starting `copilot` fresh loses all previous context | Use `--continue` (last session) or `--resume` (pick a session) |
 | Referencing files outside current directory | "Permission denied" or "File not found" errors | Use `/add-dir /path/to/directory` to grant access |
 | Not using `/clear` when switching topics | Old context confuses responses about the new topic | Run `/clear` before starting a different task |
@@ -851,14 +851,14 @@ copilot --add-dir /path/to/directory
 
 ## 🔑 Key Takeaways
 
-1. **`@` syntax** gives Copilot CLI context about files, directories, and images
+1. **`@` syntax** gives Claude Code CLI context about files, directories, and images
 2. **Multi-turn conversations** build on each other as context accumulates
 3. **Sessions auto-save**: use `--continue` or `--resume` to pick up where you left off
 4. **Context windows** have limits: manage them with `/context`, `/clear`, and `/compact`
 5. **Permission flags** (`--add-dir`, `--allow-all`) control multi-directory access. Use them wisely!
 6. **Image references** (`@screenshot.png`) help debug UI issues visually
 
-> 📚 **Official Documentation**: [Use Copilot CLI](https://docs.github.com/copilot/how-tos/copilot-cli/use-copilot-cli) for the complete reference on context, sessions, and working with files.
+> 📚 **Official Documentation**: [Use Claude Code CLI](https://docs.github.com/copilot/how-tos/copilot-cli/use-copilot-cli) for the complete reference on context, sessions, and working with files.
 
 > 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 
@@ -866,7 +866,7 @@ copilot --add-dir /path/to/directory
 
 ## ➡️ What's Next
 
-Now that you can give Copilot CLI context, let's put it to work on real development tasks. The context techniques you just learned (file references, cross-file analysis, and session management) are the foundation for the powerful workflows in the next chapter.
+Now that you can give Claude Code CLI context, let's put it to work on real development tasks. The context techniques you just learned (file references, cross-file analysis, and session management) are the foundation for the powerful workflows in the next chapter.
 
 In **[Chapter 03: Development Workflows](../03-development-workflows/)**, you'll learn:
 

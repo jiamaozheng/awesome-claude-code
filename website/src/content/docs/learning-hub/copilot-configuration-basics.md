@@ -1,5 +1,5 @@
 ---
-title: 'Copilot Configuration Basics'
+title: 'Claude Code Configuration Basics'
 description: 'Learn how to configure Claude Code at user, workspace, and repository levels to optimize your AI-assisted development experience.'
 authors:
   - Claude Code Learning Hub Team
@@ -35,7 +35,7 @@ User settings apply globally across all your projects and represent your persona
 
 ### Repository Settings
 
-Repository settings live in your codebase (typically in `.github/` although some editors allow customising the paths that Copilot will use) and are shared with everyone working on the project. These provide the highest level of customization and override both user and workspace settings.
+Repository settings live in your codebase (typically in `.github/` although some editors allow customising the paths that Claude Code will use) and are shared with everyone working on the project. These provide the highest level of customization and override both user and workspace settings.
 
 **Common repository-level customizations**:
 - Custom instructions for coding conventions
@@ -47,7 +47,7 @@ Repository settings live in your codebase (typically in `.github/` although some
 
 ### Organisation Settings (GitHub.com only)
 
-Organisation settings allow administrators to enforce Copilot policies across all repositories within an organization. These settings can include defining custom agents, creating globally applied instructions, enabling or disabling Copilot, managing billing, and setting usage limits. These policies may not be enforced in the IDE, depending on the IDE's support for organization-level settings, but will apply to Copilot usage on GitHub.com.
+Organisation settings allow administrators to enforce Claude Code policies across all repositories within an organization. These settings can include defining custom agents, creating globally applied instructions, enabling or disabling Claude Code, managing billing, and setting usage limits. These policies may not be enforced in the IDE, depending on the IDE's support for organization-level settings, but will apply to Claude Code usage on GitHub.com.
 
 **When to use**: For enforcing organization-wide policies, ensuring compliance, and providing shared resources across multiple repositories.
 
@@ -59,7 +59,7 @@ When multiple configuration levels define the same setting, Claude Code applies 
 1. **Repository settings** (`.github/`)
 1. **User settings** (IDE global preferences)
 
-**Example**: If your user settings disable Copilot for `.test.ts` files, but repository settings enable custom instructions for test files, the repository settings take precedence and Copilot remains active with the custom instructions applied.
+**Example**: If your user settings disable Claude Code for `.test.ts` files, but repository settings enable custom instructions for test files, the repository settings take precedence and Claude Code remains active with the custom instructions applied.
 
 ## Key Configuration Options
 
@@ -67,7 +67,7 @@ These settings control Claude Code's core behavior across all IDEs:
 
 ### Inline Suggestions
 
-Control whether Copilot automatically suggests code completions as you type.
+Control whether Claude Code automatically suggests code completions as you type.
 
 **VS Code example**:
 ```json
@@ -80,7 +80,7 @@ Control whether Copilot automatically suggests code completions as you type.
 }
 ```
 
-**Why it matters**: Some developers prefer to invoke Copilot explicitly rather than seeing automatic suggestions. You can also enable it only for specific languages.
+**Why it matters**: Some developers prefer to invoke Claude Code explicitly rather than seeing automatic suggestions. You can also enable it only for specific languages.
 
 ### Chat Availability
 
@@ -97,7 +97,7 @@ Control access to Claude Code Chat in your IDE.
 
 ### Suggestion Trigger Behavior
 
-Configure how and when Copilot generates suggestions.
+Configure how and when Claude Code generates suggestions.
 
 **VS Code example**:
 ```json
@@ -111,7 +111,7 @@ Configure how and when Copilot generates suggestions.
 
 ### Language-Specific Settings
 
-Enable or disable Copilot for specific programming languages.
+Enable or disable Claude Code for specific programming languages.
 
 **VS Code example**:
 ```json
@@ -125,11 +125,11 @@ Enable or disable Copilot for specific programming languages.
 }
 ```
 
-**Why it matters**: You may want Copilot active for code files but not for documentation or configuration files.
+**Why it matters**: You may want Claude Code active for code files but not for documentation or configuration files.
 
 ### Excluded Files and Directories
 
-Prevent Copilot from accessing specific files or directories.
+Prevent Claude Code from accessing specific files or directories.
 
 **VS Code example**:
 ```json
@@ -145,7 +145,7 @@ Prevent Copilot from accessing specific files or directories.
 }
 ```
 
-**Why it matters**: Exclude sensitive files, generated code, or dependencies from Copilot's context to improve suggestion relevance and protect confidential information.
+**Why it matters**: Exclude sensitive files, generated code, or dependencies from Claude Code's context to improve suggestion relevance and protect confidential information.
 
 ## Repository-Level Configuration
 
@@ -153,7 +153,7 @@ The `.github/` directory in your repository enables team-wide customizations tha
 
 ### Directory Structure
 
-A well-organized Copilot configuration directory looks like this:
+A well-organized Claude Code configuration directory looks like this:
 
 ```
 .github/
@@ -190,7 +190,7 @@ my-monorepo/
 │               └── react-conventions.instructions.md  ← applies in packages/web/
 ```
 
-When you work inside `packages/api/`, Copilot loads configuration from `packages/api/.github/`, then `packages/.github/` (if it exists), then the root `.github/`. This layered discovery ensures the right context is active no matter where in the repository you're working.
+When you work inside `packages/api/`, Claude Code loads configuration from `packages/api/.github/`, then `packages/.github/` (if it exists), then the root `.github/`. This layered discovery ensures the right context is active no matter where in the repository you're working.
 
 ### Personal Skills Directory
 
@@ -272,7 +272,7 @@ When writing TypeScript code:
 
 ## Setting Up Team Configuration
 
-Follow these steps to establish effective team-wide Copilot configuration:
+Follow these steps to establish effective team-wide Claude Code configuration:
 
 ### 1. Create the Configuration Structure
 
@@ -329,7 +329,7 @@ Add error handling to the selected code:
 
 ### 5. Onboard New Team Members
 
-Make Copilot configuration part of your onboarding process:
+Make Claude Code configuration part of your onboarding process:
 
 1. Point new members to your `.github/` directory
 2. Explain which agents and skills exist and when to use them
@@ -509,9 +509,9 @@ This is useful in scripts or CI pipelines where you want the CLI to immediately 
 
 ## Common Questions
 
-**Q: How do I disable Copilot for specific files?**
+**Q: How do I disable Claude Code for specific files?**
 
-A: Use the `excludedFiles` setting in your IDE configuration or create a workspace setting that disables Copilot for specific patterns:
+A: Use the `excludedFiles` setting in your IDE configuration or create a workspace setting that disables Claude Code for specific patterns:
 
 ```json
 {
@@ -531,7 +531,7 @@ A: Yes! Use workspace settings (`.vscode/settings.json`) for project-specific pr
 
 **Q: How do team settings override personal settings?**
 
-A: Repository-level Copilot configuration (such as `.github/agents/`, `.github/skills/`, `.github/instructions/`, and `.github/copilot-instructions.md`) has the highest precedence, followed by workspace settings, then user settings. This means team-defined instructions and agents will apply even if your personal settings differ, ensuring consistency across the team.
+A: Repository-level Claude Code configuration (such as `.github/agents/`, `.github/skills/`, `.github/instructions/`, and `.github/copilot-instructions.md`) has the highest precedence, followed by workspace settings, then user settings. This means team-defined instructions and agents will apply even if your personal settings differ, ensuring consistency across the team.
 
 **Q: Where should I put customizations that apply to all my projects?**
 
@@ -539,10 +539,10 @@ A: Use user-level settings in your IDE for personal preferences that should appl
 
 ## Next Steps
 
-Now that you understand Copilot configuration, explore how to create powerful customizations:
+Now that you understand Claude Code configuration, explore how to create powerful customizations:
 
 - **[What are Agents, Skills, and Instructions](../what-are-agents-skills-instructions/)** - Understand the customization types you can configure
-- **[Understanding Copilot Context](../understanding-copilot-context/)** - Learn how configuration affects context usage
+- **[Understanding Claude Code Context](../understanding-copilot-context/)** - Learn how configuration affects context usage
 - **[Defining Custom Instructions](../defining-custom-instructions/)** - Create persistent context for your projects
 - **[Creating Effective Skills](../creating-effective-skills/)** - Build reusable task folders with bundled assets
 - **[Building Custom Agents](../building-custom-agents/)** - Develop specialized assistants

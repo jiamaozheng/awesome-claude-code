@@ -8,7 +8,7 @@ estimatedReadingTime: '7 minutes'
 prev: false
 ---
 
-Building great experiences with Claude Code starts with understanding the core primitives that shape how Copilot behaves in different contexts. This article clarifies what each artifact does, how it is packaged inside this repository, and when to use it.
+Building great experiences with Claude Code starts with understanding the core primitives that shape how Claude Code behaves in different contexts. This article clarifies what each artifact does, how it is packaged inside this repository, and when to use it.
 
 ## Agents
 
@@ -18,14 +18,14 @@ Agents are configuration files (`*.agent.md`) that describe:
 - Which tools or MCP servers they can invoke.
 - Optional instructions that guide the conversation style or guardrails.
 
-When you assign an issue to Copilot or open the **Agents** panel in VS Code, these configurations let you swap in a specialized assistant. Each agent in this repo lives under `agents/` and includes metadata about the tools it depends on.
+When you assign an issue to Claude Code or open the **Agents** panel in VS Code, these configurations let you swap in a specialized assistant. Each agent in this repo lives under `agents/` and includes metadata about the tools it depends on.
 
 In products that support delegation, a primary agent can also launch temporary subagents for focused work such as planning, research, or review. See [Agents and Subagents](../agents-and-subagents/) for the coordination model.
 
 ### When to reach for an agent
 
 - You have a recurring workflow that benefits from deep tooling integrations.
-- You want Copilot to proactively execute commands or fetch context via MCP.
+- You want Claude Code to proactively execute commands or fetch context via MCP.
 - You need persona-level guardrails that persist throughout a coding session.
 - You want a coordinator that can delegate narrower work to subagents.
 
@@ -53,26 +53,26 @@ Skills replace the earlier prompt file (`*.prompt.md`) pattern and offer several
 
 ### When to reach for a skill
 
-- You want to standardize how Copilot responds to a recurring task.
+- You want to standardize how Claude Code responds to a recurring task.
 - You need bundled resources (templates, schemas, scripts) to complete the task.
 - You want agents to discover and invoke the capability automatically.
 - You prefer to drive the conversation, but with guardrails and rich context.
 
 ## Instructions
 
-Instructions (`*.instructions.md`) provide background context that Copilot reads whenever it works on matching files. They often contain:
+Instructions (`*.instructions.md`) provide background context that Claude Code reads whenever it works on matching files. They often contain:
 
 - Coding standards or style guides (naming conventions, testing strategy).
 - Framework-specific hints (Angular best practices, .NET analyzers to suppress).
 - Repository-specific rules ("never commit secrets", "feature flags must live in `flags/`").
 
-Instructions sit under `instructions/` and can be scoped globally, per language, or per directory using glob patterns. They help Copilot align with your engineering playbook automatically.
+Instructions sit under `instructions/` and can be scoped globally, per language, or per directory using glob patterns. They help Claude Code align with your engineering playbook automatically.
 
 ### When to reach for instructions
 
 - You need persistent guidance that applies across many sessions.
 - You are codifying architecture decisions or compliance requirements.
-- You want Copilot to understand patterns without manually pasting context.
+- You want Claude Code to understand patterns without manually pasting context.
 
 ## How the artifacts work together
 

@@ -22,7 +22,7 @@ This article explains what MCP is, how to configure servers, and how agents use 
 
 ## What Is MCP?
 
-The **Model Context Protocol (MCP)** is an open standard for connecting AI assistants to external data sources and tools. An MCP server is a lightweight process that exposes capabilities—called **tools**—that Copilot can invoke during a conversation.
+The **Model Context Protocol (MCP)** is an open standard for connecting AI assistants to external data sources and tools. An MCP server is a lightweight process that exposes capabilities—called **tools**—that Claude Code can invoke during a conversation.
 
 Think of MCP servers as bridges:
 
@@ -185,11 +185,11 @@ Some MCP servers require authentication to connect to protected resources. Claud
 - **API keys via environment variables**: Pass secrets through the `env` field in the MCP server configuration (see examples above). Never hardcode credentials in `.mcp.json`.
 - **`${input:variableName}` prompts**: VS Code will prompt for these values at runtime, keeping secrets out of committed files.
 
-> **Tip**: If your MCP server uses OAuth with Dynamic Client Registration but hosts its authorization metadata at a non-standard URL (as some enterprise servers like Atlassian Rovo do), Copilot CLI handles this automatically.
+> **Tip**: If your MCP server uses OAuth with Dynamic Client Registration but hosts its authorization metadata at a non-standard URL (as some enterprise servers like Atlassian Rovo do), Claude Code CLI handles this automatically.
 
 ## How Agents Use MCP Tools
 
-When an agent declares an MCP server in its `tools` array, Copilot can invoke that server's capabilities during conversation:
+When an agent declares an MCP server in its `tools` array, Claude Code can invoke that server's capabilities during conversation:
 
 ```yaml
 ---
@@ -228,13 +228,13 @@ Without the MCP server, the agent would have to guess at database structure and 
 
 ## MCP Sampling (LLM Inference Requests)
 
-Some advanced MCP servers can request **LLM inference** from the Copilot model — a capability defined in the MCP specification as *sampling*. Instead of only receiving tool calls from the AI, these servers can ask Copilot to generate text or make decisions as part of their own logic.
+Some advanced MCP servers can request **LLM inference** from the Claude Code model — a capability defined in the MCP specification as *sampling*. Instead of only receiving tool calls from the AI, these servers can ask Claude Code to generate text or make decisions as part of their own logic.
 
 **How it works**:
-1. An MCP server sends a `sampling/createMessage` request to Copilot.
-2. Copilot shows a **review prompt** to the user, explaining what the server is requesting.
+1. An MCP server sends a `sampling/createMessage` request to Claude Code.
+2. Claude Code shows a **review prompt** to the user, explaining what the server is requesting.
 3. The user approves or rejects the request.
-4. If approved, Copilot generates the response and returns it to the server.
+4. If approved, Claude Code generates the response and returns it to the server.
 
 This enables sophisticated patterns like MCP servers that orchestrate multi-step reasoning, generate structured output, or build more complex AI pipelines — while keeping the user in control with an explicit approval step.
 
@@ -273,7 +273,7 @@ MCP server SDKs are available in [Python](https://github.com/modelcontextprotoco
 
 GitHub organizations can enforce a policy that restricts which third-party MCP servers members are permitted to use. When this policy is active:
 
-- Copilot CLI **enforces** the policy for all users in the organization.
+- Claude Code CLI **enforces** the policy for all users in the organization.
 - A **warning is shown** if a configured MCP server is blocked by the policy, so you know which servers are restricted before expecting them to work.
 
 If you see a warning that an MCP server is blocked, contact your organization administrator to find out which servers are on the allowlist, or switch to an approved alternative.
@@ -286,7 +286,7 @@ A: No, MCP servers typically run locally on your machine as child processes. The
 
 **Q: Can I use MCP servers without custom agents?**
 
-A: Yes. Once configured in `.vscode/mcp.json`, MCP tools are available in any Copilot Chat session. Custom agents simply make it easier to pre-select the right tools for a workflow.
+A: Yes. Once configured in `.vscode/mcp.json`, MCP tools are available in any Claude Code Chat session. Custom agents simply make it easier to pre-select the right tools for a workflow.
 
 **Q: Are MCP servers secure?**
 

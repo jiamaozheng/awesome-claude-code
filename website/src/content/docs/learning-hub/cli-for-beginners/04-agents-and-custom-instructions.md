@@ -12,7 +12,7 @@ lastUpdated: 2026-03-20
 
 In Chapter 03, you mastered the essential workflows: code review, refactoring, debugging, test generation, and git integration. Those make you highly productive with Claude Code CLI. Now, let's take it further.
 
-So far, you've been using Copilot CLI as a general-purpose assistant. Agents let you give it a specific persona with built-in standards, like a code reviewer that enforces type hints and PEP 8, or a testing helper that writes pytest cases. You'll see how the same prompt gets noticeably better results when handled by an agent with targeted instructions.
+So far, you've been using Claude Code CLI as a general-purpose assistant. Agents let you give it a specific persona with built-in standards, like a code reviewer that enforces type hints and PEP 8, or a testing helper that writes pytest cases. You'll see how the same prompt gets noticeably better results when handled by an agent with targeted instructions.
 
 ## 🎯 Learning Objectives
 
@@ -75,7 +75,7 @@ Never used or made an agent? Here's all you need to know to get started for this
 | **Plan** | `/plan` or `Shift+Tab` (cycle modes) | Creates step-by-step implementation plans before coding |
 | **Code-review** | `/review` | Reviews staged/unstaged changes with focused, actionable feedback |
 | **Init** | `/init` | Generates project configuration files (instructions, agents) |
-| **Explore** | *Automatic* | Used internally when you ask Copilot to explore or analyze the codebase |
+| **Explore** | *Automatic* | Used internally when you ask Claude Code to explore or analyze the codebase |
 | **Task** | *Automatic* | Executes commands like tests, builds, lints, and dependency installs |
 
 <br>
@@ -109,7 +109,7 @@ What about the Task Agent? It works behind the scenes to manage and track what i
 
 ---
 
-# Adding Agents to Copilot CLI
+# Adding Agents to Claude Code CLI
 
 You can simply define your own agents to be part of your workflow! Define once, then direct!
 
@@ -191,7 +191,7 @@ copilot --agent python-reviewer
 > Review @samples/book-app-project/books.py
 ```
 
-> 💡 **Switching agents**: You can switch to a different agent at any time by using `/agent` or `--agent` again. To return to the standard Copilot CLI experience, use `/agent` and select **no agent**.
+> 💡 **Switching agents**: You can switch to a different agent at any time by using `/agent` or `--agent` again. To return to the standard Claude Code CLI experience, use `/agent` and select **no agent**.
 
 ---
 
@@ -208,7 +208,7 @@ Each topic below is self-contained. **Pick what interests you - you don't need t
 | See why agents beat generic prompts | [Specialist vs Generic](#specialist-vs-generic-see-the-difference) |
 | Combine agents on a feature | [Working with Multiple Agents](#working-with-multiple-agents) |
 | Organize, name, and share agents | [Organizing & Sharing Agents](#organizing--sharing-agents) |
-| Set up always-on project context | [Configuring Your Project for Copilot](#configuring-your-project-for-copilot) |
+| Set up always-on project context | [Configuring Your Project for Claude Code](#configuring-your-project-for-copilot) |
 | Look up YAML properties and tools | [Agent File Reference](#agent-file-reference) |
 
 Select a scenario below to expand it.
@@ -223,7 +223,7 @@ Select a scenario below to expand it.
 
 This is where agents prove their value. Watch the difference:
 
-### Without an Agent (Generic Copilot)
+### Without an Agent (Generic Claude Code)
 
 ```bash
 copilot
@@ -353,7 +353,7 @@ copilot
 
 ### Agent as Tools
 
-When agents are configured, Copilot can also call them as tools during complex tasks. If you ask for a full-stack feature, Copilot may automatically delegate parts to the appropriate specialist agents.
+When agents are configured, Claude Code can also call them as tools during complex tasks. If you ask for a full-stack feature, Claude Code may automatically delegate parts to the appropriate specialist agents.
 
 </details>
 
@@ -386,7 +386,7 @@ When you create agent files, the name matters. It's what you'll type after `/age
 
 ### Sharing with Your Team
 
-Place agent files in `.github/agents/` and they're version controlled. Push to your repo and every team member gets them automatically. But agents are just one type of file Copilot reads from your project. It also supports **instruction files** that apply automatically to every session, without anyone needing to run `/agent`.
+Place agent files in `.github/agents/` and they're version controlled. Push to your repo and every team member gets them automatically. But agents are just one type of file Claude Code reads from your project. It also supports **instruction files** that apply automatically to every session, without anyone needing to run `/agent`.
 
 Think of it this way: agents are specialists you call on, and instruction files are team rules that are always active.
 
@@ -398,7 +398,7 @@ You already know the two main locations (see [Where to put agent files](#where-t
 
 **Start simple:** Create a single `*.agent.md` file in your project folder. Move it to a permanent location once you're happy with it.
 
-Beyond agent files, Copilot also reads **project-level instruction files** automatically, no `/agent` needed. See [Configuring Your Project for Copilot](#configuring-your-project-for-copilot) below for `AGENTS.md`, `.instructions.md`, and `/init`.
+Beyond agent files, Claude Code also reads **project-level instruction files** automatically, no `/agent` needed. See [Configuring Your Project for Claude Code](#configuring-your-project-for-copilot) below for `AGENTS.md`, `.instructions.md`, and `/init`.
 
 </details>
 
@@ -406,28 +406,28 @@ Beyond agent files, Copilot also reads **project-level instruction files** autom
 
 <a id="configuring-your-project-for-copilot"></a>
 <details>
-<summary><strong>Configuring Your Project for Copilot</strong> - AGENTS.md, instruction files, and /init setup</summary>
+<summary><strong>Configuring Your Project for Claude Code</strong> - AGENTS.md, instruction files, and /init setup</summary>
 
-## Configuring Your Project for Copilot
+## Configuring Your Project for Claude Code
 
-Agents are specialists you invoke on demand. **Project configuration files** are different: Copilot reads them automatically in every session to understand your project's conventions, tech stack, and rules. No one needs to run `/agent`; the context is always active for everyone working in the repo.
+Agents are specialists you invoke on demand. **Project configuration files** are different: Claude Code reads them automatically in every session to understand your project's conventions, tech stack, and rules. No one needs to run `/agent`; the context is always active for everyone working in the repo.
 
 ### Quick Setup with /init
 
-The fastest way to get started is to let Copilot generate configuration files for you:
+The fastest way to get started is to let Claude Code generate configuration files for you:
 
 ```bash
 copilot
 > /init
 ```
 
-Copilot will scan your project and create tailored instruction files. You can edit them afterwards.
+Claude Code will scan your project and create tailored instruction files. You can edit them afterwards.
 
 ### Instruction File Formats
 
 | File | Scope | Notes |
 |------|-------|-------|
-| `AGENTS.md` | Project root or nested | **Cross-platform standard** - works with Copilot and other AI assistants |
+| `AGENTS.md` | Project root or nested | **Cross-platform standard** - works with Claude Code and other AI assistants |
 | `.github/copilot-instructions.md` | Project | Claude Code specific |
 | `.github/instructions/*.instructions.md` | Project | Granular, topic-specific instructions |
 | `CLAUDE.md`, `GEMINI.md` | Project root | Supported for compatibility |
@@ -436,7 +436,7 @@ Copilot will scan your project and create tailored instruction files. You can ed
 
 ### AGENTS.md
 
-`AGENTS.md` is the recommended format. It's an [open standard](https://agents.md/) that works across Copilot and other AI coding tools. Place it in your repository root and Copilot reads it automatically. This project's own [AGENTS.md](https://github.com/github/copilot-cli-for-beginners/blob/main/AGENTS.md) is a working example.
+`AGENTS.md` is the recommended format. It's an [open standard](https://agents.md/) that works across Claude Code and other AI coding tools. Place it in your repository root and Claude Code reads it automatically. This project's own [AGENTS.md](https://github.com/github/copilot-cli-for-beginners/blob/main/AGENTS.md) is a working example.
 
 A typical `AGENTS.md` describes your project context, code style, security requirements, and testing standards. Use `/init` to generate one, or write your own following the pattern in our example file.
 
@@ -458,7 +458,7 @@ For teams that want more granular control, split instructions into topic-specifi
 
 ### Disabling Custom Instructions
 
-If you need Copilot to ignore all project-specific configurations (useful for debugging or comparing behavior):
+If you need Claude Code to ignore all project-specific configurations (useful for debugging or comparing behavior):
 
 ```bash
 copilot --no-custom-instructions
@@ -513,7 +513,7 @@ You are a Python specialist focused on code quality and best practices.
 | Property | Required | Description |
 |----------|----------|-------------|
 | `name` | No | Display name (defaults to filename) |
-| `description` | **Yes** | What the agent does - helps Copilot understand when to suggest it |
+| `description` | **Yes** | What the agent does - helps Claude Code understand when to suggest it |
 | `tools` | No | List of allowed tools (omit = all tools available). See tool aliases below. |
 | `target` | No | Limit to `vscode` or `github-copilot` only |
 
@@ -700,7 +700,7 @@ copilot
 
 ### Bonus Challenge: Instruction Library
 
-You've built agents you invoke on demand. Now try the other side: **instruction files** that Copilot reads automatically in every session, no `/agent` needed.
+You've built agents you invoke on demand. Now try the other side: **instruction files** that Claude Code reads automatically in every session, no `/agent` needed.
 
 Create a `.github/instructions/` folder with at least 3 instruction files:
 - `python-style.instructions.md` for enforcing PEP 8 and type hint conventions
@@ -776,7 +776,7 @@ copilot  # This loads custom instructions by default
 
 ## ➡️ What's Next
 
-Agents change *how Copilot approaches and takes targeted actions* in your code. Next, you'll learn about **skills** - which change *what steps* it follows. Wondering how agents and skills differ? Chapter 05 covers that head-on.
+Agents change *how Claude Code approaches and takes targeted actions* in your code. Next, you'll learn about **skills** - which change *what steps* it follows. Wondering how agents and skills differ? Chapter 05 covers that head-on.
 
 In **[Chapter 05: Skills System](../05-skills/)**, you'll learn:
 

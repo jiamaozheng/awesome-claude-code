@@ -16,11 +16,11 @@ In this chapter, Claude Code CLI becomes your daily driver. You'll use it inside
 
 By the end of this chapter, you'll be able to:
 
-- Run comprehensive code reviews with Copilot CLI
+- Run comprehensive code reviews with Claude Code CLI
 - Refactor legacy code safely
 - Debug issues with AI assistance
 - Generate tests automatically
-- Integrate Copilot CLI with your git workflow
+- Integrate Claude Code CLI with your git workflow
 
 > ⏱️ **Estimated Time**: ~60 minutes (15 min reading + 45 min hands-on)
 
@@ -72,7 +72,7 @@ This chapter covers five workflows that developers typically use. **However, you
 
 ### Basic Review
 
-This example uses the `@` symbol to reference a file, giving Copilot CLI direct access to its contents for review.
+This example uses the `@` symbol to reference a file, giving Claude Code CLI direct access to its contents for review.
 
 ```bash
 copilot
@@ -95,7 +95,7 @@ copilot
 
 ### Input Validation Review
 
-Ask Copilot CLI to focus its review on a specific concern (here, input validation) by listing the categories you care about in the prompt.
+Ask Claude Code CLI to focus its review on a specific concern (here, input validation) by listing the categories you care about in the prompt.
 
 ```text
 copilot
@@ -106,7 +106,7 @@ copilot
 
 ### Cross-File Project Review
 
-Reference an entire directory with `@` to let Copilot CLI scan every file in the project at once.
+Reference an entire directory with `@` to let Claude Code CLI scan every file in the project at once.
 
 ```bash
 copilot
@@ -126,20 +126,20 @@ copilot
 > - Error handling
 > - Code style and best practices
 
-# Copilot CLI provides detailed review
+# Claude Code CLI provides detailed review
 
 > The user input handling - are there any edge cases I'm missing?
 
-# Copilot CLI shows potential issues with empty strings, special characters
+# Claude Code CLI shows potential issues with empty strings, special characters
 
 > Create a checklist of all issues found, prioritized by severity
 
-# Copilot CLI generates prioritized action items
+# Claude Code CLI generates prioritized action items
 ```
 
 ### Review Checklist Template
 
-Ask Copilot CLI to structure its output in a specific format (here, a severity-categorized markdown checklist you can paste into an issue).
+Ask Claude Code CLI to structure its output in a specific format (here, a severity-categorized markdown checklist you can paste into an issue).
 
 ```bash
 copilot
@@ -199,7 +199,7 @@ copilot
 
 > **Try this first:** `@samples/book-app-project/book_app.py The command handling uses if/elif chains. Refactor it to use a dictionary dispatch pattern.`
 
-Start with straightforward improvements. Try these on the book app. Each prompt uses an `@` file reference paired with a specific refactoring instruction so Copilot CLI knows exactly what to change.
+Start with straightforward improvements. Try these on the book app. Each prompt uses an `@` file reference paired with a specific refactoring instruction so Claude Code CLI knows exactly what to change.
 
 ```bash
 copilot
@@ -228,7 +228,7 @@ copilot
 
 ### Separate Concerns
 
-Reference multiple files with `@` in a single prompt so Copilot CLI can move code between them as part of the refactor.
+Reference multiple files with `@` in a single prompt so Claude Code CLI can move code between them as part of the refactor.
 
 ```bash
 copilot
@@ -239,7 +239,7 @@ copilot
 
 ### Improve Error Handling
 
-Provide two related files and describe the cross-cutting concern so Copilot CLI can suggest a consistent fix across both.
+Provide two related files and describe the cross-cutting concern so Claude Code CLI can suggest a consistent fix across both.
 
 ```bash
 copilot
@@ -292,7 +292,7 @@ copilot
 
 > **Try this first:** `@samples/book-app-buggy/books_buggy.py Users report that searching for "The Hobbit" returns no results even though it's in the data. Debug why.`
 
-Start by describing what's wrong. Here are common debugging patterns you can try with the buggy book app. Each prompt pairs an `@` file reference with a clear symptom description so Copilot CLI can locate and diagnose the bug.
+Start by describing what's wrong. Here are common debugging patterns you can try with the buggy book app. Each prompt pairs an `@` file reference with a clear symptom description so Claude Code CLI can locate and diagnose the bug.
 
 ```bash
 copilot
@@ -307,7 +307,7 @@ copilot
 > @samples/book-app-buggy/books_buggy.py When I mark one book as read, ALL books get marked. What's the bug?
 ```
 
-> 💡 **Debugging tip**: Describe the *symptom* (what you see) and the *expectation* (what should happen). Copilot CLI figures out the rest.
+> 💡 **Debugging tip**: Describe the *symptom* (what you see) and the *expectation* (what should happen). Claude Code CLI figures out the rest.
 
 ---
 
@@ -324,7 +324,7 @@ copilot
 
 ### The "Bug Detective" - AI Finds RELATED Bugs
 
-This is where context-aware debugging shines. Try this scenario with the buggy book app. Provide the whole file via `@` and describe only the user-reported symptom. Copilot CLI will trace the root cause and may spot additional bugs nearby.
+This is where context-aware debugging shines. Try this scenario with the buggy book app. Provide the whole file via `@` and describe only the user-reported symptom. Claude Code CLI will trace the root cause and may spot additional bugs nearby.
 
 ```bash
 copilot
@@ -335,7 +335,7 @@ copilot
 > Debug why this happens
 ```
 
-**What Copilot CLI does**:
+**What Claude Code CLI does**:
 ```
 Root Cause: Line 80 uses exact match (==) instead of partial match (in).
 
@@ -348,13 +348,13 @@ Fix: Change to case-insensitive partial match:
 return [b for b in self.books if author.lower() in b.author.lower()]
 ```
 
-**Why this matters**: Copilot CLI reads the whole file, understands the context of your bug report, and gives you a specific fix with a clear explanation.
+**Why this matters**: Claude Code CLI reads the whole file, understands the context of your bug report, and gives you a specific fix with a clear explanation.
 
-> 💡 **Bonus**: Because Copilot CLI analyzes the entire file, it often discovers *other* issues you didn't ask about. For example, while fixing the author search, Copilot CLI might also notice the case-sensitivity bug in `find_book_by_title`!
+> 💡 **Bonus**: Because Claude Code CLI analyzes the entire file, it often discovers *other* issues you didn't ask about. For example, while fixing the author search, Claude Code CLI might also notice the case-sensitivity bug in `find_book_by_title`!
 
 ### Real-World Security Sidebar
 
-While debugging your own code is important, understanding security vulnerabilities in production applications is critical. Try this example: Point Copilot CLI at an unfamiliar file and ask it to audit for security issues.
+While debugging your own code is important, understanding security vulnerabilities in production applications is critical. Try this example: Point Claude Code CLI at an unfamiliar file and ask it to audit for security issues.
 
 ```bash
 copilot
@@ -374,7 +374,7 @@ This file demonstrates real-world security patterns you'll encounter in producti
 
 ### Understanding an Error
 
-Paste a stack trace directly into your prompt along with an `@` file reference so Copilot CLI can map the error to the source code.
+Paste a stack trace directly into your prompt along with an `@` file reference so Claude Code CLI can map the error to the source code.
 
 ```bash
 copilot
@@ -388,7 +388,7 @@ copilot
 
 ### Debugging with Test Case
 
-Describe the exact input and observed output to give Copilot CLI a concrete, reproducible test case to reason about.
+Describe the exact input and observed output to give Claude Code CLI a concrete, reproducible test case to reason about.
 
 ```bash
 copilot
@@ -399,7 +399,7 @@ copilot
 
 ### Trace an Issue Through Code
 
-Reference multiple files and ask Copilot CLI to follow the data flow across them to locate where the issue originates.
+Reference multiple files and ask Claude Code CLI to follow the data flow across them to locate where the issue originates.
 
 ```bash
 copilot
@@ -411,7 +411,7 @@ copilot
 
 ### Understanding Data Issues
 
-Include a data file alongside the code that reads it so Copilot CLI understands the full picture when suggesting error-handling improvements.
+Include a data file alongside the code that reads it so Claude Code CLI understands the full picture when suggesting error-handling improvements.
 
 ```bash
 copilot
@@ -439,7 +439,7 @@ Manually writing tests, developers typically create 2-3 basic tests:
 - Test invalid input
 - Test an edge case
 
-Watch what happens when you ask Copilot CLI to generate comprehensive tests! This prompt uses a structured bullet list with an `@` file reference to guide Copilot CLI toward thorough test coverage:
+Watch what happens when you ask Claude Code CLI to generate comprehensive tests! This prompt uses a structured bullet list with an `@` file reference to guide Claude Code CLI toward thorough test coverage:
 
 ```bash
 copilot
@@ -515,7 +515,7 @@ class TestBookCollection:
 
 ### Unit Tests
 
-Target a single function and enumerate the input categories you want tested so Copilot CLI generates focused, thorough unit tests.
+Target a single function and enumerate the input categories you want tested so Claude Code CLI generates focused, thorough unit tests.
 
 ```bash
 copilot
@@ -530,14 +530,14 @@ copilot
 
 ### Running Tests
 
-Ask Copilot CLI a plain-English question about your toolchain. It can generate the right shell command for you.
+Ask Claude Code CLI a plain-English question about your toolchain. It can generate the right shell command for you.
 
 ```bash
 copilot
 
 > How do I run the tests? Show me the pytest command.
 
-# Copilot CLI responds:
+# Claude Code CLI responds:
 # cd samples/book-app-project && python -m pytest tests/
 # Or for verbose output: python -m pytest tests/ -v
 # To see print statements: python -m pytest tests/ -s
@@ -545,7 +545,7 @@ copilot
 
 ### Test for Specific Scenarios
 
-List advanced or tricky scenarios you want covered so Copilot CLI goes beyond the happy path.
+List advanced or tricky scenarios you want covered so Claude Code CLI goes beyond the happy path.
 
 ```bash
 copilot
@@ -560,7 +560,7 @@ copilot
 
 ### Add Tests to Existing File
 
-Ask for *additional* tests for a single function so Copilot CLI generates new cases that complement what you already have.
+Ask for *additional* tests for a single function so Claude Code CLI generates new cases that complement what you already have.
 
 ```bash
 copilot
@@ -587,9 +587,9 @@ copilot
 
 ### Generate Commit Messages
 
-> **Try this first:** `copilot -p "Generate a conventional commit message for: $(git diff --staged)"` — stage some changes, then run this to see Copilot CLI write your commit message.
+> **Try this first:** `copilot -p "Generate a conventional commit message for: $(git diff --staged)"` — stage some changes, then run this to see Claude Code CLI write your commit message.
 
-This example uses the `-p` inline prompt flag with shell command substitution to pipe `git diff` output directly into Copilot CLI for a one-shot commit message. The `$(...)` syntax runs the command inside the parentheses and inserts its output into the outer command.
+This example uses the `-p` inline prompt flag with shell command substitution to pipe `git diff` output directly into Claude Code CLI for a one-shot commit message. The `$(...)` syntax runs the command inside the parentheses and inserts its output into the outer command.
 
 ```bash
 
@@ -647,7 +647,7 @@ Include:
 
 ### Using /pr in Interactive Mode for the Current Branch
 
-If you're working with a branch in Copilot CLI's interactive mode, you can use the `/pr` command to work with pull requests. Use `/pr` to view a PR, create a new PR, fix an existing PR, or let Copilot CLI auto-decide based on the branch state.
+If you're working with a branch in Claude Code CLI's interactive mode, you can use the `/pr` command to work with pull requests. Use `/pr` to view a PR, create a new PR, fix an existing PR, or let Claude Code CLI auto-decide based on the branch state.
 
 ```bash
 copilot
@@ -667,7 +667,7 @@ $(git diff main..HEAD)"
 
 ### Using /delegate for Background Tasks
 
-The `/delegate` command hands off work to the Copilot coding agent on GitHub. Use the `/delegate` slash command (or the `&` shortcut) to offload a well-defined task to a background agent.
+The `/delegate` command hands off work to the Claude Code coding agent on GitHub. Use the `/delegate` slash command (or the `&` shortcut) to offload a well-defined task to a background agent.
 
 ```bash
 copilot
@@ -677,7 +677,7 @@ copilot
 # Or use the & prefix shortcut:
 > & Fix the typo in the README header
 
-# Copilot CLI:
+# Claude Code CLI:
 # 1. Commits your changes to a new branch
 # 2. Opens a draft pull request
 # 3. Works in the background on GitHub
@@ -688,7 +688,7 @@ This is great for well-defined tasks you want completed while you focus on other
 
 ### Using /diff to Review Session Changes
 
-The `/diff` command shows all changes made during your current session. Use this slash command to see a visual diff of everything Copilot CLI has modified before you commit.
+The `/diff` command shows all changes made during your current session. Use this slash command to see a visual diff of everything Claude Code CLI has modified before you commit.
 
 ```bash
 copilot
@@ -714,7 +714,7 @@ copilot
 > /research What are the best Python libraries for validating user input in CLI apps?
 ```
 
-Copilot searches GitHub repositories and web sources, then returns a summary with references. This is useful when you're about to start a new feature and want to make informed decisions first. You can share the results using `/share`.
+Claude Code searches GitHub repositories and web sources, then returns a summary with references. This is useful when you're about to start a new feature and want to make informed decisions first. You can share the results using `/share`.
 
 > 💡 **Tip**: `/research` works well *before* `/plan`. Research the approach, then plan the implementation.
 
@@ -752,7 +752,7 @@ copilot -p "Generate commit message for: $(git diff --staged)"
 
 ### Bug Fix Workflow Summary
 
-| Step | Action | Copilot Command |
+| Step | Action | Claude Code Command |
 |------|--------|-----------------|
 | 1 | Understand the bug | `> [describe bug] @relevant-file.py Analyze the likely cause` |
 | 2 | Get detailed analysis | `> Show me the function and explain the issue` |
@@ -774,9 +774,9 @@ Now it's your turn to apply these workflows.
 
 After completing the demos, try these variations:
 
-1. **Bug Detective Challenge**: Ask Copilot CLI to debug the `mark_as_read` function in `samples/book-app-buggy/books_buggy.py`. Did it explain why the function marks ALL books as read instead of just one?
+1. **Bug Detective Challenge**: Ask Claude Code CLI to debug the `mark_as_read` function in `samples/book-app-buggy/books_buggy.py`. Did it explain why the function marks ALL books as read instead of just one?
 
-2. **Test Challenge**: Generate tests for the `add_book` function in the book app. Count how many edge cases Copilot CLI includes that you wouldn't have thought of.
+2. **Test Challenge**: Generate tests for the `add_book` function in the book app. Count how many edge cases Claude Code CLI includes that you wouldn't have thought of.
 
 3. **Commit Message Challenge**: Make any small change to a book app file, stage it (`git add .`), then run:
    ```bash
@@ -794,9 +794,9 @@ After completing the demos, try these variations:
 
 The hands-on examples focused on `find_book_by_title` and code reviews. Now practice the same workflow skills on different functions in `book-app-project`:
 
-1. **Review**: Ask Copilot CLI to review `remove_book()` in `books.py` for edge cases and potential issues:
+1. **Review**: Ask Claude Code CLI to review `remove_book()` in `books.py` for edge cases and potential issues:
    `@samples/book-app-project/books.py Review the remove_book() function. What happens if the title partially matches another book (e.g., "Dune" vs "Dune Messiah")? Are there any edge cases not handled?`
-2. **Refactor**: Ask Copilot CLI to improve `remove_book()` to handle edge cases like case-insensitive matching and returning useful feedback when a book isn't found
+2. **Refactor**: Ask Claude Code CLI to improve `remove_book()` to handle edge cases like case-insensitive matching and returning useful feedback when a book isn't found
 3. **Test**: Generate pytest tests specifically for the improved `remove_book()` function, covering:
    - Removing a book that exists
    - Case-insensitive title matching
@@ -834,17 +834,17 @@ copilot
 > Generate a conventional commit message for this refactor
 ```
 
-**Tip:** After improving `remove_book()`, try asking Copilot CLI: "Are there any other functions in this file that could benefit from the same improvements?". It may suggest similar changes to `find_book_by_title()` or `find_by_author()`.
+**Tip:** After improving `remove_book()`, try asking Claude Code CLI: "Are there any other functions in this file that could benefit from the same improvements?". It may suggest similar changes to `find_book_by_title()` or `find_by_author()`.
 
 </details>
 
-### Bonus Challenge: Create an application with the Copilot CLI
+### Bonus Challenge: Create an application with the Claude Code CLI
 
 > 💡 **Note**: This GitHub Skills exercise uses **Node.js** rather than Python. The Claude Code CLI techniques you'll practice - creating issues, generating code, and collaborating from the terminal - apply to any language.
 
 The exercise shows developers how to use Claude Code CLI to create issues, generate code, and collaborate from the terminal while building a Node.js calculator app. You'll install the CLI, use templates and agents, and practice iterative, command-line driven development.
 
-##### <img src="/images/learning-hub/copilot-cli-for-beginners/03/github-skills-logo.png" width="28" align="center" /> [Start the "Create applications with the Copilot CLI" Skills Exercise](https://github.com/skills/create-applications-with-the-copilot-cli)
+##### <img src="/images/learning-hub/copilot-cli-for-beginners/03/github-skills-logo.png" width="28" align="center" /> [Start the "Create applications with the Claude Code CLI" Skills Exercise](https://github.com/skills/create-applications-with-the-copilot-cli)
 
 ---
 
@@ -857,7 +857,7 @@ The exercise shows developers how to use Claude Code CLI to create issues, gener
 |---------|--------------|-----|
 | Using vague prompts like "Review this code" | Generic feedback that misses specific issues | Be specific: "Review for SQL injection, XSS, and auth issues" |
 | Not using `/review` for code reviews | Missing the optimized code-review agent | Use `/review` which is tuned for high signal-to-noise output |
-| Asking to "find bugs" without context | Copilot CLI doesn't know what bug you're experiencing | Describe the symptom: "Users report X happens when Y" |
+| Asking to "find bugs" without context | Claude Code CLI doesn't know what bug you're experiencing | Describe the symptom: "Users report X happens when Y" |
 | Generating tests without specifying framework | Tests may use wrong syntax or assertion library | Specify: "Generate tests using Jest" or "using pytest" |
 
 ### Troubleshooting
@@ -882,7 +882,7 @@ copilot
 > @samples/book-app-project/books.py Generate tests using pytest (not unittest)
 ```
 
-**Refactoring changes behavior** - Ask Copilot CLI to preserve behavior:
+**Refactoring changes behavior** - Ask Claude Code CLI to preserve behavior:
 
 ```bash
 copilot
@@ -902,7 +902,7 @@ copilot
 
 1. **Code review** becomes comprehensive with specific prompts
 2. **Refactoring** is safer when you generate tests first
-3. **Debugging** benefits from showing Copilot CLI the error AND the code
+3. **Debugging** benefits from showing Claude Code CLI the error AND the code
 4. **Test generation** should include edge cases and error scenarios
 5. **Git integration** automates commit messages and PR descriptions
 
@@ -928,19 +928,19 @@ Chapters 04-06 cover additional features that add even more power and are worthw
 
 There's no single "right" way to use Claude Code CLI. Here are a few tips as you develop your own patterns:
 
-> 📚 **Official Documentation**: [Copilot CLI best practices](https://docs.github.com/copilot/how-tos/copilot-cli/cli-best-practices) for recommended workflows and tips from GitHub.
+> 📚 **Official Documentation**: [Claude Code CLI best practices](https://docs.github.com/copilot/how-tos/copilot-cli/cli-best-practices) for recommended workflows and tips from GitHub.
 
 - **Start with `/plan`** for anything non-trivial. Refine the plan before execution - a good plan leads to better results.
-- **Save prompts that work well.** When Copilot CLI makes a mistake, note what went wrong. Over time, this becomes your personal playbook.
+- **Save prompts that work well.** When Claude Code CLI makes a mistake, note what went wrong. Over time, this becomes your personal playbook.
 - **Experiment freely.** Some developers prefer long, detailed prompts. Others prefer short prompts with follow-ups. Try different approaches and notice what feels natural.
 
-> 💡 **Coming up**: In Chapters 04 and 05, you'll learn how to codify your best practices into custom instructions and skills that Copilot CLI loads automatically.
+> 💡 **Coming up**: In Chapters 04 and 05, you'll learn how to codify your best practices into custom instructions and skills that Claude Code CLI loads automatically.
 
 ---
 
 ## ➡️ What's Next
 
-The remaining chapters cover additional features that extend Copilot CLI's capabilities:
+The remaining chapters cover additional features that extend Claude Code CLI's capabilities:
 
 | Chapter | What It Covers | When You'll Want It |
 |---------|----------------|---------------------|

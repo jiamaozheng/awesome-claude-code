@@ -17,7 +17,7 @@ prerequisites:
   - Basic understanding of Claude Code features
 ---
 
-Custom instructions are persistent configuration files that automatically guide Claude Code's behavior when working with specific files or directories in your codebase. Unlike skills that require explicit invocation (by a user or an agent), instructions work silently in the background, ensuring Copilot consistently follows your team's standards, conventions, and architectural decisions.
+Custom instructions are persistent configuration files that automatically guide Claude Code's behavior when working with specific files or directories in your codebase. Unlike skills that require explicit invocation (by a user or an agent), instructions work silently in the background, ensuring Claude Code consistently follows your team's standards, conventions, and architectural decisions.
 
 This article explains how to create effective custom instructions, when to use them, and how they integrate with your development workflow.
 
@@ -31,10 +31,10 @@ Custom instructions are markdown files (`.instructions.md`) that contain:
 - **Compliance requirements**: Security policies, regulatory constraints
 
 **Key Points**:
-- Instructions apply automatically when Copilot works on matching files
+- Instructions apply automatically when Claude Code works on matching files
 - They persist across all chat sessions and inline completions
 - They can be scoped globally, per language, or per directory using glob patterns
-- They help Copilot understand your codebase's unique context without manual prompting
+- They help Claude Code understand your codebase's unique context without manual prompting
 
 ### How Instructions Differ from Other Customizations
 
@@ -45,7 +45,7 @@ Custom instructions are markdown files (`.instructions.md`) that contain:
 
 **Instructions vs Agents**:
 - Instructions are lightweight context; agents are specialized personas with tool access
-- Instructions work with any Copilot interaction; agents require explicit selection
+- Instructions work with any Claude Code interaction; agents require explicit selection
 - Use instructions for coding standards; use agents for complex workflows with tooling needs
 
 ## Creating Your First Custom Instruction
@@ -94,7 +94,7 @@ export function UserProfile({ userId, onUpdate }: UserProfileProps) {
 
 **Why This Works**:
 - The `applyTo` glob pattern targets TypeScript/TSX files specifically
-- Copilot reads these instructions whenever it generates or suggests code for matching files
+- Claude Code reads these instructions whenever it generates or suggests code for matching files
 - Standards are enforced consistently without developers needing to remember every rule
 - New team members benefit from institutional knowledge automatically
 
@@ -140,7 +140,7 @@ applyTo: '**'
 ```
 
 **Expected Result**:
-When you work on a file matching the pattern, Copilot incorporates that instruction's context into suggestions and chat responses automatically.
+When you work on a file matching the pattern, Claude Code incorporates that instruction's context into suggestions and chat responses automatically.
 
 ## Real Examples from the Repository
 
@@ -239,7 +239,7 @@ A well-structured instruction file includes:
 
 - **Be specific**: "Use PascalCase for component names" instead of "name components well"
 - **Show examples**: Include working code snippets demonstrating patterns
-- **Explain reasoning**: Brief context helps Copilot understand intent
+- **Explain reasoning**: Brief context helps Claude Code understand intent
 - **Stay concise**: Focus on what matters most; avoid exhaustive documentation
 
 **Example - Vague vs Specific**:
@@ -267,23 +267,23 @@ try {
 
 **Q: How many instructions should I create?**
 
-A: Start with 3-5 core instructions covering your most important standards (naming, structure, security). Add more as patterns emerge. Having 10-20 instructions for a medium-sized project is reasonable. Awesome Copilot repository contains over 120 to demonstrate the range of possibilities.
+A: Start with 3-5 core instructions covering your most important standards (naming, structure, security). Add more as patterns emerge. Having 10-20 instructions for a medium-sized project is reasonable. Awesome Claude Code repository contains over 120 to demonstrate the range of possibilities.
 
-**Q: Do instructions slow down Copilot?**
+**Q: Do instructions slow down Claude Code?**
 
-A: No. Instructions are processed efficiently as part of Copilot's context window. Keep individual files focused (under 500 lines) for best results, and ensure that they are scoped appropriately.
+A: No. Instructions are processed efficiently as part of Claude Code's context window. Keep individual files focused (under 500 lines) for best results, and ensure that they are scoped appropriately.
 
 **Q: Can instructions contradict each other?**
 
-A: If multiple instructions apply to the same file, Copilot considers all of them. Avoid contradictions by keeping instructions focused and using specific `applyTo` patterns. More specific patterns take precedence mentally, but it's best to design complementary instructions.
+A: If multiple instructions apply to the same file, Claude Code considers all of them. Avoid contradictions by keeping instructions focused and using specific `applyTo` patterns. More specific patterns take precedence mentally, but it's best to design complementary instructions.
 
 **Q: How do I know if my instructions are working?**
 
-A: Test by asking Copilot to generate code matching your patterns. If it follows your standards without explicit prompting, the instructions are effective. You can also reference the instruction explicitly in chat: "Following the TypeScript standards in my instructions, create a user component."
+A: Test by asking Claude Code to generate code matching your patterns. If it follows your standards without explicit prompting, the instructions are effective. You can also reference the instruction explicitly in chat: "Following the TypeScript standards in my instructions, create a user component."
 
 **Q: Should I document everything in instructions?**
 
-A: No. Instructions are for persistent standards that apply repeatedly. Document one-off decisions in code comments. Use instructions for patterns you want Copilot to follow automatically.
+A: No. Instructions are for persistent standards that apply repeatedly. Document one-off decisions in code comments. Use instructions for patterns you want Claude Code to follow automatically.
 
 ## Best Practices
 
@@ -291,13 +291,13 @@ A: No. Instructions are for persistent standards that apply repeatedly. Document
 - **Use clear naming**: Name files descriptively: `react-component-standards.instructions.md`, not `rules.instructions.md`
 - **Include examples**: Every guideline should have at least one code example
 - **Keep it current**: Review instructions when dependencies or frameworks update
-- **Test your instructions**: Generate code and verify Copilot follows the patterns
+- **Test your instructions**: Generate code and verify Claude Code follows the patterns
 - **Link to documentation**: Reference official docs for detailed explanations
 - **Use tables for rules**: Tabular format works well for naming conventions and comparisons
 
 ## Common Pitfalls to Avoid
 
-- ❌ **Too generic**: "Write clean code" doesn't give Copilot actionable guidance  
+- ❌ **Too generic**: "Write clean code" doesn't give Claude Code actionable guidance  
   ✅ **Instead**: Provide specific patterns: "Extract functions longer than 20 lines into smaller, named functions"
 
 - ❌ **Too verbose**: Including entire documentation pages overwhelms the context window  
@@ -319,7 +319,7 @@ Now that you understand custom instructions, you can:
 - **Explore Repository Examples**: Browse [Instructions Directory](../../instructions/) - Over 120 real-world examples covering frameworks, languages, and domains
 - **Learn About Skills**: [Creating Effective Skills](../creating-effective-skills/) - Discover when to use skills instead of instructions
 - **Understand Agents**: [Building Custom Agents](../building-custom-agents/) - See how agents complement instructions for complex workflows
-- **Configuration Basics**: [Copilot Configuration Basics](../copilot-configuration-basics/) - Learn how to organize and manage your customizations
+- **Configuration Basics**: [Claude Code Configuration Basics](../copilot-configuration-basics/) - Learn how to organize and manage your customizations
 
 **Suggested Reading Order**:
 1. This article (defining custom instructions)

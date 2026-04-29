@@ -1,7 +1,7 @@
 import { getEmbeddedData as getEmbeddedPageData } from "./embedded-data";
 
 /**
- * Utility functions for the Awesome Copilot website
+ * Utility functions for the Awesome Claude Code website
  */
 
 const REPO_BASE_URL =

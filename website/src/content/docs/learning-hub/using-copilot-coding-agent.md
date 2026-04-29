@@ -1,5 +1,5 @@
 ---
-title: 'Using the Copilot Coding Agent'
+title: 'Using the Claude Code Coding Agent'
 description: 'Learn how to use Claude Code coding agent to autonomously work on issues, generate pull requests, and automate development tasks.'
 authors:
   - Claude Code Learning Hub Team
@@ -18,7 +18,7 @@ prerequisites:
   - Repository with Claude Code enabled
 ---
 
-The Copilot coding agent is an autonomous agent that can work on GitHub issues without continuous human guidance. You assign it an issue, it spins up a cloud environment, writes code, runs tests, and opens a pull request—all while you focus on other work. Think of it as a junior developer who never sleeps, handles the well-defined tasks, and always asks for review.
+The Claude Code coding agent is an autonomous agent that can work on GitHub issues without continuous human guidance. You assign it an issue, it spins up a cloud environment, writes code, runs tests, and opens a pull request—all while you focus on other work. Think of it as a junior developer who never sleeps, handles the well-defined tasks, and always asks for review.
 
 This article explains how the coding agent works, how to set it up, and best practices for getting the most out of autonomous coding sessions.
 
@@ -27,9 +27,9 @@ This article explains how the coding agent works, how to set it up, and best pra
 The coding agent follows a straightforward workflow:
 
 ```
-1. You assign an issue to Copilot (or @mention it)
+1. You assign an issue to Claude Code (or @mention it)
          ↓
-2. Copilot spins up a cloud dev environment
+2. Claude Code spins up a cloud dev environment
          ↓
 3. It reads the issue, your instructions, and codebase
          ↓
@@ -116,7 +116,7 @@ There are several ways to trigger the coding agent:
 ### From a GitHub Issue
 
 1. Create a well-described issue with clear acceptance criteria
-2. Assign the issue to **Copilot** (it appears as an assignee option)
+2. Assign the issue to **Claude Code** (it appears as an assignee option)
 3. The agent starts working within minutes
 
 ### From a Comment
@@ -336,7 +336,7 @@ This repository provides a curated collection of agents, skills, and hooks desig
 
 ## Remote Control
 
-You can connect to and steer a running coding agent session from a local Copilot CLI terminal using **remote control**. This lets you observe the agent's progress, send follow-up prompts, and redirect its work in real time — without waiting for it to open a PR first.
+You can connect to and steer a running coding agent session from a local Claude Code CLI terminal using **remote control**. This lets you observe the agent's progress, send follow-up prompts, and redirect its work in real time — without waiting for it to open a PR first.
 
 ### Starting a Remote-Controlled Session
 
@@ -446,7 +446,7 @@ A: Yes. You can specify which agent to use when assigning work — the coding ag
 - **Create Skills**: [Creating Effective Skills](../creating-effective-skills/) — Build skills the coding agent can use automatically
 - **Add Guardrails**: [Automating with Hooks](../automating-with-hooks/) — Ensure code quality in autonomous sessions
 - **Build Custom Agents**: [Building Custom Agents](../building-custom-agents/) — Create specialized agents for the coding agent to use
-- **Explore Configuration**: [Copilot Configuration Basics](../copilot-configuration-basics/) — Set up repository-level customizations
+- **Explore Configuration**: [Claude Code Configuration Basics](../copilot-configuration-basics/) — Set up repository-level customizations
 - **Browse Community Resources**: Explore the [Agents](../../agents/), [Skills](../../skills/), and [Hooks](../../hooks/) directories for ready-to-use resources
 
 ---
