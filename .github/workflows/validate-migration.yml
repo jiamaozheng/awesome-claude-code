@@ -12,6 +12,7 @@ on:
       - "docs/migration-inventory.csv"
       - "scripts/validate_migration.py"
       - "scripts/validate_claude_assets.py"
+      - "scripts/validate_plugins.py"
       - "scripts/lint_readme.py"
       - "README.md"
       - ".github/workflows/validate-migration.yml"
@@ -29,6 +30,7 @@ on:
       - "docs/migration-inventory.csv"
       - "scripts/validate_migration.py"
       - "scripts/validate_claude_assets.py"
+      - "scripts/validate_plugins.py"
       - "scripts/lint_readme.py"
       - "README.md"
       - ".github/workflows/validate-migration.yml"
@@ -52,6 +54,9 @@ jobs:
 
       - name: Validate Claude asset frontmatter and best practices
         run: python3 scripts/validate_claude_assets.py
+
+      - name: Validate plugin manifests and migration inventory
+        run: python3 scripts/validate_plugins.py
 
   claude-assets-strict:
     runs-on: ubuntu-latest
