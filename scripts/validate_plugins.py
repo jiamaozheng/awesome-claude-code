@@ -171,7 +171,10 @@ def parse_inventory_plugin_targets() -> set[str]:
             target = row.get("target") or ""
             target = target.strip()
             if target:
-                targets.add(target)
+                # Resolve relative paths against repo root so they compare against
+                # absolute paths produced by expected_inventory_targets().
+                resolved = str((ROOT / target).resolve())
+                targets.add(resolved)
     return targets
 
 
