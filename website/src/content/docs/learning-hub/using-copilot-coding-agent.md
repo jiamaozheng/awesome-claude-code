@@ -1,8 +1,8 @@
 ---
 title: 'Using the Copilot Coding Agent'
-description: 'Learn how to use GitHub Copilot coding agent to autonomously work on issues, generate pull requests, and automate development tasks.'
+description: 'Learn how to use Claude Code coding agent to autonomously work on issues, generate pull requests, and automate development tasks.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-04-16
 estimatedReadingTime: '12 minutes'
 tags:
@@ -14,8 +14,8 @@ relatedArticles:
   - ./automating-with-hooks.md
   - ./creating-effective-skills.md
 prerequisites:
-  - Understanding of GitHub Copilot agents
-  - Repository with GitHub Copilot enabled
+  - Understanding of Claude Code agents
+  - Repository with Claude Code enabled
 ---
 
 The Copilot coding agent is an autonomous agent that can work on GitHub issues without continuous human guidance. You assign it an issue, it spins up a cloud environment, writes code, runs tests, and opens a pull request—all while you focus on other work. Think of it as a junior developer who never sleeps, handles the well-defined tasks, and always asks for review.
@@ -426,7 +426,7 @@ A: Typically 5–30 minutes depending on the complexity of the task and the size
 
 **Q: Can I use the coding agent with private repositories?**
 
-A: Yes. The coding agent works with both public and private repositories where GitHub Copilot is enabled.
+A: Yes. The coding agent works with both public and private repositories where Claude Code is enabled.
 
 **Q: What if the agent gets stuck?**
 

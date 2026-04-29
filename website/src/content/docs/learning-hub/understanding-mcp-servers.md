@@ -1,8 +1,8 @@
 ---
 title: 'Understanding MCP Servers'
-description: 'Learn how Model Context Protocol servers extend GitHub Copilot with access to external tools, databases, and APIs.'
+description: 'Learn how Model Context Protocol servers extend Claude Code with access to external tools, databases, and APIs.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-04-16
 estimatedReadingTime: '8 minutes'
 tags:
@@ -13,10 +13,10 @@ relatedArticles:
   - ./building-custom-agents.md
   - ./what-are-agents-skills-instructions.md
 prerequisites:
-  - Basic understanding of GitHub Copilot agents
+  - Basic understanding of Claude Code agents
 ---
 
-GitHub Copilot's built-in tools—code search, file editing, terminal access—cover a wide range of tasks. But real-world workflows often need access to external systems: databases, cloud APIs, monitoring dashboards, or internal services. That's where MCP servers come in.
+Claude Code's built-in tools—code search, file editing, terminal access—cover a wide range of tasks. But real-world workflows often need access to external systems: databases, cloud APIs, monitoring dashboards, or internal services. That's where MCP servers come in.
 
 This article explains what MCP is, how to configure servers, and how agents use them to accomplish tasks that would otherwise require context-switching.
 
@@ -27,19 +27,19 @@ The **Model Context Protocol (MCP)** is an open standard for connecting AI assis
 Think of MCP servers as bridges:
 
 ```
-GitHub Copilot  ←→  MCP Server  ←→  External System
+Claude Code  ←→  MCP Server  ←→  External System
                      (bridge)        (database, API, etc.)
 ```
 
 **Key characteristics**:
-- MCP is an open protocol, not specific to GitHub Copilot—it works across AI tools
+- MCP is an open protocol, not specific to Claude Code—it works across AI tools
 - Servers run locally on your machine or in a container
 - Each server exposes one or more tools with defined inputs and outputs
 - Agents and users can invoke MCP tools naturally during conversation
 
 ### Built-in vs MCP Tools
 
-GitHub Copilot provides several **built-in tools** that are always available:
+Claude Code provides several **built-in tools** that are always available:
 
 | Built-in Tool | What It Does |
 |--------------|--------------|
@@ -61,7 +61,7 @@ GitHub Copilot provides several **built-in tools** that are always available:
 
 ## Configuring MCP Servers
 
-MCP servers are configured per-workspace. GitHub Copilot CLI discovers server definitions from several locations (loaded in order):
+MCP servers are configured per-workspace. Claude Code CLI discovers server definitions from several locations (loaded in order):
 
 | File | Scope | Notes |
 |------|-------|-------|
@@ -93,7 +93,7 @@ Example `.mcp.json` or `.vscode/mcp.json`:
 
 ### Installing MCP Servers from the Registry
 
-GitHub Copilot CLI can install MCP servers directly from the official registry with guided configuration — no manual JSON editing required. During an interactive session, run:
+Claude Code CLI can install MCP servers directly from the official registry with guided configuration — no manual JSON editing required. During an interactive session, run:
 
 ```
 /mcp install
@@ -121,7 +121,7 @@ This guided flow is the recommended way to add new MCP servers, especially for s
 
 ### Managing Persistent MCP Configuration via Server RPCs
 
-In addition to file-based configuration, GitHub Copilot CLI exposes **server RPCs** that let MCP servers and tooling scripts manage the persistent MCP server registry at runtime. This enables programmatic setup — for example, an installer script that registers a server without requiring you to hand-edit a JSON file.
+In addition to file-based configuration, Claude Code CLI exposes **server RPCs** that let MCP servers and tooling scripts manage the persistent MCP server registry at runtime. This enables programmatic setup — for example, an installer script that registers a server without requiring you to hand-edit a JSON file.
 
 The available RPCs are:
 
@@ -176,7 +176,7 @@ These are especially useful for plugins and installer scripts that need to self-
 
 ### Authentication
 
-Some MCP servers require authentication to connect to protected resources. GitHub Copilot CLI supports several authentication approaches:
+Some MCP servers require authentication to connect to protected resources. Claude Code CLI supports several authentication approaches:
 
 - **OAuth**: MCP servers can use the OAuth flow to authenticate with external services. The CLI handles the browser redirect and token storage automatically. This also works when running in ACP (Agent Coordination Protocol) mode.
 - **Device code flow (RFC 8628)**: When the CLI runs in a **headless or CI environment** where a browser redirect is not possible, it automatically falls back to the device code flow. You'll see a URL and a code to enter on another device to complete authentication.

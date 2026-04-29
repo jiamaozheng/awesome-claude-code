@@ -1,8 +1,8 @@
 ---
-title: 'GitHub Copilot Terminology Glossary'
-description: 'A quick reference guide defining common GitHub Copilot and platform-specific terms.'
+title: 'Claude Code Terminology Glossary'
+description: 'A quick reference guide defining common Claude Code and platform-specific terms.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-04-02
 estimatedReadingTime: '8 minutes'
 tags:
@@ -14,7 +14,7 @@ relatedArticles:
   - ./copilot-configuration-basics.md
 ---
 
-New to GitHub Copilot customization? This glossary defines common terms you'll encounter while exploring agents, skills, instructions, and related concepts in the Awesome GitHub Copilot ecosystem.
+New to Claude Code customization? This glossary defines common terms you'll encounter while exploring agents, skills, instructions, and related concepts in the Awesome Claude Code ecosystem.
 
 Use this page as a quick reference when reading articles in the Learning Hub or browsing the repository.
 
@@ -24,7 +24,7 @@ Use this page as a quick reference when reading articles in the Learning Hub or 
 
 ### Agent
 
-A specialized configuration file (`*.agent.md`) that defines a GitHub Copilot persona or assistant with specific expertise, tools, and behavior patterns. In products that support delegation, the agent is usually the primary coordinator or main session persona, while subagents handle narrower delegated tasks.
+A specialized configuration file (`*.agent.md`) that defines a Claude Code persona or assistant with specific expertise, tools, and behavior patterns. In products that support delegation, the agent is usually the primary coordinator or main session persona, while subagents handle narrower delegated tasks.
 
 **When to use**: For recurring workflows that benefit from deep tooling integrations and persistent conversational context.
 
@@ -44,7 +44,7 @@ A temporary, task-focused agent launched by another agent or orchestrator. A sub
 
 ### Built-in Tool
 
-A native capability provided by GitHub Copilot without requiring additional configuration or MCP servers. Examples include code search, file editing, terminal command execution, and web search. Built-in tools are always available and don't require installation.
+A native capability provided by Claude Code without requiring additional configuration or MCP servers. Examples include code search, file editing, terminal command execution, and web search. Built-in tools are always available and don't require installation.
 
 **Related terms**: [Tools](#tools), [MCP](#mcp-model-context-protocol)
 
@@ -54,7 +54,7 @@ A native capability provided by GitHub Copilot without requiring additional conf
 
 **Deprecated terminology** - This term is no longer used. Use [Agent](#agent) instead.
 
-Previously, "chat mode" was an alternative term for [Agent](#agent) that described how GitHub Copilot Chat could be transformed into domain-specific assistants. The ecosystem has standardized on "Agent" as the preferred terminology.
+Previously, "chat mode" was an alternative term for [Agent](#agent) that described how Claude Code Chat could be transformed into domain-specific assistants. The ecosystem has standardized on "Agent" as the preferred terminology.
 
 **See**: [Agent](#agent)
 
@@ -62,11 +62,11 @@ Previously, "chat mode" was an alternative term for [Agent](#agent) that describ
 
 ### Collection
 
-**Note**: Collections are a concept specific to the Awesome GitHub Copilot repository and are not part of standard GitHub Copilot terminology.
+**Note**: Collections are a concept specific to the Awesome Claude Code repository and are not part of standard Claude Code terminology.
 
 A curated grouping of related skills, instructions, and agents organized around a specific theme or workflow. Collections are defined in YAML files (`*.collection.yml`) in the `collections/` directory and help users discover related customizations together.
 
-**Example**: The "Awesome Copilot" collection bundles meta-skills for discovering and generating GitHub Copilot customizations.
+**Example**: The "Awesome Copilot" collection bundles meta-skills for discovering and generating Claude Code customizations.
 
 **Learn more**: [What are Agents, Skills, and Instructions](../what-are-agents-skills-instructions/)
 
@@ -74,13 +74,13 @@ A curated grouping of related skills, instructions, and agents organized around 
 
 ### Custom Agent
 
-See [Agent](#agent). The term "custom" emphasizes that these are user-defined configurations rather than GitHub Copilot's default behavior. Custom agents can be created by anyone and shared via repositories like Awesome GitHub Copilot.
+See [Agent](#agent). The term "custom" emphasizes that these are user-defined configurations rather than Claude Code's default behavior. Custom agents can be created by anyone and shared via repositories like Awesome Claude Code.
 
 ---
 
 ### Custom Instruction
 
-See [Instruction](#instruction). The term "custom" emphasizes that these are user-defined rules rather than GitHub Copilot's built-in understanding. Custom instructions are particularly useful for codifying team-specific standards and architectural decisions.
+See [Instruction](#instruction). The term "custom" emphasizes that these are user-defined rules rather than Claude Code's built-in understanding. Custom instructions are particularly useful for codifying team-specific standards and architectural decisions.
 
 ---
 
@@ -123,7 +123,7 @@ A VS Code custom-agent frontmatter property (`handoffs`) that defines suggested 
 
 ### AGENTS.md
 
-An emerging industry standard file format for defining portable AI coding instructions that work across different AI coding tools (GitHub Copilot, Claude, Codex, and others). The `AGENTS.md` file, typically placed in a repository root or `.github/` directory, contains instructions for how AI assistants should interact with your codebase.
+An emerging industry standard file format for defining portable AI coding instructions that work across different AI coding tools (Claude Code, Claude, Codex, and others). The `AGENTS.md` file, typically placed in a repository root or `.github/` directory, contains instructions for how AI assistants should interact with your codebase.
 
 Unlike tool-specific customization files (`.agent.md`, `.prompt.md`, `.instructions.md`), `AGENTS.md` aims to provide a standardized, platform-agnostic way to define AI behavior that can be consumed by multiple tools.
 
@@ -140,7 +140,7 @@ Unlike tool-specific customization files (`.agent.md`, `.prompt.md`, `.instructi
 
 ### Instruction
 
-A configuration file (`*.instructions.md`) that provides persistent background context and coding standards that GitHub Copilot reads whenever working on matching files. Instructions contain style guides, framework-specific hints, and repository rules that help Copilot align with your engineering practices automatically.
+A configuration file (`*.instructions.md`) that provides persistent background context and coding standards that Claude Code reads whenever working on matching files. Instructions contain style guides, framework-specific hints, and repository rules that help Copilot align with your engineering practices automatically.
 
 **When to use**: For long-lived guidance that applies across many sessions, like coding standards or compliance requirements.
 
@@ -152,7 +152,7 @@ A configuration file (`*.instructions.md`) that provides persistent background c
 
 ### Persona
 
-The identity, tone, and behavioral characteristics defined for an [Agent](#agent). A well-crafted persona helps GitHub Copilot respond consistently and appropriately for specific domains or expertise areas.
+The identity, tone, and behavioral characteristics defined for an [Agent](#agent). A well-crafted persona helps Claude Code respond consistently and appropriately for specific domains or expertise areas.
 
 **Example**: A "Database Performance Expert" persona might prioritize query optimization and explain concepts using database-specific terminology.
 
@@ -162,7 +162,7 @@ The identity, tone, and behavioral characteristics defined for an [Agent](#agent
 
 ### Prompt
 
-**Deprecated** — Prompts (`*.prompt.md`) were reusable chat templates that captured specific tasks or workflows, invoked using the `/` command in GitHub Copilot Chat. Prompts have been superseded by [Skills](#skill), which offer the same slash-command invocation plus agent discovery, bundled assets, and cross-platform portability.
+**Deprecated** — Prompts (`*.prompt.md`) were reusable chat templates that captured specific tasks or workflows, invoked using the `/` command in Claude Code Chat. Prompts have been superseded by [Skills](#skill), which offer the same slash-command invocation plus agent discovery, bundled assets, and cross-platform portability.
 
 If you have existing prompts, consider migrating them to skills. See [Creating Effective Skills](../creating-effective-skills/) for guidance.
 
@@ -172,7 +172,7 @@ If you have existing prompts, consider migrating them to skills. See [Creating E
 
 ### Skill
 
-A self-contained folder containing a `SKILL.md` file and optional bundled assets (reference documents, templates, scripts) that packages a reusable capability for GitHub Copilot. Skills follow the open [Agent Skills specification](https://agentskills.io/home) and can be invoked by users via `/command` or discovered and invoked by agents automatically.
+A self-contained folder containing a `SKILL.md` file and optional bundled assets (reference documents, templates, scripts) that packages a reusable capability for Claude Code. Skills follow the open [Agent Skills specification](https://agentskills.io/home) and can be invoked by users via `/command` or discovered and invoked by agents automatically.
 
 **Key advantages**:
 - **Agent discovery**: Extended frontmatter lets agents find and invoke skills automatically
@@ -191,7 +191,7 @@ A self-contained folder containing a `SKILL.md` file and optional bundled assets
 
 ### MCP (Model Context Protocol)
 
-A standardized protocol for connecting AI assistants like GitHub Copilot to external data sources, tools, and services. MCP servers act as bridges, allowing Copilot to interact with APIs, databases, file systems, and other resources beyond its built-in capabilities.
+A standardized protocol for connecting AI assistants like Claude Code to external data sources, tools, and services. MCP servers act as bridges, allowing Copilot to interact with APIs, databases, file systems, and other resources beyond its built-in capabilities.
 
 **Example**: An MCP server might provide access to your company's internal documentation, AWS resources, or a specific database system.
 
@@ -217,7 +217,7 @@ A shell command or script that runs automatically in response to lifecycle event
 
 ### Coding Agent
 
-The autonomous GitHub Copilot agent that works on issues in a cloud environment without continuous human guidance. You assign an issue to Copilot, it spins up a dev environment, implements a solution, runs tests, and opens a pull request for review.
+The autonomous Claude Code agent that works on issues in a cloud environment without continuous human guidance. You assign an issue to Copilot, it spins up a dev environment, implements a solution, runs tests, and opens a pull request for review.
 
 **Key characteristics**:
 - Runs in an isolated cloud environment
@@ -235,7 +235,7 @@ The autonomous GitHub Copilot agent that works on issues in a cloud environment 
 
 ### Plugin
 
-An installable package that extends GitHub Copilot CLI with a bundled set of agents, skills, hooks, MCP server configurations, and LSP integrations. Plugins provide a way to distribute and share custom capabilities across projects and teams, with versioning, discovery, and one-command installation via marketplaces.
+An installable package that extends Claude Code CLI with a bundled set of agents, skills, hooks, MCP server configurations, and LSP integrations. Plugins provide a way to distribute and share custom capabilities across projects and teams, with versioning, discovery, and one-command installation via marketplaces.
 
 **Example**: Installing `database-data-management@awesome-copilot` to get a database specialist agent, migration skills, and schema validation hooks in a single command.
 
@@ -249,7 +249,7 @@ An installable package that extends GitHub Copilot CLI with a bundled set of age
 
 ### Tools
 
-Capabilities that GitHub Copilot can invoke to perform actions or retrieve information. Tools fall into two categories:
+Capabilities that Claude Code can invoke to perform actions or retrieve information. Tools fall into two categories:
 
 1. **Built-in tools**: Native capabilities like `codebase` (code search), `terminalCommand` (running commands), and `web` (web search)
 2. **MCP tools**: External integrations provided by MCP servers (e.g., database queries, cloud resource management, or API calls)

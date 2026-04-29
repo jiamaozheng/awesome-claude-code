@@ -1,8 +1,8 @@
 ---
 title: 'Installing and Using Plugins'
-description: 'Learn how to find, install, and manage plugins that extend GitHub Copilot CLI with reusable agents, skills, hooks, and integrations.'
+description: 'Learn how to find, install, and manage plugins that extend Claude Code CLI with reusable agents, skills, hooks, and integrations.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-04-16
 estimatedReadingTime: '8 minutes'
 tags:
@@ -14,11 +14,11 @@ relatedArticles:
   - ./creating-effective-skills.md
   - ./automating-with-hooks.md
 prerequisites:
-  - GitHub Copilot CLI installed
+  - Claude Code CLI installed
   - Basic understanding of agents, skills, and hooks
 ---
 
-Plugins are installable packages that extend GitHub Copilot CLI with reusable agents, skills, hooks, and servers, all bundled into a single unit you can install with one command. Instead of manually copying agent files and configuring MCP servers across every project, plugins let you install a curated set of capabilities and share them with your team.
+Plugins are installable packages that extend Claude Code CLI with reusable agents, skills, hooks, and servers, all bundled into a single unit you can install with one command. Instead of manually copying agent files and configuring MCP servers across every project, plugins let you install a curated set of capabilities and share them with your team.
 
 This article explains what plugins contain, how to find and install them, and how to manage your plugin library.
 
@@ -96,7 +96,7 @@ Plugins are especially valuable when you want to:
 
 Plugins are collected in **marketplaces** — registries you can browse and install from. Both Copilot CLI and VS Code come with two marketplaces registered by default — **no setup required**:
 
-- **`copilot-plugins`** — Official GitHub Copilot plugins
+- **`copilot-plugins`** — Official Claude Code plugins
 - **`awesome-copilot`** — Community-contributed plugins from this repository
 
 ### Browsing in Copilot CLI
@@ -264,7 +264,7 @@ See [Using the Copilot Coding Agent](../using-copilot-coding-agent/) for details
 
 **Q: Do plugins work with the coding agent on GitHub.com?**
 
-A: Plugins are specific to GitHub Copilot CLI and the VS Code extension (currently Insiders). For the coding agent on GitHub.com, add agents, skills, and hooks directly to your repository (via a plugin if you prefer!). See [Using the Copilot Coding Agent](../using-copilot-coding-agent/) for details.
+A: Plugins are specific to Claude Code CLI and the VS Code extension (currently Insiders). For the coding agent on GitHub.com, add agents, skills, and hooks directly to your repository (via a plugin if you prefer!). See [Using the Copilot Coding Agent](../using-copilot-coding-agent/) for details.
 
 **Q: Can I use plugins and repository-level configuration together?**
 

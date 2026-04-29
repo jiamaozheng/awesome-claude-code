@@ -1,8 +1,8 @@
 ---
 title: 'Before/After Customization Examples'
-description: 'See real-world transformations showing how custom agents, skills, and instructions dramatically improve GitHub Copilot effectiveness.'
+description: 'See real-world transformations showing how custom agents, skills, and instructions dramatically improve Claude Code effectiveness.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2025-12-12
 estimatedReadingTime: '12 minutes'
 tags:
@@ -16,7 +16,7 @@ relatedArticles:
   - ./defining-custom-instructions.md
 ---
 
-The power of GitHub Copilot customization becomes clear when you see concrete examples of how agents, skills, and instructions transform everyday development workflows. This article presents real-world scenarios showing the dramatic difference between default Copilot behavior and customized experiences that align with your team's standards, tools, and practices.
+The power of Claude Code customization becomes clear when you see concrete examples of how agents, skills, and instructions transform everyday development workflows. This article presents real-world scenarios showing the dramatic difference between default Copilot behavior and customized experiences that align with your team's standards, tools, and practices.
 
 > Note: The following examples illustrate typical before-and-after scenarios. The actual before and after code may vary depending on the model used and any other context present at generation time.
 
@@ -24,7 +24,7 @@ The power of GitHub Copilot customization becomes clear when you see concrete ex
 
 ### Before: Generic API Code
 
-Without customization, GitHub Copilot generates generic HTTP request code that may not follow your team's patterns:
+Without customization, Claude Code generates generic HTTP request code that may not follow your team's patterns:
 
 ```typescript
 // user-api.ts
@@ -578,7 +578,7 @@ app.post('/login', loginLimiter, authController.login);
 
 ## Key Takeaways
 
-These examples demonstrate how customization transforms GitHub Copilot from a general-purpose assistant into a team-specific expert:
+These examples demonstrate how customization transforms Claude Code from a general-purpose assistant into a team-specific expert:
 
 1. **Instructions** embed your team's patterns into every suggestion automatically
 2. **Skills** standardize workflows with bundled resources and enable agent discovery

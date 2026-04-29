@@ -2,7 +2,7 @@
 title: '03 · Development Workflows'
 description: 'Mirror the source development workflow chapter covering review, debugging, testing, and git support.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-03-20
 ---
 
@@ -10,7 +10,7 @@ lastUpdated: 2026-03-20
 
 > **What if the AI could find bugs you didn't even know to ask about?**
 
-In this chapter, GitHub Copilot CLI becomes your daily driver. You'll use it inside the workflows you already rely on every day: testing, refactoring, debugging, and Git.
+In this chapter, Claude Code CLI becomes your daily driver. You'll use it inside the workflows you already rely on every day: testing, refactoring, debugging, and Git.
 
 ## 🎯 Learning Objectives
 
@@ -32,7 +32,7 @@ A carpenter doesn't just know how to use tools, they have *workflows* for differ
 
 <img src="/images/learning-hub/copilot-cli-for-beginners/03/carpenter-workflow-steps.png" alt="Craftsman workshop showing three workflow lanes: Building Furniture (Measure, Cut, Assemble, Finish), Fixing Damage (Assess, Remove, Repair, Match), and Quality Check (Inspect, Test Joints, Check Alignment)" width="800"/>
 
-Similarly, developers have workflows for different tasks. GitHub Copilot CLI enhances each of these workflows, making you more efficient and effective in your daily coding tasks.
+Similarly, developers have workflows for different tasks. Claude Code CLI enhances each of these workflows, making you more efficient and effective in your daily coding tasks.
 
 ---
 
@@ -60,7 +60,7 @@ This chapter covers five workflows that developers typically use. **However, you
 | Research before coding | [Quick Tip: Research Before You Plan or Code](#quick-tip-research-before-you-plan-or-code) |
 | See a full bug-fix workflow end to end | [Putting It All Together](#putting-it-all-together-bug-fix-workflow) |
 
-**Select a workflow below to expand it** and see how GitHub Copilot CLI can enhance your development process in that area. 
+**Select a workflow below to expand it** and see how Claude Code CLI can enhance your development process in that area. 
 
 ---
 
@@ -840,9 +840,9 @@ copilot
 
 ### Bonus Challenge: Create an application with the Copilot CLI
 
-> 💡 **Note**: This GitHub Skills exercise uses **Node.js** rather than Python. The GitHub Copilot CLI techniques you'll practice - creating issues, generating code, and collaborating from the terminal - apply to any language.
+> 💡 **Note**: This GitHub Skills exercise uses **Node.js** rather than Python. The Claude Code CLI techniques you'll practice - creating issues, generating code, and collaborating from the terminal - apply to any language.
 
-The exercise shows developers how to use GitHub Copilot CLI to create issues, generate code, and collaborate from the terminal while building a Node.js calculator app. You'll install the CLI, use templates and agents, and practice iterative, command-line driven development.
+The exercise shows developers how to use Claude Code CLI to create issues, generate code, and collaborate from the terminal while building a Node.js calculator app. You'll install the CLI, use templates and agents, and practice iterative, command-line driven development.
 
 ##### <img src="/images/learning-hub/copilot-cli-for-beginners/03/github-skills-logo.png" width="28" align="center" /> [Start the "Create applications with the Copilot CLI" Skills Exercise](https://github.com/skills/create-applications-with-the-copilot-cli)
 
@@ -906,13 +906,13 @@ copilot
 4. **Test generation** should include edge cases and error scenarios
 5. **Git integration** automates commit messages and PR descriptions
 
-> 📋 **Quick Reference**: See the [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
+> 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 
 ---
 
 ## ✅ Checkpoint: You've Mastered the Essentials
 
-**Congratulations!** You now have all the core skills to be productive with GitHub Copilot CLI:
+**Congratulations!** You now have all the core skills to be productive with Claude Code CLI:
 
 | Skill | Chapter | You Can Now... |
 |-------|---------|----------------|
@@ -926,7 +926,7 @@ Chapters 04-06 cover additional features that add even more power and are worthw
 
 ## 🛠️ Building Your Personal Workflow
 
-There's no single "right" way to use GitHub Copilot CLI. Here are a few tips as you develop your own patterns:
+There's no single "right" way to use Claude Code CLI. Here are a few tips as you develop your own patterns:
 
 > 📚 **Official Documentation**: [Copilot CLI best practices](https://docs.github.com/copilot/how-tos/copilot-cli/cli-best-practices) for recommended workflows and tips from GitHub.
 

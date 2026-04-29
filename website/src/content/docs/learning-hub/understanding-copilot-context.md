@@ -1,8 +1,8 @@
 ---
 title: 'Understanding Copilot Context'
-description: 'Learn how GitHub Copilot uses context from your code, workspace, and conversation to generate relevant suggestions.'
+description: 'Learn how Claude Code uses context from your code, workspace, and conversation to generate relevant suggestions.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2025-11-28
 estimatedReadingTime: '8 minutes'
 tags:
@@ -13,11 +13,11 @@ relatedArticles:
   - ./what-are-agents-skills-instructions.md
 ---
 
-Context is the foundation of how GitHub Copilot generates relevant, accurate suggestions. Understanding what Copilot "sees" and how it uses that information helps you write better prompts, get higher-quality completions, and work more effectively with AI assistance. This article explains the types of context Copilot uses and how to optimize your development environment for better results.
+Context is the foundation of how Claude Code generates relevant, accurate suggestions. Understanding what Copilot "sees" and how it uses that information helps you write better prompts, get higher-quality completions, and work more effectively with AI assistance. This article explains the types of context Copilot uses and how to optimize your development environment for better results.
 
 ## What Copilot Sees
 
-When GitHub Copilot generates a suggestion or responds to a chat message, it analyzes multiple sources of information from your development environment:
+When Claude Code generates a suggestion or responds to a chat message, it analyzes multiple sources of information from your development environment:
 
 **Open Files**: Copilot can access content from files currently open in your editor. Having relevant files visible gives Copilot important context about your codebase structure, naming conventions, and coding patterns.
 
@@ -25,13 +25,13 @@ When GitHub Copilot generates a suggestion or responds to a chat message, it ana
 
 **Related Files**: Through imports, references, and dependencies, Copilot identifies files related to your current work. For example, if you're editing a component that imports a utility function, Copilot may reference that utility file to understand available functionality.
 
-**Chat Conversation History**: In GitHub Copilot Chat, previous messages in your conversation provide context for follow-up questions. This allows for natural, iterative problem-solving where each response builds on earlier exchanges.
+**Chat Conversation History**: In Claude Code Chat, previous messages in your conversation provide context for follow-up questions. This allows for natural, iterative problem-solving where each response builds on earlier exchanges.
 
 **Workspace Structure**: The organization of your project—directory structure, configuration files, and patterns—helps Copilot understand the type of project you're working on and follow appropriate conventions.
 
 ## Types of Context
 
-GitHub Copilot leverages four distinct types of context to inform its suggestions:
+Claude Code leverages four distinct types of context to inform its suggestions:
 
 ### Editor Context
 
@@ -47,7 +47,7 @@ Semantic context goes beyond raw text to understand the meaning and relationship
 
 ### Conversation Context
 
-In GitHub Copilot Chat, conversation context includes all previous messages, questions, and responses in the current chat session. This enables contextual follow-ups where you can ask "What about error handling?" and Copilot understands you're referring to the code discussed earlier.
+In Claude Code Chat, conversation context includes all previous messages, questions, and responses in the current chat session. This enables contextual follow-ups where you can ask "What about error handling?" and Copilot understands you're referring to the code discussed earlier.
 
 **Example**: After asking Copilot to generate a database query function, you can follow up with "Add error handling and logging" without repeating the full context—Copilot remembers the previous exchange.
 
@@ -59,7 +59,7 @@ Workspace context includes project-level information like your directory structu
 
 ## How Context Influences Suggestions
 
-Context directly impacts the relevance, accuracy, and usefulness of GitHub Copilot's suggestions. More context generally leads to better suggestions.
+Context directly impacts the relevance, accuracy, and usefulness of Claude Code's suggestions. More context generally leads to better suggestions.
 
 ### Example: Code Completion with Context
 
@@ -115,7 +115,7 @@ Using `#` to reference specific files gives Copilot precise context about which 
 
 ### Token Limits and Context Prioritization
 
-GitHub Copilot has a maximum token limit for how much context it can process at once. When you have many files open or a long chat history, Copilot prioritizes:
+Claude Code has a maximum token limit for how much context it can process at once. When you have many files open or a long chat history, Copilot prioritizes:
 
 1. **Closest proximity**: Code immediately surrounding your cursor
 2. **Explicitly referenced files**: Files you @-mention in chat for CLI, and #-mention for IDEs (VS Code, Visual Studio, JetBrains, etc.)
@@ -126,7 +126,7 @@ Understanding this prioritization helps you optimize which files to keep open an
 
 ## Context Best Practices
 
-Maximize GitHub Copilot's effectiveness by providing clear, relevant context:
+Maximize Claude Code's effectiveness by providing clear, relevant context:
 
 **Keep related files open**: If you're working on a component, keep its test file, related utilities, and type definitions open in tabs or split views.
 
@@ -148,7 +148,7 @@ A: No, Copilot doesn't automatically analyze all files in your repository. It fo
 
 **Q: How do I know what context Copilot is using?**
 
-A: In GitHub Copilot Chat, you can see which files are being referenced in responses. When Copilot generates suggestions, it's primarily using your currently open files and the code immediately surrounding your cursor. Using `#codebase` in chat explicitly searches across your entire repository.
+A: In Claude Code Chat, you can see which files are being referenced in responses. When Copilot generates suggestions, it's primarily using your currently open files and the code immediately surrounding your cursor. Using `#codebase` in chat explicitly searches across your entire repository.
 
 **Q: Can I control what context is included?**
 
@@ -164,7 +164,7 @@ A: Yes, closing a file can remove it from Copilot's active context. However, fil
 
 ## Next Steps
 
-Now that you understand how context works in GitHub Copilot, explore these related topics:
+Now that you understand how context works in Claude Code, explore these related topics:
 
 - **[What are Agents, Skills, and Instructions](../what-are-agents-skills-instructions/)** - Learn about customization types that provide persistent context
 - **[Copilot Configuration Basics](../copilot-configuration-basics/)** - Configure settings to optimize context usage

@@ -2,7 +2,7 @@
 title: 'Agents and Subagents'
 description: 'Learn how delegated subagents differ from primary agents, when to use them, and how to launch them in VS Code and Copilot CLI.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-04-02
 estimatedReadingTime: '9 minutes'
 tags:
@@ -15,7 +15,7 @@ relatedArticles:
   - ./what-are-agents-skills-instructions.md
   - ./github-copilot-terminology-glossary.md
 prerequisites:
-  - Basic understanding of GitHub Copilot agents
+  - Basic understanding of Claude Code agents
 ---
 
 We're [familiar with agents](./what-are-agents-skills-instructions.md), but there is another aspect to agentic workflows that we need to consider, and that is the role of subagents. An **agent** is the primary assistant you choose for a session or workflow while a **subagent** is a temporary worker that the main agent launches for a narrower task, usually to keep context clean, parallelize work, or apply a more specialized set of instructions.
@@ -111,7 +111,7 @@ By default, subagents do not keep spawning additional subagents. In VS Code, rec
 
 ## Launch subagents in Copilot CLI
 
-In GitHub Copilot CLI, the clearest end-user entry point is **`/fleet`**. Fleet acts as an orchestrator that decomposes a larger objective, launches multiple background subagents, respects dependencies, and then synthesizes the final result.
+In Claude Code CLI, the clearest end-user entry point is **`/fleet`**. Fleet acts as an orchestrator that decomposes a larger objective, launches multiple background subagents, respects dependencies, and then synthesizes the final result.
 
 ```text
 /fleet Update the auth docs, refactor the auth service, and add related tests.
@@ -185,6 +185,6 @@ No. They can run sequentially when one step depends on another, or in parallel w
 
 - Read [Building Custom Agents](../building-custom-agents/) to design coordinator and worker agents.
 - Revisit [What are Agents, Skills, and Instructions](../what-are-agents-skills-instructions/) for the broader customization model.
-- Keep the [GitHub Copilot Terminology Glossary](../github-copilot-terminology-glossary/) nearby when comparing terminology across products.
+- Keep the [Claude Code Terminology Glossary](../github-copilot-terminology-glossary/) nearby when comparing terminology across products.
 
 ---

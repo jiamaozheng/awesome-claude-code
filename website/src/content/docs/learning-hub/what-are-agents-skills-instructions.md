@@ -1,14 +1,14 @@
 ---
 title: 'What are Agents, Skills, and Instructions'
-description: 'Understand the primary customization primitives that extend GitHub Copilot for specific workflows.'
+description: 'Understand the primary customization primitives that extend Claude Code for specific workflows.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-02-26
 estimatedReadingTime: '7 minutes'
 prev: false
 ---
 
-Building great experiences with GitHub Copilot starts with understanding the core primitives that shape how Copilot behaves in different contexts. This article clarifies what each artifact does, how it is packaged inside this repository, and when to use it.
+Building great experiences with Claude Code starts with understanding the core primitives that shape how Copilot behaves in different contexts. This article clarifies what each artifact does, how it is packaged inside this repository, and when to use it.
 
 ## Agents
 
@@ -31,7 +31,7 @@ In products that support delegation, a primary agent can also launch temporary s
 
 ## Skills
 
-Skills are self-contained folders that package reusable capabilities for GitHub Copilot. Each skill lives in its own directory and contains a `SKILL.md` file along with optional bundled assets such as reference documents, templates, and scripts.
+Skills are self-contained folders that package reusable capabilities for Claude Code. Each skill lives in its own directory and contains a `SKILL.md` file along with optional bundled assets such as reference documents, templates, and scripts.
 
 A `SKILL.md` defines:
 
@@ -40,7 +40,7 @@ A `SKILL.md` defines:
 - Detailed instructions for how the skill should be executed.
 - References to any bundled assets the skill needs.
 
-Skills follow the open [Agent Skills specification](https://agentskills.io/home), making them portable across coding agent systems beyond GitHub Copilot.
+Skills follow the open [Agent Skills specification](https://agentskills.io/home), making them portable across coding agent systems beyond Claude Code.
 
 ### Why skills over prompts
 

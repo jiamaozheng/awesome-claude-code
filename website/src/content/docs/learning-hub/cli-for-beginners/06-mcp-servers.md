@@ -1,8 +1,8 @@
 ---
 title: '06 · Connect to GitHub, Databases & APIs'
-description: 'Mirror the source chapter on MCP servers and external integrations for GitHub Copilot CLI.'
+description: 'Mirror the source chapter on MCP servers and external integrations for Claude Code CLI.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-03-20
 ---
 
@@ -119,7 +119,7 @@ Description: Users report that passwords containing...
 
 MCP makes Copilot aware of your actual development environment.
 
-> 📚 **Official Documentation**: [About MCP](https://docs.github.com/copilot/concepts/context/mcp) for a deeper look at how MCP works with GitHub Copilot.
+> 📚 **Official Documentation**: [About MCP](https://docs.github.com/copilot/concepts/context/mcp) for a deeper look at how MCP works with Claude Code.
 
 ---
 
@@ -922,7 +922,7 @@ For most of this course, `/mcp show` is all you need. The other commands become 
 5. **Check server status** with `/mcp show` (additional commands available for managing servers)
 6. **Custom servers** let you connect any API (optional, covered in the appendix guide)
 
-> 📋 **Quick Reference**: See the [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
+> 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 
 ---
 

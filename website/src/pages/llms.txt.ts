@@ -30,18 +30,18 @@ export const GET: APIRoute = async () => {
   let content = "";
 
   // H1 header (required)
-  content += "# Awesome GitHub Copilot\n\n";
+  content += "# Awesome Claude Code\n\n";
 
   // Summary blockquote (optional but recommended)
   content +=
-    "> A community-driven collection of custom agents, instructions, and skills to enhance GitHub Copilot experiences across various domains, languages, and use cases.\n\n";
+    "> A community-driven collection of custom agents, instructions, and skills to enhance Claude Code experiences across various domains, languages, and use cases.\n\n";
 
   // Add overview section
   content += "## Overview\n\n";
   content +=
-    "This repository provides resources to customize and enhance GitHub Copilot:\n\n";
+    "This repository provides resources to customize and enhance Claude Code:\n\n";
   content +=
-    "- **Agents**: Specialized GitHub Copilot agents that integrate with MCP servers\n";
+    "- **Agents**: Specialized Claude Code agents that integrate with MCP servers\n";
   content +=
     "- **Instructions**: Coding standards and best practices applied to specific file patterns\n";
   content +=

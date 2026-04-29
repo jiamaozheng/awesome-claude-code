@@ -1,8 +1,8 @@
 ---
 title: 'Defining Custom Instructions'
-description: 'Learn how to create persistent, context-aware instructions that guide GitHub Copilot automatically across your codebase.'
+description: 'Learn how to create persistent, context-aware instructions that guide Claude Code automatically across your codebase.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-03-22
 estimatedReadingTime: '8 minutes'
 tags:
@@ -14,10 +14,10 @@ relatedArticles:
   - ./creating-effective-skills.md
   - ./copilot-configuration-basics.md
 prerequisites:
-  - Basic understanding of GitHub Copilot features
+  - Basic understanding of Claude Code features
 ---
 
-Custom instructions are persistent configuration files that automatically guide GitHub Copilot's behavior when working with specific files or directories in your codebase. Unlike skills that require explicit invocation (by a user or an agent), instructions work silently in the background, ensuring Copilot consistently follows your team's standards, conventions, and architectural decisions.
+Custom instructions are persistent configuration files that automatically guide Claude Code's behavior when working with specific files or directories in your codebase. Unlike skills that require explicit invocation (by a user or an agent), instructions work silently in the background, ensuring Copilot consistently follows your team's standards, conventions, and architectural decisions.
 
 This article explains how to create effective custom instructions, when to use them, and how they integrate with your development workflow.
 

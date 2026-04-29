@@ -1,8 +1,8 @@
 ---
 title: '07 · Putting It All Together'
-description: 'Mirror the source capstone chapter that combines the GitHub Copilot CLI workflow end to end.'
+description: 'Mirror the source capstone chapter that combines the Claude Code CLI workflow end to end.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-03-20
 ---
 
@@ -10,7 +10,7 @@ lastUpdated: 2026-03-20
 
 > **Everything you learned combines here. Go from idea to merged PR in a single session.**
 
-In this chapter, you'll bring together everything you've learned into complete workflows. You'll build features using multi-agent collaboration, set up pre-commit hooks that catch security issues before they're committed, integrate Copilot into CI/CD pipelines, and go from feature idea to merged PR in a single terminal session. This is where GitHub Copilot CLI becomes a genuine force multiplier.
+In this chapter, you'll bring together everything you've learned into complete workflows. You'll build features using multi-agent collaboration, set up pre-commit hooks that catch security issues before they're committed, integrate Copilot into CI/CD pipelines, and go from feature idea to merged PR in a single terminal session. This is where Claude Code CLI becomes a genuine force multiplier.
 
 > 💡 **Note**: This chapter shows how to combine everything you've learned. **You don't need agents, skills, or MCP to be productive (although they can be very helpful).** The core workflow — describe, plan, implement, test, review, ship — works with just the built-in features from Chapters 00-03.
 
@@ -477,7 +477,7 @@ Document your workflow as you go.
 4. **Automate repetition**: Hooks and scripts multiply your effectiveness
 5. **Document workflows**: Shareable patterns benefit the whole team
 
-> 📋 **Quick Reference**: See the [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
+> 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 
 ---
 
@@ -496,7 +496,7 @@ Congratulations! You've learned:
 | 06 | External connections with MCP |
 | 07 | Unified production workflows |
 
-You're now equipped to use GitHub Copilot CLI as a genuine force multiplier in your development workflow.
+You're now equipped to use Claude Code CLI as a genuine force multiplier in your development workflow.
 
 ## ➡️ What's Next
 
@@ -505,11 +505,11 @@ Your learning doesn't stop here:
 1. **Practice daily**: Use Copilot CLI for real work
 2. **Build custom tools**: Create agents and skills for your specific needs
 3. **Share knowledge**: Help your team adopt these workflows
-4. **Stay updated**: Follow GitHub Copilot updates for new features
+4. **Stay updated**: Follow Claude Code updates for new features
 
 ### Resources
 
-- [GitHub Copilot CLI Documentation](https://docs.github.com/copilot/concepts/agents/about-copilot-cli)
+- [Claude Code CLI Documentation](https://docs.github.com/copilot/concepts/agents/about-copilot-cli)
 - [MCP Server Registry](https://github.com/modelcontextprotocol/servers)
 - [Community Skills](https://github.com/topics/copilot-skill)
 

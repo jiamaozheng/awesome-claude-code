@@ -1,20 +1,20 @@
 ---
 title: '00 · Quick Start'
-description: 'Install GitHub Copilot CLI, authenticate, and verify your environment with the same flow as the source course.'
+description: 'Install Claude Code CLI, authenticate, and verify your environment with the same flow as the source course.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-03-20
 ---
 
 ![Chapter 00: Quick Start](/images/learning-hub/copilot-cli-for-beginners/00/chapter-header.png)
 
-Welcome! In this chapter, you'll get GitHub Copilot CLI (Command Line Interface) installed, signed in with your GitHub account, and verified that everything works. This is a quick setup chapter. Once you're up and running, the real demos start in Chapter 01!
+Welcome! In this chapter, you'll get Claude Code CLI (Command Line Interface) installed, signed in with your GitHub account, and verified that everything works. This is a quick setup chapter. Once you're up and running, the real demos start in Chapter 01!
 
 ## 🎯 Learning Objectives
 
 By the end of this chapter, you'll have:
 
-- Installed GitHub Copilot CLI
+- Installed Claude Code CLI
 - Signed in with your GitHub account
 - Verified it works with a simple test
 
@@ -29,14 +29,14 @@ By the end of this chapter, you'll have:
 
 ### What "Copilot Access" Means
 
-GitHub Copilot CLI requires an active Copilot subscription. You can check your status at [github.com/settings/copilot](https://github.com/settings/copilot). You should see one of:
+Claude Code CLI requires an active Copilot subscription. You can check your status at [github.com/settings/copilot](https://github.com/settings/copilot). You should see one of:
 
 - **Copilot Individual** - Personal subscription
 - **Copilot Business** - Through your organization
 - **Copilot Enterprise** - Through your enterprise
 - **GitHub Education** - Free for verified students/teachers
 
-If you see "You don't have access to GitHub Copilot," you'll need to use the free option, subscribe to a plan, or join an organization that provides access.
+If you see "You don't have access to Claude Code," you'll need to use the free option, subscribe to a plan, or join an organization that provides access.
 
 ---
 
@@ -46,7 +46,7 @@ If you see "You don't have access to GitHub Copilot," you'll need to use the fre
 
 ### Recommended: GitHub Codespaces (Zero Setup)
 
-If you don't want to install any of the prerequisites, you can use GitHub Codespaces, which has the GitHub Copilot CLI ready to go (you'll need to sign in), pre-installs Python 3.13, pytest, and the GitHub CLI.
+If you don't want to install any of the prerequisites, you can use GitHub Codespaces, which has the Claude Code CLI ready to go (you'll need to sign in), pre-installs Python 3.13, pytest, and the GitHub CLI.
 
 1. [Fork this repository](https://github.com/github/copilot-cli-for-beginners/fork) to your GitHub account
 2. Select **Code** > **Codespaces** > **Create codespace on main**
@@ -115,7 +115,7 @@ After trusting the folder, you can sign in with your GitHub account.
 1. Copilot CLI displays a one-time code (like `ABCD-1234`)
 2. Your browser opens to GitHub's device authorization page. Sign in to GitHub if you haven't already.
 3. Enter the code when prompted
-4. Select "Authorize" to grant GitHub Copilot CLI access
+4. Select "Authorize" to grant Claude Code CLI access
 5. Return to your terminal - you're now signed in!
 
 <img src="/images/learning-hub/copilot-cli-for-beginners/00/auth-device-flow.png" alt="Device Authorization Flow - showing the 5-step process from terminal login to signed-in confirmation" width="800"/>
@@ -218,7 +218,7 @@ npm install -g @github/copilot
 curl -fsSL https://gh.io/copilot-install | bash
 ```
 
-### "You don't have access to GitHub Copilot"
+### "You don't have access to Claude Code"
 
 1. Verify you have a Copilot subscription at [github.com/settings/copilot](https://github.com/settings/copilot)
 2. Check that your organization permits CLI access if using a work account
@@ -247,20 +247,20 @@ copilot
 
 ### Still stuck?
 
-- Check the [GitHub Copilot CLI documentation](https://docs.github.com/copilot/concepts/agents/about-copilot-cli)
+- Check the [Claude Code CLI documentation](https://docs.github.com/copilot/concepts/agents/about-copilot-cli)
 - Search [GitHub Issues](https://github.com/github/copilot-cli/issues)
 
 ---
 
 ## 🔑 Key Takeaways
 
-1. **A GitHub Codespace is a quick way to get started** - Python, pytest, and GitHub Copilot CLI are all pre-installed so you can jump right into the demos
+1. **A GitHub Codespace is a quick way to get started** - Python, pytest, and Claude Code CLI are all pre-installed so you can jump right into the demos
 2. **Multiple installation methods** - Choose what works for your system (Homebrew, WinGet, npm, or install script)
 3. **One-time authentication** - Login persists until token expires
 4. **The book app works** - You'll use `samples/book-app-project` throughout the entire course
 
 > 📚 **Official Documentation**: [Install Copilot CLI](https://docs.github.com/copilot/how-tos/copilot-cli/cli-getting-started) for installation options and requirements.
 
-> 📋 **Quick Reference**: See the [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
+> 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 
 ---

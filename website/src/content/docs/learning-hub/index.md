@@ -1,12 +1,12 @@
 ---
 title: Learning Hub
-description: "Curated articles, walkthroughs, and reference material to help you unlock everything you can do with GitHub Copilot"
+description: "Curated articles, walkthroughs, and reference material to help you unlock everything you can do with Claude Code"
 tableOfContents: false
 ---
 
 ## Fundamentals
 
-Essential concepts to tailor GitHub Copilot beyond its default experience. Start with
+Essential concepts to tailor Claude Code beyond its default experience. Start with
 [What are Agents, Skills, and Instructions](what-are-agents-skills-instructions/)
 and work through the full track to master every customization primitive. For delegation
 and orchestration patterns, continue with [Agents and Subagents](agents-and-subagents/).
@@ -14,7 +14,7 @@ and orchestration patterns, continue with [Agents and Subagents](agents-and-suba
 ## Reference
 
 Quick-lookup resources to keep handy while you work. Browse the
-[GitHub Copilot Terminology Glossary](github-copilot-terminology-glossary/)
+[Claude Code Terminology Glossary](github-copilot-terminology-glossary/)
 for definitions of common terms and concepts.
 
 ## Hands-on
@@ -25,5 +25,5 @@ and examples you can use right away.
 
 ## Copilot CLI for Beginners
 
-Looking for a guided path into GitHub Copilot from the terminal? Explore Copilot CLI for Beginners! You can work through a 
+Looking for a guided path into Claude Code from the terminal? Explore Copilot CLI for Beginners! You can work through a 
 [text based experience](cli-for-beginners/) for a text-based experience, or the [YouTube video series](https://www.youtube.com/watch?v=BDxRhhs36ns&list=PL0lo9MOBetEHvO-spzKBAITkkTqv4RvNl).

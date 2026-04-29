@@ -1,8 +1,8 @@
 ---
 title: 'Building Custom Agents'
-description: 'Learn how to create specialized GitHub Copilot agents with custom personas, tool integrations, and domain expertise.'
+description: 'Learn how to create specialized Claude Code agents with custom personas, tool integrations, and domain expertise.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-02-26
 estimatedReadingTime: '10 minutes'
 tags:
@@ -15,17 +15,17 @@ relatedArticles:
   - ./creating-effective-skills.md
   - ./understanding-mcp-servers.md
 prerequisites:
-  - Basic understanding of GitHub Copilot chat
+  - Basic understanding of Claude Code chat
   - Familiarity with agents, skills, and instructions
 ---
 
-Custom agents are specialized assistants that give GitHub Copilot a focused persona, specific tool access, and domain expertise. Unlike instructions (which apply passively) or skills (which handle individual tasks), agents define a complete working style—they shape how Copilot thinks, what tools it reaches for, and how it communicates throughout an entire session.
+Custom agents are specialized assistants that give Claude Code a focused persona, specific tool access, and domain expertise. Unlike instructions (which apply passively) or skills (which handle individual tasks), agents define a complete working style—they shape how Copilot thinks, what tools it reaches for, and how it communicates throughout an entire session.
 
 This article shows you how to design, structure, and deploy effective agents for your team's workflows.
 
 ## What Are Custom Agents?
 
-Custom agents are Markdown files (`*.agent.md`) that configure GitHub Copilot with:
+Custom agents are Markdown files (`*.agent.md`) that configure Claude Code with:
 
 - **A persona**: The expertise, tone, and working style the agent adopts
 - **Tool access**: Which built-in tools and MCP servers the agent can use

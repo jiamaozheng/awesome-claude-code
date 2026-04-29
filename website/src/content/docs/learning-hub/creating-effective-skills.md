@@ -2,7 +2,7 @@
 title: 'Creating Effective Skills'
 description: 'Master the art of writing reusable, shareable skill folders that deliver consistent results across your team.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-02-26
 estimatedReadingTime: '9 minutes'
 tags:
@@ -13,7 +13,7 @@ relatedArticles:
   - ./what-are-agents-skills-instructions.md
   - ./defining-custom-instructions.md
 prerequisites:
-  - Basic understanding of GitHub Copilot chat
+  - Basic understanding of Claude Code chat
 ---
 
 Skills are self-contained folders that package reusable capabilities—instructions, reference files, templates, and scripts—into a single unit that agents can discover automatically and users can invoke via slash commands. They enable teams to standardize common workflows like generating tests, reviewing code, or creating documentation, ensuring consistent, high-quality results across all team members.

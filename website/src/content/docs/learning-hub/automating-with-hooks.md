@@ -2,7 +2,7 @@
 title: 'Automating with Hooks'
 description: 'Learn how to use hooks to automate lifecycle events like formatting, linting, and governance checks during Copilot agent sessions.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-04-16
 estimatedReadingTime: '8 minutes'
 tags:
@@ -13,7 +13,7 @@ relatedArticles:
   - ./building-custom-agents.md
   - ./what-are-agents-skills-instructions.md
 prerequisites:
-  - Basic understanding of GitHub Copilot agents
+  - Basic understanding of Claude Code agents
 ---
 
 Hooks let you run automated scripts at key moments during a Copilot agent session — when a session starts or ends, when the user submits a prompt, or before and after the agent uses a tool. They're the glue between Copilot's AI capabilities and your team's existing tooling: linters, formatters, governance scanners, and notification systems.
@@ -124,7 +124,7 @@ When multiple IDE extensions (or a mix of extensions and a `hooks.json` file) ea
 
 ### Cross-Platform Event Name Compatibility
 
-Hook event names can be written in **camelCase** (e.g., `preToolUse`) or **PascalCase** (e.g., `PreToolUse`). Both are accepted, making hook configuration files compatible across GitHub Copilot CLI, VS Code, and Claude Code without modification. Hooks also support Claude Code's nested `matcher`/`hooks` structure alongside the standard flat format.
+Hook event names can be written in **camelCase** (e.g., `preToolUse`) or **PascalCase** (e.g., `PreToolUse`). Both are accepted, making hook configuration files compatible across Claude Code CLI, VS Code, and Claude Code without modification. Hooks also support Claude Code's nested `matcher`/`hooks` structure alongside the standard flat format.
 
 ### Plugin Hooks Environment Variables
 
@@ -535,7 +535,7 @@ For team-wide hooks that everyone should use, `.github/hooks/` is the recommende
 
 **Q: Can hooks access the user's prompt text?**
 
-A: Yes, for `userPromptSubmitted` events the prompt content is available via JSON input to the hook script. Other hooks like `preToolUse` and `postToolUse` receive context about the tool being called. See the [GitHub Copilot hooks documentation](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-hooks) for details.
+A: Yes, for `userPromptSubmitted` events the prompt content is available via JSON input to the hook script. Other hooks like `preToolUse` and `postToolUse` receive context about the tool being called. See the [Claude Code hooks documentation](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-hooks) for details.
 
 **Q: What happens if a hook times out?**
 

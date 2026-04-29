@@ -1,8 +1,8 @@
 ---
 title: '04 · Create Specialized AI Assistants'
-description: 'Mirror the source chapter on custom agents and custom instructions for GitHub Copilot CLI.'
+description: 'Mirror the source chapter on custom agents and custom instructions for Claude Code CLI.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-03-20
 ---
 
@@ -10,7 +10,7 @@ lastUpdated: 2026-03-20
 
 > **What if you could hire a Python code reviewer, testing expert, and security reviewer... all in one tool?**
 
-In Chapter 03, you mastered the essential workflows: code review, refactoring, debugging, test generation, and git integration. Those make you highly productive with GitHub Copilot CLI. Now, let's take it further.
+In Chapter 03, you mastered the essential workflows: code review, refactoring, debugging, test generation, and git integration. Those make you highly productive with Claude Code CLI. Now, let's take it further.
 
 So far, you've been using Copilot CLI as a general-purpose assistant. Agents let you give it a specific persona with built-in standards, like a code reviewer that enforces type hints and PEP 8, or a testing helper that writes pytest cases. You'll see how the same prompt gets noticeably better results when handled by an agent with targeted instructions.
 
@@ -105,7 +105,7 @@ What about the Task Agent? It works behind the scenes to manage and track what i
 | ❌ **Failure** | Full output with stack traces, compiler errors, and detailed logs |
 
 
-> 📚 **Official Documentation**: [GitHub Copilot CLI Agents](https://docs.github.com/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents)
+> 📚 **Official Documentation**: [Claude Code CLI Agents](https://docs.github.com/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents)
 
 ---
 
@@ -428,7 +428,7 @@ Copilot will scan your project and create tailored instruction files. You can ed
 | File | Scope | Notes |
 |------|-------|-------|
 | `AGENTS.md` | Project root or nested | **Cross-platform standard** - works with Copilot and other AI assistants |
-| `.github/copilot-instructions.md` | Project | GitHub Copilot specific |
+| `.github/copilot-instructions.md` | Project | Claude Code specific |
 | `.github/instructions/*.instructions.md` | Project | Granular, topic-specific instructions |
 | `CLAUDE.md`, `GEMINI.md` | Project root | Supported for compatibility |
 
@@ -528,7 +528,7 @@ Use these names in the `tools` list:
 
 > 📖 **Official docs**: [Custom agents configuration](https://docs.github.com/copilot/reference/custom-agents-configuration)
 >
-> ⚠️ **VS Code Only**: The `model` property (for selecting AI models) works in VS Code but is not supported in GitHub Copilot CLI. You can safely include it for cross-platform agent files. GitHub Copilot CLI will ignore it.
+> ⚠️ **VS Code Only**: The `model` property (for selecting AI models) works in VS Code but is not supported in Claude Code CLI. You can safely include it for cross-platform agent files. Claude Code CLI will ignore it.
 
 ### More Agent Templates
 
@@ -770,7 +770,7 @@ copilot  # This loads custom instructions by default
 5. **Instruction files** (`.instructions.md`) encode team standards for automatic application
 6. **Consistent output** comes from well-defined agent instructions
 
-> 📋 **Quick Reference**: See the [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
+> 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 
 ---
 

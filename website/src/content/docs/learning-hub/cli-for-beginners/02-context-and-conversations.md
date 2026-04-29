@@ -2,7 +2,7 @@
 title: '02 · Context and Conversations'
 description: 'Learn how to give Copilot CLI richer context and build stronger multi-turn conversations.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-03-20
 ---
 
@@ -10,7 +10,7 @@ lastUpdated: 2026-03-20
 
 > **What if AI could see your entire codebase, not just one file at a time?**
 
-In this chapter, you'll unlock the real power of GitHub Copilot CLI: context. You'll learn to use the `@` syntax to reference files and directories, giving Copilot CLI deep understanding of your codebase. You'll discover how to maintain conversations across sessions, resume work days later exactly where you left off, and see how cross-file analysis catches bugs that single-file reviews miss entirely.
+In this chapter, you'll unlock the real power of Claude Code CLI: context. You'll learn to use the `@` syntax to reference files and directories, giving Copilot CLI deep understanding of your codebase. You'll discover how to maintain conversations across sessions, resume work days later exactly where you left off, and see how cross-file analysis catches bugs that single-file reviews miss entirely.
 
 ## 🎯 Learning Objectives
 
@@ -356,7 +356,7 @@ Context usage: 45,000 / 128,000 tokens (35%)
 
 ### Pick Up Where You Left Off
 
-<img src="/images/learning-hub/copilot-cli-for-beginners/02/session-persistence-timeline.png" alt="Timeline showing how GitHub Copilot CLI sessions persist across days - start on Monday, resume on Wednesday with full context restored" width="800"/>
+<img src="/images/learning-hub/copilot-cli-for-beginners/02/session-persistence-timeline.png" alt="Timeline showing how Claude Code CLI sessions persist across days - start on Monday, resume on Wednesday with full context restored" width="800"/>
 
 *Sessions auto-save when you exit. Resume days later with full context: files, issues, and progress all remembered.*
 
@@ -860,7 +860,7 @@ copilot --add-dir /path/to/directory
 
 > 📚 **Official Documentation**: [Use Copilot CLI](https://docs.github.com/copilot/how-tos/copilot-cli/use-copilot-cli) for the complete reference on context, sessions, and working with files.
 
-> 📋 **Quick Reference**: See the [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
+> 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 
 ---
 

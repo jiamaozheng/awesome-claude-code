@@ -1,8 +1,8 @@
 ---
 title: 'Copilot Configuration Basics'
-description: 'Learn how to configure GitHub Copilot at user, workspace, and repository levels to optimize your AI-assisted development experience.'
+description: 'Learn how to configure Claude Code at user, workspace, and repository levels to optimize your AI-assisted development experience.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-04-16
 estimatedReadingTime: '10 minutes'
 tags:
@@ -13,14 +13,14 @@ relatedArticles:
   - ./what-are-agents-skills-instructions.md
   - ./understanding-copilot-context.md
 prerequisites:
-  - Basic familiarity with GitHub Copilot
+  - Basic familiarity with Claude Code
 ---
 
-GitHub Copilot offers extensive configuration options that let you tailor its behavior to your personal preferences, project requirements, and team standards. Understanding these configuration layers helps you maximize productivity while maintaining consistency across teams. This article explains the configuration hierarchy, key settings, and how to set up repository-level customizations that benefit your entire team.
+Claude Code offers extensive configuration options that let you tailor its behavior to your personal preferences, project requirements, and team standards. Understanding these configuration layers helps you maximize productivity while maintaining consistency across teams. This article explains the configuration hierarchy, key settings, and how to set up repository-level customizations that benefit your entire team.
 
 ## Configuration Levels
 
-GitHub Copilot uses a hierarchical configuration system where settings at different levels can override each other. Understanding this hierarchy helps you apply the right configuration at the right level.
+Claude Code uses a hierarchical configuration system where settings at different levels can override each other. Understanding this hierarchy helps you apply the right configuration at the right level.
 
 ### User Settings
 
@@ -53,7 +53,7 @@ Organisation settings allow administrators to enforce Copilot policies across al
 
 ### Configuration Precedence
 
-When multiple configuration levels define the same setting, GitHub Copilot applies them in this order (highest precedence first):
+When multiple configuration levels define the same setting, Claude Code applies them in this order (highest precedence first):
 
 1. **Organisation settings** (if applicable)
 1. **Repository settings** (`.github/`)
@@ -63,7 +63,7 @@ When multiple configuration levels define the same setting, GitHub Copilot appli
 
 ## Key Configuration Options
 
-These settings control GitHub Copilot's core behavior across all IDEs:
+These settings control Claude Code's core behavior across all IDEs:
 
 ### Inline Suggestions
 
@@ -84,7 +84,7 @@ Control whether Copilot automatically suggests code completions as you type.
 
 ### Chat Availability
 
-Control access to GitHub Copilot Chat in your IDE.
+Control access to Claude Code Chat in your IDE.
 
 **VS Code example**:
 ```json
@@ -172,7 +172,7 @@ A well-organized Copilot configuration directory looks like this:
 
 ### Monorepo Support
 
-In monorepos with multiple packages or services, GitHub Copilot CLI discovers customizations at **every directory level** from your working directory up to the git repository root. This means each package or service can have its own `.github/` folder with specialized agents, instructions, skills, and MCP servers, while still inheriting configuration from parent directories.
+In monorepos with multiple packages or services, Claude Code CLI discovers customizations at **every directory level** from your working directory up to the git repository root. This means each package or service can have its own `.github/` folder with specialized agents, instructions, skills, and MCP servers, while still inheriting configuration from parent directories.
 
 ```
 my-monorepo/
@@ -194,7 +194,7 @@ When you work inside `packages/api/`, Copilot loads configuration from `packages
 
 ### Personal Skills Directory
 
-In addition to repository-level skills, GitHub Copilot CLI supports a **personal skills directory** at `~/.agents/skills/`. Skills you place here are discovered automatically across all your projects, making them ideal for personal workflows and reusable utilities that are not project-specific.
+In addition to repository-level skills, Claude Code CLI supports a **personal skills directory** at `~/.agents/skills/`. Skills you place here are discovered automatically across all your projects, making them ideal for personal workflows and reusable utilities that are not project-specific.
 
 ```
 ~/.agents/
@@ -205,7 +205,7 @@ In addition to repository-level skills, GitHub Copilot CLI supports a **personal
         └── SKILL.md
 ```
 
-This personal directory aligns with the VS Code GitHub Copilot for Azure extension's default skill discovery path, so skills defined here work consistently across tools.
+This personal directory aligns with the VS Code Claude Code for Azure extension's default skill discovery path, so skills defined here work consistently across tools.
 
 ### Custom Agents
 
@@ -356,7 +356,7 @@ Settings file: `.vscode/settings.json` or global user settings
 
 ### Visual Studio
 
-Settings: Tools → Options → GitHub Copilot
+Settings: Tools → Options → Claude Code
 
 - Configure inline suggestions
 - Set keyboard shortcuts
@@ -364,13 +364,13 @@ Settings: Tools → Options → GitHub Copilot
 
 ### JetBrains IDEs
 
-Settings: File → Settings → Tools → GitHub Copilot
+Settings: File → Settings → Tools → Claude Code
 
 - Enable/disable for specific file types
 - Configure suggestion behavior
 - Customize keyboard shortcuts
 
-### GitHub Copilot CLI
+### Claude Code CLI
 
 Configuration file: `~/.copilot-cli/config.json`
 
@@ -394,7 +394,7 @@ CLI settings use **camelCase** naming. Key settings added in recent releases:
 
 > **Note**: Older snake_case names (e.g., `include_gitignored`, `auto_updates_channel`) are still accepted for backward compatibility, but camelCase is now the preferred format.
 
-In addition to the main config file, GitHub Copilot CLI reads two optional per-project files for repository-specific overrides:
+In addition to the main config file, Claude Code CLI reads two optional per-project files for repository-specific overrides:
 
 - `.claude/settings.json` — committed project settings
 - `.claude/settings.local.json` — local overrides (add to `.gitignore` for personal adjustments)
@@ -407,7 +407,7 @@ The model picker opens in a **full-screen view** with inline reasoning effort ad
 
 ### CLI Session Commands
 
-GitHub Copilot CLI has two commands for managing session state, with distinct behaviours:
+Claude Code CLI has two commands for managing session state, with distinct behaviours:
 
 | Command | Behaviour |
 |---------|-----------|

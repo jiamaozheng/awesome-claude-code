@@ -1,24 +1,24 @@
 ---
 title: '01 · First Steps'
-description: 'Experience your first GitHub Copilot CLI demos and learn the three main interaction modes.'
+description: 'Experience your first Claude Code CLI demos and learn the three main interaction modes.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-03-20
 ---
 
 ![Chapter 01: First Steps](/images/learning-hub/copilot-cli-for-beginners/01/chapter-header.png)
 
-> **Watch AI find bugs instantly, explain confusing code, and generate working scripts. Then learn three different ways to use GitHub Copilot CLI.**
+> **Watch AI find bugs instantly, explain confusing code, and generate working scripts. Then learn three different ways to use Claude Code CLI.**
 
-This chapter is where the magic starts! You'll experience firsthand why developers describe GitHub Copilot CLI as having a senior engineer on speed dial. You'll watch AI find security bugs in seconds, get complex code explained in plain English, and generate working scripts instantly. Then you'll master the three interaction modes (Interactive, Plan, and Programmatic) so you know exactly which one to use for any task.
+This chapter is where the magic starts! You'll experience firsthand why developers describe Claude Code CLI as having a senior engineer on speed dial. You'll watch AI find security bugs in seconds, get complex code explained in plain English, and generate working scripts instantly. Then you'll master the three interaction modes (Interactive, Plan, and Programmatic) so you know exactly which one to use for any task.
 
-> ⚠️ **Prerequisites**: Make sure you've completed **[Chapter 00: Quick Start](../00-quick-start/)** first. You'll need GitHub Copilot CLI installed and authenticated before running the demos below.
+> ⚠️ **Prerequisites**: Make sure you've completed **[Chapter 00: Quick Start](../00-quick-start/)** first. You'll need Claude Code CLI installed and authenticated before running the demos below.
 
 ## 🎯 Learning Objectives
 
 By the end of this chapter, you'll be able to:
 
-- Experience the productivity boost GitHub Copilot CLI provides through hands-on demos
+- Experience the productivity boost Claude Code CLI provides through hands-on demos
 - Choose the right mode (Interactive, Plan, or Programmatic) for any task
 - Use slash commands to control your sessions
 
@@ -58,7 +58,7 @@ Don't use Python? No problem! Just ask questions about your language of choice.
 
 Notice how natural it feels. Just ask questions like you would to a colleague. When you're done exploring, type `/exit` to leave the session.
 
-**The key insight**: GitHub Copilot CLI is conversational. You don't need special syntax to get started. Just ask questions in plain English.
+**The key insight**: Claude Code CLI is conversational. You don't need special syntax to get started. Just ask questions in plain English.
 
 ## See It In Action
 
@@ -207,7 +207,7 @@ You've just seen what Copilot CLI can do. Now let's understand *how* to use thes
 
 ## 🧩 Real-World Analogy: Dining Out
 
-Think of using GitHub Copilot CLI like going out to eat. From planning the trip to placing your order, different situations call for different approaches:
+Think of using Claude Code CLI like going out to eat. From planning the trip to placing your order, different situations call for different approaches:
 
 | Mode | Dining Analogy | When to Use |
 |------|----------------|-------------|
@@ -217,7 +217,7 @@ Think of using GitHub Copilot CLI like going out to eat. From planning the trip 
 
 Just like dining out, you'll naturally learn when each approach feels right.
 
-<img src="/images/learning-hub/copilot-cli-for-beginners/01/ordering-food-analogy.png" alt="Three Ways to Use GitHub Copilot CLI - Plan Mode (GPS route to restaurant), Interactive Mode (talking to waiter), Programmatic Mode (drive-through)" width="800"/>
+<img src="/images/learning-hub/copilot-cli-for-beginners/01/ordering-food-analogy.png" alt="Three Ways to Use Claude Code CLI - Plan Mode (GPS route to restaurant), Interactive Mode (talking to waiter), Programmatic Mode (drive-through)" width="800"/>
 
 *Choose your mode based on the task: Plan for mapping it out first, Interactive for back-and-forth collaboration, Programmatic for quick one-shot results*
 
@@ -631,7 +631,7 @@ The examples used `/plan` for a search feature and `-p` for batch reviews. Now t
 3. **Programmatic mode** is for automation. No interaction needed.
 4. **Four essential commands** (`/help`, `/clear`, `/plan`, `/exit`) cover most daily use.
 
-> 📋 **Quick Reference**: See the [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
+> 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 
 ---
 

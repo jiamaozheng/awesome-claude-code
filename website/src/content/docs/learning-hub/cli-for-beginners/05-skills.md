@@ -1,8 +1,8 @@
 ---
 title: '05 · Automate Repetitive Tasks'
-description: 'Mirror the source chapter on skills that load automatically for repeated GitHub Copilot CLI workflows.'
+description: 'Mirror the source chapter on skills that load automatically for repeated Claude Code CLI workflows.'
 authors:
-  - GitHub Copilot Learning Hub Team
+  - Claude Code Learning Hub Team
 lastUpdated: 2026-03-20
 ---
 
@@ -125,7 +125,7 @@ You can ask Copilot directly:
 
 ### Skills vs Agents vs MCP
 
-Skills are just one piece of GitHub Copilot's extensibility model. Here's how they compare to agents and MCP servers.
+Skills are just one piece of Claude Code's extensibility model. Here's how they compare to agents and MCP servers.
 
 > *Don't worry about MCP quite yet. We'll cover it in [Chapter 06](../06-mcp-servers/). It's included here so you can see how skills fit into the overall picture.*
 
@@ -558,7 +558,7 @@ Plugins can bundle multiple capabilities together - a single plugin might includ
 
 Pre-made skills are also available from community repositories:
 
-- **[Awesome Copilot](https://github.com/github/awesome-copilot)** - Official GitHub Copilot resources including skills documentation and examples
+- **[Awesome Copilot](https://github.com/github/awesome-copilot)** - Official Claude Code resources including skills documentation and examples
 
 ### Installing a Community Skill Manually
 
@@ -852,7 +852,7 @@ Run `/skills reload` after creating or editing skills to ensure changes are pick
 4. **Location matters**: `.github/skills/` for project/team sharing, `~/.copilot/skills/` for personal use
 5. **Description is key**: Write descriptions that match how you naturally ask questions
 
-> 📋 **Quick Reference**: See the [GitHub Copilot CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
+> 📋 **Quick Reference**: See the [Claude Code CLI command reference](https://docs.github.com/en/copilot/reference/cli-command-reference) for a complete list of commands and shortcuts.
 
 ---
 
