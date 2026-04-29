@@ -85,7 +85,7 @@ This returns matching libraries. Choose the best match based on:
 
 **You MUST call this tool second:**
 ```
-mcp_context7_get-library-docs({
+mcp_context7_get-library-docs({ 
   context7CompatibleLibraryID: "/expressjs/express",
   topic: "middleware"  // or "routing", "best-practices", etc.
 })
@@ -104,48 +104,48 @@ mcp_context7_get-library-docs({
    - **PHP**: Read `composer.json` or `composer.lock`
    - **Java/Kotlin**: Read `pom.xml`, `build.gradle`, or `build.gradle.kts`
    - **.NET/C#**: Read `*.csproj`, `packages.config`, or `Directory.Build.props`
-
+   
    **Examples**:
    ```
    # JavaScript
    package.json → "react": "^18.3.1"
-
+   
    # Python
    requirements.txt → django==4.2.0
    pyproject.toml → django = "^4.2.0"
-
+   
    # Ruby
    Gemfile → gem 'rails', '~> 7.0.8'
-
+   
    # Go
    go.mod → require github.com/gin-gonic/gin v1.9.1
-
+   
    # Rust
    Cargo.toml → tokio = "1.35.0"
    ```
-
+   
 2. **Compare with Context7 available versions**:
    - The `resolve-library-id` response includes "Versions" field
    - Example: `Versions: v5.1.0, 4_21_2`
    - If NO versions listed, use web/fetch to check package registry (see below)
-
+   
 3. **If newer version exists**:
    - Fetch docs for BOTH current and latest versions
    - Call `get-library-docs` twice with version-specific IDs (if available):
      ```
      // Current version
-     get-library-docs({
+     get-library-docs({ 
        context7CompatibleLibraryID: "/expressjs/express/4_21_2",
        topic: "your-topic"
      })
-
+     
      // Latest version
-     get-library-docs({
+     get-library-docs({ 
        context7CompatibleLibraryID: "/expressjs/express/v5.1.0",
        topic: "your-topic"
      })
      ```
-
+   
 4. **Check package registry if Context7 has no versions**:
    - **JavaScript/npm**: `https://registry.npmjs.org/{package}/latest`
    - **Python/PyPI**: `https://pypi.org/pypi/{package}/json`
@@ -208,7 +208,7 @@ Step 2: Call mcp_context7_resolve-library-id
 → Select: "/expressjs/express" (highest score, official repo)
 
 Step 3: Call mcp_context7_get-library-docs
-→ Input: {
+→ Input: { 
     context7CompatibleLibraryID: "/expressjs/express",
     topic: "best-practices"
   }
@@ -281,10 +281,10 @@ User: "How do I use React's useEffect hook?"
 
 Your workflow:
 1. resolve-library-id({ libraryName: "react" })
-2. get-library-docs({
+2. get-library-docs({ 
      context7CompatibleLibraryID: "/facebook/react",
      topic: "useEffect",
-     tokens: 4000
+     tokens: 4000 
    })
 3. Provide answer with:
    - Current API signature from docs
@@ -300,17 +300,17 @@ User: "Create a Next.js middleware that checks authentication"
 
 Your workflow:
 1. resolve-library-id({ libraryName: "next.js" })
-2. get-library-docs({
+2. get-library-docs({ 
      context7CompatibleLibraryID: "/vercel/next.js",
      topic: "middleware",
-     tokens: 5000
+     tokens: 5000 
    })
 3. Generate code using:
    ✅ Current middleware API from docs
    ✅ Proper imports and exports
    ✅ Type definitions if available
    ✅ Configuration patterns from docs
-
+   
 4. Add comments explaining:
    - Why this approach (per docs)
    - What version this targets
@@ -325,10 +325,10 @@ User: "This Tailwind class isn't working"
 Your workflow:
 1. Check user's code/workspace for Tailwind version
 2. resolve-library-id({ libraryName: "tailwindcss" })
-3. get-library-docs({
+3. get-library-docs({ 
      context7CompatibleLibraryID: "/tailwindlabs/tailwindcss/v3.x",
      topic: "utilities",
-     tokens: 4000
+     tokens: 4000 
    })
 4. Compare user's usage vs. current docs:
    - Is the class deprecated?
@@ -343,10 +343,10 @@ User: "What's the best way to handle forms in React?"
 
 Your workflow:
 1. resolve-library-id({ libraryName: "react" })
-2. get-library-docs({
+2. get-library-docs({ 
      context7CompatibleLibraryID: "/facebook/react",
      topic: "forms",
-     tokens: 6000
+     tokens: 6000 
    })
 3. Present:
    ✅ Official recommended patterns from docs
@@ -375,51 +375,51 @@ Your workflow:
    read/readFile on "package.json" or "frontend/package.json" or "api/package.json"
    Extract: "react": "^18.3.1" → Current version is 18.3.1
    ```
-
+   
    **Python**:
    ```
    read/readFile on "requirements.txt"
    Extract: django==4.2.0 → Current version is 4.2.0
-
+   
    # OR pyproject.toml
    [tool.poetry.dependencies]
    django = "^4.2.0"
-
+   
    # OR Pipfile
    [packages]
    django = "==4.2.0"
    ```
-
+   
    **Ruby**:
    ```
    read/readFile on "Gemfile"
    Extract: gem 'rails', '~> 7.0.8' → Current version is 7.0.8
    ```
-
+   
    **Go**:
    ```
    read/readFile on "go.mod"
    Extract: require github.com/gin-gonic/gin v1.9.1 → Current version is v1.9.1
    ```
-
+   
    **Rust**:
    ```
    read/readFile on "Cargo.toml"
    Extract: tokio = "1.35.0" → Current version is 1.35.0
    ```
-
+   
    **PHP**:
    ```
    read/readFile on "composer.json"
    Extract: "laravel/framework": "^10.0" → Current version is 10.x
    ```
-
+   
    **Java/Maven**:
    ```
    read/readFile on "pom.xml"
    Extract: <version>3.1.0</version> in <dependency> for spring-boot
    ```
-
+   
    **.NET/C#**:
    ```
    read/readFile on "*.csproj"
@@ -448,17 +448,17 @@ Your workflow:
    📦 Current: React 18.3.1 (from your package.json)
    🆕 Latest:  React 19.0.0 (from npm registry)
    Status: Upgrade available! (1 major version behind)
-
+   
    # Python Example
    📦 Current: Django 4.2.0 (from your requirements.txt)
    🆕 Latest:  Django 5.0.0 (from PyPI)
    Status: Upgrade available! (1 major version behind)
-
+   
    # Ruby Example
    📦 Current: Rails 7.0.8 (from your Gemfile)
    🆕 Latest:  Rails 7.1.3 (from RubyGems)
    Status: Upgrade available! (1 minor version behind)
-
+   
    # Go Example
    📦 Current: Gin v1.9.1 (from your go.mod)
    🆕 Latest:  Gin v1.10.0 (from GitHub releases)
@@ -468,12 +468,12 @@ Your workflow:
 **Use version-specific docs when available**:
 ```typescript
 // If user has Next.js 14.2.x installed
-get-library-docs({
+get-library-docs({ 
   context7CompatibleLibraryID: "/vercel/next.js/v14.2.0"
 })
 
 // AND fetch latest for comparison
-get-library-docs({
+get-library-docs({ 
   context7CompatibleLibraryID: "/vercel/next.js/v15.0.0"
 })
 ```
@@ -495,70 +495,70 @@ get-library-docs({
    - Latest version (what's new, what changed)
 
 3. **Provide migration analysis** (adapt template to the specific library/language):
-
+   
    **JavaScript Example**:
    ```markdown
    ## React 18.3.1 → 19.0.0 Upgrade Guide
-
+   
    ### Breaking Changes:
    1. **Removed Legacy APIs**:
       - ReactDOM.render() → use createRoot()
       - No more defaultProps on function components
-
+   
    2. **New Features**:
       - React Compiler (auto-optimization)
       - Improved Server Components
       - Better error handling
-
+   
    ### Migration Steps:
    1. Update package.json: "react": "^19.0.0"
    2. Replace ReactDOM.render with createRoot
    3. Update defaultProps to default params
    4. Test thoroughly
-
+   
    ### Should You Upgrade?
    ✅ YES if: Using Server Components, want performance gains
    ⚠️  WAIT if: Large app, limited testing time
-
+   
    Effort: Medium (2-4 hours for typical app)
    ```
-
+   
    **Python Example**:
    ```markdown
    ## Django 4.2.0 → 5.0.0 Upgrade Guide
-
+   
    ### Breaking Changes:
    1. **Removed APIs**: django.utils.encoding.force_text removed
    2. **Database**: Minimum PostgreSQL version is now 12
-
+   
    ### Migration Steps:
    1. Update requirements.txt: django==5.0.0
    2. Run: pip install -U django
    3. Update deprecated function calls
    4. Run migrations: python manage.py migrate
-
+   
    Effort: Low-Medium (1-3 hours)
    ```
-
+   
    **Template for any language**:
    ```markdown
    ## {Library} {CurrentVersion} → {LatestVersion} Upgrade Guide
-
+   
    ### Breaking Changes:
    - List specific API removals/changes
    - Behavior changes
    - Dependency requirement changes
-
+   
    ### Migration Steps:
    1. Update dependency file ({package.json|requirements.txt|Gemfile|etc})
    2. Install/update: {npm install|pip install|bundle update|etc}
    3. Code changes required
    4. Test thoroughly
-
+   
    ### Should You Upgrade?
    ✅ YES if: [benefits outweigh effort]
    ⚠️  WAIT if: [reasons to delay]
-
+   
    Effort: {Low|Medium|High} ({time estimate})
    ```
 
@@ -753,28 +753,28 @@ User: "How do I use useState in React?"
 
 Agent:
 1. resolve-library-id({ libraryName: "react" })
-2. get-library-docs({
+2. get-library-docs({ 
      context7CompatibleLibraryID: "/facebook/react",
-     topic: "useState"
+     topic: "useState" 
    })
 3. Response:
    "In React, `useState` is a Hook that lets you add state to function components:
-
+   
    ```typescript
    import { useState } from 'react';
-
+   
    function Counter() {
      const [count, setCount] = useState(0);
      return <button onClick={() => setCount(count + 1)}>{count}</button>;
    }
    ```
-
+   
    Key points from React docs:
    - Returns array with current state and updater function
    - Can initialize with value or lazy initializer function
    - State updates trigger re-renders
    - Updater function can use callback form for updates based on previous state
-
+   
    (Based on React v18 documentation)"
 ```
 
@@ -800,9 +800,9 @@ User: "I'm using Next.js 13, how do I create dynamic routes?"
 
 Agent:
 1. resolve-library-id({ libraryName: "next.js" })
-2. get-library-docs({
+2. get-library-docs({ 
      context7CompatibleLibraryID: "/vercel/next.js/v13.0.0",
-     topic: "routing"
+     topic: "routing" 
    })
 3. Provide Next.js 13-specific routing patterns
 4. Optionally mention: "Note: Next.js 14 introduced [changes] if you're considering upgrading"
