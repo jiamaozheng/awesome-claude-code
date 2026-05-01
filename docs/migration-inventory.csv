@@ -808,3 +808,15 @@ skill,skills/python-azure-iot-edge-modules/SKILL.md,skills/python-azure-iot-edge
 skill,skills/resemble-detect/SKILL.md,skills/resemble-detect/SKILL.md
 skill,skills/vardoger-analyze/SKILL.md,skills/vardoger-analyze/SKILL.md
 workflow,workflows/weekly-comment-sync.md,workflows/weekly-comment-sync.md
+agent,agents/kubestellar-console.agent.md,agents/kubestellar-console.agent.md
+agent,agents/new-relic-incident-response.agent.md,agents/new-relic-incident-response.agent.md
+agent,agents/project-documenter.agent.md,agents/project-documenter.agent.md
+instruction,instructions/hooks.instructions.md,instructions/hooks.instructions.md
+plugin,plugins/eyeball/.github/plugin/plugin.json,plugins/eyeball/.github/plugin/plugin.json
+plugin,plugins/project-documenter/.github/plugin/plugin.json,plugins/project-documenter/.github/plugin/plugin.json
+skill,skills/ai-ready/SKILL.md,skills/ai-ready/SKILL.md
+skill,skills/drawio/SKILL.md,skills/drawio/SKILL.md
+skill,skills/eyeball/SKILL.md,skills/eyeball/SKILL.md
+skill,skills/github-release/SKILL.md,skills/github-release/SKILL.md
+skill,skills/md-to-docx/SKILL.md,skills/md-to-docx/SKILL.md
+skill,skills/pr-dashboard/SKILL.md,skills/pr-dashboard/SKILL.md
