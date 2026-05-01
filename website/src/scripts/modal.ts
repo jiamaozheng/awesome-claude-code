@@ -424,7 +424,7 @@ interface Plugin {
   name: string;
   description?: string;
   path: string;
-  items: PluginItem[];
+  items?: PluginItem[];
   tags?: string[];
   external?: boolean;
   repository?: string | null;
@@ -877,6 +877,9 @@ export async function openFileModal(
   const copyBtn = document.getElementById("copy-btn");
   const installCommandBtn = document.getElementById("install-command-btn");
   const downloadBtn = document.getElementById("download-btn");
+  const shareBtn = document.getElementById("share-btn");
+  const renderBtn = document.getElementById("render-btn");
+  const rawBtn = document.getElementById("raw-btn");
   const closeBtn = document.getElementById("close-modal");
   if (!modal || !title) return;
 
@@ -916,6 +919,17 @@ export async function openFileModal(
       installCommandBtn.style.display = "none";
       installCommandBtn.classList.add("hidden");
     }
+    if (shareBtn) {
+      shareBtn.style.display = "none";
+    }
+    if (renderBtn) {
+      renderBtn.style.display = "none";
+      renderBtn.classList.add("hidden");
+    }
+    if (rawBtn) {
+      rawBtn.style.display = "none";
+      rawBtn.classList.add("hidden");
+    }
     hideSkillFileSwitcher();
     await openPluginModal(
       filePath,
@@ -931,6 +945,9 @@ export async function openFileModal(
   // Show copy/download buttons for regular files
   if (copyBtn) copyBtn.style.display = "inline-flex";
   if (downloadBtn) downloadBtn.style.display = "inline-flex";
+  if (shareBtn) shareBtn.style.display = "inline-flex";
+  if (renderBtn) renderBtn.style.removeProperty("display");
+  if (rawBtn) rawBtn.style.removeProperty("display");
   if (downloadBtn) {
     downloadBtn.setAttribute(
       "aria-label",
@@ -1016,7 +1033,10 @@ async function openPluginModal(
   }
 
   // Find the plugin
-  const plugin = pluginsCache.items.find((c) => c.path === filePath);
+  const normalizedPath = filePath.replace(/\/+$/, "");
+  const plugin = pluginsCache.items.find(
+    (c) => c.path === filePath || c.path === normalizedPath
+  );
   if (!plugin) {
     modalContent.innerHTML =
       '<div class="collection-error">Plugin not found.</div>';
@@ -1163,6 +1183,9 @@ function renderLocalPluginModal(
   plugin: Plugin,
   modalContent: HTMLElement
 ): void {
+  const pluginItems = Array.isArray(plugin.items) ? plugin.items : [];
+  const hasPluginItems = pluginItems.length > 0;
+
   modalContent.innerHTML = `
     <div class="collection-view">
       <div class="collection-description">${escapeHtml(
@@ -1180,10 +1203,11 @@ function renderLocalPluginModal(
           : ""
       }
       <div class="collection-items-header">
-        <strong>${plugin.items.length} items in this plugin</strong>
+        <strong>${pluginItems.length} items in this plugin</strong>
       </div>
       <div class="collection-items-list">
-        ${plugin.items
+        ${hasPluginItems
+          ? pluginItems
           .map(
             (item) => `
           <div class="collection-item" data-path="${escapeHtml(
@@ -1208,10 +1232,13 @@ function renderLocalPluginModal(
           </div>
         `
           )
-          .join("")}
+          .join("")
+          : `<div class="collection-error">This plugin does not expose item details in website data yet.</div>`}
       </div>
     </div>
   `;
+
+  if (!hasPluginItems) return;
 
   // Add click handlers to plugin items
   modalContent.querySelectorAll(".collection-item").forEach((el) => {
@@ -1221,10 +1248,14 @@ function renderLocalPluginModal(
 
       switch (itemType) {
         case "agent":
-          path = path.replace(".md", ".agent.md");
+          if (path && !path.endsWith(".md")) {
+            path = `${path}.md`;
+          }
           break;
         case "skill":
-          path = `${path}/SKILL.md`;
+          if (path && !path.endsWith("/SKILL.md")) {
+            path = `${path}/SKILL.md`;
+          }
           break;
       }
 

@@ -1,6 +1,44 @@
 {
   "items": [
     {
+      "name": "ai-team-orchestration",
+      "description": "Bootstrap and run a multi-agent AI development team with named roles (Producer, Dev Team, QA). Sprint planning, brainstorm prompts with distinct agent voices, cross-chat context survival, and parallel team workflows. Based on a proven template that shipped a 30-game app in 5 days with zero human-written code.",
+      "path": "plugins/ai-team-orchestration",
+      "tags": [
+        "ai-team",
+        "multi-agent",
+        "sprint-planning",
+        "brainstorm",
+        "project-management",
+        "orchestration",
+        "developer-workflow"
+      ],
+      "itemCount": 4,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/ai-team-orchestration/agents/ai-team-dev.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/ai-team-orchestration/agents/ai-team-producer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/ai-team-orchestration/agents/ai-team-qa.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/ai-team-orchestration/skills/ai-team-orchestration"
+        }
+      ],
+      "external": false,
+      "repository": null,
+      "homepage": null,
+      "author": null,
+      "source": null
+    },
+    {
       "name": "arize-ax",
       "description": "Arize AX platform skills for LLM observability, evaluation, and optimization. Includes trace export, instrumentation, datasets, experiments, evaluators, AI provider integrations, annotations, prompt optimization, and deep linking to the Arize UI.",
       "path": "plugins/arize-ax",
@@ -16,6 +54,44 @@
         "prompt-optimization"
       ],
       "itemCount": 9,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/arize-ax/skills/arize-ai-provider-integration"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/arize-ax/skills/arize-annotation"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/arize-ax/skills/arize-dataset"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/arize-ax/skills/arize-evaluator"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/arize-ax/skills/arize-experiment"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/arize-ax/skills/arize-instrumentation"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/arize-ax/skills/arize-link"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/arize-ax/skills/arize-prompt-optimization"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/arize-ax/skills/arize-trace"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -37,6 +113,12 @@
         "copilot-cli"
       ],
       "itemCount": 1,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/automate-this/skills/automate-this"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -55,6 +137,24 @@
         "agents"
       ],
       "itemCount": 4,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/awesome-copilot/agents/meta-agentic-project-scaffold.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-skills"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-instructions"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-agents"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -75,7 +175,53 @@
         "architecture",
         "devops"
       ],
-      "itemCount": 5,
+      "itemCount": 11,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/azure-cloud-development/agents/azure-logic-apps-expert.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/azure-cloud-development/agents/azure-principal-architect.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/azure-cloud-development/agents/azure-saas-architect.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/azure-cloud-development/agents/azure-verified-modules-bicep.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/azure-cloud-development/agents/azure-verified-modules-terraform.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/azure-cloud-development/agents/terraform-azure-implement.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/azure-cloud-development/agents/terraform-azure-planning.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/azure-cloud-development/skills/azure-resource-health-diagnose"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/azure-cloud-development/skills/az-cost-optimize"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/azure-cloud-development/skills/import-infrastructure-as-code"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/azure-cloud-development/skills/azure-pricing"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -94,7 +240,21 @@
         "impact-analysis",
         "devops"
       ],
-      "itemCount": 1,
+      "itemCount": 3,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/cast-imaging/agents/cast-imaging-impact-analysis.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/cast-imaging/agents/cast-imaging-software-discovery.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/cast-imaging/agents/cast-imaging-structural-quality-advisor.md"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -111,6 +271,16 @@
         "interactive-programming"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/clojure-interactive-programming/agents/clojure-interactive-programming.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/clojure-interactive-programming/skills/remember-interactive-programming"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -129,6 +299,24 @@
         "architecture"
       ],
       "itemCount": 4,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/context-engineering/agents/context-architect.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/context-engineering/skills/context-map"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/context-engineering/skills/what-context-needed"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/context-engineering/skills/refactor-plan"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -149,6 +337,16 @@
         "sdks"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/context-matic/skills/integrate-context-matic"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/context-matic/skills/onboard-context-matic"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -171,6 +369,12 @@
         "github-copilot"
       ],
       "itemCount": 1,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/copilot-sdk/skills/copilot-sdk"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -188,6 +392,44 @@
         "testing"
       ],
       "itemCount": 9,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/csharp-dotnet-development/agents/expert-dotnet-software-engineer.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/csharp-async"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/aspnet-minimal-api-openapi"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/csharp-xunit"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/csharp-nunit"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/csharp-mstest"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/csharp-tunit"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/dotnet-best-practices"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/dotnet-upgrade"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -206,6 +448,16 @@
         "server-development"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/csharp-mcp-development/agents/csharp-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-mcp-development/skills/csharp-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -226,7 +478,33 @@
         "queries",
         "data-management"
       ],
-      "itemCount": 5,
+      "itemCount": 6,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/database-data-management/agents/ms-sql-dba.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/database-data-management/agents/postgresql-dba.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/database-data-management/skills/sql-optimization"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/database-data-management/skills/sql-code-review"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/database-data-management/skills/postgresql-optimization"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/database-data-management/skills/postgresql-code-review"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -244,6 +522,24 @@
         "sdk"
       ],
       "itemCount": 4,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/dataverse-sdk-for-python/skills/dataverse-python-quickstart"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/dataverse-sdk-for-python/skills/dataverse-python-advanced-patterns"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/dataverse-sdk-for-python/skills/dataverse-python-production-code"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/dataverse-sdk-for-python/skills/dataverse-python-usecase-builder"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -261,6 +557,20 @@
         "azure"
       ],
       "itemCount": 3,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/devops-oncall/agents/azure-principal-architect.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/devops-oncall/skills/azure-resource-health-diagnose"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/devops-oncall/skills/multi-stage-dockerfile"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -280,6 +590,16 @@
         "safety"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/doublecheck/agents/doublecheck.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/doublecheck/skills/doublecheck"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -297,7 +617,17 @@
         "tasks",
         "implementation"
       ],
-      "itemCount": 1,
+      "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/edge-ai-tasks/agents/task-planner.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/edge-ai-tasks/agents/task-researcher.md"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -317,6 +647,16 @@
         "developer-experience"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/ember/agents/ember.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/ember/skills/from-the-other-side-vega"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -339,6 +679,12 @@
         "ixp"
       ],
       "itemCount": 1,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/fastah-ip-geo-tools/skills/geofeed-tuner"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -361,6 +707,28 @@
         "governance"
       ],
       "itemCount": 5,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-mcp"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-debug"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-build"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-monitoring"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-governance"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -382,7 +750,25 @@
         "angular",
         "vue"
       ],
-      "itemCount": 3,
+      "itemCount": 4,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/frontend-web-dev/agents/electron-angular-native.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/frontend-web-dev/agents/expert-react-frontend-engineer.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/frontend-web-dev/skills/playwright-explore-website"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/frontend-web-dev/skills/playwright-generate-test"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -405,7 +791,69 @@
         "prd",
         "mobile"
       ],
-      "itemCount": 1,
+      "itemCount": 15,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-browser-tester.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-code-simplifier.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-critic.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-debugger.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-designer-mobile.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-designer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-devops.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-documentation-writer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-implementer-mobile.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-implementer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-mobile-tester.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-orchestrator.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-planner.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-researcher.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/gem-team/agents/gem-reviewer.md"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -425,6 +873,16 @@
         "sdk"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/go-mcp-development/agents/go-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/go-mcp-development/skills/go-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -444,6 +902,24 @@
         "javadoc"
       ],
       "itemCount": 4,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/java-development/skills/java-docs"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/java-development/skills/java-junit"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/java-development/skills/java-springboot"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/java-development/skills/create-spring-boot-java-project"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -465,6 +941,16 @@
         "reactor"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/java-mcp-development/agents/java-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/java-mcp-development/skills/java-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -484,6 +970,16 @@
         "ktor"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/kotlin-mcp-development/agents/kotlin-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/kotlin-mcp-development/skills/kotlin-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -503,6 +999,48 @@
         "adaptive-cards"
       ],
       "itemCount": 4,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/mcp-m365-copilot/agents/mcp-m365-agent-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/mcp-m365-copilot/skills/mcp-create-declarative-agent"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/mcp-m365-copilot/skills/mcp-create-adaptive-cards"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/mcp-m365-copilot/skills/mcp-deploy-manage-agents"
+        }
+      ],
+      "external": false,
+      "repository": null,
+      "homepage": null,
+      "author": null,
+      "source": null
+    },
+    {
+      "name": "modernize-java",
+      "description": "AI-powered Java modernization and upgrade assistant. Helps upgrade Java and Spring Boot applications to the latest versions.",
+      "path": "plugins/modernize-java",
+      "tags": [
+        "java",
+        "modernization",
+        "upgrade",
+        "migration",
+        "spring-boot"
+      ],
+      "itemCount": 1,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/modernize-java/agents/modernize-java.md"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -526,6 +1064,12 @@
         "ux"
       ],
       "itemCount": 1,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/napkin/skills/napkin"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -546,6 +1090,12 @@
         "ux"
       ],
       "itemCount": 1,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/noob-mode/skills/noob-mode"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -565,6 +1115,16 @@
         "aspnet"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/openapi-to-application-csharp-dotnet/agents/openapi-to-application.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/openapi-to-application-csharp-dotnet/skills/openapi-to-application-code"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -583,6 +1143,16 @@
         "golang"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/openapi-to-application-go/agents/openapi-to-application.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/openapi-to-application-go/skills/openapi-to-application-code"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -601,6 +1171,16 @@
         "spring-boot"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/openapi-to-application-java-spring-boot/agents/openapi-to-application.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/openapi-to-application-java-spring-boot/skills/openapi-to-application-code"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -620,6 +1200,16 @@
         "nestjs"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/openapi-to-application-nodejs-nestjs/agents/openapi-to-application.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/openapi-to-application-nodejs-nestjs/skills/openapi-to-application-code"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -638,6 +1228,16 @@
         "fastapi"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/openapi-to-application-python-fastapi/agents/openapi-to-application.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/openapi-to-application-python-fastapi/skills/openapi-to-application-code"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -659,6 +1259,40 @@
         "stored-procedures"
       ],
       "itemCount": 8,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/oracle-to-postgres-migration-expert/agents/oracle-to-postgres-migration-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/oracle-to-postgres-migration-expert/skills/creating-oracle-to-postgres-master-migration-plan"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/oracle-to-postgres-migration-expert/skills/creating-oracle-to-postgres-migration-bug-report"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/oracle-to-postgres-migration-expert/skills/creating-oracle-to-postgres-migration-integration-tests"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/oracle-to-postgres-migration-expert/skills/migrating-oracle-to-postgres-stored-procedures"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/oracle-to-postgres-migration-expert/skills/planning-oracle-to-postgres-migration-integration-testing"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/oracle-to-postgres-migration-expert/skills/reviewing-oracle-to-postgres-migration"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/oracle-to-postgres-migration-expert/skills/scaffolding-oracle-to-postgres-migration-test-project"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -671,6 +1305,12 @@
       "path": "plugins/ospo-sponsorship",
       "tags": [],
       "itemCount": 1,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/ospo-sponsorship/skills/sponsor-finder"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -693,7 +1333,89 @@
         "migration",
         "performance"
       ],
-      "itemCount": 1,
+      "itemCount": 20,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/amplitude-experiment-implementation.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/apify-integration-expert.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/arm-migration.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/comet-opik.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/diffblue-cover.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/droid.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/dynatrace-expert.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/elasticsearch-observability.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/jfrog-sec.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/launchdarkly-flag-cleanup.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/lingodotdev-i18n.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/monday-bug-fixer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/mongodb-performance-advisor.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/neo4j-docker-client-generator.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/neon-migration-specialist.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/neon-optimization-analyzer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/octopus-deploy-release-notes-mcp.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/pagerduty-incident-responder.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/stackhawk-security-onboarding.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/partners/agents/terraform.md"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -712,6 +1434,7 @@
         "power-platform"
       ],
       "itemCount": 0,
+      "items": [],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -733,6 +1456,20 @@
         "instrumentation"
       ],
       "itemCount": 3,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/phoenix/skills/phoenix-cli"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/phoenix/skills/phoenix-evals"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/phoenix/skills/phoenix-tracing"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -753,6 +1490,16 @@
         "composer"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/php-mcp-development/agents/php-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/php-mcp-development/skills/php-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -775,7 +1522,45 @@
         "python",
         "go"
       ],
-      "itemCount": 2,
+      "itemCount": 9,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/polyglot-test-agent/agents/polyglot-test-builder.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/polyglot-test-agent/agents/polyglot-test-fixer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/polyglot-test-agent/agents/polyglot-test-generator.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/polyglot-test-agent/agents/polyglot-test-implementer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/polyglot-test-agent/agents/polyglot-test-linter.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/polyglot-test-agent/agents/polyglot-test-planner.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/polyglot-test-agent/agents/polyglot-test-researcher.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/polyglot-test-agent/agents/polyglot-test-tester.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/polyglot-test-agent/skills/polyglot-test-agent"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -796,6 +1581,16 @@
         "connectors"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/power-apps-code-apps/agents/power-platform-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/power-apps-code-apps/skills/power-apps-code-app-scaffold"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -816,7 +1611,41 @@
         "devops",
         "business-intelligence"
       ],
-      "itemCount": 5,
+      "itemCount": 8,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/power-bi-development/agents/power-bi-data-modeling-expert.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/power-bi-development/agents/power-bi-dax-expert.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/power-bi-development/agents/power-bi-performance-expert.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/power-bi-development/agents/power-bi-visualization-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/power-bi-development/skills/power-bi-dax-optimization"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/power-bi-development/skills/power-bi-model-design-review"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/power-bi-development/skills/power-bi-performance-troubleshooting"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/power-bi-development/skills/power-bi-report-design-consultation"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -837,6 +1666,12 @@
         "power-bi"
       ],
       "itemCount": 1,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/power-platform-architect/skills/power-platform-architect"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -855,6 +1690,20 @@
         "json-rpc"
       ],
       "itemCount": 3,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/power-platform-mcp-connector-development/agents/power-platform-mcp-integration-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/power-platform-mcp-connector-development/skills/power-platform-mcp-connector-suite"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/power-platform-mcp-connector-development/skills/mcp-copilot-studio-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -875,7 +1724,69 @@
         "architecture",
         "technical-spike"
       ],
-      "itemCount": 9,
+      "itemCount": 15,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/project-planning/agents/implementation-plan.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/project-planning/agents/plan.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/project-planning/agents/planner.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/project-planning/agents/prd.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/project-planning/agents/research-technical-spike.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/project-planning/agents/task-planner.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/project-planning/agents/task-researcher.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-planning/skills/breakdown-feature-implementation"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-planning/skills/breakdown-feature-prd"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-planning/skills/breakdown-epic-arch"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-planning/skills/breakdown-epic-pm"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-planning/skills/create-implementation-plan"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-planning/skills/update-implementation-plan"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-planning/skills/create-github-issues-feature-from-implementation-plan"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-planning/skills/create-technical-spike"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -894,6 +1805,16 @@
         "server-development"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/python-mcp-development/agents/python-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/python-mcp-development/skills/python-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -913,7 +1834,61 @@
         "lifecycle",
         "batching"
       ],
-      "itemCount": 8,
+      "itemCount": 13,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/react18-upgrade/agents/react18-auditor.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/react18-upgrade/agents/react18-batching-fixer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/react18-upgrade/agents/react18-class-surgeon.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/react18-upgrade/agents/react18-commander.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/react18-upgrade/agents/react18-dep-surgeon.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/react18-upgrade/agents/react18-test-guardian.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react18-upgrade/skills/react-audit-grep-patterns"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react18-upgrade/skills/react18-batching-patterns"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react18-upgrade/skills/react18-dep-compatibility"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react18-upgrade/skills/react18-enzyme-to-rtl"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react18-upgrade/skills/react18-legacy-context"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react18-upgrade/skills/react18-lifecycle-patterns"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react18-upgrade/skills/react18-string-refs"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -932,7 +1907,41 @@
         "hooks",
         "modern-react"
       ],
-      "itemCount": 4,
+      "itemCount": 8,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/react19-upgrade/agents/react19-auditor.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/react19-upgrade/agents/react19-commander.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/react19-upgrade/agents/react19-dep-surgeon.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/react19-upgrade/agents/react19-migrator.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/react19-upgrade/agents/react19-test-guardian.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react19-upgrade/skills/react19-concurrent-patterns"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react19-upgrade/skills/react19-source-patterns"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/react19-upgrade/skills/react19-test-patterns"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -954,6 +1963,16 @@
         "copilot-cli"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/roundup/skills/roundup-setup"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/roundup/skills/roundup"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -974,6 +1993,16 @@
         "gem"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/ruby-mcp-development/agents/ruby-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/ruby-mcp-development/skills/ruby-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -991,7 +2020,21 @@
         "software-engineering",
         "qa"
       ],
-      "itemCount": 1,
+      "itemCount": 3,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/rug-agentic-workflow/agents/qa-subagent.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/rug-agentic-workflow/agents/rug-orchestrator.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/rug-agentic-workflow/agents/swe-subagent.md"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1014,6 +2057,16 @@
         "rmcp"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/rust-mcp-development/agents/rust-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/rust-mcp-development/skills/rust-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1035,7 +2088,37 @@
         "crm",
         "salesforce-dx"
       ],
-      "itemCount": 4,
+      "itemCount": 7,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/salesforce-development/agents/salesforce-apex-triggers.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/salesforce-development/agents/salesforce-aura-lwc.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/salesforce-development/agents/salesforce-flow.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/salesforce-development/agents/salesforce-visualforce.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/salesforce-development/skills/salesforce-apex-quality"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/salesforce-development/skills/salesforce-flow-design"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/salesforce-development/skills/salesforce-component-standards"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1057,6 +2140,12 @@
         "best-practices"
       ],
       "itemCount": 1,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/security-best-practices/skills/ai-prompt-engineering-safety-review"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1077,7 +2166,37 @@
         "product",
         "ai-ethics"
       ],
-      "itemCount": 1,
+      "itemCount": 7,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/software-engineering-team/agents/se-gitops-ci-specialist.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/software-engineering-team/agents/se-product-manager-advisor.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/software-engineering-team/agents/se-responsible-ai-code.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/software-engineering-team/agents/se-security-reviewer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/software-engineering-team/agents/se-system-architecture-reviewer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/software-engineering-team/agents/se-technical-writer.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/software-engineering-team/agents/se-ux-ui-designer.md"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1090,6 +2209,20 @@
       "path": "plugins/structured-autonomy",
       "tags": [],
       "itemCount": 3,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/structured-autonomy/skills/structured-autonomy-generate"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/structured-autonomy/skills/structured-autonomy-implement"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/structured-autonomy/skills/structured-autonomy-plan"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1113,6 +2246,16 @@
         "async-await"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/swift-mcp-development/agents/swift-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/swift-mcp-development/skills/swift-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1130,6 +2273,16 @@
         "research"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/technical-spike/agents/research-technical-spike.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/technical-spike/skills/create-technical-spike"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1150,7 +2303,45 @@
         "jest",
         "nunit"
       ],
-      "itemCount": 6,
+      "itemCount": 9,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/testing-automation/agents/playwright-tester.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/testing-automation/agents/tdd-green.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/testing-automation/agents/tdd-red.md"
+        },
+        {
+          "kind": "agent",
+          "path": "plugins/testing-automation/agents/tdd-refactor.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/testing-automation/skills/playwright-explore-website"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/testing-automation/skills/playwright-generate-test"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/testing-automation/skills/csharp-nunit"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/testing-automation/skills/java-junit"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/testing-automation/skills/ai-prompt-engineering-safety-review"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1169,6 +2360,16 @@
         "server-development"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/typescript-mcp-development/agents/typescript-mcp-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/typescript-mcp-development/skills/typescript-mcp-server-generator"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1188,6 +2389,20 @@
         "microsoft-365"
       ],
       "itemCount": 3,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/typespec-m365-copilot/skills/typespec-create-agent"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/typespec-m365-copilot/skills/typespec-create-api-plugin"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/typespec-m365-copilot/skills/typespec-api-operations"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1207,6 +2422,16 @@
         "windows"
       ],
       "itemCount": 2,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/winui3-development/agents/winui3-expert.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/winui3-development/skills/winui3-migration-guide"
+        }
+      ],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -1226,6 +2451,7 @@
       "ai",
       "ai-ethics",
       "ai-partnership",
+      "ai-team",
       "angular",
       "apex",
       "api",
@@ -1247,6 +2473,7 @@
       "beginner",
       "best-practices",
       "bicep",
+      "brainstorm",
       "brainstorming",
       "briefings",
       "business-intelligence",
@@ -1286,6 +2513,7 @@
       "declarative-agents",
       "desktop",
       "developer-experience",
+      "developer-workflow",
       "devops",
       "discovery",
       "dotnet",
@@ -1349,6 +2577,7 @@
       "mobile",
       "model-context-protocol",
       "modern-react",
+      "modernization",
       "monitoring",
       "multi-agent",
       "nestjs",
@@ -1423,6 +2652,7 @@
       "source-citation",
       "spring-boot",
       "springboot",
+      "sprint-planning",
       "sql",
       "sql-server",
       "status-updates",

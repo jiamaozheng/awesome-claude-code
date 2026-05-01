@@ -113,9 +113,9 @@ Only include fields you want to change. Available fields: `title`, `body`, `stat
 
 **User**: "Create a bug issue - the login page crashes when using SSO"
 
-**Action**:
+**Action**: 
 ```bash
-gh api repos/jiamaozheng/awesome-claude-code/issues \
+gh api repos/github/awesome-copilot/issues \
   -X POST \
   -f title="Login page crashes when using SSO" \
   -f type="Bug" \

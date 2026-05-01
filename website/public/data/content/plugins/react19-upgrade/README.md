@@ -105,7 +105,7 @@ This plugin assumes you're migrating from **React 18** codebases. If you're on R
 
 ## Source
 
-This plugin is part of [Awesome Claude Code](https://github.com/jiamaozheng/awesome-claude-code).
+This plugin is part of [Awesome Copilot](https://github.com/github/awesome-copilot).
 
 ## License
 

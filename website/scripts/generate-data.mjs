@@ -50,6 +50,139 @@ function normalizeArray(value) {
   return [];
 }
 
+function normalizePluginItemPath(pluginPath, itemPath) {
+  if (typeof itemPath !== "string") return "";
+  const normalized = itemPath.trim();
+  if (!normalized) return "";
+
+  if (normalized.startsWith("./")) {
+    return path.posix.join(pluginPath, normalized.slice(2));
+  }
+
+  return normalized.replace(/^\/+/, "");
+}
+
+function inferPluginItemKind(itemPath) {
+  if (itemPath.endsWith(".agent.md")) return "agent";
+  if (itemPath.endsWith(".instructions.md")) return "instruction";
+  if (/(^|\/)skills\//.test(itemPath)) return "skill";
+  if (/(^|\/)hooks\//.test(itemPath)) return "hook";
+  if (/(^|\/)workflows\//.test(itemPath)) return "workflow";
+  return "unknown";
+}
+
+async function expandPluginItemPaths(kind, itemPath) {
+  const absPath = path.join(repoRoot, itemPath.split("/").join(path.sep));
+
+  try {
+    const stat = await fs.stat(absPath);
+    if (!stat.isDirectory()) {
+      return [itemPath];
+    }
+
+    if (kind === "agent") {
+      const agentFiles = (await walk(absPath))
+        .filter((file) => file.endsWith(".md"))
+        .map(relToRepo)
+        .sort();
+      return agentFiles.length > 0 ? agentFiles : [itemPath];
+    }
+
+    if (kind === "skill") {
+      const skillManifest = path.join(absPath, "SKILL.md");
+      try {
+        await fs.access(skillManifest);
+        return [itemPath];
+      } catch {
+        const entries = await fs.readdir(absPath, { withFileTypes: true });
+        const skillDirs = [];
+        for (const entry of entries) {
+          if (!entry.isDirectory()) continue;
+          const childSkillPath = path.join(absPath, entry.name, "SKILL.md");
+          try {
+            await fs.access(childSkillPath);
+            skillDirs.push(relToRepo(path.join(absPath, entry.name)));
+          } catch {
+            // ignore non-skill folders
+          }
+        }
+        return skillDirs.length > 0 ? skillDirs.sort() : [itemPath];
+      }
+    }
+
+    return [itemPath];
+  } catch {
+    return [itemPath];
+  }
+}
+
+async function collectPluginItems(parsed, pluginPath) {
+  const out = [];
+  const seen = new Set();
+
+  const listKeys = [
+    ["agents", "agent"],
+    ["skills", "skill"],
+    ["commands", "command"],
+    ["instructions", "instruction"],
+    ["hooks", "hook"],
+    ["workflows", "workflow"],
+  ];
+
+  for (const [key, kind] of listKeys) {
+    const values = parsed[key];
+    if (!Array.isArray(values)) continue;
+
+    for (const value of values) {
+      const normalizedPath = normalizePluginItemPath(pluginPath, value);
+      if (!normalizedPath) continue;
+
+      const expandedPaths = await expandPluginItemPaths(kind, normalizedPath);
+      for (const itemPath of expandedPaths) {
+        const dedupeKey = `${kind}:${itemPath}`;
+        if (seen.has(dedupeKey)) continue;
+        seen.add(dedupeKey);
+        out.push({
+          kind,
+          path: itemPath,
+        });
+      }
+    }
+  }
+
+  if (Array.isArray(parsed.items)) {
+    for (const value of parsed.items) {
+      const rawPath = typeof value === "string" ? value : value?.path;
+      const itemPath = normalizePluginItemPath(pluginPath, rawPath);
+      if (!itemPath) continue;
+
+      const kind =
+        typeof value === "object" && value?.kind
+          ? String(value.kind)
+          : inferPluginItemKind(itemPath);
+      const usage =
+        typeof value === "object" && typeof value?.usage === "string"
+          ? value.usage
+          : undefined;
+
+      const expandedPaths = await expandPluginItemPaths(kind, itemPath);
+      for (const expandedPath of expandedPaths) {
+        const dedupeKey = `${kind}:${expandedPath}`;
+        if (seen.has(dedupeKey)) continue;
+        seen.add(dedupeKey);
+
+        out.push({
+          kind,
+          path: expandedPath,
+          ...(usage ? { usage } : {}),
+        });
+      }
+    }
+  }
+
+  return out;
+}
+
 function parseExtensions(applyToValue) {
   const source = Array.isArray(applyToValue)
     ? applyToValue.join(",")
@@ -273,11 +406,9 @@ async function buildPlugins() {
     const pluginPath = relToRepo(pluginDir);
     const tagList = normalizeArray(parsed.tags || parsed.keywords);
     tagList.forEach((t) => tags.add(t));
+    const pluginItems = await collectPluginItems(parsed, pluginPath);
 
-    let itemCount = 0;
-    for (const key of ["agents", "commands", "skills", "items"]) {
-      if (Array.isArray(parsed[key])) itemCount += parsed[key].length;
-    }
+    const itemCount = pluginItems.length;
 
     items.push({
       name: parsed.name || path.basename(pluginDir),
@@ -285,6 +416,7 @@ async function buildPlugins() {
       path: pluginPath,
       tags: tagList,
       itemCount,
+      items: pluginItems,
       external: false,
       repository: null,
       homepage: null,

@@ -75,6 +75,23 @@
       "lastUpdated": "2026-04-29T15:54:47.135Z"
     },
     {
+      "id": "adobe-illustrator-scripting",
+      "title": "adobe-illustrator-scripting",
+      "description": "Write, debug, and optimize Adobe Illustrator automation scripts using ExtendScript (JavaScript/JSX). Use when creating or modifying scripts that manipulate documents, layers, paths, text frames, colors, symbols, artboards, or any Illustrator DOM objects. Covers the complete JavaScript object model, coordinate system, measurement units, export workflows, and scripting best practices.",
+      "path": "skills/adobe-illustrator-scripting",
+      "skillFile": "skills/adobe-illustrator-scripting/SKILL.md",
+      "category": "adobe-illustrator-scripting",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/adobe-illustrator-scripting/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.659Z"
+    },
+    {
       "id": "agent-governance",
       "title": "agent-governance",
       "description": "Patterns and techniques for adding governance, safety, and trust controls to AI agent systems. Use this skill when:\n- Building AI agents that call external tools (APIs, databases, file systems)\n- Implementing policy-based access controls for agent tool usage\n- Adding semantic intent classification to detect dangerous prompts\n- Creating trust scoring systems for multi-agent workflows\n- Building audit trails for agent actions and decisions\n- Enforcing rate limits, content filters, or tool restrictions on agents\n- Working with any agent framework (PydanticAI, CrewAI, OpenAI Agents, LangChain, AutoGen)\n",
@@ -158,6 +175,23 @@
         }
       ],
       "lastUpdated": "2026-04-29T15:54:47.138Z"
+    },
+    {
+      "id": "ai-team-orchestration",
+      "title": "ai-team-orchestration",
+      "description": "Bootstrap and run a multi-agent AI development team. Use when: starting a new software project with AI agents, setting up parallel dev/QA teams, creating sprint plans, writing brainstorm prompts with distinct agent voices, recovering a project workflow, or planning sprints.",
+      "path": "skills/ai-team-orchestration",
+      "skillFile": "skills/ai-team-orchestration/SKILL.md",
+      "category": "ai-team-orchestration",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/ai-team-orchestration/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.659Z"
     },
     {
       "id": "appinsights-instrumentation",
@@ -254,6 +288,23 @@
         }
       ],
       "lastUpdated": "2026-04-29T15:54:47.142Z"
+    },
+    {
+      "id": "arduino-azure-iot-edge-integration",
+      "title": "arduino-azure-iot-edge-integration",
+      "description": "Design and implement Arduino integration with Azure IoT Hub and IoT Edge, including secure provisioning, resilient telemetry, command handling, and production guardrails.",
+      "path": "skills/arduino-azure-iot-edge-integration",
+      "skillFile": "skills/arduino-azure-iot-edge-integration/SKILL.md",
+      "category": "arduino-azure-iot-edge-integration",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/arduino-azure-iot-edge-integration/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.660Z"
     },
     {
       "id": "arize-ai-provider-integration",
@@ -541,6 +592,23 @@
         }
       ],
       "lastUpdated": "2026-04-29T15:54:47.153Z"
+    },
+    {
+      "id": "audit-integrity",
+      "title": "audit-integrity",
+      "description": "Shared audit integrity framework for all AppSec agents — enforces output quality, intellectual honesty, and continuous improvement through anti-rationalization guards, self-critique loops, retry protocols, non-negotiable behaviors, self-reflection quality gates (1-10 scoring, ≥8 threshold), and a self-learning system with lesson/memory governance for security analysis agents.",
+      "path": "skills/audit-integrity",
+      "skillFile": "skills/audit-integrity/SKILL.md",
+      "category": "audit-integrity",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/audit-integrity/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.660Z"
     },
     {
       "id": "automate-this",
@@ -866,6 +934,23 @@
       "lastUpdated": "2026-04-29T15:54:47.181Z"
     },
     {
+      "id": "azure-smart-city-iot-solution-builder",
+      "title": "azure-smart-city-iot-solution-builder",
+      "description": "Design and plan end-to-end Azure IoT and Smart City solutions: requirements, architecture, security, operations, cost, and a phased delivery plan with concrete implementation artifacts.",
+      "path": "skills/azure-smart-city-iot-solution-builder",
+      "skillFile": "skills/azure-smart-city-iot-solution-builder/SKILL.md",
+      "category": "azure-smart-city-iot-solution-builder",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/azure-smart-city-iot-solution-builder/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.661Z"
+    },
+    {
       "id": "azure-static-web-apps",
       "title": "azure-static-web-apps",
       "description": "Helps create, configure, and deploy Azure Static Web Apps using the SWA CLI. Use when deploying static sites to Azure, setting up SWA local development, configuring staticwebapp.config.json, adding Azure Functions APIs to SWA, or setting up GitHub Actions CI/CD for Static Web Apps.",
@@ -881,6 +966,23 @@
         }
       ],
       "lastUpdated": "2026-04-29T15:54:47.184Z"
+    },
+    {
+      "id": "batch-files",
+      "title": "batch-files",
+      "description": "Expert-level Windows batch file (.bat/.cmd) skill for writing, debugging, and maintaining CMD scripts. Use when asked to \"create a batch file\", \"write a .bat script\", \"automate a Windows task\", \"CMD scripting\", \"batch automation\", \"scheduled task script\", \"Windows shell script\", or when working with .bat/.cmd files in the workspace. Covers cmd.exe syntax, environment variables, control flow, string processing, error handling, and integration with system tools.",
+      "path": "skills/batch-files",
+      "skillFile": "skills/batch-files/SKILL.md",
+      "category": "batch-files",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/batch-files/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.661Z"
     },
     {
       "id": "bigquery-pipeline-audit",
@@ -915,6 +1017,23 @@
         }
       ],
       "lastUpdated": "2026-04-29T15:54:47.187Z"
+    },
+    {
+      "id": "brag-sheet",
+      "title": "brag-sheet",
+      "description": "Turn vague \"what did I do?\" into evidence-backed impact statements for performance reviews, self-reviews, promotion packets, and weekly updates. Uniquely mines Copilot CLI session logs to reconstruct forgotten work, plus git commits and GitHub PRs. Enforces a 3-part impact contract (action → result → evidence). Works standalone with zero dependencies. Trigger for: \"brag\", \"log work\", \"what did I do\", \"backfill my work history\", \"performance review\", \"self-review\", \"self assessment\", \"write impact statement\", \"review prep\", \"promo packet\", \"promotion case\", \"weekly update\", \"status report\", \"accomplishments\", \"what did I ship\", \"I forgot to log my work\", \"summarize my work\", \"track my wins\", \"what should I highlight\", \"end of half\", \"career growth\", \"work journal\", or any request to document, summarize, or organize work accomplishments.\n",
+      "path": "skills/brag-sheet",
+      "skillFile": "skills/brag-sheet/SKILL.md",
+      "category": "brag-sheet",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/brag-sheet/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.663Z"
     },
     {
       "id": "breakdown-epic-arch",
@@ -1918,6 +2037,23 @@
         }
       ],
       "lastUpdated": "2026-04-29T15:54:47.211Z"
+    },
+    {
+      "id": "data-breach-blast-radius",
+      "title": "data-breach-blast-radius",
+      "description": "Pre-breach impact analysis: inventories sensitive data (PII, PHI, PCI-DSS, credentials), traces data flows, scores exposure vectors, and produces a regulatory blast radius report with fine ranges sourced verbatim from GDPR Art. 83, CCPA § 1798.155(a), and HIPAA 45 CFR § 160.404. Cost benchmarks from IBM Cost of a Data Breach Report (annually updated). All citations in references/SOURCES.md for verification. Use when asked: \"assess breach impact\", \"what data could be exposed\", \"calculate blast radius\", \"data exposure analysis\", \"how bad would a breach be\", \"quantify data risk\", \"sensitive data inventory\", \"data flow security audit\", \"pre-breach assessment\", \"worst-case breach scenario\", \"breach readiness\", \"data risk report\", \"/data-breach-blast-radius\". For any stack handling user data, health records, or financial information. Output labels law-sourced figures (exact) vs heuristic estimates (planning only). Does not replace legal counsel.",
+      "path": "skills/data-breach-blast-radius",
+      "skillFile": "skills/data-breach-blast-radius/SKILL.md",
+      "category": "data-breach-blast-radius",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/data-breach-blast-radius/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.664Z"
     },
     {
       "id": "datanalysis-credit-risk",
@@ -3141,7 +3277,7 @@
           "path": "skills/github-issues/references/templates.md"
         }
       ],
-      "lastUpdated": "2026-04-29T16:59:01.931Z"
+      "lastUpdated": "2026-05-01T00:46:55.866Z"
     },
     {
       "id": "go-mcp-server-generator",
@@ -3390,6 +3526,23 @@
       "lastUpdated": "2026-04-29T15:54:47.269Z"
     },
     {
+      "id": "impediment-prioritization",
+      "title": "impediment-prioritization",
+      "description": "Ranks any list of impediments and their countermeasures using a value-stream scoring model (ROI, Cost to Implement, Ease of Deployment, Risk Factor) and a fixed prioritization formula. Use when someone asks to prioritize, rank, sequence, or triage impediments, countermeasures, remediation items, risks, findings, gaps, action items, or backlog entries; or mentions value-stream prioritization, A3 / lean countermeasure ranking, ROI vs. effort scoring, or building a remediation / improvement backlog. Works with GHQR findings, audit results, retrospective action items, risk registers, architecture review gaps, or any free-form `{impediment, countermeasure}` list.",
+      "path": "skills/impediment-prioritization",
+      "skillFile": "skills/impediment-prioritization/SKILL.md",
+      "category": "impediment-prioritization",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/impediment-prioritization/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.665Z"
+    },
+    {
       "id": "import-infrastructure-as-code",
       "title": "import-infrastructure-as-code",
       "description": "Import existing Azure resources into Terraform using Azure CLI discovery and Azure Verified Modules (AVM). Use when asked to reverse-engineer live Azure infrastructure, generate Infrastructure as Code from existing subscriptions/resource groups/resource IDs, map dependencies, derive exact import addresses from downloaded module source, prevent configuration drift, and produce AVM-based Terraform files ready for validation and planning across any Azure resource type.",
@@ -3587,6 +3740,23 @@
         }
       ],
       "lastUpdated": "2026-04-29T15:54:47.273Z"
+    },
+    {
+      "id": "javax-to-jakarta-migration",
+      "title": "javax-to-jakarta-migration",
+      "description": "Migrate Java code from javax.* to jakarta.* namespace. Use when upgrading to Tomcat 11, Jakarta EE 10, or when javax imports are detected in the codebase.",
+      "path": "skills/javax-to-jakarta-migration",
+      "skillFile": "skills/javax-to-jakarta-migration/SKILL.md",
+      "category": "javax-to-jakarta-migration",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/javax-to-jakarta-migration/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.665Z"
     },
     {
       "id": "kotlin-mcp-server-generator",
@@ -4129,6 +4299,23 @@
         }
       ],
       "lastUpdated": "2026-04-29T15:54:47.291Z"
+    },
+    {
+      "id": "minecraft-plugin-development",
+      "title": "minecraft-plugin-development",
+      "description": "Use this skill when building or modifying Minecraft server plugins for Paper, Spigot, or Bukkit, including plugin.yml setup, commands, listeners, schedulers, player state, team or arena systems, persistent progression, economy or profile data, configuration files, Adventure text, and version-safe API usage. Trigger for requests like \"build a Minecraft plugin\", \"add a Paper command\", \"fix a Bukkit listener\", \"create plugin.yml\", \"implement a minigame mechanic\", \"add a perk or quest system\", or \"debug server plugin behavior\".",
+      "path": "skills/minecraft-plugin-development",
+      "skillFile": "skills/minecraft-plugin-development/SKILL.md",
+      "category": "minecraft-plugin-development",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/minecraft-plugin-development/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.666Z"
     },
     {
       "id": "mkdocs-translations",
@@ -5225,6 +5412,23 @@
       "lastUpdated": "2026-04-29T15:54:47.328Z"
     },
     {
+      "id": "python-azure-iot-edge-modules",
+      "title": "python-azure-iot-edge-modules",
+      "description": "Build and operate Python Azure IoT Edge modules with robust messaging, deployment manifests, observability, and production readiness checks.",
+      "path": "skills/python-azure-iot-edge-modules",
+      "skillFile": "skills/python-azure-iot-edge-modules/SKILL.md",
+      "category": "python-azure-iot-edge-modules",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/python-azure-iot-edge-modules/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.666Z"
+    },
+    {
       "id": "python-mcp-server-generator",
       "title": "python-mcp-server-generator",
       "description": "Generate a complete MCP server project in Python with tools, resources, and proper configuration",
@@ -6203,6 +6407,23 @@
         }
       ],
       "lastUpdated": "2026-04-29T15:54:47.353Z"
+    },
+    {
+      "id": "resemble-detect",
+      "title": "resemble-detect",
+      "description": "Deepfake detection and media safety — detect AI-generated audio, images, video, and text, trace synthesis sources, apply watermarks, verify speaker identity, and analyze media intelligence using Resemble AI",
+      "path": "skills/resemble-detect",
+      "skillFile": "skills/resemble-detect/SKILL.md",
+      "category": "resemble-detect",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/resemble-detect/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.667Z"
     },
     {
       "id": "review-and-refactor",
@@ -7185,6 +7406,23 @@
       "lastUpdated": "2026-04-29T15:54:47.387Z"
     },
     {
+      "id": "vardoger-analyze",
+      "title": "vardoger-analyze",
+      "description": "Use when the user asks to personalize the GitHub Copilot CLI assistant, adapt Copilot to their style, use vardoger, or analyze their Copilot CLI conversation history. Reads the local session directory at `~/.copilot/session-state/`, extracts recurring preferences and conventions, and writes a fenced personalization block into `~/.copilot/copilot-instructions.md`. Runs entirely on the user's machine via the local `vardoger` CLI (`pipx install vardoger`); no network calls and no uploads. Triggers: 'personalize my copilot', 'analyze my copilot history', 'tailor copilot to me', 'run vardoger', 'update my copilot instructions from history', 'make copilot learn my style'.",
+      "path": "skills/vardoger-analyze",
+      "skillFile": "skills/vardoger-analyze/SKILL.md",
+      "category": "vardoger-analyze",
+      "hasAssets": false,
+      "assetCount": 0,
+      "files": [
+        {
+          "name": "SKILL.md",
+          "path": "skills/vardoger-analyze/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.667Z"
+    },
+    {
       "id": "vscode-ext-commands",
       "title": "vscode-ext-commands",
       "description": "Guidelines for contributing commands in VS Code extensions. Indicates naming convention, visibility, localization and other relevant attributes, following VS Code extension development guidelines, libraries and good practices",
@@ -7484,15 +7722,18 @@
     "categories": [
       "acquire-codebase-knowledge",
       "add-educational-comments",
+      "adobe-illustrator-scripting",
       "agent-governance",
       "agent-owasp-compliance",
       "agent-supply-chain",
       "agentic-eval",
       "ai-prompt-engineering-safety-review",
+      "ai-team-orchestration",
       "appinsights-instrumentation",
       "apple-appstore-reviewer",
       "arch-linux-triage",
       "architecture-blueprint-generator",
+      "arduino-azure-iot-edge-integration",
       "arize-ai-provider-integration",
       "arize-annotation",
       "arize-dataset",
@@ -7504,6 +7745,7 @@
       "arize-trace",
       "aspire",
       "aspnet-minimal-api-openapi",
+      "audit-integrity",
       "automate-this",
       "autoresearch",
       "aws-cdk-python-setup",
@@ -7515,9 +7757,12 @@
       "azure-resource-health-diagnose",
       "azure-resource-visualizer",
       "azure-role-selector",
+      "azure-smart-city-iot-solution-builder",
       "azure-static-web-apps",
+      "batch-files",
       "bigquery-pipeline-audit",
       "boost-prompt",
+      "brag-sheet",
       "breakdown-epic-arch",
       "breakdown-epic-pm",
       "breakdown-feature-implementation",
@@ -7569,6 +7814,7 @@
       "csharp-tunit",
       "csharp-xunit",
       "daily-prep",
+      "data-breach-blast-radius",
       "datanalysis-credit-risk",
       "dataverse-python-advanced-patterns",
       "dataverse-python-production-code",
@@ -7631,6 +7877,7 @@
       "gtm-product-led-growth",
       "gtm-technical-product-pricing",
       "image-manipulation-image-magick",
+      "impediment-prioritization",
       "import-infrastructure-as-code",
       "integrate-context-matic",
       "issue-fields-migration",
@@ -7642,6 +7889,7 @@
       "java-refactoring-remove-parameter",
       "java-springboot",
       "javascript-typescript-jest",
+      "javax-to-jakarta-migration",
       "kotlin-mcp-server-generator",
       "kotlin-springboot",
       "legacy-circuit-mockups",
@@ -7664,6 +7912,7 @@
       "microsoft-docs",
       "microsoft-skill-creator",
       "migrating-oracle-to-postgres-stored-procedures",
+      "minecraft-plugin-development",
       "mkdocs-translations",
       "model-recommendation",
       "msstore-cli",
@@ -7706,6 +7955,7 @@
       "prompt-builder",
       "publish-to-pages",
       "pytest-coverage",
+      "python-azure-iot-edge-modules",
       "python-mcp-server-generator",
       "python-pypi-package-builder",
       "qdrant-clients-sdk",
@@ -7735,6 +7985,7 @@
       "remember",
       "remember-interactive-programming",
       "repo-story-time",
+      "resemble-detect",
       "review-and-refactor",
       "reviewing-oracle-to-postgres-migration",
       "roundup",
@@ -7779,6 +8030,7 @@
       "update-llms",
       "update-markdown-file-index",
       "update-specification",
+      "vardoger-analyze",
       "vscode-ext-commands",
       "vscode-ext-localization",
       "web-coder",

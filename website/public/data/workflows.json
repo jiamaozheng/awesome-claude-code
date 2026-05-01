@@ -67,6 +67,16 @@
         "workflow_dispatch"
       ],
       "lastUpdated": "2026-04-29T15:54:47.890Z"
+    },
+    {
+      "title": "Weekly Comment Sync",
+      "description": "Weekly workflow that finds stale code comments or README snippets, makes text-only synchronization updates, and opens a draft pull request when changes are needed.",
+      "path": "workflows/weekly-comment-sync.md",
+      "triggers": [
+        "schedule",
+        "workflow_dispatch"
+      ],
+      "lastUpdated": "2026-04-29T17:25:58.900Z"
     }
   ],
   "filters": {
