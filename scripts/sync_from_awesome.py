@@ -19,6 +19,17 @@ from pathlib import Path
 
 MIGRATED_FRONTMATTER_KINDS = {"agent", "instruction"}
 DEFAULT_AGENT_MODEL = "gpt-5.3-codex"
+CLAUDE_COMPATIBLE_AGENT_MODEL = "sonnet"
+TEXT_FILE_SUFFIXES = {
+    ".md",
+    ".json",
+    ".yml",
+    ".yaml",
+    ".txt",
+    ".csv",
+    ".toml",
+    ".ini",
+}
 
 
 @dataclass
@@ -84,12 +95,35 @@ def _normalize_instruction_frontmatter(frontmatter: str) -> str:
 
 
 def _normalize_agent_frontmatter(frontmatter: str) -> str:
-    """Ensure agent frontmatter includes a model key for strict validation."""
+    """Backward-compatible wrapper; prefer the slug-aware variant below."""
     lines = frontmatter.splitlines()
     has_model = any(line.strip().startswith("model:") for line in lines)
     if has_model:
         return frontmatter
     return "\n".join([*lines, f"model: {DEFAULT_AGENT_MODEL}"])
+
+
+def _set_or_append_scalar_key(frontmatter: str, key: str, value: str) -> str:
+    lines = frontmatter.splitlines()
+    key_prefix = f"{key}:"
+    for idx, line in enumerate(lines):
+        if line.lstrip().startswith(key_prefix):
+            indent = line[: len(line) - len(line.lstrip())]
+            lines[idx] = f"{indent}{key}: {value}"
+            return "\n".join(lines)
+    return "\n".join([*lines, f"{key}: {value}"])
+
+
+def _agent_slug_from_path(path: Path) -> str:
+    if path.name.endswith(".agent.md"):
+        return path.name[: -len(".agent.md")]
+    return path.stem
+
+
+def _normalize_agent_frontmatter_for_claude(frontmatter: str, dst: Path) -> str:
+    normalized = _set_or_append_scalar_key(frontmatter, "name", _agent_slug_from_path(dst))
+    normalized = _set_or_append_scalar_key(normalized, "model", CLAUDE_COMPATIBLE_AGENT_MODEL)
+    return normalized
 
 
 def _copy_with_frontmatter(frontmatter: str, body: str, dst: Path) -> None:
@@ -109,6 +143,18 @@ def _copy_plugin_bundle(src_manifest: Path, dst_manifest: Path) -> None:
         shutil.copy2(src_file, dst_file)
 
 
+def _read_text_with_fallback(path: Path) -> str:
+    try:
+        return path.read_text(encoding="utf-8")
+    except UnicodeDecodeError:
+        # Some upstream text files occasionally ship in cp1252; normalize to UTF-8 on copy.
+        return path.read_text(encoding="cp1252")
+
+
+def _copy_text_as_utf8(src: Path, dst: Path) -> None:
+    dst.write_text(_read_text_with_fallback(src), encoding="utf-8")
+
+
 def _copy_file(kind: str, src: Path, dst: Path, dry_run: bool) -> None:
     if dry_run:
         return
@@ -120,17 +166,20 @@ def _copy_file(kind: str, src: Path, dst: Path, dry_run: bool) -> None:
         return
 
     if kind in MIGRATED_FRONTMATTER_KINDS and dst.exists():
-        src_text = src.read_text(encoding="utf-8")
+        src_text = _read_text_with_fallback(src)
         dst_text = dst.read_text(encoding="utf-8")
         dst_frontmatter, _ = _split_frontmatter(dst_text)
         _, src_body = _split_frontmatter(src_text)
 
         if dst_frontmatter is not None:
-            _copy_with_frontmatter(dst_frontmatter, src_body, dst)
+            frontmatter_to_keep = dst_frontmatter
+            if kind == "agent":
+                frontmatter_to_keep = _normalize_agent_frontmatter_for_claude(dst_frontmatter, dst)
+            _copy_with_frontmatter(frontmatter_to_keep, src_body, dst)
             return
 
     if kind == "instruction":
-        src_text = src.read_text(encoding="utf-8")
+        src_text = _read_text_with_fallback(src)
         src_frontmatter, src_body = _split_frontmatter(src_text)
         if src_frontmatter is not None:
             normalized = _normalize_instruction_frontmatter(src_frontmatter)
@@ -138,12 +187,16 @@ def _copy_file(kind: str, src: Path, dst: Path, dry_run: bool) -> None:
             return
 
     if kind == "agent":
-        src_text = src.read_text(encoding="utf-8")
+        src_text = _read_text_with_fallback(src)
         src_frontmatter, src_body = _split_frontmatter(src_text)
         if src_frontmatter is not None:
-            normalized = _normalize_agent_frontmatter(src_frontmatter)
+            normalized = _normalize_agent_frontmatter_for_claude(src_frontmatter, dst)
             _copy_with_frontmatter(normalized, src_body, dst)
             return
+
+    if src.suffix.lower() in TEXT_FILE_SUFFIXES:
+        _copy_text_as_utf8(src, dst)
+        return
 
     shutil.copy2(src, dst)
 
