@@ -18,8 +18,8 @@
     "./agents"
   ],
   "skills": [
-    "./skills/suggest-awesome-github-copilot-skills",
+    "./skills/suggest-awesome-github-copilot-agents",
     "./skills/suggest-awesome-github-copilot-instructions",
-    "./skills/suggest-awesome-github-copilot-agents"
+    "./skills/suggest-awesome-github-copilot-skills"
   ]
 }
