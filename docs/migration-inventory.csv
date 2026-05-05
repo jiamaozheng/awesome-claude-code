@@ -820,3 +820,12 @@ skill,skills/eyeball/SKILL.md,skills/eyeball/SKILL.md
 skill,skills/github-release/SKILL.md,skills/github-release/SKILL.md
 skill,skills/md-to-docx/SKILL.md,skills/md-to-docx/SKILL.md
 skill,skills/pr-dashboard/SKILL.md,skills/pr-dashboard/SKILL.md
+agent,agents/ai-readiness-reporter.agent.md,agents/ai-readiness-reporter.agent.md
+plugin,plugins/acreadiness-cockpit/.github/plugin/plugin.json,plugins/acreadiness-cockpit/.github/plugin/plugin.json
+plugin,plugins/cms-development/.github/plugin/plugin.json,plugins/cms-development/.github/plugin/plugin.json
+skill,skills/acreadiness-assess/SKILL.md,skills/acreadiness-assess/SKILL.md
+skill,skills/acreadiness-generate-instructions/SKILL.md,skills/acreadiness-generate-instructions/SKILL.md
+skill,skills/acreadiness-policy/SKILL.md,skills/acreadiness-policy/SKILL.md
+skill,skills/commit-message-storyteller/SKILL.md,skills/commit-message-storyteller/SKILL.md
+skill,skills/content-management-systems/SKILL.md,skills/content-management-systems/SKILL.md
+skill,skills/mini-context-graph/SKILL.md,skills/mini-context-graph/SKILL.md
