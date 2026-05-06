@@ -63,7 +63,11 @@ SUPPRESSED_WARNINGS: set[tuple[str, str]] = {
     (
         "skills/flowstudio-power-automate-monitoring/SKILL.md",
         "description length should be 10-1024 characters",
-    )
+    ),
+    (
+        "agents/ai-readiness-reporter.agent.md",
+        "Legacy GitHub Copilot frontmatter key 'argument-hint'; Claude Code has no direct equivalent, so keep only if this repo intentionally preserves Copilot metadata",
+    ),
 }
 
 
