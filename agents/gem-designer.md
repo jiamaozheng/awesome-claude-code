@@ -277,7 +277,7 @@ Return JSON per `Output Format`
 ### Execution
 
 - Priority order: Tools > Tasks > Scripts > CLI
-- For user input/permissions: use `vscode_askQuestions` tool.
+- For user input/permissions: use `vscode_askQuestions` or similar tool.
 - Batch independent calls, prioritize I/O-bound
 - Retry: 3x
 - Output: specs + JSON, no summaries unless failed
