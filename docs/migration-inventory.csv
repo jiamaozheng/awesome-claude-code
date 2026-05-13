@@ -833,3 +833,11 @@ agent,agents/dotnet-fullstack-mentor.agent.md,agents/dotnet-fullstack-mentor.age
 skill,skills/diagnose/SKILL.md,skills/diagnose/SKILL.md
 skill,skills/performance-review-writer/SKILL.md,skills/performance-review-writer/SKILL.md
 instruction,instructions/azure-naming.instructions.md,instructions/azure-naming.instructions.md
+agent,agents/quality-playbook.agent.md,agents/quality-playbook.agent.md
+instruction,instructions/mvvm-toolkit.instructions.md,instructions/mvvm-toolkit.instructions.md
+skill,skills/dotnet-mcp-builder/SKILL.md,skills/dotnet-mcp-builder/SKILL.md
+skill,skills/mvvm-toolkit/SKILL.md,skills/mvvm-toolkit/SKILL.md
+skill,skills/mvvm-toolkit-di/SKILL.md,skills/mvvm-toolkit-di/SKILL.md
+skill,skills/mvvm-toolkit-messenger/SKILL.md,skills/mvvm-toolkit-messenger/SKILL.md
+skill,skills/slang-shader-engineer/SKILL.md,skills/slang-shader-engineer/SKILL.md
+skill,skills/x-twitter-scraper/SKILL.md,skills/x-twitter-scraper/SKILL.md
