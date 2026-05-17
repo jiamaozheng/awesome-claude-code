@@ -29,7 +29,7 @@ LOWER_HYPHEN_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 CLAUDE_MODEL_RE = re.compile(r"^(inherit|sonnet|opus|haiku|claude-(?:sonnet|opus|haiku)-[A-Za-z0-9.-]+)$")
 PLACEHOLDER_RE = re.compile(
     r"\$\{(?!\{|input:|openMarker|closeMarker|github\.workspace|[A-Z0-9_.-]+\})[^}]+\}"
-    r"|<[A-Z][A-Za-z0-9_\-]*>"
+    r"|(?<![A-Za-z0-9_])<[A-Z][A-Za-z0-9_\-]*>"
 )
 
 OFFICIAL_AGENT_KEYS = {
