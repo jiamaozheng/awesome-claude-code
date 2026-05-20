@@ -841,3 +841,13 @@ skill,skills/mvvm-toolkit-di/SKILL.md,skills/mvvm-toolkit-di/SKILL.md
 skill,skills/mvvm-toolkit-messenger/SKILL.md,skills/mvvm-toolkit-messenger/SKILL.md
 skill,skills/slang-shader-engineer/SKILL.md,skills/slang-shader-engineer/SKILL.md
 skill,skills/x-twitter-scraper/SKILL.md,skills/x-twitter-scraper/SKILL.md
+agent,agents/azure-verified-modules-owner-triage.agent.md,agents/azure-verified-modules-owner-triage.agent.md
+agent,agents/delphi-expert.agent.md,agents/delphi-expert.agent.md
+plugin,plugins/skill-image-gen/.github/plugin/plugin.json,plugins/skill-image-gen/.github/plugin/plugin.json
+skill,skills/generate-image/SKILL.md,skills/generate-image/SKILL.md
+skill,skills/msgraph-sdk/SKILL.md,skills/msgraph-sdk/SKILL.md
+skill,skills/optimize-simplicite-logs/SKILL.md,skills/optimize-simplicite-logs/SKILL.md
+skill,skills/prompt-optimizer/SKILL.md,skills/prompt-optimizer/SKILL.md
+skill,skills/rhino3d-scripts/SKILL.md,skills/rhino3d-scripts/SKILL.md
+skill,skills/sql-server-table-reconciliation/SKILL.md,skills/sql-server-table-reconciliation/SKILL.md
+skill,skills/ssma-console/SKILL.md,skills/ssma-console/SKILL.md
