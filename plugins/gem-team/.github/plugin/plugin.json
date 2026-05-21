@@ -1,6 +1,6 @@
 {
   "name": "gem-team",
-  "version": "1.20.0",
+  "version": "1.24.0",
   "description": "Self-Learning Multi-agent orchestration harness for spec-driven development and automated verification.",
   "author": {
     "name": "mubaidr",
@@ -9,6 +9,7 @@
   },
   "license": "Apache-2.0",
   "repository": "https://github.com/mubaidr/gem-team",
+  "homepage": "https://github.com/mubaidr/gem-team",
   "keywords": [
     "multi-agent",
     "orchestration",
@@ -20,8 +21,5 @@
     "code-review",
     "prd",
     "mobile"
-  ],
-  "agents": [
-    "./agents"
   ]
 }
