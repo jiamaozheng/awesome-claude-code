@@ -72,6 +72,26 @@ SUPPRESSED_WARNINGS: set[tuple[str, str]] = {
         "agents/azure-verified-modules-owner-triage.agent.md",
         "Legacy GitHub Copilot frontmatter key 'argument-hint'; Claude Code has no direct equivalent, so keep only if this repo intentionally preserves Copilot metadata",
     ),
+    (
+        "agents/gem-skill-creator.agent.md",
+        "Legacy GitHub Copilot frontmatter key 'argument-hint'; Claude Code has no direct equivalent, so keep only if this repo intentionally preserves Copilot metadata",
+    ),
+    (
+        "agents/gem-skill-creator.agent.md",
+        "Legacy GitHub Copilot frontmatter key 'disable-model-invocation'; review whether this behavior needs a Claude Code replacement or should remain repo-specific metadata",
+    ),
+    (
+        "agents/gem-skill-creator.agent.md",
+        "Legacy GitHub Copilot frontmatter key 'user-invocable'; review whether this should remain repo-specific metadata or be removed for Claude Code compatibility",
+    ),
+    (
+        "agents/gem-skill-creator.agent.md",
+        "Unrecognized agent frontmatter key for official Claude Code docs: hidden",
+    ),
+    (
+        "agents/gem-skill-creator.agent.md",
+        "Unrecognized agent frontmatter key for official Claude Code docs: mode",
+    ),
 }
 
 
