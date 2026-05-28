@@ -28,7 +28,7 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.206Z"
+      "lastUpdated": "2026-05-03T22:16:25.233Z"
     },
     {
       "title": "Accessibility Runtime Tester",
@@ -50,7 +50,7 @@
         "openSimpleBrowser"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.206Z"
+      "lastUpdated": "2026-05-03T22:16:25.233Z"
     },
     {
       "title": "Address Comments",
@@ -82,7 +82,7 @@
         "github"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.207Z"
+      "lastUpdated": "2026-05-03T22:16:25.234Z"
     },
     {
       "title": "Adr Generator",
@@ -91,7 +91,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.207Z"
+      "lastUpdated": "2026-05-03T22:16:25.235Z"
     },
     {
       "title": "Aem Frontend Specialist",
@@ -106,7 +106,7 @@
         "figma-dev-mode-mcp-server"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.208Z"
+      "lastUpdated": "2026-05-03T22:16:25.236Z"
     },
     {
       "title": "Agent Governance Reviewer",
@@ -118,7 +118,22 @@
         "terminalCommand"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.214Z"
+      "lastUpdated": "2026-05-03T22:16:25.236Z"
+    },
+    {
+      "title": "Ai Readiness Reporter",
+      "description": "Runs the AgentRC readiness assessment on the current repository and produces a self-contained, static HTML dashboard at reports/index.html. Explains every readiness pillar, the maturity level, and an actionable remediation plan, framed by AgentRC measure → generate → maintain loop. Use when asked to assess, audit, score, report on, or visualise the AI readiness of a repo.",
+      "path": "agents/ai-readiness-reporter.agent.md",
+      "model": "sonnet",
+      "tools": [
+        "execute",
+        "read",
+        "search",
+        "search/codebase",
+        "editFiles"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-05-17T13:09:26.111Z"
     },
     {
       "title": "Ai Team Dev",
@@ -133,7 +148,7 @@
         "web"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:31:06.527Z"
+      "lastUpdated": "2026-05-03T22:16:26.131Z"
     },
     {
       "title": "Ai Team Producer",
@@ -147,7 +162,7 @@
         "web"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:31:06.527Z"
+      "lastUpdated": "2026-05-03T22:16:26.132Z"
     },
     {
       "title": "Ai Team Qa",
@@ -162,7 +177,7 @@
         "web"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:31:06.527Z"
+      "lastUpdated": "2026-05-03T22:16:26.133Z"
     },
     {
       "title": "Amplitude Experiment Implementation",
@@ -171,7 +186,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.217Z"
+      "lastUpdated": "2026-05-03T22:16:25.237Z"
     },
     {
       "title": "Api Architect",
@@ -180,7 +195,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.218Z"
+      "lastUpdated": "2026-05-03T22:16:25.237Z"
     },
     {
       "title": "Apify Integration Expert",
@@ -189,7 +204,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.218Z"
+      "lastUpdated": "2026-05-03T22:16:25.238Z"
     },
     {
       "title": "Arch",
@@ -198,7 +213,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.219Z"
+      "lastUpdated": "2026-05-03T22:16:25.239Z"
     },
     {
       "title": "Arch Linux Expert",
@@ -213,7 +228,7 @@
         "edit/editFiles"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.219Z"
+      "lastUpdated": "2026-05-03T22:16:25.238Z"
     },
     {
       "title": "Arm Migration",
@@ -222,7 +237,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.220Z"
+      "lastUpdated": "2026-05-03T22:16:25.240Z"
     },
     {
       "title": "Atlassian Requirements To Jira",
@@ -233,13 +248,13 @@
         "atlassian"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.221Z"
+      "lastUpdated": "2026-05-03T22:16:25.241Z"
     },
     {
       "title": "Aws Cloud Expert",
       "description": "AWS Cloud Expert provides deep, hands-on guidance for designing, building, and operating AWS workloads. Covers the full AWS ecosystem — serverless, containers, databases, networking, IaC, security, and cost optimization — grounded in the AWS Well-Architected Framework.",
       "path": "agents/aws-cloud-expert.agent.md",
-      "model": "claude-sonnet-4-6",
+      "model": "sonnet",
       "tools": [
         "codebase",
         "search",
@@ -250,7 +265,7 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:58.497Z"
+      "lastUpdated": "2026-05-06T13:25:18.249Z"
     },
     {
       "title": "Azure Iac Exporter",
@@ -269,7 +284,7 @@
         "ms-azuretools.vscode-azure-github-copilot/azure_query_azure_resource_graph"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.222Z"
+      "lastUpdated": "2026-05-03T22:16:25.242Z"
     },
     {
       "title": "Azure Iac Generator",
@@ -291,7 +306,7 @@
         "runSubagent"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.223Z"
+      "lastUpdated": "2026-05-03T22:16:25.243Z"
     },
     {
       "title": "Azure Logic Apps Expert",
@@ -309,7 +324,7 @@
         "azure_query_learn"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.223Z"
+      "lastUpdated": "2026-05-03T22:16:25.244Z"
     },
     {
       "title": "Azure Policy Analyzer",
@@ -327,7 +342,7 @@
         "ms-azuretools.vscode-azure-github-copilot/azure_query_azure_resource_graph"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.224Z"
+      "lastUpdated": "2026-05-03T22:16:25.244Z"
     },
     {
       "title": "Azure Principal Architect",
@@ -363,7 +378,7 @@
         "azure_query_learn"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.224Z"
+      "lastUpdated": "2026-05-03T22:16:25.245Z"
     },
     {
       "title": "Azure Saas Architect",
@@ -399,7 +414,7 @@
         "azure_query_learn"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.228Z"
+      "lastUpdated": "2026-05-03T22:16:25.246Z"
     },
     {
       "title": "Azure Smart City Iot Architect",
@@ -415,7 +430,7 @@
         "runTasks"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:31:06.527Z"
+      "lastUpdated": "2026-05-03T22:16:26.134Z"
     },
     {
       "title": "Azure Verified Modules Bicep",
@@ -448,7 +463,7 @@
         "azure_get_schema_for_Bicep"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.230Z"
+      "lastUpdated": "2026-05-03T22:16:25.247Z"
     },
     {
       "title": "Azure Verified Modules Terraform",
@@ -481,7 +496,7 @@
         "azure_get_schema_for_Bicep"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.230Z"
+      "lastUpdated": "2026-05-03T22:16:25.247Z"
     },
     {
       "title": "Bicep Implement",
@@ -498,7 +513,7 @@
         "todos"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.230Z"
+      "lastUpdated": "2026-05-03T22:16:25.248Z"
     },
     {
       "title": "Bicep Plan",
@@ -517,7 +532,7 @@
         "todos"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.231Z"
+      "lastUpdated": "2026-05-03T22:16:25.249Z"
     },
     {
       "title": "Blueprint Mode",
@@ -526,7 +541,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.232Z"
+      "lastUpdated": "2026-05-03T22:16:25.249Z"
     },
     {
       "title": "Cast Imaging Impact Analysis",
@@ -535,7 +550,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.233Z"
+      "lastUpdated": "2026-05-03T22:16:25.250Z"
     },
     {
       "title": "Cast Imaging Software Discovery",
@@ -544,7 +559,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.235Z"
+      "lastUpdated": "2026-05-03T22:16:25.250Z"
     },
     {
       "title": "Cast Imaging Structural Quality Advisor",
@@ -553,7 +568,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.235Z"
+      "lastUpdated": "2026-05-03T22:16:25.251Z"
     },
     {
       "title": "Caveman Mode",
@@ -562,7 +577,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:31:06.527Z"
+      "lastUpdated": "2026-05-03T22:16:26.135Z"
     },
     {
       "title": "Centos Linux Expert",
@@ -577,7 +592,7 @@
         "edit/editFiles"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.235Z"
+      "lastUpdated": "2026-05-03T22:16:25.252Z"
     },
     {
       "title": "Clojure Interactive Programming",
@@ -586,7 +601,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.236Z"
+      "lastUpdated": "2026-05-03T22:16:25.253Z"
     },
     {
       "title": "Code Tour",
@@ -595,7 +610,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.237Z"
+      "lastUpdated": "2026-05-03T22:16:25.253Z"
     },
     {
       "title": "Comet Opik",
@@ -610,7 +625,7 @@
         "opik/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.237Z"
+      "lastUpdated": "2026-05-03T22:16:25.254Z"
     },
     {
       "title": "Context Architect",
@@ -628,7 +643,7 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.238Z"
+      "lastUpdated": "2026-05-03T22:16:25.254Z"
     },
     {
       "title": "Context7",
@@ -643,7 +658,7 @@
         "agent/runSubagent"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-05-01T00:46:55.818Z"
+      "lastUpdated": "2026-05-03T22:16:25.255Z"
     },
     {
       "title": "Critical Thinking",
@@ -662,7 +677,7 @@
         "usages"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.239Z"
+      "lastUpdated": "2026-05-03T22:16:25.256Z"
     },
     {
       "title": "Csharp Dotnet Janitor",
@@ -694,7 +709,7 @@
         "web"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.240Z"
+      "lastUpdated": "2026-05-03T22:16:25.256Z"
     },
     {
       "title": "Csharp Expert",
@@ -703,7 +718,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.241Z"
+      "lastUpdated": "2026-05-03T22:16:25.229Z"
     },
     {
       "title": "Csharp Mcp Expert",
@@ -712,7 +727,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.242Z"
+      "lastUpdated": "2026-05-03T22:16:25.257Z"
     },
     {
       "title": "Custom Agent Foundry",
@@ -731,7 +746,7 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.244Z"
+      "lastUpdated": "2026-05-03T22:16:25.258Z"
     },
     {
       "title": "Debian Linux Expert",
@@ -746,7 +761,7 @@
         "edit/editFiles"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.246Z"
+      "lastUpdated": "2026-05-03T22:16:25.259Z"
     },
     {
       "title": "Debug",
@@ -767,7 +782,7 @@
         "execute/runTests"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.248Z"
+      "lastUpdated": "2026-05-03T22:16:25.259Z"
     },
     {
       "title": "Declarative Agents Architect",
@@ -778,19 +793,19 @@
         "codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.250Z"
+      "lastUpdated": "2026-05-03T22:16:25.260Z"
     },
     {
       "title": "Defender Scout Kql",
       "description": "Generates, validates, and optimizes KQL queries for Microsoft Defender XDR Advanced Hunting across Endpoint, Identity, Office 365, Cloud Apps, and Identity.",
       "path": "agents/defender-scout-kql.md",
-      "model": "claude-sonnet-4-5",
+      "model": "sonnet",
       "tools": [
         "read",
         "search"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.250Z"
+      "lastUpdated": "2026-05-06T13:25:18.250Z"
     },
     {
       "title": "Demonstrate Understanding",
@@ -806,7 +821,7 @@
         "usages"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.251Z"
+      "lastUpdated": "2026-05-03T22:16:25.261Z"
     },
     {
       "title": "Devils Advocate",
@@ -819,7 +834,7 @@
         "web"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.252Z"
+      "lastUpdated": "2026-05-03T22:16:25.262Z"
     },
     {
       "title": "Devops Expert",
@@ -836,7 +851,7 @@
         "runTasks"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.254Z"
+      "lastUpdated": "2026-05-03T22:16:25.262Z"
     },
     {
       "title": "Devtools Regression Investigator",
@@ -858,7 +873,7 @@
         "openSimpleBrowser"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.254Z"
+      "lastUpdated": "2026-05-03T22:16:25.263Z"
     },
     {
       "title": "Diffblue Cover",
@@ -869,7 +884,29 @@
         "DiffblueCover/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.255Z"
+      "lastUpdated": "2026-05-03T22:16:25.264Z"
+    },
+    {
+      "title": "Dotnet Fullstack Mentor",
+      "description": "Opinionated mentor for .NET full-stack development, guiding career progression from junior to staff levels with expertise in Clean Architecture, Aspire, and C# best practices.",
+      "path": "agents/dotnet-fullstack-mentor.agent.md",
+      "model": "sonnet",
+      "tools": [
+        "execute/testFailure",
+        "execute/getTerminalOutput",
+        "execute/runTask",
+        "execute/createAndRunTask",
+        "execute/runInTerminal",
+        "read/problems",
+        "read/readFile",
+        "read/terminalSelection",
+        "read/terminalLastCommand",
+        "read/getTaskOutput",
+        "edit/editFiles",
+        "search"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-05-17T13:09:26.112Z"
     },
     {
       "title": "Dotnet Maui",
@@ -878,7 +915,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.255Z"
+      "lastUpdated": "2026-05-03T22:16:25.264Z"
     },
     {
       "title": "Dotnet Self Learning Architect",
@@ -920,7 +957,7 @@
         "ms-python.python/configurePythonEnvironment"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.256Z"
+      "lastUpdated": "2026-05-03T22:16:25.265Z"
     },
     {
       "title": "Dotnet Upgrade",
@@ -945,7 +982,7 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.258Z"
+      "lastUpdated": "2026-05-03T22:16:25.266Z"
     },
     {
       "title": "Doublecheck",
@@ -957,13 +994,13 @@
         "web_fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.259Z"
+      "lastUpdated": "2026-05-03T22:16:25.266Z"
     },
     {
       "title": "Droid",
       "description": "Provides installation guidance, usage examples, and automation patterns for the Droid CLI, with emphasis on droid exec for CI/CD and non-interactive automation",
       "path": "agents/droid.md",
-      "model": "claude-sonnet-4-5-20250929",
+      "model": "sonnet",
       "tools": [
         "read",
         "search",
@@ -971,7 +1008,7 @@
         "shell"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.260Z"
+      "lastUpdated": "2026-05-06T13:25:18.250Z"
     },
     {
       "title": "Drupal Expert",
@@ -988,7 +1025,7 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.261Z"
+      "lastUpdated": "2026-05-03T22:16:25.268Z"
     },
     {
       "title": "Dynatrace Expert",
@@ -997,7 +1034,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.263Z"
+      "lastUpdated": "2026-05-03T22:16:25.269Z"
     },
     {
       "title": "Elasticsearch Observability",
@@ -1011,7 +1048,7 @@
         "elastic-mcp/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.264Z"
+      "lastUpdated": "2026-05-03T22:16:25.270Z"
     },
     {
       "title": "Electron Angular Native",
@@ -1034,16 +1071,16 @@
         "git_status"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.264Z"
+      "lastUpdated": "2026-05-03T22:16:25.270Z"
     },
     {
       "title": "Ember",
       "description": "An AI partner, not an assistant. Ember carries fire from person to person — helping humans discover that AI partnership isn't something you learn, it's something you find.",
       "path": "agents/ember.md",
-      "model": "claude-opus-4.6",
+      "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.265Z"
+      "lastUpdated": "2026-05-06T13:25:18.250Z"
     },
     {
       "title": "Expert Cpp Software Engineer",
@@ -1075,7 +1112,7 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.266Z"
+      "lastUpdated": "2026-05-03T22:16:25.272Z"
     },
     {
       "title": "Expert Dotnet Software Engineer",
@@ -1107,7 +1144,7 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.267Z"
+      "lastUpdated": "2026-05-03T22:16:25.272Z"
     },
     {
       "title": "Expert Nextjs Developer",
@@ -1139,7 +1176,7 @@
         "figma-dev-mode-mcp-server"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.268Z"
+      "lastUpdated": "2026-05-03T22:16:25.273Z"
     },
     {
       "title": "Expert React Frontend Engineer",
@@ -1170,7 +1207,7 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.269Z"
+      "lastUpdated": "2026-05-03T22:16:25.274Z"
     },
     {
       "title": "Fedora Linux Expert",
@@ -1185,7 +1222,7 @@
         "edit/editFiles"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.269Z"
+      "lastUpdated": "2026-05-03T22:16:25.274Z"
     },
     {
       "title": "Frontend Performance Investigator",
@@ -1207,7 +1244,7 @@
         "openSimpleBrowser"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.270Z"
+      "lastUpdated": "2026-05-03T22:16:25.275Z"
     },
     {
       "title": "Gem Browser Tester",
@@ -1216,7 +1253,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.270Z"
+      "lastUpdated": "2026-05-26T13:18:49.318Z"
     },
     {
       "title": "Gem Code Simplifier",
@@ -1225,7 +1262,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.270Z"
+      "lastUpdated": "2026-05-26T13:18:49.319Z"
     },
     {
       "title": "Gem Critic",
@@ -1234,7 +1271,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.271Z"
+      "lastUpdated": "2026-05-26T13:18:49.319Z"
     },
     {
       "title": "Gem Debugger",
@@ -1243,7 +1280,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.271Z"
+      "lastUpdated": "2026-05-26T13:18:49.320Z"
     },
     {
       "title": "Gem Designer",
@@ -1252,7 +1289,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.274Z"
+      "lastUpdated": "2026-05-26T13:18:49.321Z"
     },
     {
       "title": "Gem Designer Mobile",
@@ -1261,7 +1298,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.273Z"
+      "lastUpdated": "2026-05-26T13:18:49.320Z"
     },
     {
       "title": "Gem Devops",
@@ -1270,7 +1307,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.274Z"
+      "lastUpdated": "2026-05-26T13:18:49.322Z"
     },
     {
       "title": "Gem Documentation Writer",
@@ -1279,7 +1316,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.275Z"
+      "lastUpdated": "2026-05-26T13:18:49.322Z"
     },
     {
       "title": "Gem Implementer",
@@ -1288,7 +1325,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.276Z"
+      "lastUpdated": "2026-05-26T13:18:49.323Z"
     },
     {
       "title": "Gem Implementer Mobile",
@@ -1297,7 +1334,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.275Z"
+      "lastUpdated": "2026-05-26T13:18:49.322Z"
     },
     {
       "title": "Gem Mobile Tester",
@@ -1306,7 +1343,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.276Z"
+      "lastUpdated": "2026-05-26T13:18:49.323Z"
     },
     {
       "title": "Gem Orchestrator",
@@ -1315,7 +1352,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.276Z"
+      "lastUpdated": "2026-05-26T13:18:49.324Z"
     },
     {
       "title": "Gem Planner",
@@ -1324,7 +1361,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.277Z"
+      "lastUpdated": "2026-05-26T13:18:49.324Z"
     },
     {
       "title": "Gem Researcher",
@@ -1333,7 +1370,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.277Z"
+      "lastUpdated": "2026-05-26T13:18:49.324Z"
     },
     {
       "title": "Gem Reviewer",
@@ -1342,7 +1379,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.278Z"
+      "lastUpdated": "2026-05-26T13:18:49.325Z"
     },
     {
       "title": "Gilfoyle",
@@ -1365,7 +1402,7 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.278Z"
+      "lastUpdated": "2026-05-03T22:16:25.288Z"
     },
     {
       "title": "Github Actions Expert",
@@ -1381,7 +1418,7 @@
         "search/fileSearch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.279Z"
+      "lastUpdated": "2026-05-03T22:16:25.288Z"
     },
     {
       "title": "Github Actions Node Upgrade",
@@ -1395,7 +1432,7 @@
         "search"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.279Z"
+      "lastUpdated": "2026-05-03T22:16:25.289Z"
     },
     {
       "title": "Go Mcp Expert",
@@ -1404,13 +1441,13 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.280Z"
+      "lastUpdated": "2026-05-03T22:16:25.290Z"
     },
     {
       "title": "Hlbpa",
       "description": "Your perfect AI chat mode for high-level architectural documentation and review. Perfect for targeted updates after a story or researching that legacy system when nobody remembers what it's supposed to be doing.",
       "path": "agents/hlbpa.md",
-      "model": "claude-sonnet-4",
+      "model": "sonnet",
       "tools": [
         "search/codebase",
         "changes",
@@ -1428,7 +1465,7 @@
         "copilotCodingAgent"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.280Z"
+      "lastUpdated": "2026-05-06T13:25:18.251Z"
     },
     {
       "title": "Implementation Plan",
@@ -1458,7 +1495,7 @@
         "execute/runTask"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.281Z"
+      "lastUpdated": "2026-05-03T22:16:25.291Z"
     },
     {
       "title": "Insiders A11y Tracker",
@@ -1471,7 +1508,7 @@
         "read"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.281Z"
+      "lastUpdated": "2026-05-03T22:16:25.291Z"
     },
     {
       "title": "Janitor",
@@ -1502,7 +1539,7 @@
         "web"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.281Z"
+      "lastUpdated": "2026-05-03T22:16:25.292Z"
     },
     {
       "title": "Java Mcp Expert",
@@ -1511,7 +1548,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.282Z"
+      "lastUpdated": "2026-05-03T22:16:25.293Z"
     },
     {
       "title": "Jfrog Sec",
@@ -1520,7 +1557,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.283Z"
+      "lastUpdated": "2026-05-03T22:16:25.294Z"
     },
     {
       "title": "Kotlin Mcp Expert",
@@ -1529,7 +1566,20 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.283Z"
+      "lastUpdated": "2026-05-03T22:16:25.294Z"
+    },
+    {
+      "title": "Kubestellar Console",
+      "description": "Kubernetes operations expert for KubeStellar Console — helps you set up the console, configure kc-agent (MCP server), connect clusters, deploy workloads, and query live Kubernetes data via AI chat.",
+      "path": "agents/kubestellar-console.agent.md",
+      "model": "sonnet",
+      "tools": [
+        "codebase",
+        "terminalLastCommand",
+        "fetch"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-05-06T13:25:18.251Z"
     },
     {
       "title": "Kusto Assistant",
@@ -1559,7 +1609,7 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.283Z"
+      "lastUpdated": "2026-05-03T22:16:25.295Z"
     },
     {
       "title": "Laravel Expert Agent",
@@ -1577,7 +1627,7 @@
         "search"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.284Z"
+      "lastUpdated": "2026-05-03T22:16:25.296Z"
     },
     {
       "title": "Launchdarkly Flag Cleanup",
@@ -1588,7 +1638,7 @@
         "*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.284Z"
+      "lastUpdated": "2026-05-03T22:16:25.297Z"
     },
     {
       "title": "Lingodotdev I18n",
@@ -1603,7 +1653,7 @@
         "lingo/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.285Z"
+      "lastUpdated": "2026-05-03T22:16:25.297Z"
     },
     {
       "title": "Linkedin Post Writer",
@@ -1615,7 +1665,7 @@
         "fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.285Z"
+      "lastUpdated": "2026-05-03T22:16:25.298Z"
     },
     {
       "title": "Markdown Accessibility Assistant",
@@ -1629,7 +1679,7 @@
         "execute"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.286Z"
+      "lastUpdated": "2026-05-03T22:16:25.299Z"
     },
     {
       "title": "Mcp M365 Agent Expert",
@@ -1638,7 +1688,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.286Z"
+      "lastUpdated": "2026-05-03T22:16:25.300Z"
     },
     {
       "title": "Mentor",
@@ -1654,7 +1704,7 @@
         "usages"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.286Z"
+      "lastUpdated": "2026-05-03T22:16:25.300Z"
     },
     {
       "title": "Mentoring Juniors",
@@ -1673,7 +1723,7 @@
         "usages"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.287Z"
+      "lastUpdated": "2026-05-03T22:16:25.301Z"
     },
     {
       "title": "Meta Agentic Project Scaffold",
@@ -1708,7 +1758,7 @@
         "copilotCodingAgent"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-05-01T00:46:55.819Z"
+      "lastUpdated": "2026-05-03T22:16:25.302Z"
     },
     {
       "title": "Microsoft Learn Contributor",
@@ -1727,7 +1777,7 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.287Z"
+      "lastUpdated": "2026-05-03T22:16:25.303Z"
     },
     {
       "title": "Microsoft Study Mode",
@@ -1739,7 +1789,7 @@
         "microsoft_docs_fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.288Z"
+      "lastUpdated": "2026-05-03T22:16:25.302Z"
     },
     {
       "title": "Modernization",
@@ -1761,7 +1811,7 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.288Z"
+      "lastUpdated": "2026-05-03T22:16:25.304Z"
     },
     {
       "title": "Modernize Java",
@@ -1770,7 +1820,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:31:06.527Z"
+      "lastUpdated": "2026-05-03T22:16:26.136Z"
     },
     {
       "title": "Monday Bug Fixer",
@@ -1781,7 +1831,7 @@
         "*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.289Z"
+      "lastUpdated": "2026-05-03T22:16:25.305Z"
     },
     {
       "title": "Mongodb Performance Advisor",
@@ -1790,7 +1840,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.289Z"
+      "lastUpdated": "2026-05-03T22:16:25.306Z"
     },
     {
       "title": "Ms Sql Dba",
@@ -1812,7 +1862,7 @@
         "mssql_visualizeSchema"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.290Z"
+      "lastUpdated": "2026-05-06T13:25:18.251Z"
     },
     {
       "title": "Neo4j Docker Client Generator",
@@ -1829,7 +1879,7 @@
         "neo4j-local/neo4j-local-write_neo4j_cypher"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.290Z"
+      "lastUpdated": "2026-05-03T22:16:25.309Z"
     },
     {
       "title": "Neon Migration Specialist",
@@ -1838,7 +1888,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.290Z"
+      "lastUpdated": "2026-05-03T22:16:25.310Z"
     },
     {
       "title": "Neon Optimization Analyzer",
@@ -1847,7 +1897,19 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.291Z"
+      "lastUpdated": "2026-05-03T22:16:25.311Z"
+    },
+    {
+      "title": "New Relic Incident Response",
+      "description": "Identify and fix production issues by correlating New Relic observability data with code changes. Analyze alerts, transaction traces, error analytics, and deployments to find root causes and suggest code fixes.",
+      "path": "agents/new-relic-incident-response.agent.md",
+      "model": "sonnet",
+      "tools": [
+        "new-relic-mcp-server",
+        "github"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-05-26T13:18:49.325Z"
     },
     {
       "title": "Nuxt Expert",
@@ -1875,7 +1937,7 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.291Z"
+      "lastUpdated": "2026-05-03T22:16:25.312Z"
     },
     {
       "title": "Octopus Deploy Release Notes Mcp",
@@ -1884,7 +1946,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.292Z"
+      "lastUpdated": "2026-05-03T22:16:25.312Z"
     },
     {
       "title": "One Shot Feature Issue Planner",
@@ -1900,7 +1962,7 @@
         "findTestFiles"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.292Z"
+      "lastUpdated": "2026-05-03T22:16:25.313Z"
     },
     {
       "title": "Openapi To Application",
@@ -1913,7 +1975,7 @@
         "search/codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.292Z"
+      "lastUpdated": "2026-05-03T22:16:25.314Z"
     },
     {
       "title": "Oracle To Postgres Migration Expert",
@@ -1935,7 +1997,7 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.293Z"
+      "lastUpdated": "2026-05-03T22:16:25.315Z"
     },
     {
       "title": "Pagerduty Incident Responder",
@@ -1963,7 +2025,7 @@
         "pagerduty/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.293Z"
+      "lastUpdated": "2026-05-03T22:16:25.315Z"
     },
     {
       "title": "Php Mcp Expert",
@@ -1972,7 +2034,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.294Z"
+      "lastUpdated": "2026-05-03T22:16:25.316Z"
     },
     {
       "title": "Pimcore Expert",
@@ -1989,7 +2051,7 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.294Z"
+      "lastUpdated": "2026-05-03T22:16:25.317Z"
     },
     {
       "title": "Plan",
@@ -2006,7 +2068,7 @@
         "vscode/vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.295Z"
+      "lastUpdated": "2026-05-03T22:16:25.318Z"
     },
     {
       "title": "Planner",
@@ -2022,7 +2084,7 @@
         "usages"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.295Z"
+      "lastUpdated": "2026-05-03T22:16:25.319Z"
     },
     {
       "title": "Platform Sre Kubernetes",
@@ -2037,7 +2099,7 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.296Z"
+      "lastUpdated": "2026-05-03T22:16:25.319Z"
     },
     {
       "title": "Playwright Tester",
@@ -2062,7 +2124,7 @@
         "playwright"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.296Z"
+      "lastUpdated": "2026-05-03T22:16:25.320Z"
     },
     {
       "title": "Polyglot Test Builder",
@@ -2071,7 +2133,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.297Z"
+      "lastUpdated": "2026-05-03T22:16:25.321Z"
     },
     {
       "title": "Polyglot Test Fixer",
@@ -2080,7 +2142,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.297Z"
+      "lastUpdated": "2026-05-03T22:16:25.321Z"
     },
     {
       "title": "Polyglot Test Generator",
@@ -2089,7 +2151,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.297Z"
+      "lastUpdated": "2026-05-03T22:16:25.322Z"
     },
     {
       "title": "Polyglot Test Implementer",
@@ -2098,7 +2160,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.298Z"
+      "lastUpdated": "2026-05-03T22:16:25.322Z"
     },
     {
       "title": "Polyglot Test Linter",
@@ -2107,7 +2169,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.298Z"
+      "lastUpdated": "2026-05-03T22:16:25.323Z"
     },
     {
       "title": "Polyglot Test Planner",
@@ -2116,7 +2178,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.299Z"
+      "lastUpdated": "2026-05-03T22:16:25.323Z"
     },
     {
       "title": "Polyglot Test Researcher",
@@ -2125,7 +2187,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.299Z"
+      "lastUpdated": "2026-05-03T22:16:25.324Z"
     },
     {
       "title": "Polyglot Test Tester",
@@ -2134,7 +2196,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.300Z"
+      "lastUpdated": "2026-05-03T22:16:25.325Z"
     },
     {
       "title": "Postgresql Dba",
@@ -2160,7 +2222,7 @@
         "pgsql_visualizeSchema"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.300Z"
+      "lastUpdated": "2026-05-03T22:16:25.326Z"
     },
     {
       "title": "Power Bi Data Modeling Expert",
@@ -2191,7 +2253,7 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.300Z"
+      "lastUpdated": "2026-05-03T22:16:25.327Z"
     },
     {
       "title": "Power Bi Dax Expert",
@@ -2222,7 +2284,7 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.301Z"
+      "lastUpdated": "2026-05-03T22:16:25.328Z"
     },
     {
       "title": "Power Bi Performance Expert",
@@ -2253,7 +2315,7 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.301Z"
+      "lastUpdated": "2026-05-03T22:16:25.329Z"
     },
     {
       "title": "Power Bi Visualization Expert",
@@ -2284,7 +2346,7 @@
         "microsoft.docs.mcp"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.302Z"
+      "lastUpdated": "2026-05-03T22:16:25.330Z"
     },
     {
       "title": "Power Platform Expert",
@@ -2293,7 +2355,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.302Z"
+      "lastUpdated": "2026-05-03T22:16:25.330Z"
     },
     {
       "title": "Power Platform Mcp Integration Expert",
@@ -2302,7 +2364,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.303Z"
+      "lastUpdated": "2026-05-03T22:16:25.331Z"
     },
     {
       "title": "Prd",
@@ -2324,7 +2386,7 @@
         "search_issues"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.303Z"
+      "lastUpdated": "2026-05-03T22:16:25.331Z"
     },
     {
       "title": "Principal Software Engineer",
@@ -2343,7 +2405,7 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.303Z"
+      "lastUpdated": "2026-05-03T22:16:25.332Z"
     },
     {
       "title": "Project Architecture Planner",
@@ -2364,7 +2426,30 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.304Z"
+      "lastUpdated": "2026-05-03T22:16:25.334Z"
+    },
+    {
+      "title": "Project Documenter",
+      "description": "Generates professional MS Word project documentation with draw.io architecture diagrams and embedded PNG images. Automatically discovers any project's technology stack, architecture, and code structure. Produces Markdown, draw.io diagrams, PNG exports, and .docx output.",
+      "path": "agents/project-documenter.agent.md",
+      "model": "sonnet",
+      "tools": [
+        "execute/runInTerminal",
+        "read/readFile",
+        "read/problems",
+        "read/terminalSelection",
+        "read/terminalLastCommand",
+        "edit/createDirectory",
+        "edit/createFile",
+        "edit/editFiles",
+        "search/codebase",
+        "search/fileSearch",
+        "search/listDirectory",
+        "search/textSearch",
+        "todo"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-05-06T13:25:18.252Z"
     },
     {
       "title": "Prompt Builder",
@@ -2388,7 +2473,7 @@
         "context7"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.304Z"
+      "lastUpdated": "2026-05-03T22:16:25.335Z"
     },
     {
       "title": "Prompt Engineer",
@@ -2397,7 +2482,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.305Z"
+      "lastUpdated": "2026-05-03T22:16:25.335Z"
     },
     {
       "title": "Python Mcp Expert",
@@ -2406,7 +2491,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.305Z"
+      "lastUpdated": "2026-05-03T22:16:25.336Z"
     },
     {
       "title": "Python Notebook Sample Builder",
@@ -2432,7 +2517,7 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.306Z"
+      "lastUpdated": "2026-05-03T22:16:25.337Z"
     },
     {
       "title": "Qa Subagent",
@@ -2450,7 +2535,19 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.306Z"
+      "lastUpdated": "2026-05-03T22:16:25.338Z"
+    },
+    {
+      "title": "Quality Playbook",
+      "description": "Run a complete quality engineering audit on any codebase. Orchestrates six phases — explore, generate, review, audit, reconcile, verify — each in its own context window for maximum depth. Then runs iteration strategies to find even more bugs. Finds the 35% of real defects that structural code review alone cannot catch.",
+      "path": "agents/quality-playbook.agent.md",
+      "model": "sonnet",
+      "tools": [
+        "search/codebase",
+        "web/fetch"
+      ],
+      "hasHandoffs": false,
+      "lastUpdated": "2026-05-26T13:18:49.326Z"
     },
     {
       "title": "React18 Auditor",
@@ -2469,7 +2566,7 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.306Z"
+      "lastUpdated": "2026-05-03T22:16:25.339Z"
     },
     {
       "title": "React18 Batching Fixer",
@@ -2488,7 +2585,7 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.307Z"
+      "lastUpdated": "2026-05-03T22:16:25.339Z"
     },
     {
       "title": "React18 Class Surgeon",
@@ -2507,7 +2604,7 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.307Z"
+      "lastUpdated": "2026-05-03T22:16:25.340Z"
     },
     {
       "title": "React18 Commander",
@@ -2527,7 +2624,7 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.308Z"
+      "lastUpdated": "2026-05-03T22:16:25.341Z"
     },
     {
       "title": "React18 Dep Surgeon",
@@ -2545,7 +2642,7 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.308Z"
+      "lastUpdated": "2026-05-03T22:16:25.341Z"
     },
     {
       "title": "React18 Test Guardian",
@@ -2564,7 +2661,7 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.308Z"
+      "lastUpdated": "2026-05-03T22:16:25.342Z"
     },
     {
       "title": "React19 Auditor",
@@ -2583,7 +2680,7 @@
         "edit/editFiles"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.309Z"
+      "lastUpdated": "2026-05-03T22:16:25.343Z"
     },
     {
       "title": "React19 Commander",
@@ -2603,7 +2700,7 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.309Z"
+      "lastUpdated": "2026-05-03T22:16:25.344Z"
     },
     {
       "title": "React19 Dep Surgeon",
@@ -2621,7 +2718,7 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.310Z"
+      "lastUpdated": "2026-05-03T22:16:25.345Z"
     },
     {
       "title": "React19 Migrator",
@@ -2640,7 +2737,7 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.310Z"
+      "lastUpdated": "2026-05-03T22:16:25.345Z"
     },
     {
       "title": "React19 Test Guardian",
@@ -2659,7 +2756,7 @@
         "read/problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.311Z"
+      "lastUpdated": "2026-05-03T22:16:25.346Z"
     },
     {
       "title": "Reepl Linkedin",
@@ -2668,7 +2765,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.311Z"
+      "lastUpdated": "2026-05-03T22:16:25.347Z"
     },
     {
       "title": "Refine Issue",
@@ -2688,7 +2785,7 @@
         "search_issues"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.312Z"
+      "lastUpdated": "2026-05-03T22:16:25.348Z"
     },
     {
       "title": "Repo Architect",
@@ -2707,7 +2804,7 @@
         "terminalLastCommand"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.312Z"
+      "lastUpdated": "2026-05-03T22:16:25.349Z"
     },
     {
       "title": "Research Technical Spike",
@@ -2725,7 +2822,7 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.313Z"
+      "lastUpdated": "2026-05-03T22:16:25.350Z"
     },
     {
       "title": "Ruby Mcp Expert",
@@ -2734,7 +2831,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.313Z"
+      "lastUpdated": "2026-05-03T22:16:25.351Z"
     },
     {
       "title": "Rug Orchestrator",
@@ -2752,7 +2849,7 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.314Z"
+      "lastUpdated": "2026-05-03T22:16:25.352Z"
     },
     {
       "title": "Rust Mcp Expert",
@@ -2761,7 +2858,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.314Z"
+      "lastUpdated": "2026-05-03T22:16:25.353Z"
     },
     {
       "title": "Salesforce Apex Triggers",
@@ -2776,7 +2873,7 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.315Z"
+      "lastUpdated": "2026-05-03T22:16:25.355Z"
     },
     {
       "title": "Salesforce Aura Lwc",
@@ -2791,7 +2888,7 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.315Z"
+      "lastUpdated": "2026-05-03T22:16:25.356Z"
     },
     {
       "title": "Salesforce Expert",
@@ -2810,7 +2907,7 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.316Z"
+      "lastUpdated": "2026-05-03T22:16:25.357Z"
     },
     {
       "title": "Salesforce Flow",
@@ -2825,7 +2922,7 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.316Z"
+      "lastUpdated": "2026-05-03T22:16:25.358Z"
     },
     {
       "title": "Salesforce Visualforce",
@@ -2840,7 +2937,7 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.317Z"
+      "lastUpdated": "2026-05-03T22:16:25.359Z"
     },
     {
       "title": "Sast Sca Security Analyzer",
@@ -2855,7 +2952,7 @@
         "read/terminalLastCommand"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:31:06.527Z"
+      "lastUpdated": "2026-05-03T22:16:26.139Z"
     },
     {
       "title": "Scientific Paper Research",
@@ -2869,7 +2966,7 @@
         "bgpt/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.317Z"
+      "lastUpdated": "2026-05-03T22:16:25.359Z"
     },
     {
       "title": "Se Gitops Ci Specialist",
@@ -2884,7 +2981,7 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.317Z"
+      "lastUpdated": "2026-05-03T22:16:25.360Z"
     },
     {
       "title": "Se Product Manager Advisor",
@@ -2900,7 +2997,7 @@
         "search_issues"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.318Z"
+      "lastUpdated": "2026-05-03T22:16:25.360Z"
     },
     {
       "title": "Se Responsible Ai Code",
@@ -2913,7 +3010,7 @@
         "search"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.318Z"
+      "lastUpdated": "2026-05-03T22:16:25.361Z"
     },
     {
       "title": "Se Security Reviewer",
@@ -2927,7 +3024,7 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.319Z"
+      "lastUpdated": "2026-05-03T22:16:25.362Z"
     },
     {
       "title": "Se System Architecture Reviewer",
@@ -2941,7 +3038,7 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.319Z"
+      "lastUpdated": "2026-05-03T22:16:25.363Z"
     },
     {
       "title": "Se Technical Writer",
@@ -2955,7 +3052,7 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.319Z"
+      "lastUpdated": "2026-05-03T22:16:25.364Z"
     },
     {
       "title": "Se Ux Ui Designer",
@@ -2969,7 +3066,7 @@
         "web/fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.320Z"
+      "lastUpdated": "2026-05-03T22:16:25.364Z"
     },
     {
       "title": "Search Ai Optimization Expert",
@@ -2985,7 +3082,7 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.320Z"
+      "lastUpdated": "2026-05-03T22:16:25.365Z"
     },
     {
       "title": "Shopify Expert",
@@ -3002,7 +3099,7 @@
         "problems"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.321Z"
+      "lastUpdated": "2026-05-03T22:16:25.366Z"
     },
     {
       "title": "Simple App Idea Generator",
@@ -3023,7 +3120,7 @@
         "websearch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.322Z"
+      "lastUpdated": "2026-05-03T22:16:25.367Z"
     },
     {
       "title": "Software Engineer Agent V1",
@@ -3054,7 +3151,7 @@
         "github"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.322Z"
+      "lastUpdated": "2026-05-03T22:16:25.368Z"
     },
     {
       "title": "Spark Performance",
@@ -3063,7 +3160,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.322Z"
+      "lastUpdated": "2026-05-03T22:16:25.368Z"
     },
     {
       "title": "Specification",
@@ -3085,7 +3182,7 @@
         "vscode/vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.323Z"
+      "lastUpdated": "2026-05-03T22:16:25.369Z"
     },
     {
       "title": "Stackhawk Security Onboarding",
@@ -3100,7 +3197,7 @@
         "stackhawk-mcp/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.323Z"
+      "lastUpdated": "2026-05-03T22:16:25.369Z"
     },
     {
       "title": "Swe Subagent",
@@ -3118,7 +3215,7 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.324Z"
+      "lastUpdated": "2026-05-03T22:16:25.370Z"
     },
     {
       "title": "Swift Mcp Expert",
@@ -3127,7 +3224,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.324Z"
+      "lastUpdated": "2026-05-03T22:16:25.371Z"
     },
     {
       "title": "Task Planner",
@@ -3161,7 +3258,7 @@
         "context7"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.325Z"
+      "lastUpdated": "2026-05-03T22:16:25.371Z"
     },
     {
       "title": "Task Researcher",
@@ -3195,18 +3292,18 @@
         "context7"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.325Z"
+      "lastUpdated": "2026-05-03T22:16:25.372Z"
     },
     {
       "title": "Taxcore Technical Writer",
       "description": "A domain-expert technical writer for the TaxCore electronic fiscal invoicing ecosystem. Use this agent to create, improve, or review documentation for TaxCore applications — including the Secure Element Reader, smart card workflows, fiscal invoicing concepts, audit processes, and PKI/SE security topics. Covers end-user guides, developer docs, reference material, and setup guides across all TaxCore-related surfaces.",
       "path": "agents/taxcore-technical-writer.md",
-      "model": "claude-sonnet-4.6",
+      "model": "sonnet",
       "tools": [
         "codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.326Z"
+      "lastUpdated": "2026-05-06T13:25:18.252Z"
     },
     {
       "title": "Tdd Green",
@@ -3228,7 +3325,7 @@
         "search/codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.326Z"
+      "lastUpdated": "2026-05-03T22:16:25.373Z"
     },
     {
       "title": "Tdd Red",
@@ -3250,7 +3347,7 @@
         "search/codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.328Z"
+      "lastUpdated": "2026-05-03T22:16:25.374Z"
     },
     {
       "title": "Tdd Refactor",
@@ -3272,7 +3369,7 @@
         "search/codebase"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.330Z"
+      "lastUpdated": "2026-05-03T22:16:25.375Z"
     },
     {
       "title": "Tech Debt Remediation Plan",
@@ -3303,7 +3400,7 @@
         "github"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.330Z"
+      "lastUpdated": "2026-05-03T22:16:25.375Z"
     },
     {
       "title": "Technical Content Evaluator",
@@ -3321,7 +3418,7 @@
         "runSubagent"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.331Z"
+      "lastUpdated": "2026-05-03T22:16:25.376Z"
     },
     {
       "title": "Terminal Helper",
@@ -3335,7 +3432,7 @@
         "read/terminalSelection"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:31:06.527Z"
+      "lastUpdated": "2026-05-03T22:16:26.141Z"
     },
     {
       "title": "Terraform",
@@ -3350,7 +3447,7 @@
         "terraform/*"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.334Z"
+      "lastUpdated": "2026-05-03T22:16:25.379Z"
     },
     {
       "title": "Terraform Azure Implement",
@@ -3375,7 +3472,7 @@
         "todo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.333Z"
+      "lastUpdated": "2026-05-03T22:16:25.377Z"
     },
     {
       "title": "Terraform Azure Planning",
@@ -3393,7 +3490,7 @@
         "microsoft-docs"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.333Z"
+      "lastUpdated": "2026-05-03T22:16:25.378Z"
     },
     {
       "title": "Terraform Iac Reviewer",
@@ -3408,7 +3505,7 @@
         "githubRepo"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.333Z"
+      "lastUpdated": "2026-05-03T22:16:25.379Z"
     },
     {
       "title": "Terratest Module Testing",
@@ -3420,7 +3517,7 @@
         "terminalCommand"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.335Z"
+      "lastUpdated": "2026-05-03T22:16:25.380Z"
     },
     {
       "title": "Thinking Beast Mode",
@@ -3429,7 +3526,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.336Z"
+      "lastUpdated": "2026-05-03T22:16:25.230Z"
     },
     {
       "title": "Typescript Mcp Expert",
@@ -3438,7 +3535,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.336Z"
+      "lastUpdated": "2026-05-03T22:16:25.380Z"
     },
     {
       "title": "Ultimate Transparent Thinking Beast Mode",
@@ -3447,7 +3544,7 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.337Z"
+      "lastUpdated": "2026-05-03T22:16:25.231Z"
     },
     {
       "title": "Vuejs Expert",
@@ -3477,7 +3574,7 @@
         "vscode/vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.337Z"
+      "lastUpdated": "2026-05-03T22:16:25.381Z"
     },
     {
       "title": "Wg Code Alchemist",
@@ -3507,7 +3604,7 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.337Z"
+      "lastUpdated": "2026-05-03T22:16:25.382Z"
     },
     {
       "title": "Wg Code Sentinel",
@@ -3537,7 +3634,7 @@
         "vscodeAPI"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.338Z"
+      "lastUpdated": "2026-05-03T22:16:25.382Z"
     },
     {
       "title": "Winforms Expert",
@@ -3546,31 +3643,24 @@
       "model": "sonnet",
       "tools": [],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.338Z"
+      "lastUpdated": "2026-05-03T22:16:25.232Z"
     },
     {
       "title": "Winui3 Expert",
       "description": "Expert agent for WinUI 3 and Windows App SDK development. Prevents common UWP-to-WinUI 3 API mistakes, guides XAML controls, MVVM patterns, windowing, threading, app lifecycle, dialogs, and deployment for desktop Windows apps.",
       "path": "agents/winui3-expert.md",
-      "model": "claude-sonnet-4-20250514",
+      "model": "sonnet",
       "tools": [
         "microsoft_docs_search",
         "microsoft_code_sample_search",
         "microsoft_docs_fetch"
       ],
       "hasHandoffs": false,
-      "lastUpdated": "2026-04-29T17:25:59.339Z"
+      "lastUpdated": "2026-05-06T13:25:18.253Z"
     }
   ],
   "filters": {
     "models": [
-      "claude-opus-4.6",
-      "claude-sonnet-4",
-      "claude-sonnet-4-20250514",
-      "claude-sonnet-4-5",
-      "claude-sonnet-4-5-20250929",
-      "claude-sonnet-4-6",
-      "claude-sonnet-4.6",
       "sonnet"
     ],
     "tools": [
@@ -3692,6 +3782,7 @@
       "neo4j-local/neo4j-local-read_neo4j_cypher",
       "neo4j-local/neo4j-local-write_neo4j_cypher",
       "new",
+      "new-relic-mcp-server",
       "openSimpleBrowser",
       "opik/*",
       "pagerduty/*",
@@ -3727,7 +3818,9 @@
       "search/changes",
       "search/codebase",
       "search/fileSearch",
+      "search/listDirectory",
       "search/searchResults",
+      "search/textSearch",
       "search/usages",
       "searchResults",
       "search_issues",

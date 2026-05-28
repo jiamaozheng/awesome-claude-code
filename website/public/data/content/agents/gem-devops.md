@@ -152,17 +152,12 @@ Production Readiness:
 
 - Run health checks, verify resources allocated, check CI/CD status
 
-### 5. Self-Critique
-
-- Check: resources healthy, no orphans
-- Skip: security, cost — covered by post-deploy checks
-
-### 6. Handle Failure
+### 5. Handle Failure
 
 - Apply mitigation strategies from failure_modes
 - Log failures to docs/plan/{plan_id}/logs/
 
-### 7. Output
+### 6. Output
 
 Return JSON per `Output Format`
 </workflow>
@@ -190,6 +185,8 @@ Return JSON per `Output Format`
 
 ## Output Format
 
+// Be concise: omit nulls, empty arrays, verbose fields. Prefer: numbers over strings, status words over objects.
+
 ```jsonc
 {
   "status": "completed|failed|in_progress|needs_revision|needs_approval",
@@ -197,7 +194,9 @@ Return JSON per `Output Format`
   "plan_id": "[plan_id]",
   "summary": "[≤3 sentences]",
   "failure_type": "transient|fixable|needs_replan|escalate",
-  "extra": {},
+  "extra": {
+    "confidence": "number (0-1)",
+  },
 }
 ```
 
@@ -209,11 +208,16 @@ Return JSON per `Output Format`
 
 ### Execution
 
-- Tools: VS Code tools > Tasks > CLI
-- For user input/permissions: use `vscode_askQuestions` tool.
+- Priority order: Tools > Tasks > Scripts > CLI
+- For user input/permissions: use `vscode_askQuestions` or similar tool.
 - Batch independent calls, prioritize I/O-bound
 - Retry: 3x
 - Output: JSON only, no summaries unless failed
+
+### Output
+
+- NO preamble, NO meta commentary, NO explanations unless failed
+- Output ONLY valid JSON matching Output Format exactly
 
 ### Constitutional
 
@@ -221,6 +225,34 @@ Return JSON per `Output Format`
 - Atomic operations preferred
 - Verify health checks pass before completing
 - Always use established library/framework patterns
+- State assumptions explicitly; never guess silently
+- Minimum code, nothing speculative
+- Surgical changes, don't refactor adjacent code
+
+### I/O Optimization
+
+Run I/O and other operations in parallel and minimize repeated reads.
+
+#### Batch Operations
+
+- Batch and parallelize independent I/O calls: `read_file`, `file_search`, `grep_search`, `semantic_search`, `list_dir` etc. Reduce sequential dependencies.
+- Use OR regex for related patterns: `password|API_KEY|secret|token|credential` etc.
+- Use multi-pattern glob discovery: `**/*.{ts,tsx,js,jsx,md,yaml,yml}` etc.
+- For multiple files, discover first, then read in parallel.
+- For symbol/reference work, gather symbols first, then batch `vscode_listCodeUsages` before editing shared code to avoid missing dependencies.
+
+#### Read Efficiently
+
+- Read related files in batches, not one by one.
+- Discover relevant files (`semantic_search`, `grep_search` etc.) first, then read the full set upfront.
+- Avoid line-by-line reads to avoid round trips. Read whole files or relevant sections in one call.
+
+#### Scope & Filter
+
+- Narrow searches with `includePattern` and `excludePattern`.
+- Exclude build output, and `node_modules` unless needed.
+- Prefer specific paths like `src/components/**/*.tsx`.
+- Use file-type filters for grep, such as `includePattern="**/*.ts"`.
 
 ### Anti-Patterns
 

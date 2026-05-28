@@ -1,6 +1,44 @@
 {
   "items": [
     {
+      "name": "acreadiness-cockpit",
+      "description": "Drive Microsoft AgentRC from Copilot chat: assess AI readiness, generate Copilot instructions (flat or nested with applyTo globs for monorepos), and manage policies. Produces a self-contained static HTML dashboard at reports/index.html.",
+      "path": "plugins/acreadiness-cockpit",
+      "tags": [
+        "agentrc",
+        "ai-readiness",
+        "copilot-instructions",
+        "readiness-report",
+        "monorepo",
+        "policy",
+        "dashboard"
+      ],
+      "itemCount": 4,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/acreadiness-cockpit/agents/ai-readiness-reporter.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/acreadiness-cockpit/skills/acreadiness-assess"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/acreadiness-cockpit/skills/acreadiness-generate-instructions"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/acreadiness-cockpit/skills/acreadiness-policy"
+        }
+      ],
+      "external": false,
+      "repository": null,
+      "homepage": null,
+      "author": null,
+      "source": null
+    },
+    {
       "name": "ai-team-orchestration",
       "description": "Bootstrap and run a multi-agent AI development team with named roles (Producer, Dev Team, QA). Sprint planning, brainstorm prompts with distinct agent voices, cross-chat context survival, and parallel team workflows. Based on a proven template that shipped a 30-game app in 5 days with zero human-written code.",
       "path": "plugins/ai-team-orchestration",
@@ -144,7 +182,7 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-skills"
+          "path": "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-agents"
         },
         {
           "kind": "skill",
@@ -152,7 +190,7 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-agents"
+          "path": "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-skills"
         }
       ],
       "external": false,
@@ -207,19 +245,19 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/azure-cloud-development/skills/azure-resource-health-diagnose"
-        },
-        {
-          "kind": "skill",
           "path": "plugins/azure-cloud-development/skills/az-cost-optimize"
         },
         {
           "kind": "skill",
-          "path": "plugins/azure-cloud-development/skills/import-infrastructure-as-code"
+          "path": "plugins/azure-cloud-development/skills/azure-pricing"
         },
         {
           "kind": "skill",
-          "path": "plugins/azure-cloud-development/skills/azure-pricing"
+          "path": "plugins/azure-cloud-development/skills/azure-resource-health-diagnose"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/azure-cloud-development/skills/import-infrastructure-as-code"
         }
       ],
       "external": false,
@@ -288,6 +326,42 @@
       "source": null
     },
     {
+      "name": "cms-development",
+      "description": "Skills for CMS development across themes, plugins, admin tooling, media workflows, markdown rendering, and static export pipelines.",
+      "path": "plugins/cms-development",
+      "tags": [
+        "cms",
+        "content-management-system",
+        "wordpress",
+        "shopify",
+        "drupal",
+        "theme",
+        "plugin",
+        "media",
+        "static-site"
+      ],
+      "itemCount": 3,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/cms-development/skills/content-management-systems"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/cms-development/skills/markdown-to-html"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/cms-development/skills/quasi-coder"
+        }
+      ],
+      "external": false,
+      "repository": null,
+      "homepage": null,
+      "author": null,
+      "source": null
+    },
+    {
       "name": "context-engineering",
       "description": "Tools and techniques for maximizing GitHub Copilot effectiveness through better context management. Includes guidelines for structuring code, an agent for planning multi-file changes, and prompts for context-aware development.",
       "path": "plugins/context-engineering",
@@ -310,11 +384,11 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/context-engineering/skills/what-context-needed"
+          "path": "plugins/context-engineering/skills/refactor-plan"
         },
         {
           "kind": "skill",
-          "path": "plugins/context-engineering/skills/refactor-plan"
+          "path": "plugins/context-engineering/skills/what-context-needed"
         }
       ],
       "external": false,
@@ -399,19 +473,11 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/csharp-dotnet-development/skills/csharp-async"
-        },
-        {
-          "kind": "skill",
           "path": "plugins/csharp-dotnet-development/skills/aspnet-minimal-api-openapi"
         },
         {
           "kind": "skill",
-          "path": "plugins/csharp-dotnet-development/skills/csharp-xunit"
-        },
-        {
-          "kind": "skill",
-          "path": "plugins/csharp-dotnet-development/skills/csharp-nunit"
+          "path": "plugins/csharp-dotnet-development/skills/csharp-async"
         },
         {
           "kind": "skill",
@@ -419,7 +485,15 @@
         },
         {
           "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/csharp-nunit"
+        },
+        {
+          "kind": "skill",
           "path": "plugins/csharp-dotnet-development/skills/csharp-tunit"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/csharp-dotnet-development/skills/csharp-xunit"
         },
         {
           "kind": "skill",
@@ -490,11 +564,7 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/database-data-management/skills/sql-optimization"
-        },
-        {
-          "kind": "skill",
-          "path": "plugins/database-data-management/skills/sql-code-review"
+          "path": "plugins/database-data-management/skills/postgresql-code-review"
         },
         {
           "kind": "skill",
@@ -502,7 +572,11 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/database-data-management/skills/postgresql-code-review"
+          "path": "plugins/database-data-management/skills/sql-code-review"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/database-data-management/skills/sql-optimization"
         }
       ],
       "external": false,
@@ -525,15 +599,15 @@
       "items": [
         {
           "kind": "skill",
-          "path": "plugins/dataverse-sdk-for-python/skills/dataverse-python-quickstart"
-        },
-        {
-          "kind": "skill",
           "path": "plugins/dataverse-sdk-for-python/skills/dataverse-python-advanced-patterns"
         },
         {
           "kind": "skill",
           "path": "plugins/dataverse-sdk-for-python/skills/dataverse-python-production-code"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/dataverse-sdk-for-python/skills/dataverse-python-quickstart"
         },
         {
           "kind": "skill",
@@ -664,6 +738,32 @@
       "source": null
     },
     {
+      "name": "eyeball",
+      "description": "Document analysis with inline source screenshots. When you ask Copilot to analyze a document, Eyeball generates a Word doc where every factual claim includes a highlighted screenshot from the source material so you can verify it with your own eyes.",
+      "path": "plugins/eyeball",
+      "tags": [
+        "document-analysis",
+        "citation-verification",
+        "screenshot",
+        "contracts",
+        "legal",
+        "trust",
+        "visual-verification"
+      ],
+      "itemCount": 1,
+      "items": [
+        {
+          "kind": "skill",
+          "path": "plugins/eyeball/skills/eyeball"
+        }
+      ],
+      "external": false,
+      "repository": null,
+      "homepage": null,
+      "author": null,
+      "source": null
+    },
+    {
       "name": "fastah-ip-geo-tools",
       "description": "This plugin is for network operations engineers who wish to tune and publish IP geolocation feeds in RFC 8805 format. It consists of an AI Skill and an associated MCP server that geocodes geolocation place names to real cities for accuracy.",
       "path": "plugins/fastah-ip-geo-tools",
@@ -710,7 +810,7 @@
       "items": [
         {
           "kind": "skill",
-          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-mcp"
+          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-build"
         },
         {
           "kind": "skill",
@@ -718,15 +818,15 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-build"
+          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-governance"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-mcp"
         },
         {
           "kind": "skill",
           "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-monitoring"
-        },
-        {
-          "kind": "skill",
-          "path": "plugins/flowstudio-power-automate/skills/flowstudio-power-automate-governance"
         }
       ],
       "external": false,
@@ -777,7 +877,7 @@
     },
     {
       "name": "gem-team",
-      "description": "Multi-agent orchestration framework for spec-driven development and automated verification.",
+      "description": "Self-Learning Multi-agent orchestration harness for spec-driven development and automated verification.",
       "path": "plugins/gem-team",
       "tags": [
         "multi-agent",
@@ -791,69 +891,8 @@
         "prd",
         "mobile"
       ],
-      "itemCount": 15,
-      "items": [
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-browser-tester.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-code-simplifier.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-critic.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-debugger.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-designer-mobile.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-designer.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-devops.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-documentation-writer.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-implementer-mobile.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-implementer.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-mobile-tester.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-orchestrator.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-planner.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-researcher.md"
-        },
-        {
-          "kind": "agent",
-          "path": "plugins/gem-team/agents/gem-reviewer.md"
-        }
-      ],
+      "itemCount": 0,
+      "items": [],
       "external": false,
       "repository": null,
       "homepage": null,
@@ -905,6 +944,10 @@
       "items": [
         {
           "kind": "skill",
+          "path": "plugins/java-development/skills/create-spring-boot-java-project"
+        },
+        {
+          "kind": "skill",
           "path": "plugins/java-development/skills/java-docs"
         },
         {
@@ -914,10 +957,6 @@
         {
           "kind": "skill",
           "path": "plugins/java-development/skills/java-springboot"
-        },
-        {
-          "kind": "skill",
-          "path": "plugins/java-development/skills/create-spring-boot-java-project"
         }
       ],
       "external": false,
@@ -1006,11 +1045,11 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/mcp-m365-copilot/skills/mcp-create-declarative-agent"
+          "path": "plugins/mcp-m365-copilot/skills/mcp-create-adaptive-cards"
         },
         {
           "kind": "skill",
-          "path": "plugins/mcp-m365-copilot/skills/mcp-create-adaptive-cards"
+          "path": "plugins/mcp-m365-copilot/skills/mcp-create-declarative-agent"
         },
         {
           "kind": "skill",
@@ -1697,11 +1736,47 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/power-platform-mcp-connector-development/skills/power-platform-mcp-connector-suite"
+          "path": "plugins/power-platform-mcp-connector-development/skills/mcp-copilot-studio-server-generator"
         },
         {
           "kind": "skill",
-          "path": "plugins/power-platform-mcp-connector-development/skills/mcp-copilot-studio-server-generator"
+          "path": "plugins/power-platform-mcp-connector-development/skills/power-platform-mcp-connector-suite"
+        }
+      ],
+      "external": false,
+      "repository": null,
+      "homepage": null,
+      "author": null,
+      "source": null
+    },
+    {
+      "name": "project-documenter",
+      "description": "Generate professional project documentation with draw.io architecture diagrams and Word (.docx) output with embedded images. Automatically discovers any project's technology stack and produces Markdown, diagrams, PNG exports, and a formatted Word document.",
+      "path": "plugins/project-documenter",
+      "tags": [
+        "documentation",
+        "architecture-diagrams",
+        "drawio",
+        "word-document",
+        "docx",
+        "png-images",
+        "c4-model",
+        "project-summary",
+        "auto-discovery"
+      ],
+      "itemCount": 3,
+      "items": [
+        {
+          "kind": "agent",
+          "path": "plugins/project-documenter/agents/project-documenter.md"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-documenter/skills/drawio"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-documenter/skills/md-to-docx"
         }
       ],
       "external": false,
@@ -1756,14 +1831,6 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/project-planning/skills/breakdown-feature-implementation"
-        },
-        {
-          "kind": "skill",
-          "path": "plugins/project-planning/skills/breakdown-feature-prd"
-        },
-        {
-          "kind": "skill",
           "path": "plugins/project-planning/skills/breakdown-epic-arch"
         },
         {
@@ -1772,11 +1839,11 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/project-planning/skills/create-implementation-plan"
+          "path": "plugins/project-planning/skills/breakdown-feature-implementation"
         },
         {
           "kind": "skill",
-          "path": "plugins/project-planning/skills/update-implementation-plan"
+          "path": "plugins/project-planning/skills/breakdown-feature-prd"
         },
         {
           "kind": "skill",
@@ -1784,7 +1851,15 @@
         },
         {
           "kind": "skill",
+          "path": "plugins/project-planning/skills/create-implementation-plan"
+        },
+        {
+          "kind": "skill",
           "path": "plugins/project-planning/skills/create-technical-spike"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/project-planning/skills/update-implementation-plan"
         }
       ],
       "external": false,
@@ -2112,11 +2187,11 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/salesforce-development/skills/salesforce-flow-design"
+          "path": "plugins/salesforce-development/skills/salesforce-component-standards"
         },
         {
           "kind": "skill",
-          "path": "plugins/salesforce-development/skills/salesforce-component-standards"
+          "path": "plugins/salesforce-development/skills/salesforce-flow-design"
         }
       ],
       "external": false,
@@ -2323,11 +2398,7 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/testing-automation/skills/playwright-explore-website"
-        },
-        {
-          "kind": "skill",
-          "path": "plugins/testing-automation/skills/playwright-generate-test"
+          "path": "plugins/testing-automation/skills/ai-prompt-engineering-safety-review"
         },
         {
           "kind": "skill",
@@ -2339,7 +2410,11 @@
         },
         {
           "kind": "skill",
-          "path": "plugins/testing-automation/skills/ai-prompt-engineering-safety-review"
+          "path": "plugins/testing-automation/skills/playwright-explore-website"
+        },
+        {
+          "kind": "skill",
+          "path": "plugins/testing-automation/skills/playwright-generate-test"
         }
       ],
       "external": false,
@@ -2392,15 +2467,15 @@
       "items": [
         {
           "kind": "skill",
+          "path": "plugins/typespec-m365-copilot/skills/typespec-api-operations"
+        },
+        {
+          "kind": "skill",
           "path": "plugins/typespec-m365-copilot/skills/typespec-create-agent"
         },
         {
           "kind": "skill",
           "path": "plugins/typespec-m365-copilot/skills/typespec-create-api-plugin"
-        },
-        {
-          "kind": "skill",
-          "path": "plugins/typespec-m365-copilot/skills/typespec-api-operations"
         }
       ],
       "external": false,
@@ -2447,10 +2522,12 @@
       "adaptive-cards",
       "agent-development",
       "agentic-workflow",
+      "agentrc",
       "agents",
       "ai",
       "ai-ethics",
       "ai-partnership",
+      "ai-readiness",
       "ai-team",
       "angular",
       "apex",
@@ -2460,6 +2537,7 @@
       "api-plugins",
       "apimatic",
       "architecture",
+      "architecture-diagrams",
       "arize",
       "aspnet",
       "assumption-testing",
@@ -2467,6 +2545,7 @@
       "async-await",
       "attributes",
       "aura",
+      "auto-discovery",
       "automation",
       "azure",
       "batching",
@@ -2477,12 +2556,15 @@
       "brainstorming",
       "briefings",
       "business-intelligence",
+      "c4-model",
       "cast-imaging",
       "cicd",
+      "citation-verification",
       "class-components",
       "clojure",
       "cloud",
       "cloud-flows",
+      "cms",
       "coaching",
       "code-apps",
       "code-generation",
@@ -2494,14 +2576,18 @@
       "composer",
       "concurrency",
       "connectors",
+      "content-management-system",
       "context",
+      "contracts",
       "copilot-cli",
+      "copilot-instructions",
       "copilot-sdk",
       "copilot-studio",
       "crm",
       "csharp",
       "css",
       "custom-connector",
+      "dashboard",
       "data-management",
       "data-modeling",
       "database",
@@ -2516,8 +2602,13 @@
       "developer-workflow",
       "devops",
       "discovery",
+      "document-analysis",
+      "documentation",
+      "docx",
       "dotnet",
       "drawing",
+      "drawio",
+      "drupal",
       "e2e",
       "enterprise",
       "epic",
@@ -2563,6 +2654,7 @@
       "kotlin",
       "kotlin-multiplatform",
       "ktor",
+      "legal",
       "lifecycle",
       "llm",
       "lwc",
@@ -2571,6 +2663,7 @@
       "macros",
       "management",
       "mcp",
+      "media",
       "meta",
       "microsoft-365",
       "migration",
@@ -2579,6 +2672,7 @@
       "modern-react",
       "modernization",
       "monitoring",
+      "monorepo",
       "multi-agent",
       "nestjs",
       "network-operations",
@@ -2601,6 +2695,9 @@
       "plain-english",
       "planning",
       "playwright",
+      "plugin",
+      "png-images",
+      "policy",
       "polyglot",
       "postgresql",
       "power-apps",
@@ -2614,6 +2711,7 @@
       "product",
       "productivity",
       "project-management",
+      "project-summary",
       "prompt-engineering",
       "prompt-optimization",
       "python",
@@ -2627,6 +2725,7 @@
       "react19",
       "reactive-streams",
       "reactor",
+      "readiness-report",
       "refactoring",
       "repl",
       "research",
@@ -2640,6 +2739,7 @@
       "salesforce",
       "salesforce-dx",
       "screen-recording",
+      "screenshot",
       "scripting",
       "sdk",
       "sdks",
@@ -2647,6 +2747,7 @@
       "security-audit",
       "server-development",
       "serverless",
+      "shopify",
       "software-analysis",
       "software-engineering",
       "source-citation",
@@ -2655,6 +2756,7 @@
       "sprint-planning",
       "sql",
       "sql-server",
+      "static-site",
       "status-updates",
       "sticky-notes",
       "stored-procedures",
@@ -2670,6 +2772,7 @@
       "terraform",
       "test-generation",
       "testing",
+      "theme",
       "third-party-apis",
       "tokio",
       "tracing",
@@ -2685,6 +2788,7 @@
       "verification",
       "video-analysis",
       "visual",
+      "visual-verification",
       "visualforce",
       "visualization",
       "vue",
@@ -2694,6 +2798,8 @@
       "windows-app-sdk",
       "winui",
       "winui3",
+      "word-document",
+      "wordpress",
       "workflow",
       "workflow-automation",
       "xaml"

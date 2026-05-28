@@ -19,8 +19,8 @@
     "./agents"
   ],
   "skills": [
-    "./skills/mcp-create-declarative-agent",
     "./skills/mcp-create-adaptive-cards",
+    "./skills/mcp-create-declarative-agent",
     "./skills/mcp-deploy-manage-agents"
   ]
 }

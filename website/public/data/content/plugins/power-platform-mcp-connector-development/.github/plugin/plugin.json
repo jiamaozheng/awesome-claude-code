@@ -18,7 +18,7 @@
     "./agents"
   ],
   "skills": [
-    "./skills/power-platform-mcp-connector-suite",
-    "./skills/mcp-copilot-studio-server-generator"
+    "./skills/mcp-copilot-studio-server-generator",
+    "./skills/power-platform-mcp-connector-suite"
   ]
 }

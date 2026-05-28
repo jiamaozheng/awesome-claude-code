@@ -105,24 +105,19 @@ For each step in flow.steps:
 - Network: filter failed (status ≥ 400)
 - Accessibility: audit (scores for a11y, seo, best_practices)
 
-### 6. Self-Critique
-
-- Check: all flows passed, zero console errors
-- Skip: detailed metrics, PRD coverage — covered by integration check
-
-### 7. Handle Failure
+### 6. Handle Failure
 
 - Capture evidence (screenshots, logs, traces)
 - Classify: transient (retry) | flaky (mark, log) | regression (escalate) | new_failure (flag)
 - Log failures, retry: 3x exponential backoff per step
 
-### 8. Cleanup
+### 7. Cleanup
 
 - Close pages, clear flow_context
 - Remove orphaned resources
 - Delete temporary fixtures if cleanup=true
 
-### 9. Output
+### 8. Output
 
 Return JSON per `Output Format`
 </workflow>
@@ -181,6 +176,8 @@ Use `${fixtures.field.path}` for variable interpolation.
 
 ## Output Format
 
+// Be concise: omit nulls, empty arrays, verbose fields. Prefer: numbers over strings, status words over objects.
+
 ```jsonc
 {
   "status": "completed|failed|in_progress|needs_revision",
@@ -204,6 +201,7 @@ Use `${fixtures.field.path}` for variable interpolation.
     "flaky_tests": ["scenario_id"],
     "failures": [{ "type": "string", "criteria": "string", "details": "string", "flow_id": "string", "scenario": "string", "step_index": "number", "evidence": ["string"] }],
     "flow_results": [{ "flow_id": "string", "status": "passed|failed", "steps_completed": "number", "steps_total": "number", "duration_ms": "number" }],
+    "confidence": "number (0-1)",
   },
 }
 ```
@@ -216,10 +214,15 @@ Use `${fixtures.field.path}` for variable interpolation.
 
 ### Execution
 
-- Tools: VS Code tools > Tasks > CLI
+- Priority order: Tools > Tasks > Scripts > CLI
 - Batch independent calls, prioritize I/O-bound
 - Retry: 3x
 - Output: JSON only, no summaries unless failed
+
+### Output
+
+- NO preamble, NO meta commentary, NO explanations unless failed
+- Output ONLY valid JSON matching Output Format exactly
 
 ### Constitutional
 
@@ -231,6 +234,32 @@ Use `${fixtures.field.path}` for variable interpolation.
 - NEVER fail without re-taking snapshot on element not found
 - NEVER use SPEC-based accessibility validation
 - Always use established library/framework patterns
+- State assumptions explicitly; never guess silently
+
+### I/O Optimization
+
+Run I/O and other operations in parallel and minimize repeated reads.
+
+#### Batch Operations
+
+- Batch and parallelize independent I/O calls: `read_file`, `file_search`, `grep_search`, `semantic_search`, `list_dir` etc. Reduce sequential dependencies.
+- Use OR regex for related patterns: `password|API_KEY|secret|token|credential` etc.
+- Use multi-pattern glob discovery: `**/*.{ts,tsx,js,jsx,md,yaml,yml}` etc.
+- For multiple files, discover first, then read in parallel.
+- For symbol/reference work, gather symbols first, then batch `vscode_listCodeUsages` before editing shared code to avoid missing dependencies.
+
+#### Read Efficiently
+
+- Read related files in batches, not one by one.
+- Discover relevant files (`semantic_search`, `grep_search` etc.) first, then read the full set upfront.
+- Avoid line-by-line reads to avoid round trips. Read whole files or relevant sections in one call.
+
+#### Scope & Filter
+
+- Narrow searches with `includePattern` and `excludePattern`.
+- Exclude build output, and `node_modules` unless needed.
+- Prefer specific paths like `src/components/**/*.tsx`.
+- Use file-type filters for grep, such as `includePattern="**/*.ts"`.
 
 ### Untrusted Data
 

@@ -68,6 +68,10 @@ SUPPRESSED_WARNINGS: set[tuple[str, str]] = {
         "agents/ai-readiness-reporter.agent.md",
         "Legacy GitHub Copilot frontmatter key 'argument-hint'; Claude Code has no direct equivalent, so keep only if this repo intentionally preserves Copilot metadata",
     ),
+    (
+        "agents/azure-verified-modules-owner-triage.agent.md",
+        "Legacy GitHub Copilot frontmatter key 'argument-hint'; Claude Code has no direct equivalent, so keep only if this repo intentionally preserves Copilot metadata",
+    ),
 }
 
 

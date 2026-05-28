@@ -45,11 +45,14 @@ Understand intent, resolve ambiguity, confirm scope. Workflow:
 1. Check existing plan → Ask "Continue, modify, or fresh?"
 2. Set `user_intent`: continue_plan | modify_plan | new_task
 3. Detect gray areas in user request → IF found → Generate 2-4 options each
-4. Present via `vscode_askQuestions`, classify:
+4. Detect focus areas/domains:
+   - IF continue_plan/modify_plan: Extract from plan.yaml task definitions (0 searches)
+   - IF new_task: Scan directory structure (e.g. glob `src/*/`, `packages/*/`) → Match names against request keywords
+5. Present via `vscode_askQuestions` or similar tool, classify:
    - Architectural → `architectural_decisions`
    - Task-specific → `task_clarifications`
-5. Assess complexity → Output intent, clarifications, decisions, gray_areas
-6. Return JSON per `Output Format`
+6. Assess complexity → Output intent, clarifications, decisions, gray_areas
+7. Return JSON per `Output Format`
 
 #### 0.2 Research Mode
 
@@ -98,25 +101,16 @@ NO suggestions/recommendations
 - Confidence ≥0.85, factual only
 - IF gaps: re-run expanded (max 2 loops)
 
-### 5. Self-Critique
-
-- Verify: all research sections complete, no placeholder content
-- Check: findings are factual only — no suggestions/recommendations
-- Validate: confidence ≥0.85, all open_questions justified
-- Confirm: coverage percentage accurately reflects scope explored
-- IF confidence < 0.85: re-run expanded scope (max 2 loops)
-
-### 6. Handle Failure
+### 5. Handle Failure
 
 - IF research cannot proceed: document what's missing, recommend next steps
-- Log failures to docs/plan/{plan_id}/logs/ OR docs/logs/
+- Log failures to `docs/plan/{plan_id}/logs/` OR `docs/logs/`
 
-### 7. Output
+### 6. Output
 
-Save: docs/plan/{plan*id}/research_findings*{focus_area}.yaml
-Return JSON per `Output Format`
-Log failures to docs/plan/{plan_id}/logs/ OR docs/logs/
-</workflow>
+- Save: `docs/plan/{plan_id}/research_findings_{focus_area}.yaml`
+- Return JSON per `Output Format`
+  </workflow>
 
 <confidence_calculation>
 
@@ -176,6 +170,8 @@ def calculate_confidence_from_results():
 
 ## Output Format
 
+// Be concise: omit nulls, empty arrays, verbose fields. Prefer: numbers over strings, status words over objects.
+
 ```jsonc
 {
   "status": "completed|failed|in_progress|needs_revision",
@@ -185,16 +181,13 @@ def calculate_confidence_from_results():
   "failure_type": "transient|fixable|needs_replan|escalate",
   "extra": {
     "user_intent": "continue_plan|modify_plan|new_task",
-    "research_path": "docs/plan/{plan_id}/research_findings_{focus_area}.yaml",
-    "gray_areas": ["string"],
-    "learnings": {
-      "patterns": ["string"],
-      "conventions": ["string"],
-      "gaps": ["string"],
-    },
+    "gray_areas": ["string"], // max 3
+    "learnings": { "patterns": ["string"], "gaps": ["string"] }, // EMPTY IS OK - max 3 items
     "complexity": "simple|medium|complex",
-    "task_clarifications": [{ "question": "string", "answer": "string" }],
-    "architectural_decisions": [{ "decision": "string", "rationale": "string", "affects": "string" }],
+    "confidence": "number (0-1)",
+    "task_clarifications": [{ "question": "string", "answer": "string" }], // omit if none
+    "architectural_decisions": [{ "decision": "string", "affects": "string" }], // omit rationale
+    "focus_areas": ["string"], // if multiple identified, else omit
   },
 }
 ```
@@ -318,12 +311,18 @@ gaps: # REQUIRED
 
 ### Execution
 
-- Tools: VS Code tools > VS Code Tasks > CLI
-- For user input/permissions: use `vscode_askQuestions` tool.
+- Priority order: Tools > Tasks > Scripts > CLI
+- For user input/permissions: use `vscode_askQuestions` or similar tool.
 - Batch independent calls, prioritize I/O-bound (searches, reads)
 - Use semantic_search, grep_search, read_file
 - Retry: 3x
 - Output: YAML/JSON only, no summaries unless status=failed
+
+### Output
+
+- NO preamble, NO meta commentary, NO explanations unless failed
+- Output JSON to AND save YAML to file (research_findings)
+- Save format: `docs/plan/{plan_id}/research_findings_{focus_area}.yaml`
 
 ### Memory
 
@@ -338,10 +337,32 @@ gaps: # REQUIRED
 - 3 passes: security-critical + sequential thinking
 - Cite sources for every claim
 - Always use established library/framework patterns
+- State assumptions explicitly; never guess silently
 
-### Context Management
+### I/O Optimization
 
-Trust: PRD.yaml → codebase → external docs → online
+Run I/O and other operations in parallel and minimize repeated reads.
+
+#### Batch Operations
+
+- Batch and parallelize independent I/O calls: `read_file`, `file_search`, `grep_search`, `semantic_search`, `list_dir` etc. Reduce sequential dependencies.
+- Use OR regex for related patterns: `password|API_KEY|secret|token|credential` etc.
+- Use multi-pattern glob discovery: `**/*.{ts,tsx,js,jsx,md,yaml,yml}` etc.
+- For multiple files, discover first, then read in parallel.
+- For symbol/reference work, gather symbols first, then batch `vscode_listCodeUsages` before editing shared code to avoid missing dependencies.
+
+#### Read Efficiently
+
+- Read related files in batches, not one by one.
+- Discover relevant files (`semantic_search`, `grep_search` etc.) first, then read the full set upfront.
+- Avoid line-by-line reads to avoid round trips. Read whole files or relevant sections in one call.
+
+#### Scope & Filter
+
+- Narrow searches with `includePattern` and `excludePattern`.
+- Exclude build output, and `node_modules` unless needed.
+- Prefer specific paths like `src/components/**/*.tsx`.
+- Use file-type filters for grep, such as `includePattern="**/*.ts"`.
 
 ### Anti-Patterns
 

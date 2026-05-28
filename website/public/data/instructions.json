@@ -6,7 +6,7 @@
       "path": "instructions/a11y.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.325Z"
+      "lastUpdated": "2026-05-03T22:16:25.090Z"
     },
     {
       "title": "agent-safety",
@@ -14,7 +14,7 @@
       "path": "instructions/agent-safety.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.325Z"
+      "lastUpdated": "2026-05-03T22:16:25.090Z"
     },
     {
       "title": "agent-skills",
@@ -22,7 +22,7 @@
       "path": "instructions/agent-skills.md",
       "applyTo": "**/skills/**/SKILL.md",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.326Z"
+      "lastUpdated": "2026-05-03T22:16:25.091Z"
     },
     {
       "title": "agents",
@@ -32,7 +32,7 @@
       "extensions": [
         ".agent"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.327Z"
+      "lastUpdated": "2026-05-03T22:16:25.092Z"
     },
     {
       "title": "ai-prompt-engineering-safety-best-practices",
@@ -42,7 +42,7 @@
         "*"
       ],
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.328Z"
+      "lastUpdated": "2026-05-03T22:16:25.093Z"
     },
     {
       "title": "ansible",
@@ -53,7 +53,7 @@
         ".yaml",
         ".yml"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.329Z"
+      "lastUpdated": "2026-05-03T22:16:25.094Z"
     },
     {
       "title": "apex",
@@ -64,7 +64,7 @@
         ".cls",
         ".trigger"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.330Z"
+      "lastUpdated": "2026-05-03T22:16:25.095Z"
     },
     {
       "title": "arch-linux",
@@ -72,7 +72,7 @@
       "path": "instructions/arch-linux.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.331Z"
+      "lastUpdated": "2026-05-03T22:16:25.096Z"
     },
     {
       "title": "aspnet-rest-apis",
@@ -83,7 +83,7 @@
         ".cs",
         ".json"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.331Z"
+      "lastUpdated": "2026-05-03T22:16:25.097Z"
     },
     {
       "title": "astro",
@@ -97,7 +97,7 @@
         ".md",
         ".mdx"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.332Z"
+      "lastUpdated": "2026-05-03T22:16:25.097Z"
     },
     {
       "title": "aws-appsync",
@@ -105,7 +105,7 @@
       "path": "instructions/aws-appsync.md",
       "applyTo": "**/*.{graphql,gql,vtl,ts,js,mjs,cjs,json,yml,yaml}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.332Z"
+      "lastUpdated": "2026-05-03T22:16:25.098Z"
     },
     {
       "title": "azure-devops-pipelines",
@@ -115,7 +115,7 @@
       "extensions": [
         ".pipeline"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.333Z"
+      "lastUpdated": "2026-05-03T22:16:25.098Z"
     },
     {
       "title": "azure-durable-functions-csharp",
@@ -126,7 +126,7 @@
         ".cs",
         ".csproj"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.334Z"
+      "lastUpdated": "2026-05-03T22:16:25.099Z"
     },
     {
       "title": "azure-functions-csharp",
@@ -137,7 +137,7 @@
         ".cs",
         ".csproj"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.335Z"
+      "lastUpdated": "2026-05-03T22:16:25.100Z"
     },
     {
       "title": "azure-functions-typescript",
@@ -149,7 +149,7 @@
         ".js",
         ".json"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.335Z"
+      "lastUpdated": "2026-05-03T22:16:25.100Z"
     },
     {
       "title": "azure-iot-edge-architecture.instructions",
@@ -160,7 +160,7 @@
         ".bicep",
         ".tf"
       ],
-      "lastUpdated": "2026-04-29T15:54:49.758Z"
+      "lastUpdated": "2026-05-03T22:16:26.141Z"
     },
     {
       "title": "azure-logic-apps-power-automate",
@@ -172,7 +172,20 @@
         ".logicapp",
         ".flow"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.336Z"
+      "lastUpdated": "2026-05-03T22:16:25.101Z"
+    },
+    {
+      "title": "azure-naming.instructions",
+      "description": "Azure resource naming conventions based on Microsoft CAF (Cloud Adoption Framework). Use when creating, reviewing, or suggesting names for Azure resources.",
+      "path": "instructions/azure-naming.instructions.md",
+      "applyTo": "**/*.bicep,**/*.tf,**/*.tfvars,**/*.bicepparam,**/infra/**,**/infrastructure/**",
+      "extensions": [
+        ".bicep",
+        ".tf",
+        ".tfvars",
+        ".bicepparam"
+      ],
+      "lastUpdated": "2026-05-17T13:09:26.119Z"
     },
     {
       "title": "azure-verified-modules-bicep",
@@ -183,7 +196,7 @@
         ".bicep",
         ".bicepparam"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.337Z"
+      "lastUpdated": "2026-05-03T22:16:25.102Z"
     },
     {
       "title": "azure-verified-modules-terraform",
@@ -197,7 +210,7 @@
         ".tfstate",
         ".tflint"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.337Z"
+      "lastUpdated": "2026-05-03T22:16:25.103Z"
     },
     {
       "title": "bicep-code-best-practices",
@@ -207,7 +220,7 @@
       "extensions": [
         ".bicep"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.338Z"
+      "lastUpdated": "2026-05-03T22:16:25.104Z"
     },
     {
       "title": "blazor",
@@ -217,7 +230,7 @@
       "extensions": [
         ".razor"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.338Z"
+      "lastUpdated": "2026-05-03T22:16:25.104Z"
     },
     {
       "title": "caveman-mode.instructions",
@@ -225,7 +238,7 @@
       "path": "instructions/caveman-mode.instructions.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:49.759Z"
+      "lastUpdated": "2026-05-03T22:16:26.142Z"
     },
     {
       "title": "centos-linux",
@@ -233,7 +246,7 @@
       "path": "instructions/centos-linux.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.339Z"
+      "lastUpdated": "2026-05-03T22:16:25.105Z"
     },
     {
       "title": "clojure",
@@ -241,7 +254,7 @@
       "path": "instructions/clojure.md",
       "applyTo": "**/*.{clj,cljs,cljc,bb,edn.mdx?}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.339Z"
+      "lastUpdated": "2026-05-03T22:16:25.106Z"
     },
     {
       "title": "cmake-vcpkg",
@@ -254,7 +267,7 @@
         ".h",
         ".hpp"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.340Z"
+      "lastUpdated": "2026-05-03T22:16:25.106Z"
     },
     {
       "title": "code-review-generic",
@@ -262,7 +275,7 @@
       "path": "instructions/code-review-generic.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.340Z"
+      "lastUpdated": "2026-05-03T22:16:25.107Z"
     },
     {
       "title": "codexer",
@@ -270,7 +283,7 @@
       "path": "instructions/codexer.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.341Z"
+      "lastUpdated": "2026-05-03T22:16:25.108Z"
     },
     {
       "title": "coldfusion-cfc",
@@ -280,7 +293,7 @@
       "extensions": [
         ".cfc"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.342Z"
+      "lastUpdated": "2026-05-03T22:16:25.109Z"
     },
     {
       "title": "coldfusion-cfm",
@@ -290,7 +303,7 @@
       "extensions": [
         ".cfm"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.342Z"
+      "lastUpdated": "2026-05-03T22:16:25.109Z"
     },
     {
       "title": "containerization-docker-best-practices",
@@ -300,7 +313,7 @@
       "extensions": [
         ".dockerfile"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.343Z"
+      "lastUpdated": "2026-05-03T22:16:25.110Z"
     },
     {
       "title": "context-engineering",
@@ -308,7 +321,7 @@
       "path": "instructions/context-engineering.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.343Z"
+      "lastUpdated": "2026-05-03T22:16:25.110Z"
     },
     {
       "title": "context7",
@@ -316,7 +329,7 @@
       "path": "instructions/context7.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.344Z"
+      "lastUpdated": "2026-05-03T22:16:25.111Z"
     },
     {
       "title": "convert-cassandra-to-spring-data-cosmos",
@@ -326,7 +339,7 @@
       "extensions": [
         ".java"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.345Z"
+      "lastUpdated": "2026-05-03T22:16:25.112Z"
     },
     {
       "title": "convert-jpa-to-spring-data-cosmos",
@@ -336,7 +349,7 @@
       "extensions": [
         ".java"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.346Z"
+      "lastUpdated": "2026-05-03T22:16:25.113Z"
     },
     {
       "title": "copilot-sdk-csharp",
@@ -344,7 +357,7 @@
       "path": "instructions/copilot-sdk-csharp.md",
       "applyTo": "**.cs, **.csproj",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.347Z"
+      "lastUpdated": "2026-05-03T22:16:25.115Z"
     },
     {
       "title": "copilot-sdk-go",
@@ -352,7 +365,7 @@
       "path": "instructions/copilot-sdk-go.md",
       "applyTo": "**.go, go.mod",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.348Z"
+      "lastUpdated": "2026-05-03T22:16:25.116Z"
     },
     {
       "title": "copilot-sdk-nodejs",
@@ -360,7 +373,7 @@
       "path": "instructions/copilot-sdk-nodejs.md",
       "applyTo": "**.ts, **.js, package.json",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.349Z"
+      "lastUpdated": "2026-05-03T22:16:25.116Z"
     },
     {
       "title": "copilot-sdk-python",
@@ -368,7 +381,7 @@
       "path": "instructions/copilot-sdk-python.md",
       "applyTo": "**.py, pyproject.toml, setup.py",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.349Z"
+      "lastUpdated": "2026-05-03T22:16:25.117Z"
     },
     {
       "title": "copilot-thought-logging",
@@ -376,7 +389,7 @@
       "path": "instructions/copilot-thought-logging.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.350Z"
+      "lastUpdated": "2026-05-03T22:16:25.118Z"
     },
     {
       "title": "cpp-language-service-tools",
@@ -391,7 +404,7 @@
         ".cxx",
         ".c"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.351Z"
+      "lastUpdated": "2026-05-03T22:16:25.118Z"
     },
     {
       "title": "csharp",
@@ -401,7 +414,7 @@
       "extensions": [
         ".cs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.353Z"
+      "lastUpdated": "2026-05-03T22:16:25.121Z"
     },
     {
       "title": "csharp-ja",
@@ -411,7 +424,7 @@
       "extensions": [
         ".cs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.352Z"
+      "lastUpdated": "2026-05-03T22:16:25.119Z"
     },
     {
       "title": "csharp-ko",
@@ -421,7 +434,7 @@
       "extensions": [
         ".cs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.352Z"
+      "lastUpdated": "2026-05-03T22:16:25.120Z"
     },
     {
       "title": "csharp-mcp-server",
@@ -432,7 +445,7 @@
         ".cs",
         ".csproj"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.353Z"
+      "lastUpdated": "2026-05-03T22:16:25.120Z"
     },
     {
       "title": "csharp-razorpages.instructions",
@@ -442,7 +455,7 @@
       "extensions": [
         ".cshtml"
       ],
-      "lastUpdated": "2026-04-29T15:54:49.759Z"
+      "lastUpdated": "2026-05-03T22:16:26.142Z"
     },
     {
       "title": "dart-n-flutter",
@@ -452,7 +465,7 @@
       "extensions": [
         ".dart"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.354Z"
+      "lastUpdated": "2026-05-03T22:16:25.122Z"
     },
     {
       "title": "dataverse-python",
@@ -460,7 +473,7 @@
       "path": "instructions/dataverse-python.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.365Z"
+      "lastUpdated": "2026-05-03T22:16:25.133Z"
     },
     {
       "title": "dataverse-python-advanced-features",
@@ -468,7 +481,7 @@
       "path": "instructions/dataverse-python-advanced-features.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.355Z"
+      "lastUpdated": "2026-05-03T22:16:25.122Z"
     },
     {
       "title": "dataverse-python-agentic-workflows",
@@ -476,7 +489,7 @@
       "path": "instructions/dataverse-python-agentic-workflows.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.356Z"
+      "lastUpdated": "2026-05-03T22:16:25.123Z"
     },
     {
       "title": "dataverse-python-api-reference",
@@ -484,7 +497,7 @@
       "path": "instructions/dataverse-python-api-reference.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.356Z"
+      "lastUpdated": "2026-05-03T22:16:25.124Z"
     },
     {
       "title": "dataverse-python-authentication-security",
@@ -492,7 +505,7 @@
       "path": "instructions/dataverse-python-authentication-security.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.357Z"
+      "lastUpdated": "2026-05-03T22:16:25.125Z"
     },
     {
       "title": "dataverse-python-best-practices",
@@ -500,7 +513,7 @@
       "path": "instructions/dataverse-python-best-practices.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.358Z"
+      "lastUpdated": "2026-05-03T22:16:25.126Z"
     },
     {
       "title": "dataverse-python-error-handling",
@@ -508,7 +521,7 @@
       "path": "instructions/dataverse-python-error-handling.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.359Z"
+      "lastUpdated": "2026-05-03T22:16:25.127Z"
     },
     {
       "title": "dataverse-python-file-operations",
@@ -516,7 +529,7 @@
       "path": "instructions/dataverse-python-file-operations.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.360Z"
+      "lastUpdated": "2026-05-03T22:16:25.128Z"
     },
     {
       "title": "dataverse-python-modules",
@@ -524,7 +537,7 @@
       "path": "instructions/dataverse-python-modules.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.360Z"
+      "lastUpdated": "2026-05-03T22:16:25.129Z"
     },
     {
       "title": "dataverse-python-pandas-integration",
@@ -532,7 +545,7 @@
       "path": "instructions/dataverse-python-pandas-integration.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.361Z"
+      "lastUpdated": "2026-05-03T22:16:25.129Z"
     },
     {
       "title": "dataverse-python-performance-optimization",
@@ -540,7 +553,7 @@
       "path": "instructions/dataverse-python-performance-optimization.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.362Z"
+      "lastUpdated": "2026-05-03T22:16:25.130Z"
     },
     {
       "title": "dataverse-python-real-world-usecases",
@@ -548,7 +561,7 @@
       "path": "instructions/dataverse-python-real-world-usecases.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.363Z"
+      "lastUpdated": "2026-05-03T22:16:25.131Z"
     },
     {
       "title": "dataverse-python-sdk",
@@ -556,7 +569,7 @@
       "path": "instructions/dataverse-python-sdk.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.363Z"
+      "lastUpdated": "2026-05-03T22:16:25.132Z"
     },
     {
       "title": "dataverse-python-testing-debugging",
@@ -564,7 +577,7 @@
       "path": "instructions/dataverse-python-testing-debugging.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.364Z"
+      "lastUpdated": "2026-05-03T22:16:25.133Z"
     },
     {
       "title": "debian-linux",
@@ -572,7 +585,7 @@
       "path": "instructions/debian-linux.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.365Z"
+      "lastUpdated": "2026-05-03T22:16:25.134Z"
     },
     {
       "title": "declarative-agents-microsoft365",
@@ -580,7 +593,7 @@
       "path": "instructions/declarative-agents-microsoft365.md",
       "applyTo": "**.json, **.ts, **.tsp, **manifest.json, **agent.json, **declarative-agent.json",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.366Z"
+      "lastUpdated": "2026-05-03T22:16:25.136Z"
     },
     {
       "title": "devbox-image-definition",
@@ -590,7 +603,7 @@
       "extensions": [
         ".yaml"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.367Z"
+      "lastUpdated": "2026-05-03T22:16:25.136Z"
     },
     {
       "title": "devops-core-principles",
@@ -598,7 +611,7 @@
       "path": "instructions/devops-core-principles.md",
       "applyTo": "*",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.368Z"
+      "lastUpdated": "2026-05-03T22:16:25.138Z"
     },
     {
       "title": "dotnet-architecture-good-practices",
@@ -610,7 +623,7 @@
         ".csproj",
         ".razor"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.368Z"
+      "lastUpdated": "2026-05-03T22:16:25.138Z"
     },
     {
       "title": "dotnet-framework",
@@ -621,7 +634,7 @@
         ".csproj",
         ".cs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.369Z"
+      "lastUpdated": "2026-05-03T22:16:25.139Z"
     },
     {
       "title": "dotnet-maui",
@@ -632,7 +645,7 @@
         ".xaml",
         ".cs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.371Z"
+      "lastUpdated": "2026-05-03T22:16:25.142Z"
     },
     {
       "title": "dotnet-maui-9-to-dotnet-maui-10-upgrade",
@@ -644,7 +657,7 @@
         ".cs",
         ".xaml"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.371Z"
+      "lastUpdated": "2026-05-03T22:16:25.141Z"
     },
     {
       "title": "dotnet-upgrade",
@@ -652,7 +665,7 @@
       "path": "instructions/dotnet-upgrade.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.372Z"
+      "lastUpdated": "2026-05-03T22:16:25.142Z"
     },
     {
       "title": "dotnet-wpf",
@@ -663,7 +676,7 @@
         ".xaml",
         ".cs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.373Z"
+      "lastUpdated": "2026-05-03T22:16:25.143Z"
     },
     {
       "title": "draw-io",
@@ -673,7 +686,7 @@
       "extensions": [
         ".drawio"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.373Z"
+      "lastUpdated": "2026-05-03T22:16:25.144Z"
     },
     {
       "title": "fedora-linux",
@@ -681,7 +694,7 @@
       "path": "instructions/fedora-linux.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.374Z"
+      "lastUpdated": "2026-05-03T22:16:25.144Z"
     },
     {
       "title": "genaiscript",
@@ -691,7 +704,7 @@
       "extensions": [
         ".genai"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.374Z"
+      "lastUpdated": "2026-05-03T22:16:25.146Z"
     },
     {
       "title": "generate-modern-terraform-code-for-azure",
@@ -701,7 +714,7 @@
       "extensions": [
         ".tf"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.375Z"
+      "lastUpdated": "2026-05-03T22:16:25.147Z"
     },
     {
       "title": "gilfoyle-code-review",
@@ -709,7 +722,7 @@
       "path": "instructions/gilfoyle-code-review.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.376Z"
+      "lastUpdated": "2026-05-03T22:16:25.148Z"
     },
     {
       "title": "github-actions-ci-cd-best-practices",
@@ -717,7 +730,7 @@
       "path": "instructions/github-actions-ci-cd-best-practices.md",
       "applyTo": ".github/workflows/*.yml,.github/workflows/*.yaml",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.377Z"
+      "lastUpdated": "2026-05-03T22:16:25.149Z"
     },
     {
       "title": "go",
@@ -727,7 +740,7 @@
       "extensions": [
         ".go"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.378Z"
+      "lastUpdated": "2026-05-03T22:16:25.151Z"
     },
     {
       "title": "go-mcp-server",
@@ -737,7 +750,15 @@
       "extensions": [
         ".go"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.377Z"
+      "lastUpdated": "2026-05-03T22:16:25.150Z"
+    },
+    {
+      "title": "hooks.instructions",
+      "description": "Portable guidance for authoring safe, fast, and clear hooks and reusable hook examples",
+      "path": "instructions/hooks.instructions.md",
+      "applyTo": ".github/hooks/**, hooks/**",
+      "extensions": [],
+      "lastUpdated": "2026-05-06T13:25:18.254Z"
     },
     {
       "title": "html-css-style-color-guide",
@@ -749,7 +770,7 @@
         ".css",
         ".js"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.379Z"
+      "lastUpdated": "2026-05-03T22:16:25.152Z"
     },
     {
       "title": "instructions",
@@ -759,7 +780,7 @@
       "extensions": [
         ".instructions"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.380Z"
+      "lastUpdated": "2026-05-03T22:16:25.152Z"
     },
     {
       "title": "java-11-to-java-17-upgrade",
@@ -769,7 +790,7 @@
         "*"
       ],
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.380Z"
+      "lastUpdated": "2026-05-03T22:16:25.153Z"
     },
     {
       "title": "java-17-to-java-21-upgrade",
@@ -779,7 +800,7 @@
         "*"
       ],
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.381Z"
+      "lastUpdated": "2026-05-03T22:16:25.154Z"
     },
     {
       "title": "java-21-to-java-25-upgrade",
@@ -789,7 +810,7 @@
         "*"
       ],
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.382Z"
+      "lastUpdated": "2026-05-03T22:16:25.154Z"
     },
     {
       "title": "java-mcp-server",
@@ -799,7 +820,7 @@
       "extensions": [
         ".java"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.383Z"
+      "lastUpdated": "2026-05-03T22:16:25.155Z"
     },
     {
       "title": "joyride-user-project",
@@ -807,7 +828,7 @@
       "path": "instructions/joyride-user-project.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.384Z"
+      "lastUpdated": "2026-05-03T22:16:25.156Z"
     },
     {
       "title": "joyride-workspace-automation",
@@ -815,7 +836,7 @@
       "path": "instructions/joyride-workspace-automation.md",
       "applyTo": "**/.joyride/**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.384Z"
+      "lastUpdated": "2026-05-03T22:16:25.156Z"
     },
     {
       "title": "kotlin-mcp-server",
@@ -826,7 +847,7 @@
         ".kt",
         ".kts"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.385Z"
+      "lastUpdated": "2026-05-03T22:16:25.157Z"
     },
     {
       "title": "kubernetes-deployment-best-practices",
@@ -834,7 +855,7 @@
       "path": "instructions/kubernetes-deployment-best-practices.md",
       "applyTo": "*",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.386Z"
+      "lastUpdated": "2026-05-03T22:16:25.158Z"
     },
     {
       "title": "kubernetes-manifests",
@@ -845,7 +866,7 @@
         ".yaml",
         ".yml"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.386Z"
+      "lastUpdated": "2026-05-03T22:16:25.158Z"
     },
     {
       "title": "langchain-python",
@@ -855,7 +876,7 @@
       "extensions": [
         ".py"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.387Z"
+      "lastUpdated": "2026-05-03T22:16:25.159Z"
     },
     {
       "title": "localization",
@@ -865,7 +886,7 @@
       "extensions": [
         ".md"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.387Z"
+      "lastUpdated": "2026-05-03T22:16:25.160Z"
     },
     {
       "title": "lwc",
@@ -873,7 +894,7 @@
       "path": "instructions/lwc.md",
       "applyTo": "force-app/main/default/lwc/**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.388Z"
+      "lastUpdated": "2026-05-03T22:16:25.160Z"
     },
     {
       "title": "makefile",
@@ -883,7 +904,7 @@
       "extensions": [
         ".mk"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.388Z"
+      "lastUpdated": "2026-05-03T22:16:25.162Z"
     },
     {
       "title": "markdown",
@@ -893,7 +914,7 @@
       "extensions": [
         ".md"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.391Z"
+      "lastUpdated": "2026-05-03T22:16:25.165Z"
     },
     {
       "title": "markdown-accessibility",
@@ -903,7 +924,7 @@
       "extensions": [
         ".md"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.389Z"
+      "lastUpdated": "2026-05-03T22:16:25.163Z"
     },
     {
       "title": "markdown-content-creation",
@@ -913,7 +934,7 @@
       "extensions": [
         ".md"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.390Z"
+      "lastUpdated": "2026-05-03T22:16:25.163Z"
     },
     {
       "title": "markdown-gfm",
@@ -923,7 +944,7 @@
       "extensions": [
         ".md"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.391Z"
+      "lastUpdated": "2026-05-03T22:16:25.164Z"
     },
     {
       "title": "mcp-m365-copilot",
@@ -931,7 +952,7 @@
       "path": "instructions/mcp-m365-copilot.md",
       "applyTo": "**/{*mcp*,*agent*,*plugin*,declarativeAgent.json,ai-plugin.json,mcp.json,manifest.json}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.392Z"
+      "lastUpdated": "2026-05-03T22:16:25.166Z"
     },
     {
       "title": "memory-bank",
@@ -939,7 +960,7 @@
       "path": "instructions/memory-bank.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.393Z"
+      "lastUpdated": "2026-05-03T22:16:25.167Z"
     },
     {
       "title": "mongo-dba",
@@ -947,7 +968,7 @@
       "path": "instructions/mongo-dba.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.393Z"
+      "lastUpdated": "2026-05-03T22:16:25.168Z"
     },
     {
       "title": "moodle",
@@ -962,7 +983,7 @@
         ".css",
         ".scss"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.393Z"
+      "lastUpdated": "2026-05-03T22:16:25.169Z"
     },
     {
       "title": "ms-sql-dba",
@@ -970,7 +991,19 @@
       "path": "instructions/ms-sql-dba.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.394Z"
+      "lastUpdated": "2026-05-03T22:16:25.170Z"
+    },
+    {
+      "title": "mvvm-toolkit.instructions",
+      "description": "CommunityToolkit.Mvvm (MVVM Toolkit) coding conventions for ViewModels, commands, messaging, validation, and DI across WPF, WinUI 3, .NET MAUI, Uno Platform, and Avalonia.",
+      "path": "instructions/mvvm-toolkit.instructions.md",
+      "applyTo": "**/*.cs, **/*.xaml, **/*.csproj",
+      "extensions": [
+        ".cs",
+        ".xaml",
+        ".csproj"
+      ],
+      "lastUpdated": "2026-05-26T13:18:49.327Z"
     },
     {
       "title": "nestjs",
@@ -984,7 +1017,7 @@
         ".spec",
         ".e2e-spec"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.395Z"
+      "lastUpdated": "2026-05-03T22:16:25.170Z"
     },
     {
       "title": "nextjs",
@@ -998,7 +1031,7 @@
         ".js",
         ".css"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.396Z"
+      "lastUpdated": "2026-05-03T22:16:25.171Z"
     },
     {
       "title": "nextjs-tailwind",
@@ -1012,7 +1045,7 @@
         ".js",
         ".css"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.395Z"
+      "lastUpdated": "2026-05-03T22:16:25.171Z"
     },
     {
       "title": "no-heredoc",
@@ -1020,7 +1053,7 @@
       "path": "instructions/no-heredoc.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.397Z"
+      "lastUpdated": "2026-05-03T22:16:25.172Z"
     },
     {
       "title": "nodejs-javascript-vitest",
@@ -1032,7 +1065,7 @@
         ".mjs",
         ".cjs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.397Z"
+      "lastUpdated": "2026-05-03T22:16:25.173Z"
     },
     {
       "title": "object-calisthenics",
@@ -1040,7 +1073,7 @@
       "path": "instructions/object-calisthenics.md",
       "applyTo": "**/*.{cs,ts,java}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.398Z"
+      "lastUpdated": "2026-05-03T22:16:25.173Z"
     },
     {
       "title": "oop-design-patterns",
@@ -1054,7 +1087,7 @@
         ".js",
         ".cs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.398Z"
+      "lastUpdated": "2026-05-03T22:16:25.174Z"
     },
     {
       "title": "oqtane",
@@ -1064,7 +1097,7 @@
       "extensions": [
         ".razor"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.399Z"
+      "lastUpdated": "2026-05-03T22:16:25.175Z"
     },
     {
       "title": "pcf-alm",
@@ -1072,7 +1105,7 @@
       "path": "instructions/pcf-alm.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj,sln}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.400Z"
+      "lastUpdated": "2026-05-03T22:16:25.175Z"
     },
     {
       "title": "pcf-api-reference",
@@ -1080,7 +1113,7 @@
       "path": "instructions/pcf-api-reference.md",
       "applyTo": "**/*.{ts,tsx,js}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.401Z"
+      "lastUpdated": "2026-05-03T22:16:25.176Z"
     },
     {
       "title": "pcf-best-practices",
@@ -1088,7 +1121,7 @@
       "path": "instructions/pcf-best-practices.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj,css,html}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.401Z"
+      "lastUpdated": "2026-05-03T22:16:25.176Z"
     },
     {
       "title": "pcf-canvas-apps",
@@ -1096,7 +1129,7 @@
       "path": "instructions/pcf-canvas-apps.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.402Z"
+      "lastUpdated": "2026-05-03T22:16:25.177Z"
     },
     {
       "title": "pcf-code-components",
@@ -1104,7 +1137,7 @@
       "path": "instructions/pcf-code-components.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.402Z"
+      "lastUpdated": "2026-05-03T22:16:25.178Z"
     },
     {
       "title": "pcf-community-resources",
@@ -1112,7 +1145,7 @@
       "path": "instructions/pcf-community-resources.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.403Z"
+      "lastUpdated": "2026-05-03T22:16:25.179Z"
     },
     {
       "title": "pcf-dependent-libraries",
@@ -1120,7 +1153,7 @@
       "path": "instructions/pcf-dependent-libraries.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.404Z"
+      "lastUpdated": "2026-05-03T22:16:25.180Z"
     },
     {
       "title": "pcf-events",
@@ -1128,7 +1161,7 @@
       "path": "instructions/pcf-events.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.404Z"
+      "lastUpdated": "2026-05-03T22:16:25.181Z"
     },
     {
       "title": "pcf-fluent-modern-theming",
@@ -1136,7 +1169,7 @@
       "path": "instructions/pcf-fluent-modern-theming.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.405Z"
+      "lastUpdated": "2026-05-03T22:16:25.181Z"
     },
     {
       "title": "pcf-limitations",
@@ -1144,7 +1177,7 @@
       "path": "instructions/pcf-limitations.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.405Z"
+      "lastUpdated": "2026-05-03T22:16:25.182Z"
     },
     {
       "title": "pcf-manifest-schema",
@@ -1154,7 +1187,7 @@
       "extensions": [
         ".xml"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.406Z"
+      "lastUpdated": "2026-05-03T22:16:25.183Z"
     },
     {
       "title": "pcf-model-driven-apps",
@@ -1162,7 +1195,7 @@
       "path": "instructions/pcf-model-driven-apps.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.407Z"
+      "lastUpdated": "2026-05-03T22:16:25.183Z"
     },
     {
       "title": "pcf-overview",
@@ -1170,7 +1203,7 @@
       "path": "instructions/pcf-overview.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.407Z"
+      "lastUpdated": "2026-05-03T22:16:25.184Z"
     },
     {
       "title": "pcf-power-pages",
@@ -1178,7 +1211,7 @@
       "path": "instructions/pcf-power-pages.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.408Z"
+      "lastUpdated": "2026-05-03T22:16:25.185Z"
     },
     {
       "title": "pcf-react-platform-libraries",
@@ -1186,7 +1219,7 @@
       "path": "instructions/pcf-react-platform-libraries.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.408Z"
+      "lastUpdated": "2026-05-03T22:16:25.185Z"
     },
     {
       "title": "pcf-sample-components",
@@ -1194,7 +1227,7 @@
       "path": "instructions/pcf-sample-components.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.409Z"
+      "lastUpdated": "2026-05-03T22:16:25.186Z"
     },
     {
       "title": "pcf-tooling",
@@ -1202,7 +1235,7 @@
       "path": "instructions/pcf-tooling.md",
       "applyTo": "**/*.{ts,tsx,js,json,xml,pcfproj,csproj}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.409Z"
+      "lastUpdated": "2026-05-03T22:16:25.187Z"
     },
     {
       "title": "performance-optimization",
@@ -1210,7 +1243,7 @@
       "path": "instructions/performance-optimization.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.410Z"
+      "lastUpdated": "2026-05-03T22:16:25.187Z"
     },
     {
       "title": "php-mcp-server",
@@ -1220,7 +1253,7 @@
       "extensions": [
         ".php"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.411Z"
+      "lastUpdated": "2026-05-03T22:16:25.188Z"
     },
     {
       "title": "php-symfony",
@@ -1234,7 +1267,7 @@
         ".xml",
         ".twig"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.411Z"
+      "lastUpdated": "2026-05-03T22:16:25.189Z"
     },
     {
       "title": "playwright-dotnet",
@@ -1242,7 +1275,7 @@
       "path": "instructions/playwright-dotnet.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.412Z"
+      "lastUpdated": "2026-05-03T22:16:25.189Z"
     },
     {
       "title": "playwright-python",
@@ -1250,7 +1283,7 @@
       "path": "instructions/playwright-python.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.412Z"
+      "lastUpdated": "2026-05-03T22:16:25.190Z"
     },
     {
       "title": "playwright-typescript",
@@ -1258,7 +1291,7 @@
       "path": "instructions/playwright-typescript.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.413Z"
+      "lastUpdated": "2026-05-03T22:16:25.190Z"
     },
     {
       "title": "power-apps-canvas-yaml",
@@ -1266,7 +1299,7 @@
       "path": "instructions/power-apps-canvas-yaml.md",
       "applyTo": "**/*.{yaml,yml,md,pa.yaml}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.414Z"
+      "lastUpdated": "2026-05-03T22:16:25.191Z"
     },
     {
       "title": "power-apps-code-apps",
@@ -1274,7 +1307,7 @@
       "path": "instructions/power-apps-code-apps.md",
       "applyTo": "**/*.{ts,tsx,js,jsx}, **/vite.config.*, **/package.json, **/tsconfig.json, **/power.config.json",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.415Z"
+      "lastUpdated": "2026-05-03T22:16:25.192Z"
     },
     {
       "title": "power-bi-custom-visuals-development",
@@ -1282,7 +1315,7 @@
       "path": "instructions/power-bi-custom-visuals-development.md",
       "applyTo": "**/*.{ts,tsx,js,jsx,json,less,css}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.416Z"
+      "lastUpdated": "2026-05-03T22:16:25.193Z"
     },
     {
       "title": "power-bi-data-modeling-best-practices",
@@ -1290,7 +1323,7 @@
       "path": "instructions/power-bi-data-modeling-best-practices.md",
       "applyTo": "**/*.{pbix,md,json,txt}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.417Z"
+      "lastUpdated": "2026-05-03T22:16:25.194Z"
     },
     {
       "title": "power-bi-dax-best-practices",
@@ -1298,7 +1331,7 @@
       "path": "instructions/power-bi-dax-best-practices.md",
       "applyTo": "**/*.{pbix,dax,md,txt}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.418Z"
+      "lastUpdated": "2026-05-03T22:16:25.195Z"
     },
     {
       "title": "power-bi-devops-alm-best-practices",
@@ -1306,7 +1339,7 @@
       "path": "instructions/power-bi-devops-alm-best-practices.md",
       "applyTo": "**/*.{yml,yaml,ps1,json,pbix,pbir}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.419Z"
+      "lastUpdated": "2026-05-03T22:16:25.196Z"
     },
     {
       "title": "power-bi-report-design-best-practices",
@@ -1314,7 +1347,7 @@
       "path": "instructions/power-bi-report-design-best-practices.md",
       "applyTo": "**/*.{pbix,md,json,txt}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.420Z"
+      "lastUpdated": "2026-05-03T22:16:25.197Z"
     },
     {
       "title": "power-bi-security-rls-best-practices",
@@ -1322,7 +1355,7 @@
       "path": "instructions/power-bi-security-rls-best-practices.md",
       "applyTo": "**/*.{pbix,dax,md,txt,json,csharp,powershell}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.421Z"
+      "lastUpdated": "2026-05-03T22:16:25.198Z"
     },
     {
       "title": "power-platform-connector",
@@ -1330,7 +1363,7 @@
       "path": "instructions/power-platform-connector.md",
       "applyTo": "**/*.{json,md}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.421Z"
+      "lastUpdated": "2026-05-03T22:16:25.199Z"
     },
     {
       "title": "power-platform-mcp-development",
@@ -1338,7 +1371,7 @@
       "path": "instructions/power-platform-mcp-development.md",
       "applyTo": "**/*.{json,csx,md}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.422Z"
+      "lastUpdated": "2026-05-03T22:16:25.200Z"
     },
     {
       "title": "powershell",
@@ -1349,7 +1382,7 @@
         ".ps1",
         ".psm1"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.425Z"
+      "lastUpdated": "2026-05-03T22:16:25.201Z"
     },
     {
       "title": "powershell-pester-5",
@@ -1359,7 +1392,7 @@
       "extensions": [
         ".Tests"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.423Z"
+      "lastUpdated": "2026-05-03T22:16:25.200Z"
     },
     {
       "title": "prompt",
@@ -1369,7 +1402,7 @@
       "extensions": [
         ".prompt"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.425Z"
+      "lastUpdated": "2026-05-03T22:16:25.201Z"
     },
     {
       "title": "python-mcp-server",
@@ -1379,7 +1412,7 @@
       "extensions": [
         ".py"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.426Z"
+      "lastUpdated": "2026-05-03T22:16:25.202Z"
     },
     {
       "title": "quarkus",
@@ -1387,7 +1420,7 @@
       "path": "instructions/quarkus.md",
       "applyTo": "*",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.427Z"
+      "lastUpdated": "2026-05-03T22:16:25.203Z"
     },
     {
       "title": "quarkus-mcp-server-sse",
@@ -1395,7 +1428,7 @@
       "path": "instructions/quarkus-mcp-server-sse.md",
       "applyTo": "*",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.427Z"
+      "lastUpdated": "2026-05-03T22:16:25.203Z"
     },
     {
       "title": "r",
@@ -1409,7 +1442,7 @@
         ".rmd",
         ".qmd"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.428Z"
+      "lastUpdated": "2026-05-03T22:16:25.204Z"
     },
     {
       "title": "ruby-mcp-server",
@@ -1420,7 +1453,7 @@
         ".rb",
         ".gemspec"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.428Z"
+      "lastUpdated": "2026-05-03T22:16:25.205Z"
     },
     {
       "title": "ruby-on-rails",
@@ -1430,7 +1463,7 @@
       "extensions": [
         ".rb"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.429Z"
+      "lastUpdated": "2026-05-03T22:16:25.205Z"
     },
     {
       "title": "rust",
@@ -1440,7 +1473,7 @@
       "extensions": [
         ".rs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.431Z"
+      "lastUpdated": "2026-05-03T22:16:25.207Z"
     },
     {
       "title": "rust-mcp-server",
@@ -1450,7 +1483,7 @@
       "extensions": [
         ".rs"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.430Z"
+      "lastUpdated": "2026-05-03T22:16:25.206Z"
     },
     {
       "title": "scala2",
@@ -1460,7 +1493,7 @@
       "extensions": [
         ".scala"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.432Z"
+      "lastUpdated": "2026-05-03T22:16:25.207Z"
     },
     {
       "title": "security-and-owasp",
@@ -1468,7 +1501,7 @@
       "path": "instructions/security-and-owasp.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.433Z"
+      "lastUpdated": "2026-05-03T22:16:25.208Z"
     },
     {
       "title": "self-explanatory-code-commenting",
@@ -1476,7 +1509,7 @@
       "path": "instructions/self-explanatory-code-commenting.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.434Z"
+      "lastUpdated": "2026-05-03T22:16:25.209Z"
     },
     {
       "title": "shell",
@@ -1486,7 +1519,7 @@
       "extensions": [
         ".sh"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.434Z"
+      "lastUpdated": "2026-05-03T22:16:25.210Z"
     },
     {
       "title": "spec-driven-workflow-v1",
@@ -1494,7 +1527,7 @@
       "path": "instructions/spec-driven-workflow-v1.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.435Z"
+      "lastUpdated": "2026-05-03T22:16:25.210Z"
     },
     {
       "title": "springboot",
@@ -1505,7 +1538,7 @@
         ".java",
         ".kt"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.437Z"
+      "lastUpdated": "2026-05-03T22:16:25.212Z"
     },
     {
       "title": "springboot-4-migration",
@@ -1519,7 +1552,7 @@
         ".yml",
         ".yaml"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.436Z"
+      "lastUpdated": "2026-05-17T13:09:26.119Z"
     },
     {
       "title": "sql-sp-generation",
@@ -1529,7 +1562,7 @@
       "extensions": [
         ".sql"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.437Z"
+      "lastUpdated": "2026-05-03T22:16:25.213Z"
     },
     {
       "title": "svelte",
@@ -1544,7 +1577,7 @@
         ".scss",
         ".json"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.438Z"
+      "lastUpdated": "2026-05-03T22:16:25.214Z"
     },
     {
       "title": "swift-mcp-server",
@@ -1554,7 +1587,7 @@
       "extensions": [
         ".swift"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.438Z"
+      "lastUpdated": "2026-05-03T22:16:25.215Z"
     },
     {
       "title": "tailwind-v4-vite",
@@ -1568,7 +1601,7 @@
         ".jsx",
         ".js"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.439Z"
+      "lastUpdated": "2026-05-03T22:16:25.216Z"
     },
     {
       "title": "taming-copilot",
@@ -1576,7 +1609,7 @@
       "path": "instructions/taming-copilot.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.439Z"
+      "lastUpdated": "2026-05-03T22:16:25.216Z"
     },
     {
       "title": "tanstack-start-shadcn-tailwind",
@@ -1592,7 +1625,7 @@
         ".scss",
         ".json"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.440Z"
+      "lastUpdated": "2026-05-03T22:16:25.217Z"
     },
     {
       "title": "task-implementation",
@@ -1600,7 +1633,7 @@
       "path": "instructions/task-implementation.md",
       "applyTo": "**/.copilot-tracking/changes/*.md",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.441Z"
+      "lastUpdated": "2026-05-03T22:16:25.217Z"
     },
     {
       "title": "tasksync",
@@ -1608,7 +1641,7 @@
       "path": "instructions/tasksync.md",
       "applyTo": "**",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.442Z"
+      "lastUpdated": "2026-05-03T22:16:25.218Z"
     },
     {
       "title": "terraform",
@@ -1618,7 +1651,7 @@
       "extensions": [
         ".tf"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.443Z"
+      "lastUpdated": "2026-05-03T22:16:25.221Z"
     },
     {
       "title": "terraform-azure",
@@ -1632,7 +1665,7 @@
         ".tflint",
         ".tfstate"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.442Z"
+      "lastUpdated": "2026-05-03T22:16:25.219Z"
     },
     {
       "title": "terraform-sap-btp",
@@ -1644,7 +1677,7 @@
         ".tfvars",
         ".tflint"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.443Z"
+      "lastUpdated": "2026-05-03T22:16:25.220Z"
     },
     {
       "title": "typescript-mcp-server",
@@ -1655,7 +1688,7 @@
         ".ts",
         ".js"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.444Z"
+      "lastUpdated": "2026-05-03T22:16:25.222Z"
     },
     {
       "title": "typespec-m365-copilot",
@@ -1665,7 +1698,7 @@
       "extensions": [
         ".tsp"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.445Z"
+      "lastUpdated": "2026-05-03T22:16:25.222Z"
     },
     {
       "title": "update-code-from-shorthand",
@@ -1673,7 +1706,7 @@
       "path": "instructions/update-code-from-shorthand.md",
       "applyTo": "**/${input:file}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.445Z"
+      "lastUpdated": "2026-05-03T22:16:25.223Z"
     },
     {
       "title": "update-docs-on-code-change",
@@ -1681,7 +1714,7 @@
       "path": "instructions/update-docs-on-code-change.md",
       "applyTo": "**/*.{md,js,mjs,cjs,ts,tsx,jsx,py,java,cs,go,rb,php,rs,cpp,c,h,hpp}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.446Z"
+      "lastUpdated": "2026-05-03T22:16:25.224Z"
     },
     {
       "title": "use-cliche-data-in-docs",
@@ -1689,7 +1722,7 @@
       "path": "instructions/use-cliche-data-in-docs.md",
       "applyTo": "**/*.{md,js,mjs,cjs,ts,tsx,jsx,py,json}",
       "extensions": [],
-      "lastUpdated": "2026-04-29T15:54:48.447Z"
+      "lastUpdated": "2026-05-03T22:16:25.225Z"
     },
     {
       "title": "vsixtoolkit",
@@ -1701,7 +1734,7 @@
         ".vsct",
         ".xaml"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.448Z"
+      "lastUpdated": "2026-05-03T22:16:25.226Z"
     },
     {
       "title": "winui3",
@@ -1713,7 +1746,7 @@
         ".cs",
         ".csproj"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.449Z"
+      "lastUpdated": "2026-05-03T22:16:25.226Z"
     },
     {
       "title": "wordpress",
@@ -1731,7 +1764,7 @@
         ".scss",
         ".json"
       ],
-      "lastUpdated": "2026-04-29T15:54:48.450Z"
+      "lastUpdated": "2026-05-03T22:16:25.228Z"
     }
   ],
   "filters": {

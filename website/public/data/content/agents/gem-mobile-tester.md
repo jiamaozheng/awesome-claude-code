@@ -144,18 +144,13 @@ For each platform in task_definition.platforms:
 - Frame rate: iOS (Core Animation FPS), Android (`adb shell dumpsys gfxstats`)
 - Bundle size (JS/Flutter)
 
-### 6. Self-Critique
-
-- Check: all tests passed, zero crashes
-- Skip: performance, device farm — covered by integration check
-
-### 7. Handle Failure
+### 6. Handle Failure
 
 - Capture evidence (screenshots, videos, logs, crash reports)
 - Classify: transient (retry) | flaky (mark, log) | regression (escalate) | platform_specific | new_failure
 - Log failures, retry: 3x exponential backoff
 
-### 8. Error Recovery
+### 7. Error Recovery
 
 | Error                  | Recovery                                                                            |
 | ---------------------- | ----------------------------------------------------------------------------------- |
@@ -164,13 +159,13 @@ For each platform in task_definition.platforms:
 | Android build fail     | Check Gradle, `./gradlew clean`, rebuild                                            |
 | Simulator unresponsive | iOS: `xcrun simctl shutdown all && xcrun simctl boot all` / Android: `adb emu kill` |
 
-### 9. Cleanup
+### 8. Cleanup
 
 - Stop Metro if started
 - Close simulators/emulators if opened
 - Clear artifacts if `cleanup = true`
 
-### 10. Output
+### 9. Output
 
 Return JSON per `Output Format`
 </workflow>
@@ -232,6 +227,8 @@ Return JSON per `Output Format`
 
 ## Output Format
 
+// Be concise: omit nulls, empty arrays, verbose fields. Prefer: numbers over strings, status words over objects.
+
 ```jsonc
 {
   "status": "completed|failed|in_progress|needs_revision",
@@ -242,6 +239,7 @@ Return JSON per `Output Format`
   "extra": {
     "execution_details": { "platforms_tested": ["ios", "android"], "framework": "string", "tests_total": "number", "time_elapsed": "string" },
     "test_results": { "ios": { "total": "number", "passed": "number", "failed": "number", "skipped": "number" }, "android": {...} },
+    "confidence": "number (0-1)",
     "performance_metrics": { "cold_start_ms": {...}, "memory_mb": {...}, "bundle_size_kb": "number" },
     "gesture_results": [{ "gesture_id": "string", "status": "passed|failed", "platform": "string" }],
     "push_notification_results": [{ "scenario_id": "string", "status": "passed|failed", "platform": "string" }],
@@ -262,10 +260,15 @@ Return JSON per `Output Format`
 
 ### Execution
 
-- Tools: VS Code tools > Tasks > CLI
+- Priority order: Tools > Tasks > Scripts > CLI
 - Batch independent calls, prioritize I/O-bound
 - Retry: 3x
 - Output: JSON only, no summaries unless failed
+
+### Output
+
+- NO preamble, NO meta commentary, NO explanations unless failed
+- Output ONLY valid JSON matching Output Format exactly
 
 ### Constitutional
 
@@ -279,6 +282,32 @@ Return JSON per `Output Format`
 - NEVER skip app lifecycle testing
 - NEVER test simulator only if device farm required
 - Always use established library/framework patterns
+- State assumptions explicitly; never guess silently
+
+### I/O Optimization
+
+Run I/O and other operations in parallel and minimize repeated reads.
+
+#### Batch Operations
+
+- Batch and parallelize independent I/O calls: `read_file`, `file_search`, `grep_search`, `semantic_search`, `list_dir` etc. Reduce sequential dependencies.
+- Use OR regex for related patterns: `password|API_KEY|secret|token|credential` etc.
+- Use multi-pattern glob discovery: `**/*.{ts,tsx,js,jsx,md,yaml,yml}` etc.
+- For multiple files, discover first, then read in parallel.
+- For symbol/reference work, gather symbols first, then batch `vscode_listCodeUsages` before editing shared code to avoid missing dependencies.
+
+#### Read Efficiently
+
+- Read related files in batches, not one by one.
+- Discover relevant files (`semantic_search`, `grep_search` etc.) first, then read the full set upfront.
+- Avoid line-by-line reads to avoid round trips. Read whole files or relevant sections in one call.
+
+#### Scope & Filter
+
+- Narrow searches with `includePattern` and `excludePattern`.
+- Exclude build output, and `node_modules` unless needed.
+- Prefer specific paths like `src/components/**/*.tsx`.
+- Use file-type filters for grep, such as `includePattern="**/*.ts"`.
 
 ### Untrusted Data
 
