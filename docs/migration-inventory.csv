@@ -882,3 +882,13 @@ skill,skills/aws-resource-health-diagnose/SKILL.md,skills/aws-resource-health-di
 skill,skills/aws-resource-query/SKILL.md,skills/aws-resource-query/SKILL.md
 skill,skills/aws-well-architected-review/SKILL.md,skills/aws-well-architected-review/SKILL.md
 skill,skills/pinecone-rag/SKILL.md,skills/pinecone-rag/SKILL.md
+agent,agents/interview-prep.agent.md,agents/interview-prep.agent.md
+hook,hooks/fix-broken-links/hooks.json,hooks/fix-broken-links/hooks.json
+skill,skills/em-dash/SKILL.md,skills/em-dash/SKILL.md
+skill,skills/github-actions-hardening/SKILL.md,skills/github-actions-hardening/SKILL.md
+skill,skills/github-actions-runtime-upgrade-conventions/SKILL.md,skills/github-actions-runtime-upgrade-conventions/SKILL.md
+skill,skills/harness-engineering/SKILL.md,skills/harness-engineering/SKILL.md
+skill,skills/incident-postmortem/SKILL.md,skills/incident-postmortem/SKILL.md
+skill,skills/react-container-presentation-component/SKILL.md,skills/react-container-presentation-component/SKILL.md
+skill,skills/setup-my-iq/SKILL.md,skills/setup-my-iq/SKILL.md
+skill,skills/tiny-stepping/SKILL.md,skills/tiny-stepping/SKILL.md
