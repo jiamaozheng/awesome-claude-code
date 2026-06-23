@@ -5,3 +5,14 @@ node_modules/
 website/dist/
 website/.astro/
 .upstream/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+build/
+dist/
+*.egg
