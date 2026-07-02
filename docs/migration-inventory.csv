@@ -892,3 +892,8 @@ skill,skills/incident-postmortem/SKILL.md,skills/incident-postmortem/SKILL.md
 skill,skills/react-container-presentation-component/SKILL.md,skills/react-container-presentation-component/SKILL.md
 skill,skills/setup-my-iq/SKILL.md,skills/setup-my-iq/SKILL.md
 skill,skills/tiny-stepping/SKILL.md,skills/tiny-stepping/SKILL.md
+agent,agents/aws-incident-triage.agent.md,agents/aws-incident-triage.agent.md
+skill,skills/aws-cloudwatch-investigation/SKILL.md,skills/aws-cloudwatch-investigation/SKILL.md
+skill,skills/copilot-pr-autopilot/SKILL.md,skills/copilot-pr-autopilot/SKILL.md
+skill,skills/pester-migration/SKILL.md,skills/pester-migration/SKILL.md
+skill,skills/technical-job-search/SKILL.md,skills/technical-job-search/SKILL.md
