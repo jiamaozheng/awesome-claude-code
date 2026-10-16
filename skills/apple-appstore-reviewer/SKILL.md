@@ -16,7 +16,9 @@ You must:
 - Produce **prioritized, actionable recommendations** with clear references to **App Store Review Guidelines** categories (by topic, not necessarily exact numbers unless known from context).
 - Assume the developer wants **fast approval** and **minimal re-review risk**.
 
-If you’re missing information, you should still give best-effort recommendations and clearly state assumptions.
+If you’re missing information, still give best-effort recommendations and clearly distinguish assumptions from applicable checks that remain unverified.
+
+The [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) change over time. When internet access is available, verify the current official wording before quoting a guideline or claiming a requirement is current.
 
 ---
 
@@ -24,7 +26,7 @@ If you’re missing information, you should still give best-effort recommendatio
 
 Deliver a **prioritized list** of fixes/improvements that:
 
-1. Reduce rejection probability.
+1. Reduce rejection probability and, when evidenced, post-approval removal or Apple Developer Program risk.
 2. Improve compliance and user trust (privacy, permissions, subscriptions/IAP, safety).
 3. Improve review clarity (demo/test accounts, reviewer notes, predictable flows).
 4. Improve product quality signals (crash risk, edge cases, UX pitfalls).
@@ -51,6 +53,7 @@ When given a repository, locate and inspect:
 - Permissions usage strings (e.g., Photos, Camera, Location, Bluetooth)
 - URL schemes, Associated Domains, ATS settings
 - Background modes, Push, Tracking, App Groups, keychain access groups
+- WidgetKit/ActivityKit extensions and Live Activity payload or trigger code, if present
 
 ### Monetization
 
@@ -69,8 +72,9 @@ When given a repository, locate and inspect:
 ### Content & safety
 
 - UGC / sharing / messaging / external links
-- Moderation/reporting
+- Filtering, reporting, blocking, published contact information, and effective content-removal paths
 - Restricted content, claims, medical/financial advice flags
+- Actual triggers, content, destinations, user expectations, and stop controls for Live Activities or other Apple services used for customer messaging
 
 ### Technical quality
 
@@ -119,6 +123,28 @@ Once compliance risks are handled, suggest improvements that reduce reviewer fri
 - Reviewer notes suggestions
 - Test instructions / demo data
 - UX improvements that prevent confusion or “app seems broken”
+
+---
+
+## Conditional Guideline Checks
+
+Include these checks only when the app's features, product positioning, or review history make them relevant:
+
+- **User-generated content (Guideline 1.2):** Verify filtering, reporting with timely handling, user blocking, published contact information, and an effective path to remove violating content. If Apple has identified a violation, review the requested removal, compliance plan, and evidence of improvement; do not require an incident-remediation plan universally.
+  - Apple's Guideline 1.2 rejection notices commonly ask for more than the guideline text. Check each item against actual code paths:
+    - **Terms before access:** Users must agree to terms (EULA) **before** they can register or sign in, not merely be able to view them somewhere in the app.
+    - **Zero tolerance:** The terms must explicitly state that there is **no tolerance** for objectionable content or abusive users.
+    - **Affirmative consent:** The agreement control must start unchecked/unaccepted and require a deliberate user action; a pre-checked box or implied consent is a finding.
+    - **Every entry path:** A terms prompt shown only to already signed-in users after an app update does not satisfy "before sign-in"; verify that fresh installs and new registrations hit the agreement before the login or sign-up screen completes.
+    - **24-hour handling:** Reports of objectionable content must be acted on **within 24 hours**; look for a moderation workflow or reviewer-note commitment, not just "timely" wording.
+    - **Removal and ejection:** Acting on a valid report means removing the content **and ejecting (banning) the user who posted it**, not only deleting the content.
+    - **Blocking notifies the developer:** Blocking a user must also notify the developer (e.g., create a report or moderation event), not only hide the user locally.
+    - **Instant removal on block:** Blocked users' content must disappear from the blocker's feed **immediately**, without requiring a refresh, relaunch, or server delay.
+- **Metadata pricing terms (Guideline 2.3.7):** Treat "Free" (or a localized equivalent), sale, or price wording in the app name, subtitle, keywords, screenshots, or previews as pricing information to remove, even when the app really is free. Inspect text rendered **inside screenshot UI** (e.g., a button or label such as "Fuel up (Free)"), not only caption or overlay text. Unverified if screenshots are not available in the repo.
+- **Spam and differentiation (Guideline 4.3(b)):** When the shipped experience or listing appears indistinguishable from widely available products, or the app belongs to an established category Apple identifies under this guideline, assess meaningful differentiation. Do not infer indistinguishability from a common purpose, sparse description, or missing marketplace comparison alone. For a live app in such a category, consider available evidence of maintenance, improvement, and customer attraction because the guideline describes continued-distribution risk; do not invent thresholds or infer traction from source code. Mention Developer Program risk only when repeated low-effort submissions are evidenced.
+- **Apple services (Guideline 4.5.3):** When Live Activities or another Apple service is used for customer messaging, inspect actual triggers, content, destinations, user expectations, and stop controls for spam, phishing, or unsolicited messages. Do not infer a violation from API use alone.
+
+Report only applicable findings.
 
 ---
 
@@ -225,6 +251,7 @@ After delivering recommendations, offer an optional second pass:
 - Paywall messaging must be clear (price, recurring, trial, restore)
 - Restore purchases must work and be visible
 - Don’t mislead about “free” if core requires payment
+- Don’t put “Free” or other pricing terms in metadata or screenshots, even if the app is genuinely free (Guideline 2.3.7)
 - No external purchase prompts/links for digital features
 
 ### Accounts
@@ -232,6 +259,14 @@ After delivering recommendations, offer an optional second pass:
 - If account is required, the app must clearly explain why
 - If account creation exists, account deletion must be accessible in-app (when applicable)
 - “Sign in with Apple” requirement when using other third-party social logins
+
+### User-generated content
+
+- Terms/EULA not agreed to before registration or sign-in, or shown only to existing users after an update
+- Pre-checked agreement box instead of an explicit user action
+- Terms missing a zero-tolerance statement for objectionable content and abusive users
+- No commitment to act on reports within 24 hours by removing content and ejecting the offending user
+- Blocking that does not notify the developer or does not immediately remove the blocked user's content from the feed
 
 ### Minimum functionality / completeness
 
@@ -257,9 +292,7 @@ When you cite an issue, include **at least one**:
 - Specific setting in Info.plist/entitlements
 - Network endpoint usage (domain, path)
 
-If you cannot find evidence, label as:
-
-- **Assumption** and explain what to check.
+If an applicable check depends on an artifact outside scope, label it **Unverified** and request the smallest specific evidence needed. Do not treat unavailable evidence as proof of a violation.
 
 ---
 
