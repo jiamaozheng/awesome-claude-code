@@ -6,6 +6,8 @@ paths: '**/*.{json,md}'
 
 # Power Platform Connectors Schema Development Instructions
 
+These instructions apply automatically to the standard connector definition and properties filenames. Attach them explicitly when working on a connector's `settings.json`, schema files, or documentation with other names; a generic `settings.json` filename also appears in unrelated projects. Keep the Swagger 2.0 format required by the [custom connector importer](https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition).
+
 ## Project Overview
 This workspace contains JSON Schema definitions for Power Platform Custom Connectors, specifically for the `paconn` (Power Apps Connector) tool. The schemas validate and provide IntelliSense for:
 

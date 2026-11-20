@@ -4,6 +4,8 @@ description: "This file provides guidance on building Go applications using GitH
 name: "GitHub Copilot SDK Go Instructions"
 ---
 
+The Microsoft Copilot SDK is transitioning from the GitHub Copilot SDK in phases. No immediate changes are required; package names and examples below use the currently published identifiers. See the [official transition announcement](https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk/).
+
 ## Core Principles
 
 - The SDK is in technical preview and may have breaking changes
